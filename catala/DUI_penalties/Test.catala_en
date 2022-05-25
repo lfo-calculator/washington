@@ -1,0 +1,1018 @@
+> Include: RCW_46_61_5055.catala_en
+
+## Tests
+
+## command to run tests:
+## $ catala -t interpret -s Test Test.catala_en
+
+## cannot implement this test until duration multiplication implemented in Catala
+declaration scope Test11b:
+  t1 scope RCW_46_61_5055_11_b
+  t2 scope RCW_46_61_5055_11_b
+  t3 scope RCW_46_61_5055_11_b
+
+scope Test11b:
+  definition t1.info equals RCW_46_61_5055_Probation_Info {
+    -- probation_violation_count : 2
+  }
+  assertion t1.outcome = 
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days : 60 day
+          -- max_days : 60 day
+        }
+      )
+    )
+
+```catala
+
+declaration scope Test1a:
+  t1 scope RCW_46_61_5055 
+  t2 scope RCW_46_61_5055 
+  t3 scope RCW_46_61_5055 
+  t4 scope RCW_46_61_5055 
+
+scope Test1a:
+  definition t1.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : ThereLessThan15
+    -- minor_passenger : true
+    -- indigent : true
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $35
+  } 
+  assertion t1.outcome = [
+    One content (
+       (Imprisonment content (Imprisonment {
+        -- min_days: 0 day 
+        -- max_days: 0 day
+       })));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost : $35
+          -- max_cost : $35
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0 
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 1 day 
+      -- max_days: 1 day 
+     })))
+  ]
+
+  definition t2.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : ThereLessThan15
+    -- minor_passenger : true
+    -- indigent : false
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t2.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 1 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $350
+          -- max_fine: $5000.00
+        }));
+        One content (
+    Cost content (
+        Cost {
+          -- min_cost : $0
+          -- max_cost : $0
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $1000 
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 1 day 
+      -- max_days: 1 day 
+     })))
+  ]
+
+  definition t3.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : NotThereBecauseSomethingElse
+    -- minor_passenger : false
+    -- indigent : true
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t3.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 1 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+        One content (
+    Cost content (
+        Cost {
+          -- min_cost : $0
+          -- max_cost : $0
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0 
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     })))
+  ]
+
+  definition t4.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : NotThereBecauseSomethingElse
+    -- minor_passenger : false
+    -- indigent : false
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $300
+  } 
+  assertion t4.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        })); 
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $350
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost : $300
+          -- max_cost : $300
+      }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0 
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     })))
+  ]
+
+declaration scope Test1b:
+  t1 scope RCW_46_61_5055
+  t2 scope RCW_46_61_5055 
+  t3 scope RCW_46_61_5055 
+  t4 scope RCW_46_61_5055 
+
+scope Test1b:
+  definition t1.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : ThereGreaterOrEqualTo15
+    -- minor_passenger : true
+    -- indigent : true 
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $35
+  } 
+  assertion t1.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));  
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      (Cost content (
+        Cost {
+          -- min_cost: $35
+          -- max_cost: $35
+        })));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 1 day 
+      -- max_days: 1 day 
+     })))
+  ]
+
+  definition t2.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : ThereGreaterOrEqualTo15
+    -- minor_passenger : true
+    -- indigent : false
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t2.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 2 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $500
+          -- max_fine: $5000.00
+        }));
+    One content (
+      (Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0
+        })));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $1000
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 1 day 
+      -- max_days: 1 day 
+     }))) 
+  ]
+
+  definition t3.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : NotThereBecauseRefused
+    -- minor_passenger : false
+    -- indigent : true
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $900
+  } 
+  assertion t3.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+   One content (
+      Cost content (
+        Cost {
+          -- min_cost: $900
+          -- max_cost: $900 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+  definition t4.info equals RCW_46_61_5055_Info {
+    -- priors : 0
+    -- test : NotThereBecauseRefused
+    -- minor_passenger : false
+    -- indigent : false    
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t4.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 2 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $500
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+declaration scope Test2a:
+  t1 scope RCW_46_61_5055
+  t2 scope RCW_46_61_5055
+  t3 scope RCW_46_61_5055
+  t4 scope RCW_46_61_5055
+
+scope Test2a:
+  definition t1.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : ThereLessThan15
+    -- minor_passenger : false
+    -- indigent : true
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t1.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 4 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+  definition t2.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : ThereLessThan15
+    -- minor_passenger : true
+    -- indigent : false
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $200
+  } 
+  assertion t2.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $500
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $200
+          -- max_cost: $200 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $2000
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 5 day 
+      -- max_days: 5 day 
+     }))) 
+  ]
+
+  definition t3.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : NotThereBecauseSomethingElse
+    -- minor_passenger : true
+    -- indigent : true
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $55
+  } 
+  assertion t3.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $55
+          -- max_cost: $55 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $1000
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 5 day 
+      -- max_days: 5 day 
+     }))) 
+  ]
+
+  definition t4.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : NotThereBecauseSomethingElse
+    -- minor_passenger : false
+    -- indigent : false
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t4.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 4 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $500
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+declaration scope Test2b:
+  t1 scope RCW_46_61_5055
+  t2 scope RCW_46_61_5055
+  t3 scope RCW_46_61_5055
+  t4 scope RCW_46_61_5055
+
+scope Test2b:
+  definition t1.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : ThereGreaterOrEqualTo15
+    -- minor_passenger : false
+    -- indigent : true 
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t1.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 6 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+  definition t2.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : ThereGreaterOrEqualTo15
+    -- minor_passenger : true
+    -- indigent : false
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $22
+  } 
+  assertion t2.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $750
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $22
+          -- max_cost: $22 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $2000
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 5 day 
+      -- max_days: 5 day 
+     }))) 
+  ]
+
+  definition t3.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : NotThereBecauseRefused 
+    -- minor_passenger : true
+    -- indigent : true
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $400
+  } 
+  assertion t3.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $400
+          -- max_cost: $400
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $1000
+      -- max_fine: $5000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 5 day 
+      -- max_days: 5 day 
+     }))) 
+  ]
+
+  definition t4.info equals RCW_46_61_5055_Info {
+    -- priors : 1
+    -- test : NotThereBecauseRefused 
+    -- minor_passenger : false
+    -- indigent : false
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t4.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 6 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $750
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+declaration scope Test3a:
+  t1 scope RCW_46_61_5055
+  t2 scope RCW_46_61_5055
+  t3 scope RCW_46_61_5055
+  t4 scope RCW_46_61_5055
+
+scope Test3a:
+  definition t1.info equals RCW_46_61_5055_Info {
+    -- priors : 2
+    -- test : ThereLessThan15
+    -- minor_passenger : true
+    -- indigent : true
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $100
+  } 
+  assertion t1.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $100
+          -- max_cost: $100 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $2000
+      -- max_fine: $10000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 10 day 
+      -- max_days: 10 day 
+     }))) 
+  ]
+
+  definition t2.info equals RCW_46_61_5055_Info {
+    -- priors : 2
+    -- test : ThereLessThan15
+    -- minor_passenger : false
+    -- indigent : false
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t2.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 90 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $1000
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+  definition t3.info equals RCW_46_61_5055_Info {
+    -- priors : 2
+    -- test : NotThereBecauseSomethingElse 
+    -- minor_passenger : false
+    -- indigent : true
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $30
+  } 
+  assertion t3.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $30
+          -- max_cost: $30 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+  definition t4.info equals RCW_46_61_5055_Info {
+    -- priors : 2
+    -- test : NotThereBecauseSomethingElse 
+    -- minor_passenger : true
+    -- indigent : false
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t4.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 90 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $1000
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $3000
+      -- max_fine: $10000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 10 day 
+      -- max_days: 10 day 
+     }))) 
+  ]
+
+declaration scope Test3b:
+  t1 scope RCW_46_61_5055
+  t2 scope RCW_46_61_5055
+  t3 scope RCW_46_61_5055
+  t4 scope RCW_46_61_5055
+
+scope Test3b:
+  definition t1.info equals RCW_46_61_5055_Info {
+    -- priors : 2
+    -- test : ThereGreaterOrEqualTo15
+    -- minor_passenger : true
+    -- indigent : true
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t1.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 120 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $2000
+      -- max_fine: $10000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 10 day 
+      -- max_days: 10 day 
+     }))) 
+  ]
+
+  definition t2.info equals RCW_46_61_5055_Info {
+    -- priors : 2 
+    -- test : ThereGreaterOrEqualTo15
+    -- minor_passenger : true
+    -- indigent : false
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $0
+  } 
+  assertion t2.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $1500
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $3000
+      -- max_fine: $10000 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 10 day 
+      -- max_days: 10 day 
+     }))) 
+  ]
+
+  definition t3.info equals RCW_46_61_5055_Info {
+    -- priors : 2
+    -- test : NotThereBecauseRefused 
+    -- minor_passenger : false
+    -- indigent : true
+    -- suspended_imprisonment : true
+    -- home_monitoring_cost : $100
+  } 
+  assertion t3.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 0 day
+          -- max_days: 0 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $0
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $100
+          -- max_cost: $100 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+  definition t4.info equals RCW_46_61_5055_Info {
+    -- priors : 2
+    -- test : NotThereBecauseRefused 
+    -- minor_passenger : false
+    -- indigent : false
+    -- suspended_imprisonment : false
+    -- home_monitoring_cost : $0
+  } 
+  assertion t4.outcome = [
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days: 120 day
+          -- max_days: 364 day
+        }));
+    One content (
+      Fine content (
+        Fine {
+          -- min_fine: $1500
+          -- max_fine: $5000.00
+        }));
+    One content (
+      Cost content (
+        Cost {
+          -- min_cost: $0
+          -- max_cost: $0 
+        }));
+    One content (
+      (Fine content (Fine {
+      -- min_fine: $0
+      -- max_fine: $0 
+      })));
+    One content (
+       (Imprisonment content (Imprisonment {
+      -- min_days: 0 day 
+      -- max_days: 0 day 
+     }))) 
+  ]
+
+declaration scope Test:
+  test1 scope Test1a
+  test2 scope Test1b
+  test3 scope Test2a
+  test3 scope Test2b
+  test4 scope Test3a
+  test5 scope Test3b
+  
+```
+  test6 scope Test11b
+
+
