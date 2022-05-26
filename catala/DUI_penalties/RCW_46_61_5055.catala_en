@@ -52,6 +52,7 @@ declaration structure RCW_46_61_5055_Info:
   data indigent content boolean
   data suspended_imprisonment content boolean
   data home_monitoring_cost content money
+  data home_monitoring_waived content boolean
 
 declaration structure RCW_46_61_5055_Probation_Info:
   data probation_violation_count content integer
@@ -158,7 +159,7 @@ scope RCW_46_61_5055 under condition
 
   exception definition cost 
   under condition
-    info.home_monitoring_cost != $0
+    not info.home_monitoring_waived
   consequence equals
     (Cost content (Cost {
       -- min_cost: info.home_monitoring_cost
@@ -225,7 +226,7 @@ scope RCW_46_61_5055 under condition
     
   exception definition cost
   under condition 
-    info.home_monitoring_cost != $0 
+    not info.home_monitoring_waived
   consequence equals
     (Cost content (Cost {
       -- min_cost: info.home_monitoring_cost
@@ -302,7 +303,7 @@ scope RCW_46_61_5055 under condition
 
   exception definition cost
   under condition 
-    info.home_monitoring_cost != $0
+    not info.home_monitoring_waived
   consequence equals
     (Cost content (Cost {
       -- min_cost: info.home_monitoring_cost
@@ -375,7 +376,7 @@ scope RCW_46_61_5055 under condition
 
   exception definition cost
   under condition 
-    info.home_monitoring_cost != $0 
+    not info.home_monitoring_waived
   consequence equals
     (Cost content (Cost {
       -- min_cost: info.home_monitoring_cost
@@ -449,7 +450,7 @@ scope RCW_46_61_5055 under condition
 
   exception definition cost
   under condition 
-    info.home_monitoring_cost != $0
+    not info.home_monitoring_waived
   consequence equals
     (Cost content (Cost {
       -- min_cost: info.home_monitoring_cost
@@ -519,7 +520,7 @@ scope RCW_46_61_5055 under condition
 
   exception definition cost
   under condition 
-    info.home_monitoring_cost != $0 
+    not info.home_monitoring_waived
   consequence equals
     (Cost content (Cost {
       -- min_cost: info.home_monitoring_cost
@@ -849,6 +850,11 @@ alternative sentence would exceed three hundred sixty-four days, the offender
 shall serve the jail portion of the sentence first, and the electronic home
 monitoring or alternative portion of the sentence shall be reduced so that the
 combination does not exceed three hundred sixty-four days.
+
+```catala
+# this is the basis for waiving electronic home monitoring
+```
+
 (13) Extraordinary medical placement. An offender serving a sentence under this
 section, whether or not a mandatory minimum term has expired, may be granted an
 extraordinary medical placement by the jail administrator subject to the

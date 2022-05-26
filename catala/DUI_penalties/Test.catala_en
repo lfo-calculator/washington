@@ -41,6 +41,7 @@ scope Test1a:
     -- indigent : true
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $35
+    -- home_monitoring_waived : false
   } 
   assertion t1.outcome = [
     One content (
@@ -79,6 +80,7 @@ scope Test1a:
     -- indigent : false
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : false
   } 
   assertion t2.outcome = [
     One content (
@@ -118,6 +120,7 @@ scope Test1a:
     -- indigent : true
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : true
   } 
   assertion t3.outcome = [
     One content (
@@ -157,6 +160,7 @@ scope Test1a:
     -- indigent : false
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $300
+    -- home_monitoring_waived : true
   } 
   assertion t4.outcome = [
     One content (
@@ -174,8 +178,8 @@ scope Test1a:
     One content (
       Cost content (
         Cost {
-          -- min_cost : $300
-          -- max_cost : $300
+          -- min_cost : $0
+          -- max_cost : $0
       }));
     One content (
       (Fine content (Fine {
@@ -203,6 +207,7 @@ scope Test1b:
     -- indigent : true 
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $35
+    -- home_monitoring_waived : true
   } 
   assertion t1.outcome = [
     One content (
@@ -220,8 +225,8 @@ scope Test1b:
     One content (
       (Cost content (
         Cost {
-          -- min_cost: $35
-          -- max_cost: $35
+          -- min_cost: $0
+          -- max_cost: $0
         })));
     One content (
       (Fine content (Fine {
@@ -242,6 +247,7 @@ scope Test1b:
     -- indigent : false
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : true
   } 
   assertion t2.outcome = [
     One content (
@@ -281,6 +287,7 @@ scope Test1b:
     -- indigent : true
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $900
+    -- home_monitoring_waived : false
   } 
   assertion t3.outcome = [
     One content (
@@ -320,6 +327,7 @@ scope Test1b:
     -- indigent : false    
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : false
   } 
   assertion t4.outcome = [
     One content (
@@ -366,6 +374,7 @@ scope Test2a:
     -- indigent : true
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : true
   } 
   assertion t1.outcome = [
     One content (
@@ -405,6 +414,7 @@ scope Test2a:
     -- indigent : false
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $200
+    -- home_monitoring_waived : false
   } 
   assertion t2.outcome = [
     One content (
@@ -444,6 +454,7 @@ scope Test2a:
     -- indigent : true
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $55
+    -- home_monitoring_waived : true
   } 
   assertion t3.outcome = [
     One content (
@@ -461,8 +472,8 @@ scope Test2a:
     One content (
       Cost content (
         Cost {
-          -- min_cost: $55
-          -- max_cost: $55 
+          -- min_cost: $0
+          -- max_cost: $0
         }));
     One content (
       (Fine content (Fine {
@@ -483,6 +494,7 @@ scope Test2a:
     -- indigent : false
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : false
   } 
   assertion t4.outcome = [
     One content (
@@ -529,6 +541,7 @@ scope Test2b:
     -- indigent : true 
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : false
   } 
   assertion t1.outcome = [
     One content (
@@ -568,6 +581,7 @@ scope Test2b:
     -- indigent : false
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $22
+    -- home_monitoring_waived : false
   } 
   assertion t2.outcome = [
     One content (
@@ -607,6 +621,7 @@ scope Test2b:
     -- indigent : true
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $400
+    -- home_monitoring_waived : true
   } 
   assertion t3.outcome = [
     One content (
@@ -624,8 +639,8 @@ scope Test2b:
     One content (
       Cost content (
         Cost {
-          -- min_cost: $400
-          -- max_cost: $400
+          -- min_cost: $0
+          -- max_cost: $0
         }));
     One content (
       (Fine content (Fine {
@@ -646,6 +661,7 @@ scope Test2b:
     -- indigent : false
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : true
   } 
   assertion t4.outcome = [
     One content (
@@ -692,6 +708,7 @@ scope Test3a:
     -- indigent : true
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $100
+    -- home_monitoring_waived : false
   } 
   assertion t1.outcome = [
     One content (
@@ -731,6 +748,7 @@ scope Test3a:
     -- indigent : false
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : false
   } 
   assertion t2.outcome = [
     One content (
@@ -770,6 +788,7 @@ scope Test3a:
     -- indigent : true
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $30
+    -- home_monitoring_waived : true
   } 
   assertion t3.outcome = [
     One content (
@@ -787,8 +806,8 @@ scope Test3a:
     One content (
       Cost content (
         Cost {
-          -- min_cost: $30
-          -- max_cost: $30 
+          -- min_cost: $0
+          -- max_cost: $0 
         }));
     One content (
       (Fine content (Fine {
@@ -809,6 +828,7 @@ scope Test3a:
     -- indigent : false
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : true
   } 
   assertion t4.outcome = [
     One content (
@@ -855,6 +875,7 @@ scope Test3b:
     -- indigent : true
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : false
   } 
   assertion t1.outcome = [
     One content (
@@ -894,6 +915,7 @@ scope Test3b:
     -- indigent : false
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : true
   } 
   assertion t2.outcome = [
     One content (
@@ -933,6 +955,7 @@ scope Test3b:
     -- indigent : true
     -- suspended_imprisonment : true
     -- home_monitoring_cost : $100
+    -- home_monitoring_waived : true
   } 
   assertion t3.outcome = [
     One content (
@@ -950,8 +973,8 @@ scope Test3b:
     One content (
       Cost content (
         Cost {
-          -- min_cost: $100
-          -- max_cost: $100 
+          -- min_cost: $0
+          -- max_cost: $0 
         }));
     One content (
       (Fine content (Fine {
@@ -972,6 +995,7 @@ scope Test3b:
     -- indigent : false
     -- suspended_imprisonment : false
     -- home_monitoring_cost : $0
+    -- home_monitoring_waived : true
   } 
   assertion t4.outcome = [
     One content (
