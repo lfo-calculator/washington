@@ -853,6 +853,7 @@ combination does not exceed three hundred sixty-four days.
 
 ```catala
 # this is the basis for waiving electronic home monitoring
+# ask if we shoulde represent the difference between waiving EHM and suspending EHM (both would impose $0 in costs?)
 ```
 
 (13) Extraordinary medical placement. An offender serving a sentence under this
