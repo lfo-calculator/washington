@@ -1,0 +1,22 @@
+#case-settings {
+    width: 500px;
+    margin: auto;
+}
+
+#center-dropdown {
+    display: table;
+    margin: 0 auto;
+}
+
+.bold {
+    font-style: bold;
+}
+
+@media only screen and (max-width: 520px) {
+    #charge-selector {
+        width: 100%;
+    }
+}
+
+// WEBPACK FOOTER //
+// ./src/components/CaseSettings/CaseSettings.css

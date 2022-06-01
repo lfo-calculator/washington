@@ -1,0 +1,152 @@
+body {
+    min-width: 375px;
+}
+
+.App-header {
+    position: relative;
+    text-align: center;
+    background-color: #78909c;
+    height: 100px;
+    padding: 20px;
+    color: white;
+}
+
+.logo-container {
+    height: 90%;
+    display: inline-block;
+}
+
+#logo {
+    height: 90%;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+    top: 6px;
+    display: inline-block;
+}
+
+.title-grouping {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+#footer {
+    text-align: center;
+    margin: 50px;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.no-charges-message {
+    text-align: center;
+    margin: 100px;
+    margin-top: 80px;
+}
+
+#stepper {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 5;
+    -webkit-box-shadow: 0 2px 2px -2px #e0e0e0;
+    box-shadow: 0 2px 2px -2px #e0e0e0;
+}
+
+.tab-header {
+    text-align: center;
+}
+
+.rcw-link {
+    text-decoration: none;
+    color: "#1FBCD2";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+#password:focus {
+    outline-color: #1fbcd3;
+}
+
+#password {
+    border-color: #1fbcd3;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#password-container {
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 540px) {
+    .logo-container {
+        display: none;
+    }
+}
+
+#lfo-version {
+    left: 0px;
+    position: fixed;
+    color: #ffffff;
+    z-index: 1;
+    padding: 5px;
+    font-size: 0.7em;
+}
+
+#new-ver-notify {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #78909c;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 55%;
+    bottom: 30px;
+}
+
+#new-ver-notify.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s;
+    animation: fadein 0.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+// WEBPACK FOOTER //
+// ./src/components/App.css

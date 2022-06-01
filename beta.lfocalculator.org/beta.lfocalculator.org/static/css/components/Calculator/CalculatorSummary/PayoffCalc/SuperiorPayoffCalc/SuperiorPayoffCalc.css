@@ -1,0 +1,26 @@
+#radio-button-group {
+    margin-top: 10px;
+}
+
+.pull-left {
+    text-align: left;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+.pull-right {
+    text-align: right;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.wrapper p {
+    margin: 10px 0 0 0;
+}
+
+// WEBPACK FOOTER //
+// ./src/components/Calculator/CalculatorSummary/PayoffCalc/SuperiorPayoffCalc/SuperiorPayoffCalc.css

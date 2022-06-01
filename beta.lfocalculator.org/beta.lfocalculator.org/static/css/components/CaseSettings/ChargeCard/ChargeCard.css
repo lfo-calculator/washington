@@ -1,0 +1,24 @@
+.charge-header {
+    display: inline-block;
+    width: 98%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.delete-charge {
+    display: inline-block;
+    width: 2%;
+    text-align: right;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ef9a9a;
+    vertical-align: top;
+}
+
+.delete-charge:hover {
+    color: #b71c1c;
+    cursor: pointer;
+}
+
+// WEBPACK FOOTER //
+// ./src/components/CaseSettings/ChargeCard/ChargeCard.css

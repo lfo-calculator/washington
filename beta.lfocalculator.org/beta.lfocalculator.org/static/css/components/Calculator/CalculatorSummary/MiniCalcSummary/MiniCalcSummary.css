@@ -1,0 +1,50 @@
+#mini-calc-summary {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0 -10px 10px -10px #e0e0e0;
+    box-shadow: 0 -10px 10px -10px #e0e0e0;
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 10;
+}
+
+.mini-summary-section {
+    padding: 5px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+}
+
+.mini-summary-section-row {
+    width: 75%;
+    display: inline-block;
+}
+
+.empty {
+    opacity: 0;
+}
+
+.white {
+    background-color: white;
+    color: #757575;
+}
+
+.mini-summary-section.align-right {
+    text-align: right;
+    width: 20%;
+    float: none;
+}
+
+.hidden {
+    display: none;
+}
+
+// WEBPACK FOOTER //
+// ./src/components/Calculator/CalculatorSummary/MiniCalcSummary/MiniCalcSummary.css

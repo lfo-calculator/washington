@@ -1,0 +1,166 @@
+.flex-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.lfo-item {
+    margin-bottom: 10px;
+    background-color: #f5f5f5;
+}
+
+.lfo-info {
+    -ms-flex: 1 1;
+    flex: 1 1;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lfo-info h4 {
+    margin: 0;
+}
+
+.lfo-notes {
+    font-weight: lighter;
+}
+
+.lfo-rcw {
+    text-decoration: none;
+    color: #1fbcd3;
+    font-size: small;
+}
+
+.lfo-manipulation {
+    width: 155px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lfo-entry-container {
+    background-color: #e0e0e0;
+    padding: 10px;
+    text-align: right;
+}
+
+.mobile {
+    display: none;
+}
+
+.lfo-entry {
+    -moz-appearance: textfield;
+    text-align: center;
+    width: 30%;
+    border: none;
+    display: inline-block;
+    height: 20px;
+}
+
+/* hide up/down arrows on input fields marked type="number" */
+
+.lfo-entry::-webkit-outer-spin-button,
+.lfo-entry::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-text {
+    font-size: small;
+    color: red;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+
+.lfo-entry[disabled] {
+    background-color: #f5f5f5;
+}
+
+.lfo-entry:focus {
+    outline-color: #1fbcd3;
+}
+
+.error:focus {
+    outline-color: red;
+}
+
+.lfo-entry::-webkit-input-placeholder {
+    color: #bdbdbd;
+}
+
+.lfo-entry::-ms-input-placeholder {
+    color: #bdbdbd;
+}
+
+.lfo-entry::placeholder {
+    color: #bdbdbd;
+}
+
+.lfo-to-pay {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: right;
+    font-size: small;
+}
+
+.lfo-to-pay-mobile {
+    display: none;
+}
+
+.csh-container {
+    text-align: right;
+}
+
+.toggles {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    min-width: 100px;
+}
+
+.toggles:empty {
+    display: none;
+}
+
+.disabled {
+    color: #e0e0e0;
+}
+
+@media only screen and (max-width: 533px) {
+    .flex-wrapper {
+        display: block;
+    }
+    .lfo-info {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .lfo-manipulation {
+        width: 100%;
+    }
+    .lfo-to-pay {
+        display: inline-block;
+        width: 50%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .lfo-entry-container {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+// WEBPACK FOOTER //
+// ./src/components/Calculator/LfoGroup/LfoItem/LfoItem.css

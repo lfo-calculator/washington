@@ -1,0 +1,14 @@
+.lfo-group {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 805px) {
+    .lfo-group {
+        width: 100%;
+    }
+}
+
+// WEBPACK FOOTER //
+// ./src/components/Calculator/LfoGroup/LfoGroup.css

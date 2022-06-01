@@ -1,0 +1,44 @@
+#calculate-lfos {
+    position: relative;
+}
+
+.calculator-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+#calculator {
+    -ms-flex: 0 0 496px;
+    flex: 0 0 496px;
+}
+
+.calculator-summary-wrapper {
+    -ms-flex: 0 0 265px;
+    flex: 0 0 265px;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 805px) {
+    .calculator-wrapper {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    #calculator {
+        -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
+    }
+    .calculator-summary-wrapper {
+        -ms-flex: 1 0 265px;
+        flex: 1 0 265px;
+        position: static !important;
+    }
+}
+
+// WEBPACK FOOTER //
+// ./src/components/Calculator/Calculator.css

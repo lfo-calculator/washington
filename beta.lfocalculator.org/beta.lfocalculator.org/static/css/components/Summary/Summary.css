@@ -1,0 +1,65 @@
+#password:focus {
+    outline-color: #1fbcd3;
+}
+
+#password {
+    border-color: #1fbcd3;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#password-container {
+    margin-top: 50px;
+}
+
+#table-summary {
+    font-weight: bold;
+}
+
+#clj-summary {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+    font-weight: bold;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+.clj-summary-wrapper {
+    margin: 10px;
+}
+
+.pull-left {
+    text-align: left;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 70%;
+}
+
+.pull-right {
+    text-align: right;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 30%;
+}
+
+#csh-note {
+    text-align: center;
+    font-size: small;
+}
+
+@media only screen and (max-width: 805px) {
+    #clj-summary {
+        width: 100%;
+    }
+}
+
+// WEBPACK FOOTER //
+// ./src/components/Summary/Summary.css

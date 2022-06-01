@@ -1,0 +1,56 @@
+#indigent-alert {
+    float: right;
+    border: 1px solid black;
+    background-color: #e0e0e0;
+    font-size: small;
+    width: 230px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 72px;
+}
+
+#indigent-alert p {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.alert {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #ef9a9a;
+}
+
+.snackbar {
+    display: none;
+}
+
+@media only screen and (max-width: 820px) {
+    #indigent-alert {
+        margin-top: 30px;
+        float: none;
+        display: block;
+        width: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .alert {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .snackbar {
+        display: block;
+    }
+}
+
+// WEBPACK FOOTER //
+// ./src/components/ScreeningPage/ScreeningAlert.css
