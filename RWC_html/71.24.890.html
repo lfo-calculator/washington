@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 71.24.890: National 988 system—Crisis call center hubs—Technology and platform development—Agency collaboration.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=71.24.890" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ERrMOoQUHWVF1Va8RQAkGXhEhmMKVrThFegRZ9I3zzFbGMecOk+K6iANHogVFjnRr4532IFcVphA8OC+FLgukqm+eSg9twA/8tSCFSId+yCo/+87IlbSwGKiRDQXv4vG2vuV5QSBaVhWE8TsnNcpwKwLJskBKT0k1gLZYUz2mBAWON+yDtFCEkkU/LTDNHlxbztNf01euhzvutgiU9IkE85rn9m5E3hqJsrFFkIcf6jc+G61r93q6CoM/yHhAHv65X/Ke146P3eBPWcv77Pn9RU0lwV31BgbZXQQSWrDSIAJTLCHBQRyWt9l+lMGEDHBTW4wQq5lAKz9MBMchfBInA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=71">Title 71</a> > <a href="default.aspx?cite=71.24">Chapter 71.24</a> > <a href="default.aspx?cite=71.24.890">Section 71.24.890</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=71.24.887">71.24.887</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        71.24.890&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=71.24.892">71.24.892</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.890'>71.24.890</a></h3></div><div><h3>National 988 system<span style="font-family:times new roman;">—</span>Crisis call center hubs<span style="font-family:times new roman;">—</span>Technology and platform development<span style="font-family:times new roman;">—</span>Agency collaboration.</h3></div><div><div style="text-indent:0.5in;">(1) Establishing the state crisis call center hubs and enhancing the crisis response system will require collaborative work between the department and the authority within their respective roles. The department shall have primary responsibility for establishing and designating the crisis call center hubs. The authority shall have primary responsibility for developing and implementing the crisis response system and services to support the work of the crisis call center hubs. In any instance in which one agency is identified as the lead, the expectation is that agency will be communicating and collaborating with the other to ensure seamless, continuous, and effective service delivery within the statewide crisis response system.</div><div style="text-indent:0.5in;">(2) The department shall provide adequate funding for the state's crisis call centers to meet an expected increase in the use of the call centers based on the implementation of the 988 crisis hotline. The funding level shall be established at a level anticipated to achieve an in-state call response rate of at least 90 percent by July 22, 2022. The funding level shall be determined by considering standards and cost per call predictions provided by the administrator of the national suicide prevention lifeline, call volume predictions, guidance on crisis call center performance metrics, and necessary technology upgrades.</div><div style="text-indent:0.5in;">(3) The department shall adopt rules by July 1, 2023, to establish standards for designation of crisis call centers as crisis call center hubs. The department shall collaborate with the authority and other agencies to assure coordination and availability of services, and shall consider national guidelines for behavioral health crisis care as determined by the federal substance abuse and mental health services administration, national behavioral health accrediting bodies, and national behavioral health provider associations to the extent they are appropriate, and recommendations from the crisis response improvement strategy committee created in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.892'>71.24.892</a>.</div><div style="text-indent:0.5in;">(4) The department shall designate crisis call center hubs by July 1, 2024. The crisis call center hubs shall provide crisis intervention services, triage, care coordination, referrals, and connections to individuals contacting the 988 crisis hotline from any jurisdiction within Washington 24 hours a day, seven days a week, using the system platform developed under subsection (5) of this section.</div><div style="text-indent:0.5in;">(a) To be designated as a crisis call center hub, the applicant must demonstrate to the department the ability to comply with the requirements of this section and to contract to provide crisis call center hub services. The department may revoke the designation of any crisis call center hub that fails to substantially comply with the contract.</div><div style="text-indent:0.5in;">(b) The contracts entered shall require designated crisis call center hubs to:</div><div style="text-indent:0.5in;">(i) Have an active agreement with the administrator of the national suicide prevention lifeline for participation within its network;</div><div style="text-indent:0.5in;">(ii) Meet the requirements for operational and clinical standards established by the department and based upon the national suicide prevention lifeline best practices guidelines and other recognized best practices;</div><div style="text-indent:0.5in;">(iii) Employ highly qualified, skilled, and trained clinical staff who have sufficient training and resources to provide empathy to callers in acute distress, de-escalate crises, assess behavioral health disorders and suicide risk, triage to system partners, and provide case management and documentation. Call center staff shall be trained to make every effort to resolve cases in the least restrictive environment and without law enforcement involvement whenever possible. Call center staff shall coordinate with certified peer counselors to provide follow-up and outreach to callers in distress as available. It is intended for transition planning to include a pathway for continued employment and skill advancement as needed for experienced crisis call center employees;</div><div style="text-indent:0.5in;">(iv) Collaborate with the authority, the national suicide prevention lifeline, and veterans crisis line networks to assure consistency of public messaging about the 988 crisis hotline; and</div><div style="text-indent:0.5in;">(v) Provide data and reports and participate in evaluations and related quality improvement activities, according to standards established by the department in collaboration with the authority.</div><div style="text-indent:0.5in;">(c) The department and the authority shall incorporate recommendations from the crisis response improvement strategy committee created under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.892'>71.24.892</a> in its agreements with crisis call center hubs, as appropriate.</div><div style="text-indent:0.5in;">(5) The department and authority must coordinate to develop the technology and platforms necessary to manage and operate the behavioral health crisis response and suicide prevention system. The technologies developed must include:</div><div style="text-indent:0.5in;">(a) A new technologically advanced behavioral health and suicide prevention crisis call center system platform using technology demonstrated to be interoperable across crisis and emergency response systems used throughout the state, such as 911 systems, emergency medical services systems, and other nonbehavioral health crisis services, for use in crisis call center hubs designated by the department under subsection (4) of this section. This platform, which shall be fully funded by July 1, 2023, shall be developed by the department and must include the capacity to receive crisis assistance requests through phone calls, texts, chats, and other similar methods of communication that may be developed in the future that promote access to the behavioral health crisis system; and</div><div style="text-indent:0.5in;">(b) A behavioral health integrated client referral system capable of providing system coordination information to crisis call center hubs and the other entities involved in behavioral health care. This system shall be developed by the authority.</div><div style="text-indent:0.5in;">(6) In developing the new technologies under subsection (5) of this section, the department and the authority must coordinate to designate a primary technology system to provide each of the following:</div><div style="text-indent:0.5in;">(a) Access to real-time information relevant to the coordination of behavioral health crisis response and suicide prevention services, including:</div><div style="text-indent:0.5in;">(i) Real-time bed availability for all behavioral health bed types, including but not limited to crisis stabilization services, triage facilities, psychiatric inpatient, substance use disorder inpatient, withdrawal management, peer-run respite centers, and crisis respite services, inclusive of both voluntary and involuntary beds, for use by crisis response workers, first responders, health care providers, emergency departments, and individuals in crisis; and</div><div style="text-indent:0.5in;">(ii) Real-time information relevant to the coordination of behavioral health crisis response and suicide prevention services for a person, including the means to access:</div><div style="text-indent:0.5in;">(A) Information about any less restrictive alternative treatment orders or mental health advance directives related to the person; and</div><div style="text-indent:0.5in;">(B) Information necessary to enable the crisis call center hub to actively collaborate with emergency departments, primary care providers and behavioral health providers within managed care organizations, behavioral health administrative services organizations, and other health care payers to establish a safety plan for the person in accordance with best practices and provide the next steps for the person's transition to follow-up noncrisis care. To establish information-sharing guidelines that fulfill the intent of this section the authority shall consider input from the confidential information compliance and coordination subcommittee established under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.892'>71.24.892</a>;</div><div style="text-indent:0.5in;">(b) The means to request deployment of appropriate crisis response services, which may include mobile rapid response crisis teams, co-responder teams, designated crisis responders, fire department mobile integrated health teams, or community assistance referral and educational services programs under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=35.21.930'>35.21.930</a>, according to best practice guidelines established by the authority, and track local response through global positioning technology; and</div><div style="text-indent:0.5in;">(c) The means to track the outcome of the 988 call to enable appropriate follow up, cross-system coordination, and accountability, including as appropriate: (i) Any immediate services dispatched and reports generated from the encounter; (ii) the validation of a safety plan established for the caller in accordance with best practices; (iii) the next steps for the caller to follow in transition to noncrisis follow-up care, including a next-day appointment for callers experiencing urgent, symptomatic behavioral health care needs; and (iv) the means to verify and document whether the caller was successful in making the transition to appropriate noncrisis follow-up care indicated in the safety plan for the person, to be completed either by the care coordinator provided through the person's managed care organization, health plan, or behavioral health administrative services organization, or if such a care coordinator is not available or does not follow through, by the staff of the crisis call center hub;</div><div style="text-indent:0.5in;">(d) A means to facilitate actions to verify and document whether the person's transition to follow up noncrisis care was completed and services offered, to be performed by a care coordinator provided through the person's managed care organization, health plan, or behavioral health administrative services organization, or if such a care coordinator is not available or does not follow through, by the staff of the crisis call center hub;</div><div style="text-indent:0.5in;">(e) The means to provide geographically, culturally, and linguistically appropriate services to persons who are part of high-risk populations or otherwise have need of specialized services or accommodations, and to document these services or accommodations; and</div><div style="text-indent:0.5in;">(f) When appropriate, consultation with tribal governments to ensure coordinated care in government-to-government relationships, and access to dedicated services to tribal members.</div><div style="text-indent:0.5in;">(7) To implement this section the department and the authority shall collaborate with the state enhanced 911 coordination office, emergency management division, and military department to develop technology that is demonstrated to be interoperable between the 988 crisis hotline system and crisis and emergency response systems used throughout the state, such as 911 systems, emergency medical services systems, and other nonbehavioral health crisis services, as well as the national suicide prevention lifeline, to assure cohesive interoperability, develop training programs and operations for both 911 public safety telecommunicators and crisis line workers, develop suicide and other behavioral health crisis assessments and intervention strategies, and establish efficient and equitable access to resources via crisis hotlines.</div><div style="text-indent:0.5in;">(8) The authority shall:</div><div style="text-indent:0.5in;">(a) Collaborate with county authorities and behavioral health administrative services organizations to develop procedures to dispatch behavioral health crisis services in coordination with crisis call center hubs to effectuate the intent of this section;</div><div style="text-indent:0.5in;">(b) Establish formal agreements with managed care organizations and behavioral health administrative services organizations by January 1, 2023, to provide for the services, capacities, and coordination necessary to effectuate the intent of this section, which shall include a requirement to arrange next-day appointments for persons contacting the 988 crisis hotline experiencing urgent, symptomatic behavioral health care needs with geographically, culturally, and linguistically appropriate primary care or behavioral health providers within the person's provider network, or, if uninsured, through the person's behavioral health administrative services organization;</div><div style="text-indent:0.5in;">(c) Create best practices guidelines by July 1, 2023, for deployment of appropriate and available crisis response services by crisis call center hubs to assist 988 hotline callers to minimize nonessential reliance on emergency room services and the use of law enforcement, considering input from relevant stakeholders and recommendations made by the crisis response improvement strategy committee created under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.892'>71.24.892</a>;</div><div style="text-indent:0.5in;">(d) Develop procedures to allow appropriate information sharing and communication between and across crisis and emergency response systems for the purpose of real-time crisis care coordination including, but not limited to, deployment of crisis and outgoing services, follow-up care, and linked, flexible services specific to crisis response; and</div><div style="text-indent:0.5in;">(e) Establish guidelines to appropriately serve high-risk populations who request crisis services. The authority shall design these guidelines to promote behavioral health equity for all populations with attention to circumstances of race, ethnicity, gender, socioeconomic status, sexual orientation, and geographic location, and include components such as training requirements for call response workers, policies for transferring such callers to an appropriate specialized center or subnetwork within or external to the national suicide prevention lifeline network, and procedures for referring persons who access the 988 crisis hotline to linguistically and culturally competent care.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1477-S2.SL.pdf?cite=2021 c 302 § 102'>2021 c 302 § 102</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2021 c 302:</span> "(1) The legislature finds that:</div><div style="text-indent:0.75in;">(a) Nearly 6,000 Washington adults and children died by suicide in the last five years, according to the federal centers for disease control and prevention, tragically reflecting a state increase of 36 percent in the last 10 years.</div><div style="text-indent:0.75in;">(b) Suicide is now the single leading cause of death for Washington young people ages 10 through 24, with total deaths 22 percent higher than for vehicle crashes.</div><div style="text-indent:0.75in;">(c) Groups with suicide rates higher than the general population include veterans, American Indians/Alaska Natives, LGBTQ youth, and people living in rural counties across the state.</div><div style="text-indent:0.75in;">(d) More than one in five Washington residents are currently living with a behavioral health disorder.</div><div style="text-indent:0.75in;">(e) The COVID-19 pandemic has increased stressors and substance use among Washington residents.</div><div style="text-indent:0.75in;">(f) An improved crisis response system will reduce reliance on emergency room services and the use of law enforcement response to behavioral health crises and will stabilize individuals in the community whenever possible.</div><div style="text-indent:0.75in;">(g) To accomplish effective crisis response and suicide prevention, Washington state must continue its integrated approach to address mental health and substance use disorder in tandem under the umbrella of behavioral health disorders, consistently with chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24'>71.24</a> RCW and the state's approach to integrated health care. This is particularly true in the domain of suicide prevention, because of the prevalence of substance use as both a risk factor and means for suicide.</div><div style="text-indent:0.75in;">(2) The legislature intends to:</div><div style="text-indent:0.75in;">(a) Establish crisis call center hubs and expand the crisis response system in a deliberate, phased approach that includes the involvement of partners from a range of perspectives to:</div><div style="text-indent:0.75in;">(i) Save lives by improving the quality of and access to behavioral health crisis services;</div><div style="text-indent:0.75in;">(ii) Further equity in addressing mental health and substance use treatment and assure a culturally and linguistically competent response to behavioral health crises;</div><div style="text-indent:0.75in;">(iii) Recognize that, historically, crisis response placed marginalized communities, including those experiencing behavioral health crises, at disproportionate risk of poor outcomes and criminal justice involvement;</div><div style="text-indent:0.75in;">(iv) Comply with the national suicide hotline designation act of 2020 and the federal communications commission's rules adopted July 16, 2020, to assure that all Washington residents receive a consistent and effective level of 988 suicide prevention and other behavioral health crisis response and suicide prevention services no matter where they live, work, or travel in the state; and</div><div style="text-indent:0.75in;">(v) Provide higher quality support for people experiencing behavioral health crises through investment in new technology to create a crisis call center hub system to triage calls and link individuals to follow-up care.</div><div style="text-indent:0.75in;">(b) Make additional investments to enhance the crisis response system, including the expansion of crisis teams, to be known as mobile rapid response crisis teams, and deployment of a wide array of crisis stabilization services, such as 23-hour crisis stabilization units based on the living room model, crisis stabilization centers, short-term respite facilities, peer-run respite centers, and same-day walk-in behavioral health services. The overall crisis system shall contain components that operate like hospital emergency departments that accept all walk-ins and ambulance, fire, and police drop-offs. Certified peer counselors as well as peers in other roles providing support must be incorporated within the crisis system and along the continuum of crisis care." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1477-S2.SL.pdf?cite=2021 c 302 § 101'>2021 c 302 § 101</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 70A.02.110: Environmental justice council.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=70A.02.110" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="bQl2GdSRzO3YhVean1EThCRMOphNPwpbk64mv2jTlzm61jipHwkGHmSbsRz9C6K70aeat3mKmAyUKJ4+s2M08V1ayL5ugQTKIyZSJrqH6dyGS+hu0jVNycSh7A48IPv+T2ssAw0ykvy+OmPmgLxxfaQeJ2hvu/+tB/XeFj6yAhCaZ+ssaUogrCeimV29tlmvDx8l4SrGyp69fpDwZ7qzd3w8357LPqQCb250Npp1lGjWvYsz6yO3NTup/osupnCHQjCV4c2cei4qAYK37nl2sPpc9tX9FoD31ARFZv7x6hqPdcBXT9KuIR3gCcb4A53PHIcjm/73Mm2McKDIPXkTtg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=70A">Title 70A</a> > <a href="default.aspx?cite=70A.02">Chapter 70A.02</a> > <a href="default.aspx?cite=70A.02.110">Section 70A.02.110</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=70A.02.100">70A.02.100</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        70A.02.110&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=70A.02.120">70A.02.120</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.110'>70A.02.110</a></h3></div><div><h3>Environmental justice council.</h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5842-S2.SL.pdf">5842-S2.SL</a>) ***</div><div><div style="text-indent:0.5in;">(1) The environmental justice council is established to advise covered agencies on incorporating environmental justice into agency activities.</div><div style="text-indent:0.5in;">(2) The council consists of 14 members appointed by the governor. The councilmembers must be persons who are well-informed regarding and committed to the principles of environmental justice and who, to the greatest extent practicable, represent diversity in race, ethnicity, age, and gender, urban and rural areas, and different regions of the state. The members of the council shall elect two members to serve as cochairs for two-year terms. The council must include:</div><div style="text-indent:0.5in;">(a) Seven community representatives, including one youth representative, the nominations of which are based upon applied and demonstrated work and focus on environmental justice or a related field, such as racial or economic justice, and accountability to vulnerable populations and overburdened communities;</div><div style="text-indent:0.5in;">(i) The youth representative must be between the ages of 18 and 25 at the time of appointment;</div><div style="text-indent:0.5in;">(ii) The youth representative serves a two-year term. All other community representatives serve four-year terms, with six representatives initially being appointed to four-year terms and five being initially appointed to two-year terms, after which they will be appointed to four-year terms;</div><div style="text-indent:0.5in;">(b) Two members representing tribal communities, one from eastern Washington and one from western Washington, appointed by the governor. The governor shall solicit and consider nominees from each of the federally recognized tribes in Washington state. The governor shall collaborate with federally recognized tribes on the selection of tribal representatives. The tribal representatives serve four-year terms. One representative must be initially appointed for a four-year term. The other representative must be initially appointed for a two-year term, after which, that representative must be appointed for a four-year term;</div><div style="text-indent:0.5in;">(c) Two representatives who are environmental justice practitioners or academics to serve as environmental justice experts, the nominations of which are based upon applied and demonstrated work and focus on environmental justice;</div><div style="text-indent:0.5in;">(d)(i) One representative of a business that is regulated by a covered agency and whose ordinary business conditions are significantly affected by the actions of at least one other covered agency; and</div><div style="text-indent:0.5in;">(ii) One representative who is a member or officer of a union representing workers in the building and construction trades; and</div><div style="text-indent:0.5in;">(e) One representative at large, the nomination of which is based upon applied and demonstrated work and focus on environmental justice.</div><div style="text-indent:0.5in;">(3) Covered agencies shall serve as nonvoting, ex officio liaisons to the council. Each covered agency must identify an executive team level staff person to participate on behalf of the agency.</div><div style="text-indent:0.5in;">(4) Nongovernmental members of the council must be compensated and reimbursed in accordance with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.03.050'>43.03.050</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.03.060'>43.03.060</a>, and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.03.220'>43.03.220</a>.</div><div style="text-indent:0.5in;">(5) The department of health must:</div><div style="text-indent:0.5in;">(a) Hire a manager who is responsible for overseeing all staffing and administrative duties in support of the council; and</div><div style="text-indent:0.5in;">(b) Provide all administrative and staff support for the council.</div><div style="text-indent:0.5in;">(6) In collaboration with the office of equity, the office of financial management, the council, and covered agencies, the department of health must:</div><div style="text-indent:0.5in;">(a) Establish standards for the collection, analysis, and reporting of disaggregated data as it pertains to tracking population level outcomes of communities;</div><div style="text-indent:0.5in;">(b) Create statewide and agency-specific process and outcome measures to show performance:</div><div style="text-indent:0.5in;">(i) Using outcome-based methodology to determine the effectiveness of agency programs and services on reducing environmental disparities; and</div><div style="text-indent:0.5in;">(ii) Taking into consideration community feedback from the council on whether the performance measures established accurately measure the effectiveness of covered agency programs and services in the communities served; and</div><div style="text-indent:0.5in;">(c) Create an online performance dashboard to publish performance measures and outcomes as referenced in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.090'>70A.02.090</a> for the state and each covered agency.</div><div style="text-indent:0.5in;">(7) The department of health must coordinate with the consolidated technology services agency to address cybersecurity and data protection for all data collected by the department.</div><div style="text-indent:0.5in;">(8)(a) With input and assistance from the council, the department of health must establish an interagency work group to assist covered agencies in incorporating environmental justice into agency decision making. The work group must include staff from each covered agency directed to implement environmental justice provisions under this chapter and may include members from the council. The department of health shall provide assistance to the interagency work group by:</div><div style="text-indent:0.5in;">(i) Facilitating information sharing among covered agencies on environmental justice issues and between agencies and the council;</div><div style="text-indent:0.5in;">(ii) Developing and providing assessment tools for covered agencies to use in the development and evaluation of agency programs, services, policies, and budgets;</div><div style="text-indent:0.5in;">(iii) Providing technical assistance and compiling and creating resources for covered agencies to use; and</div><div style="text-indent:0.5in;">(iv) Training covered agency staff on effectively using data and tools for environmental justice assessments.</div><div style="text-indent:0.5in;">(b) The duties of the interagency work group include:</div><div style="text-indent:0.5in;">(i) Providing technical assistance to support agency compliance with the implementation of environmental justice into their strategic plans, environmental justice obligations for budgeting and funding criteria and decisions, environmental justice assessments, and community engagement plans;</div><div style="text-indent:0.5in;">(ii) Assisting the council in developing a suggested schedule and timeline for sequencing the types of: (A) Funding and expenditure decisions subject to rules; and (B) criteria incorporating environmental justice principles;</div><div style="text-indent:0.5in;">(iii) Identifying other policies, priorities, and projects for the council's review and guidance development;</div><div style="text-indent:0.5in;">(iv) Identifying goals and metrics that the council may use to assess agency performance in meeting the requirements of chapter 314, Laws of 2021 for purposes of communicating progress to the public, the governor, and the legislature; and</div><div style="text-indent:0.5in;">(v) Developing the guidance under subsection (9)(c) of this section in coordination with the council.</div><div style="text-indent:0.5in;">(9) The council has the following powers and duties:</div><div style="text-indent:0.5in;">(a) To provide a forum for the public to:</div><div style="text-indent:0.5in;">(i) Provide written or oral testimony on their environmental justice concerns;</div><div style="text-indent:0.5in;">(ii) Assist the council in understanding environmental justice priorities across the state in order to develop council recommendations to agencies for issues to prioritize; and</div><div style="text-indent:0.5in;">(iii) Identify which agencies to contact with their specific environmental justice concerns and questions;</div><div style="text-indent:0.5in;">(b)(i) The council shall work in an iterative fashion with the interagency work group to develop guidance for environmental justice implementation into covered agency strategic plans pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.040'>70A.02.040</a>, environmental justice assessments pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.060'>70A.02.060</a>, budgeting and funding criteria for making budgeting and funding decisions pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.080'>70A.02.080</a>, and community engagement plans pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.050'>70A.02.050</a>;</div><div style="text-indent:0.5in;">(ii) The council and interagency work group shall regularly update its guidance;</div><div style="text-indent:0.5in;">(c) In consultation with the interagency work group, the council:</div><div style="text-indent:0.5in;">(i) Shall provide guidance to covered agencies on developing environmental justice assessments pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.060'>70A.02.060</a> for significant agency actions;</div><div style="text-indent:0.5in;">(ii) Shall make recommendations to covered agencies on which agency actions may cause environmental harm or may affect the equitable distribution of environmental benefits to an overburdened community or a vulnerable population and therefore should be considered significant agency actions that require an environmental justice assessment under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.060'>70A.02.060</a>;</div><div style="text-indent:0.5in;">(iii) Shall make recommendations to covered agencies:</div><div style="text-indent:0.5in;">(A) On the identification and prioritization of overburdened communities under this chapter; and</div><div style="text-indent:0.5in;">(B) Related to the use by covered agencies of the environmental and health disparities map in agency efforts to identify and prioritize overburdened communities;</div><div style="text-indent:0.5in;">(iv) May make recommendations to a covered agency on the timing and sequencing of a covered agencies' efforts to implement RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.040'>70A.02.040</a> through  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.080'>70A.02.080</a>; and</div><div style="text-indent:0.5in;">(v) May make recommendations to the governor and the legislature regarding ways to improve agency compliance with the requirements of this chapter;</div><div style="text-indent:0.5in;">(d) By December 1, 2023, and biennially thereafter, and with consideration of the information shared on September 1st each year in covered agencies' annual updates to the council required under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.090'>70A.02.090</a>, the council must:</div><div style="text-indent:0.5in;">(i) Evaluate the progress of each agency in applying council guidance, and update guidance as needed; and</div><div style="text-indent:0.5in;">(ii) Communicate each covered agency's progress to the public, the governor, and the legislature. This communication is not required to be a report and may take the form of a presentation or other format that communicates the progress of the state and its agencies in meeting the state's environmental justice goals in compliance with chapter 314, Laws of 2021, and summarizing the work of the council pursuant to (a) through (d) of this subsection, and subsection (11) of this section.</div><div style="text-indent:0.5in;">(10) By November 30, 2023, and in compliance with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.01.036'>43.01.036</a>, the council must submit a report to the governor and the appropriate committees of the house of representatives and the senate on:</div><div style="text-indent:0.5in;">(a) The council's recommendations to covered agencies on the identification of significant agency actions requiring an environmental justice assessment under subsection (9)(c)(ii) of this section;</div><div style="text-indent:0.5in;">(b) The summary of covered agency progress reports provided to the council under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.090'>70A.02.090</a>(1), including the status of agency plans for performing environmental justice assessments required by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.060'>70A.02.060</a>; and</div><div style="text-indent:0.5in;">(c) Guidance for environmental justice implementation into covered agency strategic plans, environmental justice assessments, budgeting and funding criteria, and community engagement plans under subsection (9)(c)(i) of this section.</div><div style="text-indent:0.5in;">(11) The council may:</div><div style="text-indent:0.5in;">(a) Review incorporation of environmental justice implementation plans into covered agency strategic plans pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.040'>70A.02.040</a>, environmental justice assessments pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.060'>70A.02.060</a>, budgeting and funding criteria for making budgeting and funding decisions pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.080'>70A.02.080</a>, and community engagement plans pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.050'>70A.02.050</a>;</div><div style="text-indent:0.5in;">(b) Make recommendations for amendments to this chapter or other legislation to promote and achieve the environmental justice goals of the state;</div><div style="text-indent:0.5in;">(c) Review existing laws and make recommendations for amendments that will further environmental justice;</div><div style="text-indent:0.5in;">(d) Recommend to specific agencies that they create environmental justice-focused, agency-requested legislation;</div><div style="text-indent:0.5in;">(e) Provide requested assistance to state agencies other than covered agencies that wish to incorporate environmental justice principles into agency activities; and</div><div style="text-indent:0.5in;">(f) Recommend funding strategies and allocations to build capacity in vulnerable populations and overburdened communities to address environmental justice.</div><div style="text-indent:0.5in;">(12) The role of the council is purely advisory and council decisions are not binding on an agency, individual, or organization.</div><div style="text-indent:0.5in;">(13) The department of health must convene the first meeting of the council by January 1, 2022.</div><div style="text-indent:0.5in;">(14) All council meetings are subject to the open public meetings requirements of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=42.30'>42.30</a> RCW and a public comment period must be provided at every meeting of the council.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5141-S2.SL.pdf?cite=2021 c 314 § 20'>2021 c 314 § 20</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Conflict with federal requirements<span style="font-family:times new roman;">—</span>2021 c 314:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.005'>70A.02.005</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

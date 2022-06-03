@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 38.10.010: Emergency management assistance compact.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=38.10.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="QUloNBwhOiII2Q80R8PlVwUkVCXNxNOpEhvKKtQvouHF9gFi3L4tbWSMZJjMHdB625y25aRaW2Mc+kFy0bDd/Gh0U/NTDi/sTgG7FF+qonT2KBXxjdbvNRKGXgWnizesZ3XSxSIgg0rRyvqchvdPgr1UXMK+09k6PsPJQp/1Amw=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=38">Title 38</a> > <a href="default.aspx?cite=38.10">Chapter 38.10</a> > <a href="default.aspx?cite=38.10.010">Section 38.10.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=38.10.010'>38.10.010</a></h3></div><div><h3>Emergency management assistance compact.</h3></div><div><div style="text-indent:0.5in;">The emergency management assistance compact is enacted and entered into by this state with all other states legally joining the compact in the form substantially as follows:</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE I</div><div style="text-align:center;">PURPOSES AND AUTHORITIES</div><div style="margin-top:4.5pt;text-indent:0.5in;">This compact is made and entered into by and between the participating party states which enact this compact. For the purposes of this agreement, the term "states" means the several states, the Commonwealth of Puerto Rico, the District of Columbia, and all United States territorial possessions.</div><div style="text-indent:0.5in;">The purpose of this compact is to provide for mutual assistance between the states entering into this compact in managing any emergency or disaster that is duly declared by the governor of the affected state or states, whether arising from natural disaster, technological hazard, man-made disaster, civil emergency aspects of resources shortages, community disorders, insurgency, or enemy attack.</div><div style="text-indent:0.5in;">This compact shall also provide for mutual cooperation in emergency-related exercises, testing, or other training activities using equipment and personnel simulating performance of any aspect of the giving and receiving of aid by party states or subdivisions of party states during emergencies, such actions occurring outside actual declared emergency periods. Mutual assistance in this compact may include the use of the states' national guard forces, either in accordance with the national guard mutual assistance compact, or by mutual agreement between states.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE II</div><div style="text-align:center;">GENERAL IMPLEMENTATION</div><div style="margin-top:4.5pt;text-indent:0.5in;">Each party state entering into this compact recognizes many emergencies transcend political jurisdictional boundaries and that intergovernmental coordination is essential in managing these and other emergencies under this compact. Each state further recognizes that there will be emergencies which require immediate access and present procedures to apply outside resources to make a prompt and effective response to the emergency. This is because few, if any, individual states have all the resources they may need in all types of emergencies or the capability of delivering resources to areas where emergencies exist.</div><div style="text-indent:0.5in;">The prompt, full, and effective utilization of resources of the participating states, including any resources on hand or available from the federal government or any other source, that are essential to the safety, care, and welfare of the people in the event of any emergency or disaster declared by a party state, shall be the underlying principle on which all articles of this compact shall be understood.</div><div style="text-indent:0.5in;">On behalf of the governor of each state participating in the compact, the legally designated state official who is assigned responsibility for emergency management will be responsible for formulation of the appropriate interstate mutual aid plans and procedures necessary to implement this compact.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE III</div><div style="text-align:center;">PARTY STATE RESPONSIBILITIES</div><div style="margin-top:4.5pt;text-indent:0.5in;">(1) It shall be the responsibility of each party state to formulate procedural plans and programs for interstate cooperation in the performance of the responsibilities listed in this article. In formulating such plans, and in carrying them out, the party states, as is practical, shall:</div><div style="text-indent:0.5in;">(a) Review individual state hazards analyses and, to the extent reasonably possible, determine all those potential emergencies the party states might jointly suffer, whether due to natural disaster, technological hazard, man-made disaster, emergency aspects of resource shortages, civil disorders, insurgency, or enemy attack;</div><div style="text-indent:0.5in;">(b) Review party states' individual emergency plans and develop a plan which will determine the mechanism for the interstate management and provision of assistance concerning any potential emergency;</div><div style="text-indent:0.5in;">(c) Develop interstate procedures to fill any identified gaps and to resolve any identified inconsistencies or overlaps in existing or developed plans;</div><div style="text-indent:0.5in;">(d) Assist in warning communities adjacent to or crossing the state boundaries;</div><div style="text-indent:0.5in;">(e) Protect and assure uninterrupted delivery of services, medicines, water, food, energy and fuel, search and rescue, and critical lifeline equipment, services, and resources, both human and material;</div><div style="text-indent:0.5in;">(f) Inventory and set procedures for the interstate loan and delivery of human and material resources, together with procedures for reimbursement or forgiveness;</div><div style="text-indent:0.5in;">(g) Provide, to the extent authorized by law, for temporary suspension of any statutes or ordinances that restrict the implementation of the responsibilities listed in this compact.</div><div style="text-indent:0.5in;">(2) The authorized representative of a party state may request assistance of another party state by contacting the authorized representative of that state. The provisions of this agreement shall only apply to requests for assistance made by and to authorized representatives. Requests may be verbal or in writing. If verbal, the request shall be confirmed in writing within thirty days of the verbal request. Requests shall provide the following information:</div><div style="text-indent:0.5in;">(a) A description of the emergency services function for which assistance is needed, such as, but not limited to, fire services, law enforcement, emergency medical, transportation, communications, public works and engineering, building inspection, planning and information assistance, mass care, resource support, health and medical services, and search and rescue;</div><div style="text-indent:0.5in;">(b) The amount and type of personnel, equipment, materials, and supplies needed, and a reasonable estimate of the length of time they will be needed;</div><div style="text-indent:0.5in;">(c) The specific place and time for staging of the assisting party's response and a point of contact at that location.</div><div style="text-indent:0.5in;">(3) There shall be frequent consultation between state officials who have assigned emergency management responsibilities and other appropriate representatives of the party states with affected jurisdictions and the United States government, with free exchange of information, plans, and resource records relating to emergency capabilities.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE IV</div><div style="text-align:center;">LIMITATIONS</div><div style="margin-top:4.5pt;text-indent:0.5in;">Any party state requested to render mutual aid or conduct exercises and training for mutual aid shall take such action as is necessary to provide and make available the resources covered by this compact in accordance with the terms of this compact. However, it is understood that the state rendering aid may withhold resources to the extent necessary to provide reasonable protection for the state. Each party state shall afford to the emergency forces of any party state, while operating within its state limits under the terms and conditions of this compact, the same powers except that of arrest unless specifically authorized by the receiving state, duties, rights, and privileges as are afforded forces of the state in which they are performing emergency services. Emergency forces will continue under the command and control of their regular leaders, but the organizational units will come under the operational control of the emergency services authorities of the state receiving assistance. These conditions may be activated, as needed, only subsequent to a declaration of a state of emergency or disaster by the governor of the party state that is to receive assistance or commencement of exercises or training for mutual aid and shall continue so long as the exercise or training for mutual aid are in progress, the state of emergency or disaster remains in effect, or loaned resources remain in the receiving state or states, whichever is longer.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE V</div><div style="text-align:center;">LICENSES AND PERMITS</div><div style="margin-top:4.5pt;text-indent:0.5in;">Whenever any person holds a license, certificate, or other permit issued by any state party to the compact evidencing the meeting of qualifications for professional, mechanical, or other skills, and when such assistance is requested by the receiving party state, such person shall be deemed licensed, certified, or permitted by the state requesting assistance to render aid involving such skill to meet a declared emergency or disaster, subject to such limitations and conditions as the governor of the requesting state may prescribe by executive order or otherwise.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE VI</div><div style="text-align:center;">LIABILITY</div><div style="margin-top:4.5pt;text-indent:0.5in;">Officers or employees of a party state rendering aid in another state under this compact shall be considered agents of the requesting state for tort liability and immunity purposes; and no party state or its officers or employees rendering aid in another state under this compact shall be liable on account of any act or omission in good faith on the part of such forces while so engaged or on account of the maintenance or use of any equipment or supplies in connection therewith. Good faith in this article may not include willful misconduct, gross negligence, or recklessness.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE VII</div><div style="text-align:center;">SUPPLEMENTARY AGREEMENTS</div><div style="margin-top:4.5pt;text-indent:0.5in;">Inasmuch as it is probable that the pattern and detail of the machinery for mutual aid among two or more states may differ from that among the states that are party to this compact, this instrument contains elements of a broad base common to all states, and nothing in this compact shall preclude any state from entering into supplementary agreements with another state or affect any other agreements already in force between states. Supplementary agreements may comprehend, but shall not be limited to, provisions for evacuation and reception of injured and other persons and the exchange of medical, fire, police, public utility, reconnaissance, welfare, transportation and communications personnel, and equipment and supplies.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE VIII</div><div style="text-align:center;">COMPENSATION</div><div style="margin-top:4.5pt;text-indent:0.5in;">Each party state shall provide for payment of compensation and death benefits to injured members of the emergency forces of that state and representatives of deceased members of such forces in case such members sustain injuries or are killed while rendering aid under this compact, in the same manner and on the same terms as if the injury or death were sustained within their own state.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE IX</div><div style="text-align:center;">REIMBURSEMENT</div><div style="margin-top:4.5pt;text-indent:0.5in;">Any party state rendering aid in another state under this compact shall be reimbursed by the party state receiving the aid for any loss or damage to or expense incurred in the operation of any equipment and the provision of any service in answering a request for aid and for the costs incurred in connection with the requests. However, any aiding party state may assume in whole or in part the loss, damage, expense, or other cost, or may loan equipment or donate services to the receiving party state without charge or cost; and any two or more party states may enter into supplementary agreements establishing a different allocation of costs among those states. Article VIII expenses may not be reimbursable under this article.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE X</div><div style="text-align:center;">EVACUATION</div><div style="margin-top:4.5pt;text-indent:0.5in;">Plans for the orderly evacuation and interstate reception of portions of the civilian population as the result of any emergency or disaster of sufficient proportions to so warrant, shall be worked out and maintained between the party states and the emergency management/services directors of the various jurisdictions where any type of incident requiring evacuation might occur. The plans shall be put into effect by request of the state from which evacuees come and shall include the manner of transporting evacuees, the number of evacuees to be received in different areas, the manner in which food, clothing, housing, and medical care will be provided, the registration of evacuees, the providing of facilities for the notification of relatives or friends, and the forwarding of evacuees to other areas or the bringing in of additional materials, supplies, and all other relevant factors. Plans shall provide that the party state receiving evacuees and the party state from which the evacuees come shall mutually agree as to reimbursement of out-of-pocket expenses incurred in receiving and caring for the evacuees, for expenditures for transportation, food, clothing, medicines and medical care, and like items. Expenditures shall be reimbursed as agreed by the party state from which the evacuees come. After the termination of the emergency or disaster, the party state from which the evacuees come shall assume the responsibility for the ultimate support of repatriation of the evacuees.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE XI</div><div style="text-align:center;">IMPLEMENTATION</div><div style="margin-top:4.5pt;text-indent:0.5in;">(1) This compact shall become operative immediately upon its enactment into law by any two states. After the first enactment, this compact shall become effective as to any other state upon its enactment by such state.</div><div style="text-indent:0.5in;">(2) Any party state may withdraw from this compact by enacting a statute repealing the compact, but no withdrawal may take effect until thirty days after the governor of the withdrawing state has given notice in writing of the withdrawal to the governors of all other party states. This action may not relieve the withdrawing state from obligations assumed under this compact before the effective date of withdrawal.</div><div style="text-indent:0.5in;">(3) Duly authenticated copies of this compact and such supplementary agreements as may be entered into shall, at the time of their approval, be deposited with each of the party states, and with the federal emergency management agency and other appropriate agencies of the United States government.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE XII</div><div style="text-align:center;">ADDITIONAL PROVISIONS</div><div style="margin-top:4.5pt;text-indent:0.5in;">Nothing in this compact shall authorize or permit the use of military force by the national guard of a state at any place outside that state in any emergency for which the president is authorized by law to call into federal service the militia, or for any purpose for which the use of the army or the air force would in the absence of express statutory authorization be prohibited under 18 U.S.C. Sec. 1385.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/5256.SL.pdf?cite=2001 c 288 § 1'>2001 c 288 § 1</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Emergency volunteer health practitioners: Chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.15'>70.15</a> RCW.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

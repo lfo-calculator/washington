@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 69.51A.230: Medical marijuana authorization database—Recognition cards.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=69.51A.230" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="lCfvLCrvG309o7RjMToHRfI/7lwqF+vjIwjUQBOU6KImBNcy145PFRyXIPFgjj2JEBQ4uRpNliaWBqK6xCcBxVQAB76cZBaTJkZylJkwXpw5ElMAxVI0K6tLaqlDudezAlAL0OC+IS7mez0fyjXG8tJ0n/trhn+UxKkwXAWe0+zxbh138A2xidQFiz/D1h0XetYhbkvxdvRbGzLltk8RM/SE7S7bnhW8JXGso3IX2FmxOwG6barTAbFHQV/lNiXXQqi2RO9wh0/EVc7r8V/9RCIT7E2kxOmURqtKIm6mB0ZZzrW9D2K7K4G7ILWwyOYFmxHyMMZVmYhwBma2St4+/Q==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=69">Title 69</a> > <a href="default.aspx?cite=69.51A">Chapter 69.51A</a> > <a href="default.aspx?cite=69.51A.230">Section 69.51A.230</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=69.51A.225">69.51A.225</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        69.51A.230&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=69.51A.235">69.51A.235</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.51A.230'>69.51A.230</a></h3></div><div><h3>Medical marijuana authorization database<span style="font-family:times new roman;">—</span>Recognition cards.</h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1210-S2.SL.pdf">1210-S2.SL</a>) ***</div><div><div style="text-indent:0.5in;">(1) The department must contract with an entity to create, administer, and maintain a secure and confidential medical marijuana authorization database that, beginning July 1, 2016, allows:</div><div style="text-indent:0.5in;">(a) A marijuana retailer with a medical marijuana endorsement to add a qualifying patient or designated provider and include the amount of marijuana concentrates, useable marijuana, marijuana-infused products, or plants for which the qualifying patient is authorized under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.51A.210'>69.51A.210</a>;</div><div style="text-indent:0.5in;">(b) Persons authorized to prescribe or dispense controlled substances to access health care information on their patients for the purpose of providing medical or pharmaceutical care for their patients;</div><div style="text-indent:0.5in;">(c) A qualifying patient or designated provider to request and receive his or her own health care information or information on any person or entity that has queried their name or information;</div><div style="text-indent:0.5in;">(d) Appropriate local, state, tribal, and federal law enforcement or prosecutorial officials who are engaged in a bona fide specific investigation of suspected marijuana-related activity that may be illegal under Washington state law to confirm the validity of the recognition card of a qualifying patient or designated provider;</div><div style="text-indent:0.5in;">(e) A marijuana retailer holding a medical marijuana endorsement to confirm the validity of the recognition card of a qualifying patient or designated provider;</div><div style="text-indent:0.5in;">(f) The department of revenue to verify tax exemptions under chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.08'>82.08</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.12'>82.12</a> RCW;</div><div style="text-indent:0.5in;">(g) The department and the health care professional's disciplining authorities to monitor authorizations and ensure compliance with this chapter and chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.130'>18.130</a> RCW by their licensees; and</div><div style="text-indent:0.5in;">(h) Authorizations to expire six months or one year after entry into the medical marijuana authorization database, depending on whether the authorization is for a minor or an adult.</div><div style="text-indent:0.5in;">(2) A qualifying patient and his or her designated provider, if any, may be placed in the medical marijuana authorization database at a marijuana retailer with a medical marijuana endorsement. After a qualifying patient or designated provider is placed in the medical marijuana authorization database, he or she must be provided with a recognition card that contains identifiers required in subsection (3) of this section.</div><div style="text-indent:0.5in;">(3) The recognition card requirements must be developed by the department in rule and include:</div><div style="text-indent:0.5in;">(a) A randomly generated and unique identifying number;</div><div style="text-indent:0.5in;">(b) For designated providers, the unique identifying number of the qualifying patient whom the provider is assisting;</div><div style="text-indent:0.5in;">(c) A photograph of the qualifying patient's or designated provider's face taken by an employee of the marijuana retailer with a medical marijuana endorsement at the same time that the qualifying patient or designated provider is being placed in the medical marijuana authorization database in accordance with rules adopted by the department;</div><div style="text-indent:0.5in;">(d) The amount of marijuana concentrates, useable marijuana, marijuana-infused products, or plants for which the qualifying patient is authorized under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.51A.210'>69.51A.210</a>;</div><div style="text-indent:0.5in;">(e) The effective date and expiration date of the recognition card;</div><div style="text-indent:0.5in;">(f) The name of the health care professional who authorized the qualifying patient or designated provider; and</div><div style="text-indent:0.5in;">(g) For the recognition card, additional security features as necessary to ensure its validity.</div><div style="text-indent:0.5in;">(4)(a) For qualifying patients who are eighteen years of age or older and their designated providers, recognition cards are valid for one year from the date the health care professional issued the authorization. For qualifying patients who are under the age of eighteen and their designated providers, recognition cards are valid for six months from the date the health care professional issued the authorization. Qualifying patients may not be reentered into the medical marijuana authorization database until they have been reexamined by a health care professional and determined to meet the definition of qualifying patient. After reexamination, a marijuana retailer with a medical marijuana endorsement must reenter the qualifying patient or designated provider into the medical marijuana authorization database and a new recognition card will then be issued in accordance with department rules.</div><div style="text-indent:0.5in;">(b) Beginning on July 28, 2019, a qualifying patient's registration in the medical marijuana authorization database and his or her recognition card may be renewed by a qualifying patient's designated provider without the physical presence of the qualifying patient at the retailer if the authorization from the health care professional indicates that the qualifying patient qualifies for a compassionate care renewal, as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.51A.030'>69.51A.030</a>. A qualifying patient receiving renewals under the compassionate care renewal provisions is exempt from the photograph requirements under subsection (3)(c) of this section.</div><div style="text-indent:0.5in;">(5) If a recognition card is lost or stolen, a marijuana retailer with a medical marijuana endorsement, in conjunction with the database administrator, may issue a new card that will be valid for six months to one year if the patient is reexamined by a health care professional and determined to meet the definition of qualifying patient and depending on whether the patient is under the age of eighteen or eighteen years of age or older as provided in subsection (4) of this section. If a reexamination is not performed, the expiration date of the replacement recognition card must be the same as the lost or stolen recognition card.</div><div style="text-indent:0.5in;">(6) The database administrator must remove qualifying patients and designated providers from the medical marijuana authorization database upon expiration of the recognition card. Qualifying patients and designated providers may request to remove themselves from the medical marijuana authorization database before expiration of a recognition card and health care professionals may request to remove qualifying patients and designated providers from the medical marijuana authorization database if the patient or provider no longer qualifies for the medical use of marijuana. The database administrator must retain database records for at least five calendar years to permit the state liquor and cannabis board and the department of revenue to verify eligibility for tax exemptions.</div><div style="text-indent:0.5in;">(7) During development of the medical marijuana authorization database, the database administrator must consult with the department, stakeholders, and persons with relevant expertise to include, but not be limited to, qualifying patients, designated providers, health care professionals, state and local law enforcement agencies, and the University of Washington computer science and engineering security and privacy research lab or a certified cybersecurity firm, vendor, or service.</div><div style="text-indent:0.5in;">(8) The medical marijuana authorization database must meet the following requirements:</div><div style="text-indent:0.5in;">(a) Any personally identifiable information included in the database must be nonreversible, pursuant to definitions and standards set forth by the national institute of standards and technology;</div><div style="text-indent:0.5in;">(b) Any personally identifiable information included in the database must not be susceptible to linkage by use of data external to the database;</div><div style="text-indent:0.5in;">(c) The database must incorporate current best differential privacy practices, allowing for maximum accuracy of database queries while minimizing the chances of identifying the personally identifiable information included therein; and</div><div style="text-indent:0.5in;">(d) The database must be upgradable and updated in a timely fashion to keep current with state of the art privacy and security standards and practices.</div><div style="text-indent:0.5in;">(9)(a) Personally identifiable information of qualifying patients and designated providers included in the medical marijuana authorization database is confidential and exempt from public disclosure, inspection, or copying under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=42.56'>42.56</a> RCW.</div><div style="text-indent:0.5in;">(b) Information contained in the medical marijuana authorization database may be released in aggregate form, with all personally identifiable information redacted, for the purpose of statistical analysis and oversight of agency performance and actions.</div><div style="text-indent:0.5in;">(c) Information contained in the medical marijuana authorization database shall not be shared with the federal government or its agents unless the particular qualifying patient or designated provider is convicted in state court for violating this chapter or chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50'>69.50</a> RCW.</div><div style="text-indent:0.5in;">(10) The department must charge a one dollar fee for each initial and renewal recognition card issued by a marijuana retailer with a medical marijuana endorsement. The marijuana retailer with a medical marijuana endorsement shall collect the fee from the qualifying patient or designated provider at the time that he or she is entered into the database and issued a recognition card. The department shall establish a schedule for marijuana retailers with a medical marijuana endorsement to remit the fees collected. Fees collected under this subsection shall be deposited into the dedicated marijuana account created under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.530'>69.50.530</a>.</div><div style="text-indent:0.5in;">(11) If the database administrator fails to comply with this section, the department may cancel any contracts with the database administrator and contract with another database administrator to continue administration of the database. A database administrator who fails to comply with this section is subject to a fine of up to five thousand dollars in addition to any penalties established in the contract. Fines collected under this section must be deposited into the health professions account created under *RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.70.320'>43.70.320</a>.</div><div style="text-indent:0.5in;">(12) The department may adopt rules to implement this section.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/1415-S.SL.pdf?cite=2019 c 220 § 2'>2019 c 220 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/1094-S.SL.pdf?cite=2019 c 203 § 2'>2019 c 203 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5052-S2.SL.pdf?cite=2015 c 70 § 21'>2015 c 70 § 21</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Reviser's note: </span>*(1) 2019 c 220 amended RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.51A.230'>69.51A.230</a> by providing that medical marijuana recognition card fees are to be deposited into the dedicated marijuana account created under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.530'>69.50.530</a> rather than the health professions account under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.70.320'>43.70.320</a>. Consequently, the legislature likely intended that this reference to the health professions account be changed to the dedicated marijuana account under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.530'>69.50.530</a> and fines collected for failure to comply with marijuana database requirements be deposited into the dedicated marijuana account rather than the health professions account under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.70.320'>43.70.320</a>.</div><div style="text-indent:0.75in;">(2) This section was amended by 2019 c 203 § 2 and by 2019 c 220 § 2, each without reference to the other. Both amendments are incorporated in the publication of this section under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.12.025'>1.12.025</a>(2). For rule of construction, see RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.12.025'>1.12.025</a>(1).</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2019 c 220:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.70.320'>43.70.320</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2015 c 70 §§ 21, 22, 32, and 33:</span> "Sections 21, 22, 32, and 33 of this act are necessary for the immediate preservation of the public health, or safety, or support of the state government and its existing public institutions, and take effect immediately [April 24, 2015]." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5052-S2.SL.pdf?cite=2015 c 70 § 51'>2015 c 70 § 51</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Short title<span style="font-family:times new roman;">—</span>Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>References to Washington state liquor control board<span style="font-family:times new roman;">—</span>Draft legislation<span style="font-family:times new roman;">—</span>2015 c 70:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=66.08.012'>66.08.012</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

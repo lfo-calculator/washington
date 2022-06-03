@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 28B.118.010: Program design and student eligibility.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=28B.118.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="5mZd7KI+vL1jzjf6PVduWk2+MNa5aklJkcahwvjTIEfA+hgC+mGJoqfs2O40u9LNzhWrqCCbdSZh9aDF+/j3U6E+zogmF9daskphSWE7r2jVbiIZgVA/Gdej2u/mC4s7yL9w3mSQMixXz0BrK0bVVr32Sh6jSkd2iaAjB4sbdbxG24Qu8YHPyudOLm9JUQ+g1bzXuDWw9SCZUun/gA/sQcDH3oc116KnlN9U6iW6m9xiNra1Sa4mNeKbtxh0xlPhgGLHO9Q1lHRysXbPfln5Ki7Ulbo4hQpBp6sUIfEcecnePqaBpN8+D9HKkKeD1aiEFKN7As1h+UJTfhO/HLIeSg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=28B">Title 28B</a> > <a href="default.aspx?cite=28B.118">Chapter 28B.118</a> > <a href="default.aspx?cite=28B.118.010">Section 28B.118.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=28B.118.005">28B.118.005</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        28B.118.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=28B.118.020">28B.118.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.118.010'>28B.118.010</a></h3></div><div><h3>Program design and student eligibility.</h3></div><div><div style="text-indent:0.5in;">The office of student financial assistance shall design the Washington college bound scholarship program in accordance with this section and in alignment with the Washington college grant program in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.92'>28B.92</a> RCW unless otherwise provided in this section. The right of an eligible student to receive a college bound scholarship vest upon enrollment in the program that is earned by meeting the requirements of this section as it exists at the time of the student's enrollment under subsection (2) of this section.</div><div style="text-indent:0.5in;">(1) "Eligible students" are those students who:</div><div style="text-indent:0.5in;">(a) Qualify for free or reduced-price lunches.</div><div style="text-indent:0.5in;">(i) If a student qualifies in the seventh or eighth grade, the student remains eligible even if the student does not receive free or reduced-price lunches thereafter.</div><div style="text-indent:0.5in;">(ii) Beginning in the 2019-20 academic year, if a student qualifies for free or reduced-price lunches in the ninth grade and was previously ineligible during the seventh or eighth grade while he or she was a student in Washington, the student is eligible for the college bound scholarship program;</div><div style="text-indent:0.5in;">(b) Are dependent pursuant to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=13.34'>13.34</a> RCW and:</div><div style="text-indent:0.5in;">(i) In grade seven through twelve; or</div><div style="text-indent:0.5in;">(ii) Are between the ages of eighteen and twenty-one and have not graduated from high school; or</div><div style="text-indent:0.5in;">(c) Were dependent pursuant to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=13.34'>13.34</a> RCW and were adopted between the ages of fourteen and eighteen with a negotiated adoption agreement that includes continued eligibility for the Washington state college bound scholarship program pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.13A.025'>74.13A.025</a>.</div><div style="text-indent:0.5in;">(2)(a) Every eligible student shall be automatically enrolled by the office of student financial assistance, with no action necessary by the student, student's family, or student's guardians.</div><div style="text-indent:0.5in;">(b) Eligible students and the students' parents or guardians shall be notified of the student's enrollment in the Washington college bound scholarship program and the requirements for award of the scholarship by the office of student financial assistance. To the maximum extent practicable, an eligible student must acknowledge enrollment in the college bound scholarship program and receipt of the requirements for award of the scholarship.</div><div style="text-indent:0.5in;">(c) The office of the superintendent of public instruction and the department of children, youth, and families must provide the office of student financial assistance with a list of eligible students when requested. The office of student financial assistance must determine the most effective methods, including timing and frequency, to notify eligible students of enrollment in the Washington college bound scholarship program. The office of student financial assistance must take reasonable steps to ensure that eligible students acknowledge enrollment in the college bound scholarship program and receipt of the requirements for award of the scholarship. The office of student financial assistance shall also make available to every school district information, brochures, and posters to increase awareness and to enable school districts to notify eligible students directly or through school teachers, counselors, or school activities.</div><div style="text-indent:0.5in;">(3) Except as provided in subsection (4) of this section, an eligible student must:</div><div style="text-indent:0.5in;">(a) Graduate with at least a "C" average from a public high school under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.010'>28A.150.010</a>, an approved private high school under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.195'>28A.195</a> RCW in Washington, or have received home-based instruction under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.200'>28A.200</a> RCW;</div><div style="text-indent:0.5in;">(b) Have no felony convictions;</div><div style="text-indent:0.5in;">(c) Be a resident student as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.15.012'>28B.15.012</a>(2) (a) through (e); and</div><div style="text-indent:0.5in;">(d) Have a family income that does not exceed 65 percent of the state median family income at the time of high school graduation.</div><div style="text-indent:0.5in;">(4)(a) An eligible student who is a resident student under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.15.012'>28B.15.012</a>(2)(e) must also provide the institution, as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.15.012'>28B.15.012</a>, an affidavit indicating that the individual will file an application to become a permanent resident at the earliest opportunity the individual is eligible to do so and a willingness to engage in any other activities necessary to acquire citizenship, including but not limited to citizenship or civics review courses.</div><div style="text-indent:0.5in;">(b) For eligible students as defined in subsection (1)(b) and (c) of this section, a student may also meet the requirement in subsection (3)(a) of this section by receiving a high school equivalency certificate as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.50.536'>28B.50.536</a>.</div><div style="text-indent:0.5in;">(c) For a student who does not meet the "C" average requirement, and who completes fewer than two quarters in the running start program, under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.600'>28A.600</a> RCW, the student's first quarter of running start course grades must be excluded from the student's overall grade point average for purposes of determining if the requirement in subsection (3)(a) of this section is met.</div><div style="text-indent:0.5in;">(5)(a) For students attending two or four-year institutions of higher education as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.10.016'>28B.10.016</a>, the value of the award shall be (i) the difference between the student's tuition and required fees, less the value of any state-funded grant, scholarship, or waiver assistance the student receives; (ii) plus five hundred dollars for books and materials.</div><div style="text-indent:0.5in;">(b) For students attending private four-year institutions of higher education in Washington, the award amount shall be the representative average of awards granted to students in public research universities in Washington or the representative average of awards granted to students in public research universities in Washington in the 2014-15 academic year, whichever is greater.</div><div style="text-indent:0.5in;">(c) For students attending private vocational schools in Washington, the award amount shall be the representative average of awards granted to students in public community and technical colleges in Washington or the representative average of awards granted to students in public community and technical colleges in Washington in the 2014-15 academic year, whichever is greater.</div><div style="text-indent:0.5in;">(6) Eligible students must enroll no later than the fall term, as defined by the institution of higher education, one academic year following high school graduation. Eligible students may receive no more than four full-time years' worth of scholarship awards within a five-year period.</div><div style="text-indent:0.5in;">(7) Institutions of higher education shall award the student all need-based and merit-based financial aid for which the student would otherwise qualify. The Washington college bound scholarship is intended to replace unmet need, loans, and, at the student's option, work-study award before any other grants or scholarships are reduced.</div><div style="text-indent:0.5in;">(8) The first scholarships shall be awarded to students graduating in 2012.</div><div style="text-indent:0.5in;">(9) The eligible student has a property right in the award, but the state of Washington retains legal ownership of tuition units awarded as scholarships under this chapter until the tuition units are redeemed. These tuition units shall remain separately held from any tuition units owned under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.95'>28B.95</a> RCW by a Washington college bound scholarship recipient.</div><div style="text-indent:0.5in;">(10) The scholarship award must be used within five years of receipt. Any unused scholarship tuition units revert to the Washington college bound scholarship account.</div><div style="text-indent:0.5in;">(11) Should the recipient terminate his or her enrollment for any reason during the academic year, the unused portion of the scholarship tuition units shall revert to the Washington college bound scholarship account.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5321-S.SL.pdf?cite=2021 c 283 § 2'>2021 c 283 § 2</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/2158-S2.SL.pdf?cite=2019 c 406 § 44'>2019 c 406 § 44</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/1311-S2.SL.pdf?cite=2019 c 298 § 1'>2019 c 298 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1488-S3.SL.pdf?cite=2018 c 204 § 1'>2018 c 204 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1293-S2.SL.pdf?cite=2018 c 12 § 1'>2018 c 12 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/Senate/5890-S.SL.pdf?cite=2017 3rd sp.s. c 20 § 11'>2017 3rd sp.s. c 20 § 11</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5954-S.SL.pdf?cite=2015 3rd sp.s. c 36 § 8'>2015 3rd sp.s. c 36 § 8</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5851-S2.SL.pdf?cite=2015 c 244 § 3'>2015 c 244 § 3</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2483-S2.SL.pdf?cite=2012 c 229 § 402'>2012 c 229 § 402</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2254-S.SL.pdf?cite=2012 c 163 § 8'>2012 c 163 § 8</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/5182-S2.SL.pdf?cite=2011 1st sp.s. c 11 § 226'>2011 1st sp.s. c 11 § 226</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/6673-S2.SL.pdf?cite=2008 c 321 § 9'>2008 c 321 § 9</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5098-S2.SL.pdf?cite=2007 c 405 § 2'>2007 c 405 § 2</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2021 c 283:</span> "The legislature enacted the college bound scholarship program in 2007 to encourage all Washington students to dream big by creating a guaranteed four-year tuition scholarship program for students from low-income families. The legislature finds the program has been successful in achieving this goal. A report by the Washington state institute for public policy found that the scholarship increases high school graduation rates, probability of on-time college enrollment, college persistence, and college graduation rates. However, more than one quarter of eligible students are unable to access the scholarship by failing to sign the pledge required by the program. The legislature finds that the pledge has become an unintended barrier to entry, a problem made more acute as students are receiving their education remotely during the COVID-19 pandemic and have less access to school teachers, counselors, and peers. Therefore, the legislature intends with this act to remove the pledge as an eligibility requirement while retaining the requirement that students maintain a "C" average and avoid serious interactions with the criminal justice system for four years. In order to ensure that the legislature will fulfill its promise to provide a scholarship upon graduation, the legislature intends by this act to create a statutory contractual right for students who fulfill scholarship requirements that vests when the student becomes first eligible for the scholarship." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5321-S.SL.pdf?cite=2021 c 283 § 1'>2021 c 283 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Savings<span style="font-family:times new roman;">—</span>2021 c 283:</span> "This act does not affect any existing right acquired or liability or obligation incurred under the sections amended or repealed or under any rule or order adopted under those sections, nor does it affect any proceeding instituted under those sections." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5321-S.SL.pdf?cite=2021 c 283 § 5'>2021 c 283 § 5</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>Retroactive application<span style="font-family:times new roman;">—</span>2021 c 283:</span> "The legislature intends this act to be curative, remedial, and retroactively apply to seventh grade students beginning with the 2019-20 school year." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5321-S.SL.pdf?cite=2021 c 283 § 6'>2021 c 283 § 6</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2021 c 283:</span> "This act is necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and takes effect immediately [May 12, 2021]." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5321-S.SL.pdf?cite=2021 c 283 § 7'>2021 c 283 § 7</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2019 c 406:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.79.195'>43.79.195</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Short title<span style="font-family:times new roman;">—</span>2019 c 406:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.92.200'>28B.92.200</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2019 c 406:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.94.020'>28B.94.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2019 c 406:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28C.30.050'>28C.30.050</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2019 c 406:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.135'>43.216.135</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Construction<span style="font-family:times new roman;">—</span>Competitive procurement process and contract provisions<span style="font-family:times new roman;">—</span>Conflict with federal requirements and Indian Child Welfare Act of 1978<span style="font-family:times new roman;">—</span>2017 3rd sp.s. c 20:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.13.270'>74.13.270</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Short title<span style="font-family:times new roman;">—</span>2015 3rd sp.s. c 36:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.15.031'>28B.15.031</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2015 c 244:</span> "The legislature finds that the college bound scholarship program has demonstrated that an early promise of financial aid results in increased high school graduation rates for low-income students. The promise of state financial aid to students from low-income families who work to graduate with sufficient grades and no felony convictions provides them with a path toward greater educational attainment and upward mobility. The scholarship program has the potential to move Washington toward its long-term goal of a better trained and educated workforce. Among the first two cohorts, college bound enrollees were fifteen percent and nineteen percent more likely to graduate from high school in 2012 and 2013 compared to low-income peers who were not part of the program.</div><div style="text-indent:0.75in;">The legislature also finds that a comprehensive review of the college bound scholarship program in 2014 resulted in unanimous recommendations to improve and enhance certain components of the program, including data collection, outreach, and program outcomes." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5851-S2.SL.pdf?cite=2015 c 244 § 1'>2015 c 244 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2012 c 229 §§ 101, 117, 401, 402, 501 through 594, 601 through 609, 701 through 708, 801 through 821, 902, and 904:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.77.005'>28B.77.005</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Legislative recommendation<span style="font-family:times new roman;">—</span>2012 c 163:</span> "The legislature strongly recommends that the entities with which the department of social and health services contracts or collaborates to provide educational support services and educational outcomes for students who are dependent under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=13.34'>13.34</a> RCW and the private agency under contract with the *higher education coordinating board or its successor to perform outreach for the passport to college promise program under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.117'>28B.117</a> RCW and the college bound scholarship program under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.118'>28B.118</a> RCW explore models for harnessing technology to keep in constant touch with the students they serve and keep these students engaged." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2254-S.SL.pdf?cite=2012 c 163 § 12'>2012 c 163 § 12</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">*Reviser's note:</span> The higher education coordinating board was abolished by 2011 1st sp.s. c 11 § 301, effective July 1, 2012.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2012 c 163:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.117.010'>28B.117.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2011 1st sp.s. c 11 §§ 101-103, 106-202, 204-244, and 301:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.76.020'>28B.76.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>2011 1st sp.s. c 11:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.76.020'>28B.76.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2008 c 321:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.655.061'>28A.655.061</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

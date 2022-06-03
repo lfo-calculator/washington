@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 64.90.010: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=64.90.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="5hJwv5Ns+6UHWrVO3IVDLN9/oTgzlt6rixV+ANH0TgPoD8hA9drbyUJ2a+beYMNt3JHIgpukDCDCSB0uzQJ313tBeGKKKFPBd8dThCyFprzpkktXhCfWfWnCel/sQ1ta55E7B09yP3g+6hpSXop8zHkgS4PRZ4x9tIlR4L9W93mYv/DKXDdVX+TDCy3HqzXV8VYP/t7XvRzipYmcub7AA7b0pf4PjfctZFGrIsZH/XbujwV1GTQ7WWTzX/9ffaOo42Wc9KEmS+g/x4e2KdmdlqeHMcIDad8k7P1FBXcCwDk=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=64">Title 64</a> > <a href="default.aspx?cite=64.90">Chapter 64.90</a> > <a href="default.aspx?cite=64.90.010">Section 64.90.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        64.90.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=64.90.015">64.90.015</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.010'>64.90.010</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Affiliate of a declarant" means any person who controls, is controlled by, or is under common control with a declarant. For purposes of this subsection:</div><div style="text-indent:0.5in;">(a) A person controls a declarant if the person:</div><div style="text-indent:0.5in;">(i) Is a general partner, managing member, officer, director, or employer of the declarant;</div><div style="text-indent:0.5in;">(ii) Directly or indirectly or acting in concert with one or more other persons, or through one or more subsidiaries, owns, controls, holds with power to vote, or holds proxies representing more than twenty percent of the voting interest in the declarant;</div><div style="text-indent:0.5in;">(iii) Controls in any manner the election or appointment of a majority of the directors, managing members, or general partners of the declarant; or</div><div style="text-indent:0.5in;">(iv) Has contributed more than twenty percent of the capital of the declarant.</div><div style="text-indent:0.5in;">(b) A person is controlled by a declarant if the declarant:</div><div style="text-indent:0.5in;">(i) Is a general partner, managing member, officer, director, or employer of the person;</div><div style="text-indent:0.5in;">(ii) Directly or indirectly or acting in concert with one or more other persons, or through one or more subsidiaries, owns, controls, holds with power to vote, or holds proxies representing more than twenty percent of the voting interest in the person;</div><div style="text-indent:0.5in;">(iii) Controls in any manner the election or appointment of a majority of the directors, managing members, or general partners of the person; or</div><div style="text-indent:0.5in;">(iv) Has contributed more than twenty percent of the capital of the person.</div><div style="text-indent:0.5in;">(c) Control does not exist if the powers described in this subsection (1) are held solely as security for an obligation and are not exercised.</div><div style="text-indent:0.5in;">(2) "Allocated interests" means the following interests allocated to each unit:</div><div style="text-indent:0.5in;">(a) In a condominium, the undivided interest in the common elements, the common expense liability, and votes in the association;</div><div style="text-indent:0.5in;">(b) In a cooperative, the common expense liability, the ownership interest, and votes in the association; and</div><div style="text-indent:0.5in;">(c) In a plat community and miscellaneous community, the common expense liability and the votes in the association, and also the undivided interest in the common elements if owned in common by the unit owners rather than an association.</div><div style="text-indent:0.5in;">(3) "Assessment" means all sums chargeable by the association against a unit, including any assessments levied pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.480'>64.90.480</a>, fines or fees levied or imposed by the association pursuant to this chapter or the governing documents, interest and late charges on any delinquent account, and all costs of collection incurred by the association in connection with the collection of a delinquent owner's account, including reasonable attorneys' fees.</div><div style="text-indent:0.5in;">(4) "Association" or "unit owners association" means the unit owners association organized under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.400'>64.90.400</a> and, to the extent necessary to construe sections of this chapter made applicable to common interest communities pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.080'>64.90.080</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.090'>64.90.090</a>, or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.095'>64.90.095</a>, the association organized or created to administer such common interest communities.</div><div style="text-indent:0.5in;">(5) "Ballot" means a record designed to cast or register a vote or consent in a form provided or accepted by the association.</div><div style="text-indent:0.5in;">(6) "Board" means the body, regardless of name, designated in the declaration, map, or organizational documents, with primary authority to manage the affairs of the association.</div><div style="text-indent:0.5in;">(7) "Common elements" means:</div><div style="text-indent:0.5in;">(a) In a condominium or cooperative, all portions of the common interest community other than the units;</div><div style="text-indent:0.5in;">(b) In a plat community or miscellaneous community, any real estate other than a unit within a plat community or miscellaneous community that is owned or leased either by the association or in common by the unit owners rather than an association; and</div><div style="text-indent:0.5in;">(c) In all common interest communities, any other interests in real estate for the benefit of any unit owners that are subject to the declaration.</div><div style="text-indent:0.5in;">(8) "Common expense" means any expense of the association, including allocations to reserves, allocated to all of the unit owners in accordance with common expense liability.</div><div style="text-indent:0.5in;">(9) "Common expense liability" means the liability for common expenses allocated to each unit pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.235'>64.90.235</a>.</div><div style="text-indent:0.5in;">(10) "Common interest community" means real estate described in a declaration with respect to which a person, by virtue of the person's ownership of a unit, is obligated to pay for a share of real estate taxes, insurance premiums, maintenance, or improvement of, or services or other expenses related to, common elements, other units, or other real estate described in the declaration. "Common interest community" does not include an arrangement described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.110'>64.90.110</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.115'>64.90.115</a>. A common interest community may be a part of another common interest community.</div><div style="text-indent:0.5in;">(11) "Condominium" means a common interest community in which portions of the real estate are designated for separate ownership and the remainder of the real estate is designated for common ownership solely by the owners of those portions. A common interest community is not a condominium unless the undivided interests in the common elements are vested in the unit owners.</div><div style="text-indent:0.5in;">(12) "Condominium notice" means the notice given to tenants pursuant to subsection (13)(c) of this section.</div><div style="text-indent:0.5in;">(13)(a) "Conversion building" means a building:</div><div style="text-indent:0.5in;">(i) That at any time before creation of the common interest community was lawfully occupied wholly or partially by a tenant or subtenant for residential purposes pursuant to a rental agreement, oral or written, express or implied, who did not receive a condominium notice prior to entering into the rental agreement or lawfully taking occupancy, whichever event occurred first; or</div><div style="text-indent:0.5in;">(ii) That at any time within the twelve months preceding the first acceptance of an agreement with the declarant to convey, or the first conveyance of, any unit in the building, whichever event occurred first, to any person who was not a declarant or dealer, or affiliate of a declarant or dealer, was lawfully occupied wholly or partially by a tenant or subtenant for residential purposes pursuant to a rental agreement, oral or written, express or implied, who did not receive a condominium notice prior to entering into the rental agreement or lawfully taking occupancy, whichever event occurred first.</div><div style="text-indent:0.5in;">(b) A building in a common interest community is a conversion building only if:</div><div style="text-indent:0.5in;">(i) The building contains more than two attached dwelling units as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.55.010'>64.55.010</a>(1); and</div><div style="text-indent:0.5in;">(ii) Acceptance of an agreement to convey, or conveyance of, any unit in the building to any person who was not a declarant or dealer, or affiliate of a declarant or dealer, did not occur prior to July 1, 2018.</div><div style="text-indent:0.5in;">(c) The notice referred to in (a)(i) and (ii) of this subsection must be in writing and must state: "The unit you will be occupying is, or may become, part of a common interest community and subject to sale."</div><div style="text-indent:0.5in;">(14) "Convey" or "conveyance" means, with respect to a unit, any transfer of ownership of the unit, including a transfer by deed or by real estate contract and, with respect to a unit in a leasehold common interest community or a proprietary lease in a cooperative, a transfer by lease or assignment of the unit, but does not include the creation, transfer, or release of a security interest.</div><div style="text-indent:0.5in;">(15) "Cooperative" means a common interest community in which the real estate is owned by an association, each member of which is entitled by virtue of the member's ownership interest in the association and by a proprietary lease to exclusive possession of a unit.</div><div style="text-indent:0.5in;">(16) "Dealer" means a person who, together with such person's affiliates, owns or has a right to acquire either six or more units in a common interest community or fifty percent or more of the units in a common interest community containing more than two units.</div><div style="text-indent:0.5in;">(17) "Declarant" means:</div><div style="text-indent:0.5in;">(a) Any person who executes as declarant a declaration;</div><div style="text-indent:0.5in;">(b) Any person who reserves any special declarant right in a declaration;</div><div style="text-indent:0.5in;">(c) Any person who exercises special declarant rights or to whom special declarant rights are transferred of record. The holding or exercise of rights to maintain sales offices, signs advertising the common interest community, and models, and related right of access, does not confer the status of being a declarant; or</div><div style="text-indent:0.5in;">(d) Any person who is the owner of a fee interest in the real estate that is subjected to the declaration at the time of the recording of an instrument pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.425'>64.90.425</a> and who directly or through one or more affiliates is materially involved in the construction, marketing, or sale of units in the common interest community created by the recording of the instrument.</div><div style="text-indent:0.5in;">(18) "Declarant control" means the right of the declarant or persons designated by the declarant to appoint or remove any officer or board member of the association or to veto or approve a proposed action of any board or association, pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.415'>64.90.415</a>(1)(a).</div><div style="text-indent:0.5in;">(19) "Declaration" means the instrument, however denominated, that creates a common interest community, including any amendments to the instrument.</div><div style="text-indent:0.5in;">(20) "Development rights" means any right or combination of rights reserved by a declarant in the declaration to:</div><div style="text-indent:0.5in;">(a) Add real estate or improvements to a common interest community;</div><div style="text-indent:0.5in;">(b) Create units, common elements, or limited common elements within a common interest community;</div><div style="text-indent:0.5in;">(c) Subdivide or combine units or convert units into common elements;</div><div style="text-indent:0.5in;">(d) Withdraw real estate from a common interest community; or</div><div style="text-indent:0.5in;">(e) Reallocate limited common elements with respect to units that have not been conveyed by the declarant.</div><div style="text-indent:0.5in;">(21) "Effective age" means the difference between the useful life and remaining useful life.</div><div style="text-indent:0.5in;">(22) "Electronic transmission" or "electronically transmitted" means any electronic communication (a) not directly involving the physical transfer of a record in a tangible medium and (b) that may be retained, retrieved, and reviewed by the sender and the recipient of the communication, and that may be directly reproduced in a tangible medium by a sender and recipient.</div><div style="text-indent:0.5in;">(23) "Eligible mortgagee" means the holder of a security interest on a unit that has filed with the secretary of the association a written request that it be given copies of notices of any action by the association that requires the consent of mortgagees.</div><div style="text-indent:0.5in;">(24) "Foreclosure" means a statutory forfeiture or a judicial or nonjudicial foreclosure of a security interest or a deed or other conveyance in lieu of a security interest.</div><div style="text-indent:0.5in;">(25) "Full funding plan" means a reserve funding goal of achieving one hundred percent fully funded reserves by the end of the thirty-year study period described under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.550'>64.90.550</a>, in which the reserve account balance equals the sum of the estimated costs required to maintain, repair, or replace the deteriorated portions of all reserve components.</div><div style="text-indent:0.5in;">(26) "Fully funded balance" means the current value of the deteriorated portion, not the total replacement value, of all the reserve components. The fully funded balance for each reserve component is calculated by multiplying the current replacement cost of that reserve component by its effective age, then dividing the result by that reserve component's useful life. The sum total of all reserve components' fully funded balances is the association's fully funded balance.</div><div style="text-indent:0.5in;">(27) "Governing documents" means the organizational documents, map, declaration, rules, or other written instrument by which the association has the authority to exercise any of the powers provided for in this chapter or to manage, maintain, or otherwise affect the property under its jurisdiction.</div><div style="text-indent:0.5in;">(28) "Identifying number" means a symbol or address that identifies only one unit or limited common element in a common interest community.</div><div style="text-indent:0.5in;">(29) "Leasehold common interest community" means a common interest community in which all or a portion of the real estate is subject to a lease the expiration or termination of which will terminate the common interest community or reduce its size.</div><div style="text-indent:0.5in;">(30) "Limited common element" means a portion of the common elements allocated by the declaration or by operation of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.210'>64.90.210</a> (1)(b) or (3) for the exclusive use of one or more, but fewer than all, of the unit owners.</div><div style="text-indent:0.5in;">(31) "Map" means: (a) With respect to a plat community, the plat as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=58.17.020'>58.17.020</a> and complying with the requirements of Title <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=58'>58</a> RCW, and (b) with respect to a condominium, cooperative, or miscellaneous community, a map prepared in accordance with the requirements of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.245'>64.90.245</a>.</div><div style="text-indent:0.5in;">(32) "Master association" means an organization described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.300'>64.90.300</a>, whether or not it is also an association described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.400'>64.90.400</a>.</div><div style="text-indent:0.5in;">(33) "Miscellaneous community" means a common interest community in which units are lawfully created in a manner not inconsistent with chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=58.17'>58.17</a> RCW and that is not a condominium, cooperative, or plat community.</div><div style="text-indent:0.5in;">(34) "Nominal reserve costs" means that the current estimated total replacement costs of the reserve components are less than fifty percent of the annual budgeted expenses of the association, excluding contributions to the reserve fund, for a condominium or cooperative containing horizontal unit boundaries, and less than seventy-five percent of the annual budgeted expenses of the association, excluding contributions to the reserve fund, for all other common interest communities.</div><div style="text-indent:0.5in;">(35) "Organizational documents" means the instruments filed with the secretary of state to create an entity and the instruments governing the internal affairs of the entity including, but not limited to, any articles of incorporation, certificate of formation, bylaws, and limited liability company or partnership agreement.</div><div style="text-indent:0.5in;">(36) "Person" means an individual, corporation, business trust, estate, the trustee or beneficiary of a trust that is not a business trust, partnership, limited liability company, association, joint venture, public corporation, government, or governmental subdivision, agency, or instrumentality, or any other legal entity.</div><div style="text-indent:0.5in;">(37) "Plat community" means a common interest community in which units have been created by subdivision or short subdivision as both are defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=58.17.020'>58.17.020</a> and in which the boundaries of units are established pursuant to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=58.17'>58.17</a> RCW.</div><div style="text-indent:0.5in;">(38) "Proprietary lease" means a written and recordable lease that is executed and acknowledged by the association as lessor and that otherwise complies with requirements applicable to a residential lease of more than one year and pursuant to which a member is entitled to exclusive possession of a unit in a cooperative. A proprietary lease governed under this chapter is not subject to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=59.18'>59.18</a> RCW except as provided in the declaration.</div><div style="text-indent:0.5in;">(39) "Purchaser" means a person, other than a declarant or a dealer, which by means of a voluntary transfer acquires a legal or equitable interest in a unit other than as security for an obligation.</div><div style="text-indent:0.5in;">(40) "Qualified financial institution" means a bank, savings association, or credit union whose deposits are insured by the federal government.</div><div style="text-indent:0.5in;">(41) "Real estate" means any leasehold or other estate or interest in, over, or under land, including structures, fixtures, and other improvements and interests that by custom, usage, or law pass with a conveyance of land though not described in the contract of sale or instrument of conveyance. "Real estate" includes parcels with or without upper or lower boundaries and spaces that may be filled with air or water.</div><div style="text-indent:0.5in;">(42) "Real estate contract" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.30.010'>61.30.010</a>.</div><div style="text-indent:0.5in;">(43) "Record," when used as a noun, means information inscribed on a tangible medium or contained in an electronic transmission.</div><div style="text-indent:0.5in;">(44) "Remaining useful life" means the estimated time, in years, before a reserve component will require major maintenance, repair, or replacement to perform its intended function.</div><div style="text-indent:0.5in;">(45) "Replacement cost" means the estimated total cost to maintain, repair, or replace a reserve component to its original functional condition.</div><div style="text-indent:0.5in;">(46) "Reserve component" means a physical component of the common interest community which the association is obligated to maintain, repair, or replace, which has an estimated useful life of less than thirty years, and for which the cost of such maintenance, repair, or replacement is infrequent, significant, and impractical to include in an annual budget.</div><div style="text-indent:0.5in;">(47) "Reserve study professional" means an independent person who is suitably qualified by knowledge, skill, experience, training, or education to prepare a reserve study in accordance with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.545'>64.90.545</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.550'>64.90.550</a>. For the purposes of this subsection, "independent" means a person who is not an employee, officer, or director, and has no pecuniary interest in the declarant, association, or any other party for whom the reserve study is prepared.</div><div style="text-indent:0.5in;">(48) "Residential purposes" means use for dwelling or recreational purposes, or both.</div><div style="text-indent:0.5in;">(49) "Rule" means a policy, guideline, restriction, procedure, or regulation of an association, however denominated, that is not set forth in the declaration or organizational documents and governs the conduct of persons or the use or appearance of property.</div><div style="text-indent:0.5in;">(50) "Security interest" means an interest in real estate or personal property, created by contract or conveyance that secures payment or performance of an obligation. "Security interest" includes a lien created by a mortgage, deed of trust, real estate contract, lease intended as security, assignment of lease or rents intended as security, pledge of an ownership interest in an association, and any other consensual lien or title retention contract intended as security for an obligation.</div><div style="text-indent:0.5in;">(51) "Special declarant rights" means rights reserved for the benefit of a declarant to:</div><div style="text-indent:0.5in;">(a) Complete any improvements indicated on the map or described in the declaration or the public offering statement pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.610'>64.90.610</a>(1)(h);</div><div style="text-indent:0.5in;">(b) Exercise any development right;</div><div style="text-indent:0.5in;">(c) Maintain sales offices, management offices, signs advertising the common interest community, and models;</div><div style="text-indent:0.5in;">(d) Use easements through the common elements for the purpose of making improvements within the common interest community or within real estate that may be added to the common interest community;</div><div style="text-indent:0.5in;">(e) Make the common interest community subject to a master association;</div><div style="text-indent:0.5in;">(f) Merge or consolidate a common interest community with another common interest community of the same form of ownership;</div><div style="text-indent:0.5in;">(g) Appoint or remove any officer or board member of the association or any master association or to veto or approve a proposed action of any board or association, pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.415'>64.90.415</a>(1);</div><div style="text-indent:0.5in;">(h) Control any construction, design review, or aesthetic standards committee or process;</div><div style="text-indent:0.5in;">(i) Attend meetings of the unit owners and, except during an executive session, the board;</div><div style="text-indent:0.5in;">(j) Have access to the records of the association to the same extent as a unit owner.</div><div style="text-indent:0.5in;">(52) "Specially allocated expense" means any expense of the association, including allocations to reserves, allocated to some or all of the unit owners pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.480'>64.90.480</a> (4) through (8).</div><div style="text-indent:0.5in;">(53) "Survey" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=58.09.020'>58.09.020</a>.</div><div style="text-indent:0.5in;">(54) "Tangible medium" means a writing, copy of a writing, facsimile, or a physical reproduction, each on paper or on other tangible material.</div><div style="text-indent:0.5in;">(55) "Timeshare" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.36.010'>64.36.010</a>.</div><div style="text-indent:0.5in;">(56) "Transition meeting" means the meeting held pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.415'>64.90.415</a>(4).</div><div style="text-indent:0.5in;">(57)(a) "Unit" means a physical portion of the common interest community designated for separate ownership or occupancy, the boundaries of which are described pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.90.225'>64.90.225</a>(1)(d).</div><div style="text-indent:0.5in;">(b) If a unit in a cooperative is owned by a unit owner or is sold, conveyed, voluntarily or involuntarily encumbered, or otherwise transferred by a unit owner, the interest in that unit that is owned, sold, conveyed, encumbered, or otherwise transferred is the right to possession of that unit under a proprietary lease, coupled with the allocated interests of that unit, and the association's interest in that unit is not affected.</div><div style="text-indent:0.5in;">(c) Except as provided in the declaration, a mobile home or manufactured home for which title has been eliminated pursuant to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=65.20'>65.20</a> RCW is part of the unit described in the title elimination documents.</div><div style="text-indent:0.5in;">(58)(a) "Unit owner" means (i) a declarant or other person that owns a unit or (ii) a lessee of a unit in a leasehold common interest community whose lease expires simultaneously with any lease the expiration or termination of which will remove the unit from the common interest community, but does not include a person having an interest in a unit solely as security for an obligation.</div><div style="text-indent:0.5in;">(b) "Unit owner" also means the vendee, not the vendor, of a unit under a recorded real estate contract.</div><div style="text-indent:0.5in;">(c) In a condominium, plat community, or miscellaneous community, the declarant is the unit owner of any unit created by the declaration. In a cooperative, the declarant is treated as the unit owner of any unit to which allocated interests have been allocated until that unit has been conveyed to another person.</div><div style="text-indent:0.5in;">(59) "Useful life" means the estimated time during which a reserve component is expected to perform its intended function without major maintenance, repair, or replacement.</div><div style="text-indent:0.5in;">(60) "Writing" does not include an electronic transmission.</div><div style="text-indent:0.5in;">(61) "Written" means embodied in a tangible medium.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5334.SL.pdf?cite=2019 c 238 § 201'>2019 c 238 § 201</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/Senate/6175-S.SL.pdf?cite=2018 c 277 § 102'>2018 c 277 § 102</a>.]</div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

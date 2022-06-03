@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 82.56.010: Compact.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=82.56.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Qc3Yvew2Jcye3KoOh1zPLB/qK7oPDVZKJURAc6tjkSevSv+4PG12N1STTu0XdYuQXW83CjibuJLrRFPT+9X22bGWS+s8thh/a9Uj8FwcwnDnRkYAqSdiwiruERsfuJabY+q2jZPNVqNRtQH5jIBaSF30I0DepqiJ/nPbRpKryhcoDCN1R3GMMqcznVzjE+yrNZp3Oh+h/gi6I/VFtdZY1Tsbsag0Xqw9nFFSEnscPes3j+zfS71agl4BucXx6UFpXdPMZoUwnurQC4V/8+07o/q844ScIELCPOfNa3VXL34=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=82">Title 82</a> > <a href="default.aspx?cite=82.56">Chapter 82.56</a> > <a href="default.aspx?cite=82.56.010">Section 82.56.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        82.56.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=82.56.020">82.56.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.56.010'>82.56.010</a></h3></div><div><h3>Compact.</h3></div><div><div style="text-indent:0.5in;">The following multistate tax compact, and each and every part thereof, is hereby approved, ratified, adopted, entered into and enacted into law by the state of Washington.</div><div style="text-align:center;margin-top:4.5pt;">MULTISTATE TAX COMPACT</div><div style="text-align:center;margin-top:4.5pt;">Article I. Purposes.</div><div style="margin-top:4.5pt;text-indent:0.5in;">The purposes of this compact are to:</div><div style="text-indent:0.5in;">1. Facilitate proper determination of state and local tax liability of multistate taxpayers, including the equitable apportionment of tax bases and settlement of apportionment disputes.</div><div style="text-indent:0.5in;">2. Promote uniformity or compatibility in significant components of tax systems.</div><div style="text-indent:0.5in;">3. Facilitate taxpayer convenience and compliance in the filing of tax returns and in other phases of tax administration.</div><div style="text-indent:0.5in;">4. Avoid duplicative taxation.</div><div style="text-align:center;margin-top:4.5pt;">Article II. Definitions.</div><div style="margin-top:4.5pt;text-indent:0.5in;">As used in this compact:</div><div style="text-indent:0.5in;">1. "State" means a state of the United States, the District of Columbia, the Commonwealth of Puerto Rico, or any territory or possession of the United States.</div><div style="text-indent:0.5in;">2. "Subdivision" means any governmental unit or special district of a state.</div><div style="text-indent:0.5in;">3. "Taxpayer" means any corporation, partnership, firm, association, governmental unit or agency or person acting as a business entity in more than one state.</div><div style="text-indent:0.5in;">4. "Income tax" means a tax imposed on or measured by net income including any tax imposed on or measured by an amount arrived at by deducting expenses from gross income, one or more forms of which expenses are not specifically and directly related to particular transactions.</div><div style="text-indent:0.5in;">5. "Capital stock tax" means a tax measured in any way by the capital of a corporation considered in its entirety.</div><div style="text-indent:0.5in;">6. "Gross receipts tax" means a tax, other than a sales tax, which is imposed on or measured by the gross volume of business, in terms of gross receipts or in other terms, and in the determination of which no deduction is allowed which would constitute the tax an income tax.</div><div style="text-indent:0.5in;">7. "Sales tax" means a tax imposed with respect to the transfer for a consideration of ownership, possession or custody of tangible personal property or the rendering of services measured by the price of the tangible personal property transferred or services rendered and which is required by state or local law to be separately stated from the sales price by the seller, or which is customarily separately stated from the sales price, but does not include a tax imposed exclusively on the sale of a specifically identified commodity or article or class of commodities or articles.</div><div style="text-indent:0.5in;">8. "Use tax" means a nonrecurring tax, other than a sales tax, which (a) is imposed on or with respect to the exercise or enjoyment of any right or power over tangible personal property incident to the ownership, possession or custody of that property or the leasing of that property from another including any consumption, keeping, retention, or other use of tangible personal property and (b) is complementary to a sales tax.</div><div style="text-indent:0.5in;">9. "Tax" means an income tax, capital stock tax, gross receipts tax, sales tax, use tax, and any other tax which has a multistate impact, except that the provisions of Articles III, IV and V of this compact shall apply only to the taxes specifically designated therein and the provisions of Article IX of this compact shall apply only in respect to determinations pursuant to Article IV.</div><div style="text-align:center;margin-top:4.5pt;">Article III. Elements of Income Tax Laws.</div><div style="text-align:center;margin-top:4.5pt;">Taxpayer Option, State and Local Taxes.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1. Any taxpayer subject to an income tax whose income is subject to apportionment and allocation for tax purposes pursuant to the laws of a party state or pursuant to the laws of subdivisions in two or more party states may elect to apportion and allocate his income in the manner provided by the laws of such state or by the laws of such states and subdivisions without reference to this compact, or may elect to apportion and allocate in accordance with Article IV. This election for any tax year may be made in all party states or subdivisions thereof or in any one or more of the party states or subdivisions thereof without reference to the election made in the others. For the purposes of this paragraph, taxes imposed by subdivisions shall be considered separately from state taxes and the apportionment and allocation also may be applied to the entire tax base. In no instance wherein Article IV is employed for all subdivisions of a state may the sum of all apportionments and allocations to subdivisions within a state be greater than the apportionment and allocation that would be assignable to that state if the apportionment or allocation were being made with respect to a state income tax.</div><div style="text-align:center;margin-top:4.5pt;">Taxpayer Option, Short Form.</div><div style="margin-top:4.5pt;text-indent:0.5in;">2. Each party state or any subdivision thereof which imposes an income tax shall provide by law that any taxpayer required to file a return, whose only activities within the taxing jurisdiction consist of sales and do not include owning or renting real estate or tangible personal property, and whose dollar volume of gross sales made during the tax year within the state or subdivision, as the case may be, is not in excess of $100,000 may elect to report and pay any tax due on the basis of a percentage of such volume, and shall adopt rates which shall produce a tax which reasonably approximates the tax otherwise due. The multistate tax commission, not more than once in five years, may adjust the $100,000 figure in order to reflect such changes as may occur in the real value of the dollar, and such adjusted figure, upon adoption by the commission, shall replace the $100,000 figure specifically provided herein. Each party state and subdivision thereof may make the same election available to taxpayers additional to those specified in this paragraph.</div><div style="text-align:center;margin-top:4.5pt;">Coverage.</div><div style="margin-top:4.5pt;text-indent:0.5in;">3. Nothing in this article relates to the reporting or payment of any tax other than an income tax.</div><div style="text-align:center;margin-top:4.5pt;">Article IV. Division of Income.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1. As used in this article, unless the context otherwise requires:</div><div style="text-indent:0.5in;">(a) "Business income" means income arising from transactions and activity in the regular course of the taxpayer's trade or business and includes income from tangible and intangible property if the acquisition, management, and disposition of the property constitute integral parts of the taxpayer's regular trade or business operations.</div><div style="text-indent:0.5in;">(b) "Commercial domicile" means the principal place from which the trade or business of the taxpayer is directed or managed.</div><div style="text-indent:0.5in;">(c) "Compensation" means wages, salaries, commissions and any other form of remuneration paid to employees for personal services.</div><div style="text-indent:0.5in;">(d) "Financial organization" means any bank, trust company, savings bank, industrial bank, land bank, safe deposit company, private banker, savings and loan association, credit union, cooperative bank, small loan company, sales finance company, investment company, or any type of insurance company.</div><div style="text-indent:0.5in;">(e) "Nonbusiness income" means all income other than business income.</div><div style="text-indent:0.5in;">(f) "Public utility" means any business entity (1) which owns or operates any plant, equipment, property, franchise, or license for the transmission of communications, transportation of goods or persons, except by pipe line, or the production, transmission, sale, delivery, or furnishing of electricity, water or steam; and (2) whose rates of charges for goods or services have been established or approved by a federal, state or local government or governmental agency.</div><div style="text-indent:0.5in;">(g) "Sales" means all gross receipts of the taxpayer not allocated under paragraphs of this article.</div><div style="text-indent:0.5in;">(h) "State" means any state of the United States, the District of Columbia, the Commonwealth of Puerto Rico, any territory or possession of the United States, and any foreign country or political subdivision thereof.</div><div style="text-indent:0.5in;">(i) "This state" means the state in which the relevant tax return is filed or, in the case of application of this article to the apportionment and allocation of income for local tax purposes, the subdivision or local taxing district in which the relevant tax return is filed.</div><div style="text-indent:0.5in;">2. Any taxpayer having income from business activity which is taxable both within and without this state, other than activity as a financial organization or public utility or the rendering of purely personal services by an individual, shall allocate and apportion his net income as provided in this article. If a taxpayer has income from business activity as a public utility but derives the greater percentage of his income from activities subject to this article, the taxpayer may elect to allocate and apportion his entire net income as provided in this article.</div><div style="text-indent:0.5in;">3. For purposes of allocation and apportionment of income under this article, a taxpayer is taxable in another state if (1) in that state he is subject to a net income tax, a franchise tax measured by net income, a franchise tax for the privilege of doing business, or a corporate stock tax, or (2) that state has jurisdiction to subject the taxpayer to a net income tax regardless of whether, in fact, the state does or does not.</div><div style="text-indent:0.5in;">4. Rents and royalties from real or tangible personal property, capital gains, interest, dividends or patent or copyright royalties, to the extent that they constitute nonbusiness income, shall be allocated as provided in paragraphs 5 through 8 of this article.</div><div style="text-indent:0.5in;">5.(a) Net rents and royalties from real property located in this state are allocable to this state.</div><div style="text-indent:0.5in;">(b) Net rents and royalties from tangible personal property are allocable to this state: (1) If and to the extent that the property is utilized in this state, or (2) in their entirety if the taxpayer's commercial domicile is in this state and the taxpayer is not organized under the laws of or taxable in the state in which the property is utilized.</div><div style="text-indent:0.5in;">(c) The extent of utilization of tangible personal property in a state is determined by multiplying the rents and royalties by a fraction, the numerator of which is the number of days of physical location of the property in the state during the rental or royalty period in the taxable year and the denominator of which is the number of days of physical location of the property everywhere during all rental or royalty periods in the taxable year. If the physical location of the property during the rental or royalty period is unknown or unascertainable by the taxpayer, tangible personal property is utilized in the state in which the property was located at the time the rental or royalty payer obtained possession.</div><div style="text-indent:0.5in;">6.(a) Capital gains and losses from sales of real property located in this state are allocable to this state.</div><div style="text-indent:0.5in;">(b) Capital gains and losses from sales of tangible personal property are allocable to this state if (1) the property had a situs in this state at the time of the sale, or (2) the taxpayer's commercial domicile is in this state and the taxpayer is not taxable in the state in which the property had a situs.</div><div style="text-indent:0.5in;">(c) Capital gains and losses from sales of intangible personal property are allocable to this state if the taxpayer's commercial domicile is in this state.</div><div style="text-indent:0.5in;">7. Interest and dividends are allocable to this state if the taxpayer's commercial domicile is in this state.</div><div style="text-indent:0.5in;">8.(a) Patent and copyright royalties are allocable to this state: (1) If and to the extent that the patent or copyright is utilized by the payer in this state, or (2) if and to the extent that the patent copyright is utilized by the payer in a state in which the taxpayer is not taxable and the taxpayer's commercial domicile is in this state.</div><div style="text-indent:0.5in;">(b) A patent is utilized in a state to the extent that it is employed in production, fabrication, manufacturing, or other processing in the state or to the extent that a patented product is produced in the state. If the basis of receipts from patent royalties does not permit allocation to states or if the accounting procedures do not reflect states of utilization, the patent is utilized in the state in which the taxpayer's commercial domicile is located.</div><div style="text-indent:0.5in;">(c) A copyright is utilized in a state to the extent that printing or other publication originates in the state. If the basis of receipts from copyright royalties does not permit allocation to states or if the accounting procedures do not reflect states of utilization, the copyright is utilized in the state in which the taxpayer's commercial domicile is located.</div><div style="text-indent:0.5in;">9. All business income shall be apportioned to this state by multiplying the income by a fraction, the numerator of which is the property factor plus the payroll factor plus the sales factor, and the denominator of which is three.</div><div style="text-indent:0.5in;">10. The property factor is a fraction, the numerator of which is the average value of the taxpayer's real and tangible personal property owned or rented and used in this state during the tax period and the denominator of which is the average value of all the taxpayer's real and tangible personal property owned or rented and used during the tax period.</div><div style="text-indent:0.5in;">11. Property owned by the taxpayer is valued at its original cost. Property rented by the taxpayer is valued at eight times the net annual rental rate. Net annual rental rate is the annual rental rate paid by the taxpayer less any annual rental rate received by the taxpayer from subrentals.</div><div style="text-indent:0.5in;">12. The average value of property shall be determined by averaging the values at the beginning and ending of the tax period but the tax administrator may require the averaging of monthly values during the tax period if reasonably required to reflect properly the average value of the taxpayer's property.</div><div style="text-indent:0.5in;">13. The payroll factor is a fraction, the numerator of which is the total amount paid in this state during the tax period by the taxpayer for compensation and the denominator of which is the total compensation paid everywhere during the tax period.</div><div style="text-indent:0.5in;">14. Compensation is paid in this state if:</div><div style="text-indent:0.5in;">(a) The individual's service is performed entirely within the state;</div><div style="text-indent:0.5in;">(b) The individual's service is performed both within and without the state, but the service performed without the state is incidental to the individual's service within the state; or</div><div style="text-indent:0.5in;">(c) Some of the service is performed in the state and (1) the base of operations or, if there is no base of operations, the place from which the service is directed or controlled is in the state, or (2) the base of operations or the place from which the service is directed or controlled is not in any state in which some part of the service is performed, but the individual's residence is in this state.</div><div style="text-indent:0.5in;">15. The sales factor is a fraction, the numerator of which is the total sales of the taxpayer in this state during the tax period, and the denominator of which is the total sales of the taxpayer everywhere during the tax period.</div><div style="text-indent:0.5in;">16. Sales of tangible personal property are in this state if:</div><div style="text-indent:0.5in;">(a) The property is delivered or shipped to a purchaser, other than the United States government, within this state regardless of the f.o.b. point or other conditions of the sale; or</div><div style="text-indent:0.5in;">(b) The property is shipped from an office, store, warehouse, factory, or other place of storage in this state and (1) the purchaser is the United States government or (2) the taxpayer is not taxable in the state of the purchaser.</div><div style="text-indent:0.5in;">17. Sales, other than sales of tangible personal property, are in this state if:</div><div style="text-indent:0.5in;">(a) The income-producing activity is performed in this state; or</div><div style="text-indent:0.5in;">(b) The income-producing activity is performed both in and outside this state and a greater proportion of the income-producing activity is performed in this state than in any other state, based on costs of performance.</div><div style="text-indent:0.5in;">18. If the allocation and apportionment provisions of this article do not fairly represent the extent of the taxpayer's business activity in this state, the taxpayer may petition for or the tax administrator may require, in respect to all or any part of the taxpayer's business activity, if reasonable:</div><div style="text-indent:0.5in;">(a) Separate accounting;</div><div style="text-indent:0.5in;">(b) The exclusion of any one or more of the factors;</div><div style="text-indent:0.5in;">(c) The inclusion of one or more additional factors which will fairly represent the taxpayer's business activity in this state; or</div><div style="text-indent:0.5in;">(d) The employment of any other method to effectuate an equitable allocation and apportionment of the taxpayer's income.</div><div style="text-align:center;margin-top:4.5pt;">Article V. Elements of Sales</div><div style="text-align:center;">and Use Tax Laws.</div><div style="text-align:center;margin-top:4.5pt;">Tax Credit.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1. Each purchaser liable for a use tax on tangible personal property shall be entitled to full credit for the combined amount or amounts of legally imposed sales or use taxes paid by him with respect to the same property to another state and any subdivision thereof. The credit shall be applied first against the amount of any use tax due the state, and any unused portion of the credit shall then be applied against the amount of any use tax due a subdivision.</div><div style="text-align:center;margin-top:4.5pt;">Exemption Certificates, Vendors May Rely.</div><div style="margin-top:4.5pt;text-indent:0.5in;">2. Whenever a vendor receives and accepts in good faith from a purchaser a resale or other exemption certificate or other written evidence of exemption authorized by the appropriate state or subdivision taxing authority, the vendor shall be relieved of liability for a sales or use tax with respect to the transaction.</div><div style="text-align:center;margin-top:4.5pt;">Article VI. The Commission.</div><div style="text-align:center;margin-top:4.5pt;">Organization and Management.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1.(a) The multistate tax commission is hereby established. It shall be composed of one "member" from each party state who shall be the head of the state agency charged with the administration of the types of taxes to which this compact applies. If there is more than one such agency the state shall provide by law for the selection of the commission member from the heads of the relevant agencies. State law may provide that a member of the commission be represented by an alternate but only if there is on file with the commission written notification of the designation and identity of the alternate. The attorney general of each party state or his designee, or other counsel if the laws of the party state specifically provide, shall be entitled to attend the meetings of the commission, but shall not vote. Such attorneys general, designees, or other counsel shall receive all notices of meetings required under paragraph 1(e) of this article.</div><div style="text-indent:0.5in;">(b) Each party state shall provide by law for the selection of representatives from its subdivisions affected by this compact to consult with the commission member from that state.</div><div style="text-indent:0.5in;">(c) Each member shall be entitled to one vote. The commission shall not act unless a majority of the members are present, and no action shall be binding unless approved by a majority of the total number of members.</div><div style="text-indent:0.5in;">(d) The commission shall adopt an official seal to be used as it may provide.</div><div style="text-indent:0.5in;">(e) The commission shall hold an annual meeting and such other regular meetings as its bylaws may provide and such special meetings as its executive committee may determine. The commission bylaws shall specify the dates of the annual and any other regular meetings, and shall provide for the giving of notice of annual, regular and special meetings. Notices of special meetings shall include the reasons therefor and an agenda of the items to be considered.</div><div style="text-indent:0.5in;">(f) The commission shall elect annually, from among its members, a chairman, a vice chairman and a treasurer. The commission shall appoint an executive director who shall serve at its pleasure, and it shall fix his duties and compensation. The executive director shall be secretary of the commission. The commission shall make provision for the bonding of such of its officers and employees as it may deem appropriate.</div><div style="text-indent:0.5in;">(g) Irrespective of the civil service, personnel or other merit system laws of any party state, the executive director shall appoint or discharge such personnel as may be necessary for the performance of the functions of the commission and shall fix their duties and compensation. The commission bylaws shall provide for personnel policies and programs.</div><div style="text-indent:0.5in;">(h) The commission may borrow, accept or contract for the services of personnel from any state, the United States, or any other governmental entity.</div><div style="text-indent:0.5in;">(i) The commission may accept for any of its purposes and functions any and all donations and grants of money, equipment, supplies, materials and services, conditional or otherwise, from any governmental entity, and may utilize and dispose of the same.</div><div style="text-indent:0.5in;">(j) The commission may establish one or more offices for the transacting of its business.</div><div style="text-indent:0.5in;">(k) The commission shall adopt bylaws for the conduct of its business. The commission shall publish its bylaws in convenient form, and shall file a copy of the bylaws and any amendments thereto with the appropriate agency or officer in each of the party states.</div><div style="text-indent:0.5in;">(l) The commission annually shall make to the governor and legislature of each party state a report covering its activities for the preceding year. Any donation or grant accepted by the commission or services borrowed shall be reported in the annual report of the commission, and shall include the nature, amount and conditions, if any, of the donation, gift, grant or services borrowed and the identity of the donor or lender. The commission may make additional reports as it may deem desirable.</div><div style="text-align:center;margin-top:4.5pt;">Committees.</div><div style="margin-top:4.5pt;text-indent:0.5in;">2.(a) To assist in the conduct of its business when the full commission is not meeting, the commission shall have an executive committee of seven members, including the chairman, vice chairman, treasurer and four other members elected annually by the commission. The executive committee, subject to the provisions of this compact and consistent with the policies of the commission, shall function as provided in the bylaws of the commission.</div><div style="text-indent:0.5in;">(b) The commission may establish advisory and technical committees, membership on which may include private persons and public officials, in furthering any of its activities. Such committees may consider any matter of concern to the commission, including problems of special interest to any party state and problems dealing with particular types of taxes.</div><div style="text-indent:0.5in;">(c) The commission may establish such additional committees as its bylaws may provide.</div><div style="text-align:center;margin-top:4.5pt;">Powers.</div><div style="margin-top:4.5pt;text-indent:0.5in;">3. In addition to powers conferred elsewhere in this compact, the commission shall have power to:</div><div style="text-indent:0.5in;">(a) Study state and local tax systems and particular types of state and local taxes.</div><div style="text-indent:0.5in;">(b) Develop and recommend proposals for an increase in uniformity or compatibility of state and local tax laws with a view toward encouraging the simplification and improvement of state and local tax law and administration.</div><div style="text-indent:0.5in;">(c) Compile and publish information as in its judgment would assist the party states in implementation of the compact and taxpayers in complying with state and local tax laws.</div><div style="text-indent:0.5in;">(d) Do all things necessary and incidental to the administration of its functions pursuant to this compact.</div><div style="text-align:center;margin-top:4.5pt;">Finance.</div><div style="margin-top:4.5pt;text-indent:0.5in;">4.(a) The commission shall submit to the governor or designated officer or officers of each party state a budget of its estimated expenditures for such period as may be required by the laws of that state for presentation to the legislature thereof.</div><div style="text-indent:0.5in;">(b) Each of the commission's budgets of estimated expenditures shall contain specific recommendations of the amounts to be appropriated by each of the party states. The total amount of appropriations requested under any such budget shall be apportioned among the party states as follows: one-tenth in equal shares; and the remainder in proportion to the amount of revenue collected by each party state and its subdivisions from income taxes, capital stock taxes, gross receipts taxes, sales and use taxes. In determining such amounts, the commission shall employ such available public sources of information as, in its judgment, present the most equitable and accurate comparisons among the party states. Each of the commission's budgets of estimated expenditures and requests for appropriations shall indicate the sources used in obtaining information employed in applying the formula contained in this paragraph.</div><div style="text-indent:0.5in;">(c) The commission shall not pledge the credit of any party state. The commission may meet any of its obligations in whole or in part with funds available to it under paragraph (1)(i) of this article: PROVIDED, That the commission takes specific action setting aside such funds prior to incurring any obligation to be met in whole or in part in such manner. Except where the commission makes use of funds available to it under paragraph 1(i), the commission shall not incur any obligation prior to the allotment of funds by the party states adequate to meet the same.</div><div style="text-indent:0.5in;">(d) The commission shall keep accurate accounts of all receipts and disbursements. The receipts and disbursements of the commission shall be subject to the audit and accounting procedures established under its bylaws. All receipts and disbursements of funds handled by the commission shall be audited yearly by a certified or licensed public accountant and the report of the audit shall be included in and become part of the annual report of the commission.</div><div style="text-indent:0.5in;">(e) The accounts of the commission shall be open at any reasonable time for inspection by duly constituted officers of the party states and by any persons authorized by the commission.</div><div style="text-indent:0.5in;">(f) Nothing contained in this article shall be construed to prevent commission compliance with laws relating to audit or inspection of accounts by or on behalf of any government contributing to the support of the commission.</div><div style="text-align:center;margin-top:4.5pt;">Article VII. Uniform Regulations and Forms.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1. Whenever any two or more party states, or subdivisions of party states, have uniform or similar provisions of law relating to an income tax, capital stock tax, gross receipts tax, sales or use tax, the commission may adopt uniform regulations for any phase of the administration of such law, including assertion of jurisdiction to tax, or prescribing uniform tax forms. The commission may also act with respect to the provisions of Article IV of this compact.</div><div style="text-indent:0.5in;">2. Prior to the adoption of any regulation, the commission shall:</div><div style="text-indent:0.5in;">(a) As provided in its bylaws, hold at least one public hearing on due notice to all affected party states and subdivisions thereof and to all taxpayers and other persons who have made timely request of the commission for advance notice of its regulation-making proceedings.</div><div style="text-indent:0.5in;">(b) Afford all affected party states and subdivisions and interested persons an opportunity to submit relevant written data and views, which shall be considered fully by the commission.</div><div style="text-indent:0.5in;">3. The commission shall submit any regulations adopted by it to the appropriate officials of all party states and subdivisions to which they might apply. Each such state and subdivision shall consider any such regulation for adoption in accordance with its own laws and procedures.</div><div style="text-align:center;margin-top:4.5pt;">Article VIII. Interstate Audits.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1. This article shall be in force only in those party states that specifically provide therefor by statute.</div><div style="text-indent:0.5in;">2. Any party state or subdivision thereof desiring to make or participate in an audit of any accounts, books, papers, records or other documents may request the commission to perform the audit on its behalf. In responding to the request, the commission shall have access to and may examine, at any reasonable time, such accounts, books, papers, records, and other documents and any relevant property or stock of merchandise. The commission may enter into agreements with party states or their subdivisions for assistance in performance of the audit. The commission shall make charges, to be paid by the state or local government or governments for which it performs the service, for any audits performed by it in order to reimburse itself for the actual costs incurred in making the audit.</div><div style="text-indent:0.5in;">3. The commission may require the attendance of any person within the state where it is conducting an audit or part thereof at a time and place fixed by it within such state for the purpose of giving testimony with respect to any account, book, paper, document, other record, property or stock of merchandise being examined in connection with the audit. If the person is not within the jurisdiction, he may be required to attend for such purpose at any time and place fixed by the commission within the state of which he is a resident: PROVIDED, That such state has adopted this article.</div><div style="text-indent:0.5in;">4. The commission may apply to any court having power to issue compulsory process for orders in aid of its powers and responsibilities pursuant to this article and any and all such courts shall have jurisdiction to issue such orders. Failure of any person to obey any such order shall be punishable as contempt of the issuing court. If the party or subject matter on account of which the commission seeks an order is within the jurisdiction of the court to which application is made, such application may be to a court in the state or subdivision on behalf of which the audit is being made or a court in the state in which the object of the order being sought is situated. The provisions of this paragraph apply only to courts in a state that has adopted this article.</div><div style="text-indent:0.5in;">5. The commission may decline to perform any audit requested if it finds that its available personnel or other resources are insufficient for the purpose or that, in the terms requested, the audit is impracticable of satisfactory performance. If the commission, on the basis of its experience, has reason to believe that an audit of a particular taxpayer, either at a particular time or on a particular schedule, would be of interest to a number of party states or their subdivisions, it may offer to make the audit or audits, the offer to be contingent on sufficient participation therein as determined by the commission.</div><div style="text-indent:0.5in;">6. Information obtained by any audit pursuant to this article shall be confidential and available only for tax purposes to party states, their subdivisions or the United States. Availability of information shall be in accordance with the laws of the states or subdivisions on whose account the commission performs the audit, and only through the appropriate agencies or officers of such states or subdivisions. Nothing in this article shall be construed to require any taxpayer to keep records for any period not otherwise required by law.</div><div style="text-indent:0.5in;">7. Other arrangements made or authorized pursuant to law for cooperative audit by or on behalf of the party states or any of their subdivisions are not superseded or invalidated by this article.</div><div style="text-indent:0.5in;">8. In no event shall the commission make any charge against a taxpayer for an audit.</div><div style="text-indent:0.5in;">9. As used in this article, "tax," in addition to the meaning ascribed to it in Article II, means any tax or license fee imposed in whole or in part for revenue purposes.</div><div style="text-align:center;margin-top:4.5pt;">Article IX. Arbitration.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1. Whenever the commission finds a need for settling disputes concerning apportionments and allocations by arbitration, it may adopt a regulation placing this article in effect, notwithstanding the provisions of Article VII.</div><div style="text-indent:0.5in;">2. The commission shall select and maintain an arbitration panel composed of officers and employees of state and local governments and private persons who shall be knowledgeable and experienced in matters of tax law and administration.</div><div style="text-indent:0.5in;">3. Whenever a taxpayer who has elected to employ Article IV, or whenever the laws of the party state or subdivision thereof are substantially identical with the relevant provisions of Article IV, the taxpayer, by written notice to the commission and to each party state or subdivision thereof that would be affected, may secure arbitration of an apportionment or allocation, if he is dissatisfied with the final administrative determination of the tax agency of the state or subdivision with respect thereto on the ground that it would subject him to double or multiple taxation by two or more party states or subdivisions thereof. Each party state and subdivision thereof hereby consents to the arbitration as provided herein, and agrees to be bound thereby.</div><div style="text-indent:0.5in;">4. The arbitration board shall be composed of one person selected by the taxpayer, one by the agency or agencies involved, and one member of the commission's arbitration panel. If the agencies involved are unable to agree on the person to be selected by them, such person shall be selected by lot from the total membership of the arbitration panel. The two persons selected for the board in the manner provided by the foregoing provisions of this paragraph shall jointly select the third member of the board. If they are unable to agree on the selection, the third member shall be selected by lot from among the total membership of the arbitration panel. No member of a board selected by lot shall be qualified to serve if he is an officer or employee or is otherwise affiliated with any party to the arbitration proceeding. Residence within the jurisdiction of a party to the arbitration proceeding shall not constitute affiliation within the meaning of this paragraph.</div><div style="text-indent:0.5in;">5. The board may sit in any state or subdivision party to the proceeding, in the state of the taxpayer's incorporation, residence or domicile, in any state where the taxpayer does business, or in any place that it finds most appropriate for gaining access to evidence relevant to the matter before it.</div><div style="text-indent:0.5in;">6. The board shall give due notice of the times and places of its hearings. The parties shall be entitled to be heard, to present evidence, and to examine and cross-examine witnesses. The board shall act by majority vote.</div><div style="text-indent:0.5in;">7. The board shall have power to administer oaths, take testimony, subpoena and require the attendance of witnesses and the production of accounts, books, papers, records, and other documents, and issue commissions to take testimony. Subpoenas may be signed by any member of the board. In case of failure to obey a subpoena, and upon application by the board, any judge of a court of competent jurisdiction of the state in which the board is sitting or in which the person to whom the subpoena is directed may be found may make an order requiring compliance with the subpoena, and the court may punish failure to obey the order as a contempt. The provisions of this paragraph apply only in states that have adopted this article.</div><div style="text-indent:0.5in;">8. Unless the parties otherwise agree the expenses and other costs of the arbitration shall be assessed and allocated among the parties by the board in such manner as it may determine. The commission shall fix a schedule of compensation for members of arbitration boards and of other allowable expenses and costs. No officer or employee of a state or local government who serves as a member of a board shall be entitled to compensation therefor unless he is required on account of his service to forego the regular compensation attaching to his public employment, but any such board member shall be entitled to expenses.</div><div style="text-indent:0.5in;">9. The board shall determine the disputed apportionment or allocation and any matters necessary thereto. The determinations of the board shall be final for purposes of making the apportionment or allocation, but for no other purpose.</div><div style="text-indent:0.5in;">10. The board shall file with the commission and with each tax agency represented in the proceeding: the determination of the board; the board's written statement of its reasons therefor; the record of the board's proceedings; and any other documents required by the arbitration rules of the commission to be filed.</div><div style="text-indent:0.5in;">11. The commission shall publish the determinations of boards together with the statements of the reasons therefor.</div><div style="text-indent:0.5in;">12. The commission shall adopt and publish rules of procedure and practice and shall file a copy of such rules and of any amendment thereto with the appropriate agency or officer in each of the party states.</div><div style="text-indent:0.5in;">13. Nothing contained herein shall prevent at any time a written compromise of any matter or matters in dispute, if otherwise lawful, by the parties to the arbitration proceeding.</div><div style="text-align:center;margin-top:4.5pt;">Article X. Entry into Force</div><div style="text-align:center;">and Withdrawal.</div><div style="margin-top:4.5pt;text-indent:0.5in;">1. This compact shall enter into force when enacted into law by any seven states. Thereafter, this compact shall become effective as to any other state upon its enactment thereof. The commission shall arrange for notification of all party states whenever there is a new enactment of the compact.</div><div style="text-indent:0.5in;">2. Any party state may withdraw from this compact by enacting a statute repealing the same. No withdrawal shall affect any liability already incurred by or chargeable to a party state prior to the time of such withdrawal.</div><div style="text-indent:0.5in;">3. No proceeding commenced before an arbitration board prior to the withdrawal of a state and to which the withdrawing state or any subdivision thereof is a party shall be discontinued or terminated by the withdrawal, nor shall the board thereby lose jurisdiction over any of the parties to the proceeding necessary to make a binding determination therein.</div><div style="text-align:center;margin-top:4.5pt;">Article XI. Effect on Other Laws</div><div style="text-align:center;">and Jurisdiction.</div><div style="margin-top:4.5pt;text-indent:0.5in;">Nothing in this compact shall be construed to:</div><div style="text-indent:0.5in;">(a) Affect the power of any state or subdivision thereof to fix rates of taxation, except that a party state shall be obligated to implement Article III 2 of this compact.</div><div style="text-indent:0.5in;">(b) Apply to any tax or fixed fee imposed for the registration of a motor vehicle or any tax on motor fuel, other than a sales tax: PROVIDED, That the definition of "tax" in Article VIII 9 may apply for the purposes of that article and the commission's powers of study and recommendation pursuant to Article VI 3 may apply.</div><div style="text-indent:0.5in;">(c) Withdraw or limit the jurisdiction of any state or local court or administrative officer or body with respect to any person, corporation or other entity or subject matter, except to the extent that such jurisdiction is expressly conferred by or pursuant to this compact upon another agency or body.</div><div style="text-indent:0.5in;">(d) Supersede or limit the jurisdiction of any court of the United States.</div><div style="text-align:center;margin-top:4.5pt;">Article XII. Construction and Severability.</div><div style="margin-top:4.5pt;text-indent:0.5in;">This compact shall be liberally construed so as to effectuate the purposes thereof. The provisions of this compact shall be severable and if any phrase, clause, sentence or provision of this compact is declared to be contrary to the Constitution of any state or of the United States or the applicability thereof to any government, agency, person or circumstance is held invalid, the validity of the remainder of this compact and the applicability thereof to any government, agency, person or circumstance shall not be affected thereby. If this compact shall be held contrary to the Constitution of any state participating therein, the compact shall remain in full force and effect as to the remaining party states and in full force and effect as to the state affected as to all severable matters.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1967c125.pdf?cite=1967 c 125 § 1'>1967 c 125 § 1</a>.]</div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

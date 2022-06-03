@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 17.21.020: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=17.21.020" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="j+I/PuVYSOGG861iL3ZoFH1cBgJLkkntKUw2OskxT7dMkplNVNCSifDx9kVy61SKf9L2CO9S1mi9iTH2RWxmbvQFyvV0DkGwRU270YEOrOUHEk90/fROTplIAFI6+gppI3DarhaEMgRm8xOUQqUJ7jlp/tzNCpMOIq2lSSmXs7MspRkkVHTY6k5bkBXO1KGcWxpsCoMzh4JiDqluHVNdelj7YhX8qroiQyxkh5BCSd7c6bS/ctx8TOXsg+NpcQDc7+gyWWYjUnbmMFRkUXAN9XvQlg56PrOHJLpZ0obN0jaFel9MHDKml8unFWPDrgg4qcRvz+jD80YYOuqq8DC/Iw==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=17">Title 17</a> > <a href="default.aspx?cite=17.21">Chapter 17.21</a> > <a href="default.aspx?cite=17.21.020">Section 17.21.020</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=17.21.010">17.21.010</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        17.21.020&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=17.21.030">17.21.030</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.21.020'>17.21.020</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">Unless the context clearly requires otherwise, the definitions in this section apply throughout this chapter.</div><div style="text-indent:0.5in;">(1) "Agricultural commodity" means any plant or part of a plant, or animal, or animal product, produced by a person (including farmers, ranchers, vineyardists, plant propagators, Christmas tree growers, aquaculturists, floriculturists, orchardists, foresters, or other comparable persons) primarily for sale, consumption, propagation, or other use by people or animals.</div><div style="text-indent:0.5in;">(2) "Agricultural land" means land on which an agricultural commodity is produced or land that is in a government-recognized conservation reserve program. This definition does not apply to private gardens where agricultural commodities are produced for personal consumption.</div><div style="text-indent:0.5in;">(3) "Antimicrobial pesticide" means a pesticide that is used for the control of microbial pests, including but not limited to viruses, bacteria, algae, and protozoa, and is intended for use as a disinfectant or sanitizer.</div><div style="text-indent:0.5in;">(4) "Apparatus" means any type of ground, water, or aerial equipment, device, or contrivance using motorized, mechanical, or pressurized power and used to apply any pesticide on land and anything that may be growing, habitating, or stored on or in such land, but shall not include any pressurized handsized household device used to apply any pesticide, or any equipment, device, or contrivance of which the person who is applying the pesticide is the source of power or energy in making such pesticide application, or any other small equipment, device, or contrivance that is transported in a piece of equipment licensed under this chapter as an apparatus.</div><div style="text-indent:0.5in;">(5) "Arthropod" means any invertebrate animal that belongs to the phylum arthropoda, which in addition to insects, includes allied classes whose members are wingless and usually have more than six legs; for example, spiders, mites, ticks, centipedes, and isopod crustaceans.</div><div style="text-indent:0.5in;">(6) "Certified applicator" means any individual who is licensed as a commercial pesticide applicator, commercial pesticide operator, public operator, private-commercial applicator, demonstration and research applicator, private applicator, limited private applicator, rancher private applicator, or any other individual who is certified by the director to use or supervise the use of any pesticide which is classified by the EPA or the director as a restricted use pesticide.</div><div style="text-indent:0.5in;">(7) "Commercial pesticide applicator" means any person who engages in the business of applying pesticides to the land of another.</div><div style="text-indent:0.5in;">(8) "Commercial pesticide operator" means any employee of a commercial pesticide applicator who uses or supervises the use of any pesticide and who is required to be licensed under provisions of this chapter.</div><div style="text-indent:0.5in;">(9) "Defoliant" means any substance or mixture of substances intended to cause the leaves or foliage to drop from a plant with or without causing abscission.</div><div style="text-indent:0.5in;">(10) "Department" means the Washington state department of agriculture.</div><div style="text-indent:0.5in;">(11) "Desiccant" means any substance or mixture of substances intended to artificially accelerate the drying of plant tissues.</div><div style="text-indent:0.5in;">(12) "Device" means any instrument or contrivance intended to trap, destroy, control, repel, or mitigate pests, but not including equipment used for the application of pesticides when sold separately from the pesticides.</div><div style="text-indent:0.5in;">(13) "Direct supervision" by certified private applicators shall mean that the designated restricted use pesticide shall be applied for purposes of producing any agricultural commodity on land owned or rented by the applicator or the applicator's employer, by a competent person acting under the instructions and control of a certified private applicator who is available if and when needed, even though such certified private applicator is not physically present at the time and place the pesticide is applied. The certified private applicator shall have direct management responsibility and familiarity of the pesticide, manner of application, pest, and land to which the pesticide is being applied. Direct supervision by all other certified applicators means direct on-the-job supervision and shall require that the certified applicator be physically present at the application site and that the person making the application be in voice and visual contact with the certified applicator at all times during the application. However, direct supervision for forest application does not require constant voice and visual contact when general use pesticides are applied using nonapparatus type equipment, the certified applicator is physically present and readily available in the immediate application area, and the certified applicator directly observes pesticide mixing and batching. Direct supervision of an aerial apparatus means the pilot of the aircraft must be appropriately certified.</div><div style="text-indent:0.5in;">(14) "Director" means the director of the department or a duly authorized representative.</div><div style="text-indent:0.5in;">(15) "Engage in business" means any application of pesticides by any person upon lands or crops of another.</div><div style="text-indent:0.5in;">(16) "EPA" means the United States environmental protection agency.</div><div style="text-indent:0.5in;">(17) "EPA restricted use pesticide" means any pesticide classified for restricted use by the administrator, EPA.</div><div style="text-indent:0.5in;">(18) "FIFRA" means the federal insecticide, fungicide and rodenticide act as amended (61 Stat. 163, 7 U.S.C. Sec. 136 et seq.).</div><div style="text-indent:0.5in;">(19) "Forest application" means the application of pesticides to agricultural land used to grow trees for the commercial production of wood or wood fiber for products such as dimensional lumber, shakes, plywood, poles, posts, pilings, particle board, hardboard, oriented strand board, pulp, paper, cardboard, or other similar products.</div><div style="text-indent:0.5in;">(20) "Fumigant" means any pesticide product or combination of products that is a vapor or gas or forms a vapor or gas on application and whose method of pesticidal action is through the gaseous state.</div><div style="text-indent:0.5in;">(21) "Fungi" means all nonchlorophyll-bearing thallophytes (all nonchlorophyll-bearing plants of lower order than mosses and liverworts); for example, rusts, smuts, mildews, molds, and yeasts, except those on or in a living person or other animals.</div><div style="text-indent:0.5in;">(22) "Fungicide" means any substance or mixture of substances intended to prevent, destroy, repel, or mitigate any fungi.</div><div style="text-indent:0.5in;">(23) "Herbicide" means any substance or mixture of substances intended to prevent, destroy, repel, or mitigate any weed or other higher plant.</div><div style="text-indent:0.5in;">(24) "Immediate service call" means a landscape application to satisfy an emergency customer request for service, or a treatment to control a pest to landscape plants.</div><div style="text-indent:0.5in;">(25) "Insect" means any small invertebrate animal, in any life stage, whose adult form is segmented and which generally belongs to the class insecta, comprised of six-legged, usually winged forms, as, for example, beetles, bugs, bees, and flies. The term insect shall also apply to other allied classes of arthropods whose members are wingless and usually have more than six legs, for example, spiders, mites, ticks, centipedes, and isopod crustaceans.</div><div style="text-indent:0.5in;">(26) "Insecticide" means any substance or mixture of substances intended to prevent, destroy, repel, or mitigate any insect.</div><div style="text-indent:0.5in;">(27) "Land" means all land and water areas, including airspace and all plants, animals, structures, buildings, devices, and contrivances, appurtenant to or situated on, fixed or mobile, including any used for transportation.</div><div style="text-indent:0.5in;">(28) "Landscape application" means an application of any EPA registered pesticide to any exterior landscape area around residential property, commercial properties such as apartments or shopping centers, parks, golf courses, schools including nursery schools and licensed day cares, or cemeteries or similar areas. This definition shall not apply to: (a) Applications made by private applicators, limited private applicators, or rancher private applicators; (b) mosquito abatement, gypsy moth eradication, or similar wide-area pest control programs sponsored by governmental entities; and (c) commercial pesticide applicators making structural applications.</div><div style="text-indent:0.5in;">(29) "Limited private applicator" means a certified applicator who uses or is in direct supervision, as defined for private applicators in this section, of the use of any herbicide classified by the EPA or the director as a restricted use pesticide, for the sole purpose of controlling weeds on nonproduction agricultural land owned or rented by the applicator or the applicator's employer. Limited private applicators may also use restricted use pesticides on timber areas, excluding aquatic sites, to control weeds designated for mandatory control under chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.04'>17.04</a>, 17.06, and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.10'>17.10</a> RCW and state and local regulations adopted under chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.04'>17.04</a>, 17.06, and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.10'>17.10</a> RCW. A limited private applicator may apply restricted use herbicides to the types of land described in this subsection of another person if applied without compensation other than trading of personal services between the applicator and the other person. This license is only valid when making applications in counties of Washington located east of the crest of the Cascade mountains.</div><div style="text-indent:0.5in;">(30) "Limited production agricultural land" means land used to grow hay and grain crops that are consumed by the livestock on the farm where produced. No more than ten percent of the hay and grain crops grown on limited production agricultural land may be sold each crop year. Limited production agricultural land does not include aquatic sites.</div><div style="text-indent:0.5in;">(31) "Nematocide" means any substance or mixture of substances intended to prevent, destroy, repel, or mitigate nematodes.</div><div style="text-indent:0.5in;">(32) "Nematode" means any invertebrate animal of the phylum nemathelminthes and class nematoda, that is, unsegmented round worms with elongated, fusiform, or saclike bodies covered with cuticle, and inhabiting soil, water, plants or plant parts. Nematodes may also be called nemas or eelworms.</div><div style="text-indent:0.5in;">(33) "Nonproduction agricultural land" means pastures, rangeland, fencerows, and areas around farm buildings but not aquatic sites.</div><div style="text-indent:0.5in;">(34) "Person" means any individual, partnership, association, corporation, or organized group of persons whether or not incorporated.</div><div style="text-indent:0.5in;">(35) "Pest" means, but is not limited to, any insect, rodent, nematode, snail, slug, weed, and any form of plant or animal life or virus, except virus, bacteria, or other microorganisms on or in a living person or other animal or in or on processed food or beverages or pharmaceuticals, which is normally considered to be a pest, or which the director may declare to be a pest.</div><div style="text-indent:0.5in;">(36) "Pesticide" means, but is not limited to:</div><div style="text-indent:0.5in;">(a) Any substance or mixture of substances intended to prevent, destroy, control, repel, or mitigate any pest;</div><div style="text-indent:0.5in;">(b) Any substance or mixture of substances intended to be used as a plant regulator, defoliant or desiccant; and</div><div style="text-indent:0.5in;">(c) Any spray adjuvant as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=15.58.030'>15.58.030</a>.</div><div style="text-indent:0.5in;">(37) "Plant regulator" means any substance or mixture of substances intended through physiological action, to accelerate or retard the rate of growth or maturation, or to otherwise alter the behavior of ornamental or crop plants or their produce, but shall not include substances insofar as they are intended to be used as plant nutrients, trace elements, nutritional chemicals, plant inoculants, or soil amendments.</div><div style="text-indent:0.5in;">(38) "Private applicator" means a certified applicator who uses or is in direct supervision of the use of any pesticide classified by the EPA or the director as a restricted use pesticide, for the purposes of producing any agricultural commodity and for any associated noncrop application on land owned or rented by the applicator or the applicator's employer or if applied without compensation other than trading of personal services between producers of agricultural commodities on the land of another person.</div><div style="text-indent:0.5in;">(39) "Private-commercial applicator" means a certified applicator who uses or supervises the use of any pesticide classified by the EPA or the director as a restricted use pesticide for purposes other than the production of any agricultural commodity on lands owned or rented by the applicator or the applicator's employer.</div><div style="text-indent:0.5in;">(40) "Rancher private applicator" means a certified applicator who uses or is in direct supervision, as defined for private applicators in this section, of the use of any herbicide or any rodenticide classified by the EPA or the director as a restricted use pesticide for the purpose of controlling weeds and pest animals on nonproduction agricultural land and limited production agricultural land owned or rented by the applicator or the applicator's employer. Rancher private applicators may also use restricted use pesticides on timber areas, excluding aquatic sites, to control weeds designated for mandatory control under chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.04'>17.04</a>, 17.06, and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.10'>17.10</a> RCW and state and local regulations adopted under chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.04'>17.04</a>, 17.06, and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.10'>17.10</a> RCW. A rancher private applicator may apply restricted use herbicides and rodenticides to the types of land described in this subsection of another person if applied without compensation other than trading of personal services between the applicator and the other person. This license is only valid when making applications in counties of Washington located east of the crest of the Cascade mountains.</div><div style="text-indent:0.5in;">(41) "Residential property" includes property less than one acre in size zoned as residential by a city, town, or county, but does not include property zoned as agricultural or agricultural homesites.</div><div style="text-indent:0.5in;">(42) "Restricted use pesticide" means any pesticide or device which, when used as directed or in accordance with a widespread and commonly recognized practice, the director determines, subsequent to a hearing, requires additional restrictions for that use to prevent unreasonable adverse effects on the environment including people, lands, beneficial insects, animals, crops, and wildlife, other than pests.</div><div style="text-indent:0.5in;">(43) "Rodenticide" means any substance or mixture of substances intended to prevent, destroy, repel, or mitigate rodents, or any other vertebrate animal which the director may declare by rule to be a pest.</div><div style="text-indent:0.5in;">(44) "School facility" means any facility used for licensed day care center purposes or for the purposes of a public kindergarten or public elementary or secondary school. School facility includes the buildings or structures, playgrounds, landscape areas, athletic fields, school vehicles, or any other area of school property.</div><div style="text-indent:0.5in;">(45) "Snails or slugs" include all harmful mollusks.</div><div style="text-indent:0.5in;">(46) "Unreasonable adverse effects on the environment" means any unreasonable risk to people or the environment taking into account the economic, social, and environmental costs and benefits of the use of any pesticide, or as otherwise determined by the director.</div><div style="text-indent:0.5in;">(47) "Weed" means any plant which grows where it is not wanted.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/2617-S2.SL.pdf?cite=2010 1st sp.s. c 7 § 134'>2010 1st sp.s. c 7 § 134</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/2300-S.SL.pdf?cite=2004 c 100 § 1'>2004 c 100 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/House/2809.SL.pdf?cite=2002 c 122 § 2'>2002 c 122 § 2</a>; (2002 c 122 § 1 expired July 1, 2002);  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/5533-S.SL.pdf?cite=2001 c 333 § 1'>2001 c 333 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/6100-S.SL.pdf?cite=1994 c 283 § 1'>1994 c 283 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1991-92/Pdf/Bills/Session Laws/Senate/6093.SL.pdf?cite=1992 c 176 § 1'>1992 c 176 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c380.pdf?cite=1989 c 380 § 33'>1989 c 380 § 33</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1979c92.pdf?cite=1979 c 92 § 1'>1979 c 92 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1971ex1c191.pdf?cite=1971 ex.s. c 191 § 1'>1971 ex.s. c 191 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1967c177.pdf?cite=1967 c 177 § 2'>1967 c 177 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1961c249.pdf?cite=1961 c 249 § 2'>1961 c 249 § 2</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2010 1st sp.s. c 26; 2010 1st sp.s. c 7:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.03.027'>43.03.027</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2004 c 100:</span> "This act takes effect January 1, 2005." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/2300-S.SL.pdf?cite=2004 c 100 § 7'>2004 c 100 § 7</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>2002 c 122:</span> "(1) Section 1 of this act is necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and takes effect immediately [March 26, 2002].</div><div style="text-indent:0.75in;">(2) Section 2 of this act takes effect July 1, 2002." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/House/2809.SL.pdf?cite=2002 c 122 § 3'>2002 c 122 § 3</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Expiration date<span style="font-family:times new roman;">—</span>2002 c 122 § 1:</span> "Section 1 of this act expires July 1, 2002." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/House/2809.SL.pdf?cite=2002 c 122 § 4'>2002 c 122 § 4</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2001 c 333:</span> "Except for *section 7 of this act, this act takes effect July 1, 2002." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/5533-S.SL.pdf?cite=2001 c 333 § 6'>2001 c 333 § 6</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">*Reviser's note:</span> Section 7 of this act was vetoed.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

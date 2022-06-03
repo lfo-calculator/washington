@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 11.98.070: Power of trustee.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=11.98.070" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="YKnJNG5rT24SpyjFZz4z0PyhmqQPHn2ARgSGjI7vvNGULQbHI0/oNDVxQVAjQ+aCIoX80mNLxdIbyfair7nn+a892SKrBeFgXDgqdcrePlc9T4LT6I4lewbJTuolD8UbKCH/xgsxPVGuyPD2tmIpZHmLRSg6bxAcfIIsfIEKo71vY63BkBW53auTCF0Ln2JzkDtk7efcZR2ZkbosY0mlBbnJWRGMHO7vpmyFtvXsJi9a47ztQf+UA9qViNz6n9yErxcYGB7R3eaOYVpF0HGSiBOVt/HnwGgMpc1F3nkfjx5bK1EyZpZWACSB9IHF8yANfKfnrpt34oRsoNE1+L7nZg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=11">Title 11</a> > <a href="default.aspx?cite=11.98">Chapter 11.98</a> > <a href="default.aspx?cite=11.98.070">Section 11.98.070</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=11.98.065">11.98.065</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        11.98.070&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=11.98.071">11.98.071</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.98.070'>11.98.070</a></h3></div><div><h3>Power of trustee.</h3></div><div><div style="text-indent:0.5in;">A trustee, or the trustees jointly, of a trust, in addition to the authority otherwise given by law, have discretionary power to acquire, invest, reinvest, exchange, sell, convey, control, divide, partition, and manage the trust property in accordance with the standards provided by law, and in so doing may:</div><div style="text-indent:0.5in;">(1) Receive property from any source as additions to the trust or any fund of the trust to be held and administered under the provisions of the trust;</div><div style="text-indent:0.5in;">(2) Sell on credit;</div><div style="text-indent:0.5in;">(3) Grant, purchase or exercise options;</div><div style="text-indent:0.5in;">(4) Sell or exercise subscriptions to stock or other corporate securities and to exercise conversion rights;</div><div style="text-indent:0.5in;">(5) Deposit stock or other corporate securities with any protective or other similar committee;</div><div style="text-indent:0.5in;">(6) Assent to corporate sales, leases, and encumbrances;</div><div style="text-indent:0.5in;">(7) Vote trust securities in person or by proxy with power of substitution; and enter into voting trusts;</div><div style="text-indent:0.5in;">(8) Register and hold any stocks, securities, or other property in the name of a nominee or nominees without mention of the trust relationship, provided the trustee or trustees are liable for any loss occasioned by the acts of any nominee, except that this subsection shall not apply to situations covered by subsection (31) of this section;</div><div style="text-indent:0.5in;">(9) Grant leases of trust property, with or without options to purchase or renew, to begin within a reasonable period and for terms within or extending beyond the duration of the trust, for any purpose including exploration for and removal of oil, gas and other minerals; enter into community oil leases, pooling and unitization agreements;</div><div style="text-indent:0.5in;">(10) Subdivide, develop, dedicate to public use, make or obtain the vacation of public plats, adjust boundaries, partition real property, and on exchange or partition to adjust differences in valuation by giving or receiving money or money's worth;</div><div style="text-indent:0.5in;">(11) Compromise or submit claims to arbitration;</div><div style="text-indent:0.5in;">(12) Borrow money, secured or unsecured, from any source, including a corporate trustee's banking department, or from the individual trustee's own funds;</div><div style="text-indent:0.5in;">(13) Make loans, either secured or unsecured, at such interest as the trustee may determine to any person, including any beneficiary of a trust, except that no trustee who is a beneficiary of a trust may participate in decisions regarding loans to such beneficiary from the trust and then only to the extent of the loan, and also except that if a beneficiary or the grantor of a trust has the power to change a trustee of the trust, the power to loan shall be limited to loans at a reasonable rate of interest and for adequate security;</div><div style="text-indent:0.5in;">(14) Determine the hazards to be insured against and maintain insurance for them;</div><div style="text-indent:0.5in;">(15) Select any part of the trust estate in satisfaction of any partition or distribution, in kind, in money or both; make nonpro rata distributions of property in kind; allocate particular assets or portions of them or undivided interests in them to any one or more of the beneficiaries without regard to the income tax basis of specific property allocated to any beneficiary and without any obligation to make an equitable adjustment;</div><div style="text-indent:0.5in;">(16)(a) Pay an amount distributable to a beneficiary who is under a legal disability or who the trustee reasonably believes is incapacitated, by paying it directly to the beneficiary or applying it for the beneficiary's benefit, or by:</div><div style="text-indent:0.5in;">(i) Paying it to the beneficiary's guardian;</div><div style="text-indent:0.5in;">(ii) Paying it to the beneficiary's custodian under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.114'>11.114</a> RCW, and, for that purpose, creating a custodianship;</div><div style="text-indent:0.5in;">(iii) If the trustee does not know of a guardian or custodian, paying it to an adult relative or other person having legal or physical care or custody of the beneficiary, with instructions to expend the funds on the beneficiary's behalf; or</div><div style="text-indent:0.5in;">(iv) Managing it as a separate fund on the beneficiary's behalf, subject to the beneficiary's continuing right to withdraw the distribution.</div><div style="text-indent:0.5in;">(b) If the trustee pays any amount to a third party under (a)(i) through (iii) of this subsection, the trustee has no further obligations regarding the amounts so paid;</div><div style="text-indent:0.5in;">(17) Change the character of or abandon a trust asset or any interest in it;</div><div style="text-indent:0.5in;">(18) Mortgage, pledge the assets or the credit of the trust estate, or otherwise encumber trust property, including future income, whether an initial encumbrance or a renewal or extension of it, for a term within or extending beyond the term of the trust, in connection with the exercise of any power vested in the trustee;</div><div style="text-indent:0.5in;">(19) Make ordinary or extraordinary repairs or alterations in buildings or other trust property, demolish any improvements, raze existing structures, and make any improvements to trust property;</div><div style="text-indent:0.5in;">(20) Create restrictions, easements, including easements to public use without consideration, and other servitudes;</div><div style="text-indent:0.5in;">(21) Manage any business interest, including any farm or ranch interest, regardless of form, received by the trustee from the trustor of the trust, as a result of the death of a person, or by gratuitous transfer from any other transferor, and with respect to the business interest, have the following powers:</div><div style="text-indent:0.5in;">(a) To hold, retain, and continue to operate that business interest solely at the risk of the trust, without need to diversify and without liability on the part of the trustee for any resulting losses;</div><div style="text-indent:0.5in;">(b) To enlarge or diminish the scope or nature or the activities of any business;</div><div style="text-indent:0.5in;">(c) To authorize the participation and contribution by the business to any employee benefit plan, whether or not qualified as being tax deductible, as may be desirable from time to time;</div><div style="text-indent:0.5in;">(d) To use the general assets of the trust for the purpose of the business and to invest additional capital in or make loans to such business;</div><div style="text-indent:0.5in;">(e) To endorse or guarantee on behalf of the trust any loan made to the business and to secure the loan by the trust's interest in the business or any other property of the trust;</div><div style="text-indent:0.5in;">(f) To leave to the discretion of the trustee the manner and degree of the trustee's active participation in the management of the business, and the trustee is authorized to delegate all or any part of the trustee's power to supervise, manage, or operate to such persons as the trustee may select, including any partner, associate, director, officer, or employee of the business; and also including electing or employing directors, officers, or employees of the trustee to take part in the management of the business as directors or officers or otherwise, and to pay that person reasonable compensation for services without regard to the fees payable to the trustee;</div><div style="text-indent:0.5in;">(g) To engage, compensate, and discharge or to vote for the engaging, compensating, and discharging of managers, employees, agents, lawyers, accountants, consultants, or other representatives, including anyone who may be a beneficiary of the trust or any trustee;</div><div style="text-indent:0.5in;">(h) To cause or agree that surplus be accumulated or that dividends be paid;</div><div style="text-indent:0.5in;">(i) To accept as correct financial or other statements rendered by any accountant for any sole proprietorship or by any partnership or corporation as to matters pertaining to the business except upon actual notice to the contrary;</div><div style="text-indent:0.5in;">(j) To treat the business as an entity separate from the trust, and in any accounting by the trustee it is sufficient if the trustee reports the earning and condition of the business in a manner conforming to standard business accounting practice;</div><div style="text-indent:0.5in;">(k) To exercise with respect to the retention, continuance, or disposition of any such business all the rights and powers that the trustor of the trust would have if alive at the time of the exercise, including all powers as are conferred on the trustee by law or as are necessary to enable the trustee to administer the trust in accordance with the instrument governing the trust, subject to any limitations provided for in the instrument; and</div><div style="text-indent:0.5in;">(l) To satisfy contractual and tort liabilities arising out of an unincorporated business, including any partnership, first out of the business and second out of the estate or trust, but in no event may there be a liability of the trustee, except as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.98.110'>11.98.110</a> (2) and (4), and if the trustee is liable, the trustee is entitled to indemnification from the business and the trust, respectively;</div><div style="text-indent:0.5in;">(22) Participate in the establishment of, and thereafter in the operation of, any business or other enterprise according to subsection (21) of this section except that the trustee shall not be relieved of the duty to diversify;</div><div style="text-indent:0.5in;">(23) Cause or participate in, directly or indirectly, the formation, reorganization, merger, consolidation, dissolution, or other change in the form of any corporate or other business undertaking where trust property may be affected and retain any property received pursuant to the change;</div><div style="text-indent:0.5in;">(24) Limit participation in the management of any partnership and act as a limited or general partner;</div><div style="text-indent:0.5in;">(25) Charge profits and losses of any business operation, including farm or ranch operation, to the trust estate as a whole and not to the trustee; make available to or invest in any business or farm operation additional moneys from the trust estate or other sources;</div><div style="text-indent:0.5in;">(26) Pay reasonable compensation to the trustee or co-trustees considering all circumstances including the time, effort, skill, and responsibility involved in the performance of services by the trustee and reimburse the trustee, with interest as appropriate, for expenses that were properly incurred in the administration of the trust;</div><div style="text-indent:0.5in;">(27) Engage persons, including lawyers, accountants, investment advisors, or agents, even if they are associated with the trustee, to advise or assist the trustee in the performance of the trustee's duties or to perform any act, subject to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.98.071'>11.98.071</a>;</div><div style="text-indent:0.5in;">(28) Appoint an ancillary trustee or agent to facilitate management of assets located in another state or foreign country;</div><div style="text-indent:0.5in;">(29) Retain and store such items of tangible personal property as the trustee selects and pay reasonable storage charges thereon from the trust estate;</div><div style="text-indent:0.5in;">(30) Issue proxies to any adult beneficiary of a trust for the purpose of voting stock of a corporation acting as the trustee of the trust;</div><div style="text-indent:0.5in;">(31) Place all or any part of the securities at any time held by the trustee in the care and custody of any bank, trust company, or member firm of the New York Stock Exchange with no obligation while the securities are so deposited to inspect or verify the same and with no responsibility for any loss or misapplication by the bank, trust company, or firm, so long as the bank, trust company, or firm was selected and retained with reasonable care, and have all stocks and registered securities placed in the name of the bank, trust company, or firm, or in the name of its nominee, and to appoint such bank, trust company, or firm agent as attorney to collect, receive, receipt for, and disburse any income, and generally may perform, but is under no requirement to perform, the duties and services incident to a so-called "custodian" account;</div><div style="text-indent:0.5in;">(32) Determine at any time that the corpus of any trust is insufficient to implement the intent of the trust, and upon this determination by the trustee, terminate the trust by distribution of the trust to the current income beneficiary or beneficiaries of the trust or their legal representatives, except that this determination may only be made by the trustee if the trustee is neither the grantor nor the beneficiary of the trust, and if the trust has no charitable beneficiary;</div><div style="text-indent:0.5in;">(33) Continue to be a party to any existing voting trust agreement or enter into any new voting trust agreement or renew an existing voting trust agreement with respect to any assets contained in trust;</div><div style="text-indent:0.5in;">(34)(a) Donate a qualified conservation easement, as defined by 26 U.S.C. Sec. 2031(c) of the federal internal revenue code, on any real property, or consent to the donation of a qualified conservation easement on any real property by a personal representative of an estate of which the trustee is a devisee, to obtain the benefit of the estate tax exclusion allowed under 26 U.S.C. Sec. 2031(c) of the federal internal revenue code or the deduction allowed under 26 U.S.C. Sec. 2055(f) of the federal internal revenue code as long as:</div><div style="text-indent:0.5in;">(i)(A) The governing instrument authorizes the donation of a qualified conservation easement on the real property; or</div><div style="text-indent:0.5in;">(B) Each beneficiary that may be affected by the qualified conservation easement consents to the donation under the provisions of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.96A'>11.96A</a> RCW; and</div><div style="text-indent:0.5in;">(ii) The donation of a qualified conservation easement will not result in the insolvency of the decedent's estate.</div><div style="text-indent:0.5in;">(b) The authority granted under this subsection includes the authority to amend a previously donated qualified conservation easement, as defined under 26 U.S.C. Sec. 2031(c)(8)(B) of the federal internal revenue code, and to amend a previously donated unqualified conservation easement for the purpose of making the easement a qualified conservation easement under 26 U.S.C. Sec. 2031(c)(8)(B);</div><div style="text-indent:0.5in;">(35) Pay or contest any claim, settle a claim by or against the trust, and release, in whole or in part, a claim belonging to the trust;</div><div style="text-indent:0.5in;">(36) Exercise elections with respect to federal, state, and local taxes;</div><div style="text-indent:0.5in;">(37) Prosecute or defend an action, claim, or judicial proceeding in any jurisdiction to protect trust property and the trustee in the performance of the trustee's duties;</div><div style="text-indent:0.5in;">(38) On termination of the trust, exercise the powers appropriate to wind up the administration of the trust and distribute the trust property to the persons entitled to it; and</div><div style="text-indent:0.5in;">(39) Select a mode of payment under any employee benefit or retirement plan, annuity, or life insurance payable to the trustee, exercise rights thereunder, including exercise of the right to indemnification for expenses and against liabilities, and take appropriate action to collect the proceeds.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5302.SL.pdf?cite=2015 c 115 § 2'>2015 c 115 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/1051-S.SL.pdf?cite=2011 c 327 § 26'>2011 c 327 § 26</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/6239-S.SL.pdf?cite=2010 c 8 § 2091'>2010 c 8 § 2091</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/6484.SL.pdf?cite=2002 c 66 § 1'>2002 c 66 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/5110-S.SL.pdf?cite=1997 c 252 § 75'>1997 c 252 § 75</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c40.pdf?cite=1989 c 40 § 7'>1989 c 40 § 7</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1985c30.pdf?cite=1985 c 30 § 50'>1985 c 30 § 50</a>. Prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1984c149.pdf?cite=1984 c 149 § 80'>1984 c 149 § 80</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1959c124.pdf?cite=1959 c 124 § 7'>1959 c 124 § 7</a>. Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=30.99.070'>30.99.070</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2011 c 327:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.103.020'>11.103.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Construction<span style="font-family:times new roman;">—</span>1989 c 40:</span> "(1) The amendments made in this act with respect to the excise tax imposed under section 4980A(d) of the Internal Revenue Code of 1986, as amended, are to be effective as to excise tax imposed by reason of a decedent's death occurring after April 18, 1989.</div><div style="text-indent:0.75in;">(2) The amendments made in this act regarding apportionment of the tax with respect to qualified real property, and regarding extensions to pay tax, shall be effective with respect to the tax attributable to deaths occurring after April 18, 1989.</div><div style="text-indent:0.75in;">(3) The amendment to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.98.070'>11.98.070</a>(13) shall be effective with respect to loans described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=83.110.020'>83.110.020</a>(2) made or committed to be made after April 18, 1989." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c40.pdf?cite=1989 c 40 § 8'>1989 c 40 § 8</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1989 c 40:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c40.pdf?cite=1989 c 40 § 9'>1989 c 40 § 9</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Short title<span style="font-family:times new roman;">—</span>Application<span style="font-family:times new roman;">—</span>Purpose<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1985 c 30:</span>See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.02.900'>11.02.900</a> through  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.02.903'>11.02.903</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>Effective dates<span style="font-family:times new roman;">—</span>1984 c 149:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.02.005'>11.02.005</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

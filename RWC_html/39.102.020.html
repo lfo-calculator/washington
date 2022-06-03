@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 39.102.020: Definitions. (Expires June 30, 2044.)
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=39.102.020" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="y+p+J4PC6cqfYM881YDTsYURqZCR+LFODTYXrTXYRvK1jcYGH1+Y10V1kVfa+z9ou7pE1l/A4+zYRFUDYUKZd290n0RWJIWqTB+vdmo7Cf9jEXE6qzxsJJWU6mb+F8W7l9vd4tvdTs52kgHAqrj7oXuNFSQyJP6ASIxeiATOH763XvD+j/EJ+j964NDps72GUsg8vcmomQEMTmQJGdd+KmvAW9L5ZWGWCDjvudul5vlzwNLA7r5zLQrm3r1d5ZlKmF4BTLj4qZGtrO0fU38r2n0Rk7CE7Ck2EgBezIZ5/OjlgJXQbg5i4dod+h4E8qOANGy+wWvJo1xOq5Fi0RTGsQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=39">Title 39</a> > <a href="default.aspx?cite=39.102">Chapter 39.102</a> > <a href="default.aspx?cite=39.102.020">Section 39.102.020</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=39.102.010">39.102.010</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        39.102.020&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=39.102.030">39.102.030</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.020'>39.102.020</a></h3></div><div><h3>Definitions. <span style="font-style:italic;">(Expires June 30, 2044.)</span></h3></div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Annual state contribution limit" means seven million five hundred thousand dollars statewide per fiscal year.</div><div style="text-indent:0.5in;">(2) "Assessed value" means the valuation of taxable real property as placed on the last completed assessment roll.</div><div style="text-indent:0.5in;">(3) "Board" means the community economic revitalization board under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.160'>43.160</a> RCW.</div><div style="text-indent:0.5in;">(4) "Dedicated" means pledged, set aside, allocated, received, budgeted, or otherwise identified.</div><div style="text-indent:0.5in;">(5) "Demonstration project" means one of the following projects:</div><div style="text-indent:0.5in;">(a) Bellingham waterfront redevelopment project;</div><div style="text-indent:0.5in;">(b) Spokane river district project at Liberty Lake; and</div><div style="text-indent:0.5in;">(c) Vancouver riverwest project.</div><div style="text-indent:0.5in;">(6) "Department" means the department of revenue.</div><div style="text-indent:0.5in;">(7) "Fiscal year" means the twelve-month period beginning July 1st and ending the following June 30th.</div><div style="text-indent:0.5in;">(8) "Local excise tax allocation revenue" means an amount of local excise taxes equal to some or all of the sponsoring local government's local excise tax increment, amounts of local excise taxes equal to some or all of any participating local government's excise tax increment as agreed upon in the written agreement under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.080'>39.102.080</a>(1), or both, and dedicated to local infrastructure financing.</div><div style="text-indent:0.5in;">(9) "Local excise tax increment" means an amount equal to the estimated annual increase in local excise taxes in each calendar year following the approval of the revenue development area by the board from taxable activity within the revenue development area, as set forth in the application provided to the board under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.040'>39.102.040</a>, and updated in accordance with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.140'>39.102.140</a>(1)(f).</div><div style="text-indent:0.5in;">(10) "Local excise taxes" means local revenues derived from the imposition of sales and use taxes authorized in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.14.030'>82.14.030</a>.</div><div style="text-indent:0.5in;">(11) "Local government" means any city, town, county, port district, and any federally recognized Indian tribe.</div><div style="text-indent:0.5in;">(12) "Local infrastructure financing" means the use of revenues received from local excise tax allocation revenues, local property tax allocation revenues, other revenues from local public sources, and revenues received from the local option sales and use tax authorized in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.14.475'>82.14.475</a>, dedicated to pay either the principal and interest on bonds authorized under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.150'>39.102.150</a> or to pay public improvement costs on a pay-as-you-go basis subject to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.195'>39.102.195</a>, or both.</div><div style="text-indent:0.5in;">(13) "Local property tax allocation revenue" means those tax revenues derived from the receipt of regular property taxes levied on the property tax allocation revenue value and used for local infrastructure financing.</div><div style="text-indent:0.5in;">(14) "Low-income housing" means residential housing for low-income persons or families who lack the means which is necessary to enable them, without financial assistance, to live in decent, safe, and sanitary dwellings, without overcrowding. For the purposes of this subsection, "low income" means income that does not exceed eighty percent of the median family income for the standard metropolitan statistical area in which the revenue development area is located.</div><div style="text-indent:0.5in;">(15) "Ordinance" means any appropriate method of taking legislative action by a local government.</div><div style="text-indent:0.5in;">(16) "Participating local government" means a local government having a revenue development area within its geographic boundaries that has entered into a written agreement with a sponsoring local government as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.080'>39.102.080</a> to allow the use of all or some of its local excise tax allocation revenues or other revenues from local public sources dedicated for local infrastructure financing.</div><div style="text-indent:0.5in;">(17) "Participating taxing district" means a local government having a revenue development area within its geographic boundaries that has entered into a written agreement with a sponsoring local government as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.080'>39.102.080</a> to allow the use of some or all of its local property tax allocation revenues or other revenues from local public sources dedicated for local infrastructure financing.</div><div style="text-indent:0.5in;">(18) "Permanently affordable housing" means housing, regardless of ownership, for which there is a legally binding, recorded document in effect that limits the price at which the owner may sell or restricts the occupancy of the unit to a qualified, low-income household, for a period of at least forty years for a property used for shelter or rental housing, or for a period of at least twenty-five years for a property to be owned by a low-income household. These documents include, but are not limited to, affordability covenants, deed restrictions, and community land trust leases. Resale restrictions exercised by providers of permanently affordable housing can include, but are not limited to:</div><div style="text-indent:0.5in;">(a) Continuous ownership of land by a public entity or nonprofit housing provider with a lease allowing ownership of the structure by an income-eligible household;</div><div style="text-indent:0.5in;">(b) A nonpossessory interest or right in real property, such as a deed restriction, restrictive covenant, resale restriction[,] or other contractual agreement, that ensures affordability.</div><div style="text-indent:0.5in;">(19) "Property tax allocation revenue base value" means the assessed value of real property located within a revenue development area less the property tax allocation revenue value.</div><div style="text-indent:0.5in;">(20)(a)(i) "Property tax allocation revenue value" means seventy-five percent of any increase in the assessed value of real property in a revenue development area resulting from:</div><div style="text-indent:0.5in;">(A) The placement of new construction, improvements to property, or both, on the assessment roll, where the new construction and improvements are initiated after the revenue development area is approved by the board;</div><div style="text-indent:0.5in;">(B) The cost of new housing construction, conversion, and rehabilitation improvements, when such cost is treated as new construction for purposes of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.55'>84.55</a> RCW as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.14.020'>84.14.020</a>, and the new housing construction, conversion, and rehabilitation improvements are initiated after the revenue development area is approved by the board;</div><div style="text-indent:0.5in;">(C) The cost of rehabilitation of historic property, when such cost is treated as new construction for purposes of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.55'>84.55</a> RCW as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.26.070'>84.26.070</a>, and the rehabilitation is initiated after the revenue development area is approved by the board.</div><div style="text-indent:0.5in;">(ii) Increases in the assessed value of real property in a revenue development area resulting from (a)(i)(A) through (C) of this subsection are included in the property tax allocation revenue value in the initial year. These same amounts are also included in the property tax allocation revenue value in subsequent years unless the property becomes exempt from property taxation.</div><div style="text-indent:0.5in;">(b) "Property tax allocation revenue value" includes seventy-five percent of any increase in the assessed value of new construction consisting of an entire building in the years following the initial year, unless the building becomes exempt from property taxation.</div><div style="text-indent:0.5in;">(c) Except as provided in (b) of this subsection, "property tax allocation revenue value" does not include any increase in the assessed value of real property after the initial year.</div><div style="text-indent:0.5in;">(d) There is no property tax allocation revenue value if the assessed value of real property in a revenue development area has not increased as a result of any of the reasons specified in (a)(i)(A) through (C) of this subsection.</div><div style="text-indent:0.5in;">(e) For purposes of this subsection, "initial year" means:</div><div style="text-indent:0.5in;">(i) For new construction and improvements to property added to the assessment roll, the year during which the new construction and improvements are initially placed on the assessment roll;</div><div style="text-indent:0.5in;">(ii) For the cost of new housing construction, conversion, and rehabilitation improvements, when such cost is treated as new construction for purposes of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.55'>84.55</a> RCW, the year when such cost is treated as new construction for purposes of levying taxes for collection in the following year; and</div><div style="text-indent:0.5in;">(iii) For the cost of rehabilitation of historic property, when such cost is treated as new construction for purposes of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.55'>84.55</a> RCW, the year when such cost is treated as new construction for purposes of levying taxes for collection in the following year.</div><div style="text-indent:0.5in;">(21) "Public improvement costs" means the cost of: (a) Design, planning, acquisition including land acquisition, site preparation including land clearing, construction, reconstruction, rehabilitation, improvement, and installation of public improvements; (b) demolishing, relocating, maintaining, and operating property pending construction of public improvements; (c) the local government's portion of relocating utilities as a result of public improvements; (d) financing public improvements, including interest during construction, legal and other professional services, taxes, insurance, principal and interest costs on general indebtedness issued to finance public improvements, and any necessary reserves for general indebtedness; (e) assessments incurred in revaluing real property for the purpose of determining the property tax allocation revenue base value that are in excess of costs incurred by the assessor in accordance with the revaluation plan under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.41'>84.41</a> RCW, and the costs of apportioning the taxes and complying with this chapter and other applicable law; (f) administrative expenses and feasibility studies reasonably necessary and related to these costs; and (g) any of the above-described costs that may have been incurred before adoption of the ordinance authorizing the public improvements and the use of local infrastructure financing to fund the costs of the public improvements.</div><div style="text-indent:0.5in;">(22) "Public improvements" means:</div><div style="text-indent:0.5in;">(a) Infrastructure improvements within the revenue development area that include:</div><div style="text-indent:0.5in;">(i) Street, bridge, and road construction and maintenance, including highway interchange construction;</div><div style="text-indent:0.5in;">(ii) Water and sewer system construction and improvements, including wastewater reuse facilities;</div><div style="text-indent:0.5in;">(iii) Sidewalks, traffic controls, and streetlights;</div><div style="text-indent:0.5in;">(iv) Parking, terminal, and dock facilities;</div><div style="text-indent:0.5in;">(v) Park and ride facilities of a transit authority;</div><div style="text-indent:0.5in;">(vi) Park facilities and recreational areas, including trails; and</div><div style="text-indent:0.5in;">(vii) Stormwater and drainage management systems;</div><div style="text-indent:0.5in;">(b) Expenditures for facilities and improvements that support affordable housing as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.63A.510'>43.63A.510</a>; and</div><div style="text-indent:0.5in;">(c) Expenditures to purchase, rehabilitate, retrofit for energy efficiency, and construct housing for the purpose of creating or preserving permanently affordable housing.</div><div style="text-indent:0.5in;">(23) "Real property" has the same meaning as in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.04.090'>84.04.090</a> and also includes any privately owned improvements located on publicly owned land that are subject to property taxation.</div><div style="text-indent:0.5in;">(24) "Regular property taxes" means regular property taxes as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.04.140'>84.04.140</a>, except: (a) Regular property taxes levied by public utility districts specifically for the purpose of making required payments of principal and interest on general indebtedness; (b) regular property taxes levied by the state for the support of the common schools under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.52.065'>84.52.065</a>; and (c) regular property taxes authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.55.050'>84.55.050</a> that are limited to a specific purpose. "Regular property taxes" do not include excess property tax levies that are exempt from the aggregate limits for junior and senior taxing districts as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.52.043'>84.52.043</a>.</div><div style="text-indent:0.5in;">(25) "Relocating a business" means the closing of a business and the reopening of that business, or the opening of a new business that engages in the same activities as the previous business, in a different location within a one-year period, when an individual or entity has an ownership interest in the business at the time of closure and at the time of opening or reopening. "Relocating a business" does not include the closing and reopening of a business in a new location where the business has been acquired and is under entirely new ownership at the new location, or the closing and reopening of a business in a new location as a result of the exercise of the power of eminent domain.</div><div style="text-indent:0.5in;">(26) "Revenue development area" means the geographic area adopted by a sponsoring local government and approved by the board, from which local excise and property tax allocation revenues are derived for local infrastructure financing.</div><div style="text-indent:0.5in;">(27)(a) "Revenues from local public sources" means:</div><div style="text-indent:0.5in;">(i) Amounts of local excise tax allocation revenues and local property tax allocation revenues, dedicated by sponsoring local governments, participating local governments, and participating taxing districts, for local infrastructure financing; and</div><div style="text-indent:0.5in;">(ii) Any other local revenues, except as provided in (b) of this subsection, including revenues derived from federal and private sources.</div><div style="text-indent:0.5in;">(b) Revenues from local public sources do not include any local funds derived from state grants, state loans, or any other state moneys including any local sales and use taxes credited against the state sales and use taxes imposed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.08'>82.08</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.12'>82.12</a> RCW.</div><div style="text-indent:0.5in;">(28) "Small business" has the same meaning as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.85.020'>19.85.020</a>.</div><div style="text-indent:0.5in;">(29) "Sponsoring local government" means a city, town, or county, and for the purpose of this chapter a federally recognized Indian tribe or any combination thereof, that adopts a revenue development area and applies to the board to use local infrastructure financing.</div><div style="text-indent:0.5in;">(30) "State contribution" means the lesser of:</div><div style="text-indent:0.5in;">(a) One million dollars;</div><div style="text-indent:0.5in;">(b) The total amount of local excise tax allocation revenues, local property tax allocation revenues, and other revenues from local public sources, that are dedicated by a sponsoring local government, any participating local governments, and participating taxing districts, in the preceding calendar year to the payment of principal and interest on bonds issued under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.150'>39.102.150</a> or to pay public improvement costs on a pay-as-you-go basis subject to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.195'>39.102.195</a>, or both. Revenues from local public sources dedicated in the preceding calendar year that are in excess of the project award may be carried forward and used in later years for the purpose of this subsection (30)(b);</div><div style="text-indent:0.5in;">(c) The amount of project award granted by the board in the notice of approval to use local infrastructure financing under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.040'>39.102.040</a>; or</div><div style="text-indent:0.5in;">(d) The highest amount of state excise tax allocation revenues and state property tax allocation revenues for any one calendar year as determined by the sponsoring local government and reported to the board and the department as required by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.140'>39.102.140</a>.</div><div style="text-indent:0.5in;">(31) "State excise tax allocation revenue" means an amount equal to the annual increase in state excise taxes estimated to be received by the state in each calendar year following the approval of the revenue development area by the board, from taxable activity within the revenue development area as set forth in the application provided to the board under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.040'>39.102.040</a> and periodically updated and reported as required in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.140'>39.102.140</a>(1)(f).</div><div style="text-indent:0.5in;">(32) "State excise taxes" means revenues derived from state retail sales and use taxes under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020'>82.08.020</a>(1) and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.12.020'>82.12.020</a> at the rate provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.08.020'>82.08.020</a>(1), less the amount of tax distributions from all local retail sales and use taxes, other than the local sales and use taxes authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.14.475'>82.14.475</a> for the applicable revenue development area, imposed on the same taxable events that are credited against the state retail sales and use taxes under chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.08'>82.08</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.12'>82.12</a> RCW.</div><div style="text-indent:0.5in;">(33) "State property tax allocation revenue" means an amount equal to the estimated tax revenues derived from the imposition of property taxes levied by the state for the support of common schools under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.52.065'>84.52.065</a> on the property tax allocation revenue value, as set forth in the application submitted to the board under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.040'>39.102.040</a> and updated annually in the report required under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.102.140'>39.102.140</a>(1)(f).</div><div style="text-indent:0.5in;">(34) "Taxing district" means a government entity that levies or has levied for it regular property taxes upon real property located within a proposed or approved revenue development area.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/2497.SL.pdf?cite=2020 c 280 § 2'>2020 c 280 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2858.SL.pdf?cite=2018 c 178 § 1'>2018 c 178 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/House/1306-S2.SL.pdf?cite=2013 2nd sp.s. c 21 § 6'>2013 2nd sp.s. c 21 § 6</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/6609-S2.SL.pdf?cite=2010 c 164 § 11'>2010 c 164 § 11</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/5901-S.SL.pdf?cite=2009 c 267 § 1'>2009 c 267 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/6196.SL.pdf?cite=2008 c 209 § 1'>2008 c 209 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1277-S2.SL.pdf?cite=2007 c 229 § 1'>2007 c 229 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/2673-S2.SL.pdf?cite=2006 c 181 § 102'>2006 c 181 § 102</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Reviser's note: </span>The definitions in this section have been alphabetized pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.08.015'>1.08.015</a>(2)(k).</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>2007 c 229:</span> "This act applies retroactively as well as prospectively." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1277-S2.SL.pdf?cite=2007 c 229 § 15'>2007 c 229 § 15</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>2007 c 229:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1277-S2.SL.pdf?cite=2007 c 229 § 16'>2007 c 229 § 16</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

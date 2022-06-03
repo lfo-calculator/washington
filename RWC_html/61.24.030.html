@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 61.24.030: Requisites to trustee's sale.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=61.24.030" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="EJ4FBXQfm/6JPE9KAIxMJ8j5V38R//9cfdF+QYQZPokcd1p/JutSueCjZmCvkFM3jrJAF5aVlTIbUm4YQCxTTJOFER1s5ixHQIGOtTn0j82rbsl0KPtf25lQGeaWWmj2cUOW6AvDFRlTi0Dw60drRFqKxyNPzPDjd4+94GFol3xhS0DOI3QtS2B/Q+gSDHkMy5Pj/q60uSTPlbcE8TfqbZxAbEw1/ArduT1kXJNpNW4w0ieHxRneOz7zrvPrfAecxkA2AOjmf4rIkeTbRhTJhJgFjkE26G+TaRc6r6Tup/FSxbUEgwNvElcGvpc5VopWt1D9zQHSQULvMsDzmXZiWQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=61">Title 61</a> > <a href="default.aspx?cite=61.24">Chapter 61.24</a> > <a href="default.aspx?cite=61.24.030">Section 61.24.030</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=61.24.026">61.24.026</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        61.24.030&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=61.24.031">61.24.031</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.030'>61.24.030</a></h3></div><div><h3>Requisites to trustee's sale.</h3></div><div><div style="text-indent:0.5in;">It shall be requisite to a trustee's sale:</div><div style="text-indent:0.5in;">(1) That the deed of trust contains a power of sale;</div><div style="text-indent:0.5in;">(2) That the deed of trust contains a statement that the real property conveyed is not used principally for agricultural purposes; provided, if the statement is false on the date the deed of trust was granted or amended to include that statement, and false on the date of the trustee's sale, then the deed of trust must be foreclosed judicially. Real property is used for agricultural purposes if it is used in an operation that produces crops, livestock, or aquatic goods;</div><div style="text-indent:0.5in;">(3) That a default has occurred in the obligation secured or a covenant of the grantor, which by the terms of the deed of trust makes operative the power to sell;</div><div style="text-indent:0.5in;">(4) That no action commenced by the beneficiary of the deed of trust is now pending to seek satisfaction of an obligation secured by the deed of trust in any court by reason of the grantor's default on the obligation secured: PROVIDED, That (a) the seeking of the appointment of a receiver, or the filing of a civil case to obtain court approval to access, secure, maintain, and preserve property from waste or nuisance, shall not constitute an action for purposes of this chapter; and (b) if a receiver is appointed, the grantor shall be entitled to any rents or profits derived from property subject to a homestead as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=6.13.010'>6.13.010</a>. If the deed of trust was granted to secure a commercial loan, this subsection shall not apply to actions brought to enforce any other lien or security interest granted to secure the obligation secured by the deed of trust being foreclosed;</div><div style="text-indent:0.5in;">(5) That the deed of trust has been recorded in each county in which the land or some part thereof is situated;</div><div style="text-indent:0.5in;">(6) That prior to the date of the notice of trustee's sale and continuing thereafter through the date of the trustee's sale, the trustee must maintain a street address in this state where personal service of process may be made, and the trustee must maintain a physical presence and have telephone service at such address;</div><div style="text-indent:0.5in;">(7)(a) That, for residential real property of up to four units, before the notice of trustee's sale is recorded, transmitted, or served, the trustee shall have proof that the beneficiary is the holder of any promissory note or other obligation secured by the deed of trust. A declaration by the beneficiary made under the penalty of perjury stating that the beneficiary is the holder of any promissory note or other obligation secured by the deed of trust shall be sufficient proof as required under this subsection.</div><div style="text-indent:0.5in;">(b) Unless the trustee has violated his or her duty under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.010'>61.24.010</a>(4), the trustee is entitled to rely on the beneficiary's declaration as evidence of proof required under this subsection.</div><div style="text-indent:0.5in;">(c) This subsection (7) does not apply to association beneficiaries subject to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.32'>64.32</a>, 64.34, or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.38'>64.38</a> RCW;</div><div style="text-indent:0.5in;">(8) That at least thirty days before notice of sale shall be recorded, transmitted or served, written notice of default and, for residential real property of up to four units, the beneficiary declaration specified in subsection (7)(a) of this section shall be transmitted by the beneficiary or trustee to the borrower and grantor at their last known addresses by both first-class and either registered or certified mail, return receipt requested, and the beneficiary or trustee shall cause to be posted in a conspicuous place on the premises, a copy of the notice, or personally served on the borrower and grantor. This notice shall contain the following information:</div><div style="text-indent:0.5in;">(a) A description of the property which is then subject to the deed of trust;</div><div style="text-indent:0.5in;">(b) A statement identifying each county in which the deed of trust is recorded and the document number given to the deed of trust upon recording by each county auditor or recording officer;</div><div style="text-indent:0.5in;">(c) A statement that the beneficiary has declared the borrower or grantor to be in default, and a concise statement of the default alleged;</div><div style="text-indent:0.5in;">(d) An itemized account of the amount or amounts in arrears if the default alleged is failure to make payments;</div><div style="text-indent:0.5in;">(e) An itemized account of all other specific charges, costs, or fees that the borrower, grantor, or any guarantor is or may be obliged to pay to reinstate the deed of trust before the recording of the notice of sale;</div><div style="text-indent:0.5in;">(f) A statement showing the total of (d) and (e) of this subsection, designated clearly and conspicuously as the amount necessary to reinstate the note and deed of trust before the recording of the notice of sale;</div><div style="text-indent:0.5in;">(g) A statement that failure to cure the alleged default within thirty days of the date of mailing of the notice, or if personally served, within thirty days of the date of personal service thereof, may lead to recordation, transmittal, and publication of a notice of sale, and that the property described in (a) of this subsection may be sold at public auction at a date no less than one hundred twenty days in the future, or no less than one hundred fifty days in the future if the borrower received a letter under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.031'>61.24.031</a>;</div><div style="text-indent:0.5in;">(h) A statement that the effect of the recordation, transmittal, and publication of a notice of sale will be to (i) increase the costs and fees and (ii) publicize the default and advertise the grantor's property for sale;</div><div style="text-indent:0.5in;">(i) A statement that the effect of the sale of the grantor's property by the trustee will be to deprive the grantor of all their interest in the property described in (a) of this subsection;</div><div style="text-indent:0.5in;">(j) A statement that the borrower, grantor, and any guarantor has recourse to the courts pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.130'>61.24.130</a> to contest the alleged default on any proper ground;</div><div style="text-indent:0.5in;">(k) In the event the property secured by the deed of trust is residential real property of up to four units, a statement, prominently set out at the beginning of the notice, which shall state as follows:</div><div style="text-align:center;margin-top:4.5pt;"><span style="font-weight:bold;">"THIS NOTICE IS ONE STEP IN A PROCESS THAT COULD RESULT IN YOUR</span></div><div style="text-align:center;"><span style="font-weight:bold;">LOSING YOUR HOME.</span></div><div style="text-indent:0pt;margin-top:4.5pt;">You may be eligible for mediation in front of a neutral third party to help save your home.</div><div style="text-indent:0pt;margin-top:4.5pt;"><span style="font-weight:bold;">CONTACT A HOUSING COUNSELOR OR AN ATTORNEY LICENSED IN WASHINGTON NOW</span> to assess your situation and refer you to mediation if you might benefit. Mediation <span style="font-weight:bold;">MUST</span> be requested between the time you receive the Notice of Default and no later than twenty days after the Notice of Trustee Sale is recorded.</div><div style="text-indent:0pt;margin-top:4.5pt;"><span style="font-weight:bold;">DO NOT DELAY.</span> If you do nothing, a notice of sale may be issued as soon as 30 days from the date of this notice of default. The notice of sale will provide a minimum of 120 days' notice of the date of the actual foreclosure sale.</div><div style="text-indent:0pt;margin-top:4.5pt;"><span style="font-weight:bold;">BE CAREFUL</span> of people who claim they can help you. There are many individuals and businesses that prey upon borrowers in distress.</div><div style="text-indent:0pt;margin-top:4.5pt;"><span style="font-weight:bold;">REFER TO THE CONTACTS BELOW</span> for sources of assistance.</div><div style="text-align:center;margin-top:4.5pt;"><span style="font-weight:bold;">SEEKING ASSISTANCE</span></div><div style="text-indent:0pt;margin-top:4.5pt;">Housing counselors and legal assistance may be available at little or no cost to you. If you would like assistance in determining your rights and opportunities to keep your house, you may contact the following:</div><div style="text-indent:0pt;">The statewide foreclosure hotline for assistance and referral to housing counselors recommended by the Housing Finance Commission</div><div style="text-indent:0pt;">Telephone: . . . . . . . Website: . . . . . .</div><div style="text-indent:0pt;">The United States Department of Housing and Urban Development</div><div style="text-indent:0pt;">Telephone: . . . . . . . Website: . . . . . . .</div><div style="text-indent:0pt;">The statewide civil legal aid hotline for assistance and referrals to other housing counselors and attorneys</div><div style="text-indent:0pt;">Telephone: . . . . . . . Website: . . . . . ."</div><div style="text-indent:0.5in;">The beneficiary or trustee shall obtain the toll-free numbers and website information from the department for inclusion in the notice;</div><div style="text-indent:0.5in;">(l) In the event the property secured by the deed of trust is residential real property of up to four units, the name and address of the holder of any promissory note or other obligation secured by the deed of trust and the name, address, and telephone number of a party acting as a servicer of the obligations secured by the deed of trust;</div><div style="text-indent:0.5in;">(m) For notices issued after June 30, 2018, on the top of the first page of the notice:</div><div style="text-indent:0.5in;">(i) The current beneficiary of the deed of trust;</div><div style="text-indent:0.5in;">(ii) The current mortgage servicer for the deed of trust; and</div><div style="text-indent:0.5in;">(iii) The current trustee for the deed of trust;</div><div style="text-indent:0.5in;">(9) That, for residential real property of up to four units, before the notice of the trustee's sale is recorded, transmitted, or served, the beneficiary has complied with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.031'>61.24.031</a> and, if applicable, RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.163'>61.24.163</a>;</div><div style="text-indent:0.5in;">(10) That, in the case where the borrower or grantor is known to the mortgage servicer or trustee to be deceased, the notice required under subsection (8) of this section must be sent to any spouse, child, or parent of the borrower or grantor known to the trustee or mortgage servicer, and to any owner of record of the property, at any address provided to the trustee or mortgage servicer, and to the property addressed to the heirs and devisees of the borrower.</div><div style="text-indent:0.5in;">(a) If the name or address of any spouse, child, or parent of such deceased borrower or grantor cannot be ascertained with use of reasonable diligence, the trustee must execute and record with the notice of sale a declaration attesting to the same.</div><div style="text-indent:0.5in;">(b) Reasonable diligence for the purposes of this subsection (10) means the trustee shall search in the county where the property is located, the public records and information for any obituary, will, death certificate, or case in probate within the county for the borrower and grantor;</div><div style="text-indent:0.5in;">(11) Upon written notice identifying the property address and the name of the borrower to the servicer or trustee by someone claiming to be a successor in interest to the borrower's or grantor's property rights, but who is not a party to the loan or promissory note or other obligation secured by the deed of trust, a trustee shall not record a notice of sale pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.040'>61.24.040</a> until the trustee or mortgage servicer completes the following:</div><div style="text-indent:0.5in;">(a) Acknowledges the notice in writing and requests reasonable documentation of the death of the borrower or grantor from the claimant including, but not limited to, a death certificate or other written evidence of the death of the borrower or grantor. The claimant must be allowed thirty days from the date of this request to present this documentation. If the trustee or mortgage servicer has already obtained sufficient proof of the borrower's death, it may proceed by acknowledging the claimant's notice in writing and issuing a request under (b) of this subsection.</div><div style="text-indent:0.5in;">(b) If the mortgage servicer or trustee obtains or receives written documentation of the death of the borrower or grantor from the claimant, or otherwise independently confirms the death of the borrower or grantor, then the servicer or trustee must request in writing documentation from the claimant demonstrating the ownership interest of the claimant in the real property. A claimant has sixty days from the date of the request to present this documentation.</div><div style="text-indent:0.5in;">(c) If the mortgage servicer or trustee receives written documentation demonstrating the ownership interest of the claimant prior to the expiration of the sixty days provided in (b) of this subsection, then the servicer or trustee must, within twenty days of receipt of proof of ownership interest, provide the claimant with, at a minimum, the loan balance, interest rate and interest reset dates and amounts, balloon payments if any, prepayment penalties if any, the basis for the default, the monthly payment amount, reinstatement amounts or conditions, payoff amounts, and information on how and where payments should be made. The mortgage servicers shall also provide the claimant application materials and information, or a description of the process, necessary to request a loan assumption and modification.</div><div style="text-indent:0.5in;">(d) Upon receipt by the trustee or the mortgage servicer of the documentation establishing claimant's ownership interest in the real property, that claimant shall be deemed a "successor in interest" for the purposes of this section.</div><div style="text-indent:0.5in;">(e) There may be more than one successor in interest to the borrower's property rights. The trustee and mortgage servicer shall apply the provisions of this section to each successor in interest. In the case of multiple successors in interest, where one or more do not wish to assume the loan as coborrowers or coapplicants, a mortgage servicer may require any nonapplicant successor in interest to consent in writing to the application for loan assumption.</div><div style="text-indent:0.5in;">(f) The existence of a successor in interest under this section does not impose an affirmative duty on a mortgage servicer or alter any obligation the mortgage servicer has to provide a loan modification to the successor in interest. If a successor in interest assumes the loan, he or she may be required to otherwise qualify for available foreclosure prevention alternatives offered by the mortgage servicer.</div><div style="text-indent:0.5in;">(g) (c), (e), and (f) of this subsection (11) do not apply to association beneficiaries subject to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.32'>64.32</a>, 64.34, or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.38'>64.38</a> RCW; and</div><div style="text-indent:0.5in;">(12) Nothing in this section shall prejudice the right of the mortgage servicer or beneficiary from discontinuing any foreclosure action initiated under the deed of trust act in favor of other allowed methods for pursuit of foreclosure of the security interest or deed of trust security interest.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1108-S.SL.pdf?cite=2021 c 151 § 3'>2021 c 151 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2057-S.SL.pdf?cite=2018 c 306 § 1'>2018 c 306 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2614-S.SL.pdf?cite=2012 c 185 § 9'>2012 c 185 § 9</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/1362-S2.SL.pdf?cite=2011 c 58 § 4'>2011 c 58 § 4</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/5810.SL.pdf?cite=2009 c 292 § 8'>2009 c 292 § 8</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5378-S.SL.pdf?cite=2008 c 153 § 2'>2008 c 153 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/2770-S.SL.pdf?cite=2008 c 108 § 22'>2008 c 108 § 22</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/6191-S.SL.pdf?cite=1998 c 295 § 4'>1998 c 295 § 4</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1990c111.pdf?cite=1990 c 111 § 1'>1990 c 111 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1987c352.pdf?cite=1987 c 352 § 2'>1987 c 352 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1985c193.pdf?cite=1985 c 193 § 3'>1985 c 193 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1975ex1c129.pdf?cite=1975 1st ex.s. c 129 § 3'>1975 1st ex.s. c 129 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1965c74.pdf?cite=1965 c 74 § 3'>1965 c 74 § 3</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2021 c 151 §§ 1-4, 6-8, and 10:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.005'>61.24.005</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2021 c 151:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.005'>61.24.005</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Short title<span style="font-family:times new roman;">—</span>2011 c 58:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.005'>61.24.005</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2008 c 108:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.144.005'>19.144.005</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>1985 c 193:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=61.24.020'>61.24.020</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

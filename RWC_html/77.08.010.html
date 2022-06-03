@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 77.08.010: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=77.08.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="H/zGiat/aHaarOTUhjRDlSFZ/BVaza871ih+f2oRA+3G90Bk55+KfWlF15osqWgbazr/YIUC124f2GyVg13e1RKHaDLato3cuy80ocp1ic0YAg9/QQw094cv7/nrrErzm3NmEZST9JJQMswqJEHN2LJNR45r3NGBqoAG3l3YRZ3BudJMhjpOzxVTm/kP+O9ETIDOJglbkPVeThbeeNHE8skd6WnA3BZRZmEGB7rZwJwwF55A0jk2fU24rpqh95oHqNYkaC+Hs4b9QR0qP1KRpFLXKb2YzzK80xEW/YBhsuM=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=77">Title 77</a> > <a href="default.aspx?cite=77.08">Chapter 77.08</a> > <a href="default.aspx?cite=77.08.010">Section 77.08.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        77.08.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=77.08.020">77.08.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.08.010'>77.08.010</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this title or rules adopted under this title unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Angling gear" means a line attached to a rod and reel capable of being held in hand while landing the fish or a handheld line operated without rod or reel.</div><div style="text-indent:0.5in;">(2) "Bag limit" means the maximum number of game animals, game birds, or game fish which may be taken, caught, killed, or possessed by a person, as specified by rule of the commission for a particular period of time, or as to size, sex, or species.</div><div style="text-indent:0.5in;">(3) "Building" means a private domicile, garage, barn, or public or commercial building.</div><div style="text-indent:0.5in;">(4) "Closed area" means a place where the hunting of some or all species of wild animals or wild birds is prohibited.</div><div style="text-indent:0.5in;">(5) "Closed season" means all times, manners of taking, and places or waters other than those established by rule of the commission as an open season. "Closed season" also means all hunting, fishing, taking, or possession of game animals, game birds, game fish, food fish, or shellfish that do not conform to the special restrictions or physical descriptions established by rule of the commission as an open season or that have not otherwise been deemed legal to hunt, fish, take, harvest, or possess by rule of the commission as an open season.</div><div style="text-indent:0.5in;">(6) "Closed waters" means all or part of a lake, river, stream, or other body of water, where fishing or harvesting is prohibited.</div><div style="text-indent:0.5in;">(7) "Commercial" means related to or connected with buying, selling, or bartering.</div><div style="text-indent:0.5in;">(8) "Commission" means the state fish and wildlife commission.</div><div style="text-indent:0.5in;">(9) "Concurrent waters of the Columbia river" means those waters of the Columbia river that coincide with the Washington-Oregon state boundary.</div><div style="text-indent:0.5in;">(10) "Contraband" means any property that is unlawful to produce or possess.</div><div style="text-indent:0.5in;">(11) "Covered animal species" means any species of elephant, rhinoceros, tiger, lion, leopard, cheetah, pangolin, marine turtle, shark, or ray either: (a) Listed in appendix I or appendix II of the convention on international trade in endangered species of wild flora and fauna; or (b) listed as critically endangered, endangered, or vulnerable on the international union for conservation of nature and natural resources red list of threatened species.</div><div style="text-indent:0.5in;">(12) "Covered animal species part or product" means any item that contains, or is wholly or partially made from, any covered animal species.</div><div style="text-indent:0.5in;">(13) "Deleterious exotic wildlife" means species of the animal kingdom not native to Washington and designated as dangerous to the environment or wildlife of the state.</div><div style="text-indent:0.5in;">(14) "Department" means the department of fish and wildlife.</div><div style="text-indent:0.5in;">(15) "Director" means the director of fish and wildlife.</div><div style="text-indent:0.5in;">(16) "Distribute" or "distribution" means either a change in possession for consideration or a change in legal ownership.</div><div style="text-indent:0.5in;">(17) "Endangered species" means wildlife designated by the commission as seriously threatened with extinction.</div><div style="text-indent:0.5in;">(18) "Ex officio fish and wildlife officer" means:</div><div style="text-indent:0.5in;">(a) A commissioned officer of a municipal, county, or state agency having as its primary function the enforcement of criminal laws in general, while the officer is acting in the respective jurisdiction of that agency;</div><div style="text-indent:0.5in;">(b) An officer or special agent commissioned by one of the following: The national marine fisheries service; the Washington state parks and recreation commission; the United States fish and wildlife service; the Washington state department of natural resources; the United States forest service; or the United States parks service, if the agent or officer is in the respective jurisdiction of the primary commissioning agency and is acting under a mutual law enforcement assistance agreement between the department and the primary commissioning agency;</div><div style="text-indent:0.5in;">(c) A commissioned fish and wildlife peace officer from another state who meets the training standards set by the Washington state criminal justice training commission pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=10.93.090'>10.93.090</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.101.080'>43.101.080</a>, and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.101.200'>43.101.200</a>, and who is acting under a mutual law enforcement assistance agreement between the department and the primary commissioning agency; or</div><div style="text-indent:0.5in;">(d) A Washington state tribal police officer who successfully completes the requirements set forth under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.101.157'>43.101.157</a>, is employed by a tribal nation that has complied with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=10.92.020'>10.92.020</a>(2) (a) and (b), and is acting under a mutual law enforcement assistance agreement between the department and the tribal government.</div><div style="text-indent:0.5in;">(19) "Fish" includes all species classified as game fish or food fish by statute or rule, as well as all finfish not currently classified as food fish or game fish if such species exist in state waters. The term "fish" includes all stages of development and the bodily parts of fish species.</div><div style="text-indent:0.5in;">(20) "To fish" and its derivatives means an effort to kill, injure, harass, harvest, or capture a fish or shellfish.</div><div style="text-indent:0.5in;">(21) "Fish and wildlife officer" means a person appointed and commissioned by the director, with authority to enforce this title and rules adopted pursuant to this title, and other statutes as prescribed by the legislature. Fish and wildlife officer includes a person commissioned before June 11, 1998, as a wildlife agent or a fisheries patrol officer.</div><div style="text-indent:0.5in;">(22) "Fish broker" means a person who facilitates the sale or purchase of raw or frozen fish or shellfish on a fee or commission basis, without assuming title to the fish or shellfish.</div><div style="text-indent:0.5in;">(23) "Fish dealer" means a person who engages in any activity that triggers the need to obtain a fish dealer license under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.65.280'>77.65.280</a>.</div><div style="text-indent:0.5in;">(24) "Fishery" means the taking of one or more particular species of fish or shellfish with particular gear in a particular geographical area.</div><div style="text-indent:0.5in;">(25) "Food, food waste, or other substance" includes human and pet food or other waste or garbage that could attract large wild carnivores.</div><div style="text-indent:0.5in;">(26) "Fresh water" means all waters not defined as salt water including, but not limited to, rivers upstream of the river mouth, lakes, ponds, and reservoirs.</div><div style="text-indent:0.5in;">(27) "Fur-bearing animals" means game animals that shall not be trapped except as authorized by the commission.</div><div style="text-indent:0.5in;">(28) "Fur dealer" means a person who purchases, receives, or resells raw furs for commercial purposes.</div><div style="text-indent:0.5in;">(29) "Game animals" means wild animals that shall not be hunted except as authorized by the commission.</div><div style="text-indent:0.5in;">(30) "Game birds" means wild birds that shall not be hunted except as authorized by the commission.</div><div style="text-indent:0.5in;">(31) "Game farm" means property on which wildlife is held, confined, propagated, hatched, fed, or otherwise raised for commercial purposes, trade, or gift. The term "game farm" does not include publicly owned facilities.</div><div style="text-indent:0.5in;">(32) "Game reserve" means a closed area where hunting for all wild animals and wild birds is prohibited.</div><div style="text-indent:0.5in;">(33) "To hunt" and its derivatives means an effort to kill, injure, harass, harvest, or capture a wild animal or wild bird.</div><div style="text-indent:0.5in;">(34) "Illegal items" means those items unlawful to be possessed.</div><div style="text-indent:0.5in;">(35)(a) "Intentionally feed, attempt to feed, or attract" means to purposefully or knowingly provide, leave, or place in, on, or about any land or building any food, food waste, or other substance that attracts or could attract large wild carnivores to that land or building.</div><div style="text-indent:0.5in;">(b) "Intentionally feed, attempt to feed, or attract" does not include keeping food, food waste, or other substance in an enclosed garbage receptacle or other enclosed container unless specifically directed by a fish and wildlife officer or animal control authority to secure the receptacle or container in another manner.</div><div style="text-indent:0.5in;">(36) "Large wild carnivore" includes wild bear, cougar, and wolf.</div><div style="text-indent:0.5in;">(37) "License year" means the period of time for which a recreational license is valid. The license year begins April 1st, and ends March 31st.</div><div style="text-indent:0.5in;">(38) "Limited-entry license" means a license subject to a license limitation program established in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.70'>77.70</a> RCW.</div><div style="text-indent:0.5in;">(39) "Limited fish seller" means a licensed commercial fisher who sells his or her fish or shellfish to anyone other than a wholesale fish buyer thereby triggering the need to obtain a limited fish seller endorsement under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.65.510'>77.65.510</a>.</div><div style="text-indent:0.5in;">(40) "Money" means all currency, script, personal checks, money orders, or other negotiable instruments.</div><div style="text-indent:0.5in;">(41) "Natural person" means a human being.</div><div style="text-indent:0.5in;">(42)(a) "Negligently feed, attempt to feed, or attract" means to provide, leave, or place in, on, or about any land or building any food, food waste, or other substance that attracts or could attract large wild carnivores to that land or building, without the awareness that a reasonable person in the same situation would have with regard to the likelihood that the food, food waste, or other substance could attract large wild carnivores to the land or building.</div><div style="text-indent:0.5in;">(b) "Negligently feed, attempt to feed, or attract" does not include keeping food, food waste, or other substance in an enclosed garbage receptacle or other enclosed container unless specifically directed by a fish and wildlife officer or animal control authority to secure the receptacle or container in another manner.</div><div style="text-indent:0.5in;">(43) "Nonresident" means a person who has not fulfilled the qualifications of a resident.</div><div style="text-indent:0.5in;">(44) "Offshore waters" means marine waters of the Pacific Ocean outside the territorial boundaries of the state, including the marine waters of other states and countries.</div><div style="text-indent:0.5in;">(45) "Open season" means those times, manners of taking, and places or waters established by rule of the commission for the lawful hunting, fishing, taking, or possession of game animals, game birds, game fish, food fish, or shellfish that conform to the special restrictions or physical descriptions established by rule of the commission or that have otherwise been deemed legal to hunt, fish, take, or possess by rule of the commission. "Open season" includes the first and last days of the established time.</div><div style="text-indent:0.5in;">(46) "Owner" means the person in whom is vested the ownership dominion, or title of the property.</div><div style="text-indent:0.5in;">(47) "Person" means and includes an individual; a corporation; a public or private entity or organization; a local, state, or federal agency; all business organizations, including corporations and partnerships; or a group of two or more individuals acting with a common purpose whether acting in an individual, representative, or official capacity.</div><div style="text-indent:0.5in;">(48) "Personal property" or "property" includes both corporeal and incorporeal personal property and includes, among other property, contraband and money.</div><div style="text-indent:0.5in;">(49) "Personal use" means for the private use of the individual taking the fish or shellfish and not for sale or barter.</div><div style="text-indent:0.5in;">(50) "Predatory birds" means wild birds that may be hunted throughout the year as authorized by the commission.</div><div style="text-indent:0.5in;">(51) "To process" and its derivatives mean preparing or preserving fish, wildlife, or shellfish.</div><div style="text-indent:0.5in;">(52) "Protected wildlife" means wildlife designated by the commission that shall not be hunted or fished.</div><div style="text-indent:0.5in;">(53) "Raffle" means an activity in which tickets bearing an individual number are sold for not more than twenty-five dollars each and in which a permit or permits are awarded to hunt or for access to hunt big game animals or wild turkeys on the basis of a drawing from the tickets by the person or persons conducting the raffle.</div><div style="text-indent:0.5in;">(54) "Resident" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.08.075'>77.08.075</a>.</div><div style="text-indent:0.5in;">(55) "Salt water" means those marine waters seaward of river mouths.</div><div style="text-indent:0.5in;">(56) "Seaweed" means marine aquatic plant species that are dependent upon the marine aquatic or tidal environment, and exist in either an attached or free floating form, and includes but is not limited to marine aquatic plants in the classes Chlorophyta, Phaeophyta, and Rhodophyta.</div><div style="text-indent:0.5in;">(57) "Senior" means a person seventy years old or older.</div><div style="text-indent:0.5in;">(58) "Shark fin" means a raw, dried, or otherwise processed detached fin or tail of a shark.</div><div style="text-indent:0.5in;">(59)(a) "Shark fin derivative product" means any product intended for use by humans or animals that is derived in whole or in part from shark fins or shark fin cartilage.</div><div style="text-indent:0.5in;">(b) "Shark fin derivative product" does not include a drug approved by the United States food and drug administration and available by prescription only or medical device or vaccine approved by the United States food and drug administration.</div><div style="text-indent:0.5in;">(60) "Shellfish" means those species of marine and freshwater invertebrates that have been classified and that shall not be taken or possessed except as authorized by rule of the commission. The term "shellfish" includes all stages of development and the bodily parts of shellfish species.</div><div style="text-indent:0.5in;">(61) "State waters" means all marine waters and fresh waters within ordinary high water lines and within the territorial boundaries of the state.</div><div style="text-indent:0.5in;">(62) "To take" and its derivatives means to kill, injure, harvest, or capture a fish, shellfish, wild animal, bird, or seaweed.</div><div style="text-indent:0.5in;">(63) "Taxidermist" means a person who, for commercial purposes, creates lifelike representations of fish and wildlife using fish and wildlife parts and various supporting structures.</div><div style="text-indent:0.5in;">(64) "Trafficking" means offering, attempting to engage, or engaging in sale, barter, or purchase of fish, shellfish, wildlife, or deleterious exotic wildlife.</div><div style="text-indent:0.5in;">(65) "To trap" and its derivatives means a method of hunting using devices to capture wild animals or wild birds.</div><div style="text-indent:0.5in;">(66) "Unclaimed" means that no owner of the property has been identified or has requested, in writing, the release of the property to themselves nor has the owner of the property designated an individual to receive the property or paid the required postage to effect delivery of the property.</div><div style="text-indent:0.5in;">(67) "Unclassified wildlife" means wildlife existing in Washington in a wild state that have not been classified as big game, game animals, game birds, predatory birds, protected wildlife, endangered wildlife, or deleterious exotic wildlife.</div><div style="text-indent:0.5in;">(68) "To waste" or "to be wasted" means to allow any edible portion of any game bird, food fish, game fish, shellfish, or big game animal other than cougar to be rendered unfit for human consumption, or to fail to retrieve edible portions of such a game bird, food fish, game fish, shellfish, or big game animal other than cougar from the field. For purposes of this chapter, edible portions of game birds must include, at a minimum, the breast meat of those birds. Entrails, including the heart and liver, of any wildlife species are not considered edible.</div><div style="text-indent:0.5in;">(69) "Wholesale fish buyer" means a person who engages in any fish buying or selling activity that triggers the need to obtain a wholesale fish buyer endorsement under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.65.340'>77.65.340</a>.</div><div style="text-indent:0.5in;">(70) "Wild animals" means those species of the class Mammalia whose members exist in Washington in a wild state. The term "wild animal" does not include feral domestic mammals or old world rats and mice of the family Muridae of the order Rodentia.</div><div style="text-indent:0.5in;">(71) "Wild birds" means those species of the class Aves whose members exist in Washington in a wild state.</div><div style="text-indent:0.5in;">(72) "Wildlife" means all species of the animal kingdom whose members exist in Washington in a wild state. This includes but is not limited to mammals, birds, reptiles, amphibians, fish, and invertebrates. The term "wildlife" does not include feral domestic mammals, old world rats and mice of the family Muridae of the order Rodentia, or those fish, shellfish, and marine invertebrates classified as food fish or shellfish by the director. The term "wildlife" includes all stages of development and the bodily parts of wildlife members.</div><div style="text-indent:0.5in;">(73) "Wildlife meat cutter" means a person who packs, cuts, processes, or stores wildlife for consumption for another for commercial purposes.</div><div style="text-indent:0.5in;">(74) "Youth" means a person fifteen years old for fishing and under sixteen years old for hunting.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1597-S.SL.pdf?cite=2017 3rd sp.s. c 8 § 2'>2017 3rd sp.s. c 8 § 2</a>. Prior:  <a href='?cite=2016 c 2 § 2'>2016 c 2 § 2</a> (Initiative Measure No. 1401, approved November 3, 2015); prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/6040-S.SL.pdf?cite=2014 c 202 § 301'>2014 c 202 § 301</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/6041-S.SL.pdf?cite=2014 c 48 § 1'>2014 c 48 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/6135-S.SL.pdf?cite=2012 c 176 § 4'>2012 c 176 § 4</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/5688-S.SL.pdf?cite=2011 c 324 § 3'>2011 c 324 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1778-S.SL.pdf?cite=2009 c 333 § 12'>2009 c 333 § 12</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/2788-S.SL.pdf?cite=2008 c 277 § 2'>2008 c 277 § 2</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5923-S2.SL.pdf?cite=2007 c 350 § 2'>2007 c 350 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1079-S.SL.pdf?cite=2007 c 254 § 1'>2007 c 254 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/1695.SL.pdf?cite=2005 c 104 § 1'>2005 c 104 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/1127-S.SL.pdf?cite=2003 c 387 § 1'>2003 c 387 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/6553-S.SL.pdf?cite=2002 c 281 § 2'>2002 c 281 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/5961-S.SL.pdf?cite=2001 c 253 § 10'>2001 c 253 § 10</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/2078-S.SL.pdf?cite=2000 c 107 § 207'>2000 c 107 § 207</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/6328-S.SL.pdf?cite=1998 c 190 § 111'>1998 c 190 § 111</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/2396.SL.pdf?cite=1996 c 207 § 2'>1996 c 207 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/2055-S.SL.pdf?cite=1993 sp.s. c 2 § 66'>1993 sp.s. c 2 § 66</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c297.pdf?cite=1989 c 297 § 7'>1989 c 297 § 7</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1987c506.pdf?cite=1987 c 506 § 11'>1987 c 506 § 11</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1980c78.pdf?cite=1980 c 78 § 9'>1980 c 78 § 9</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1955c36.pdf?cite=1955 c 36 § 77.08.010'>1955 c 36 § 77.08.010</a>; prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1947c275.pdf?cite=1947 c 275 § 9'>1947 c 275 § 9</a>; Rem. Supp. 1947 § 5992-19.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Alphabetization<span style="font-family:times new roman;">—</span>2017 3rd sp.s. c 8 § 2:</span> "The code reviser's office is directed to move the definitions of "to fish," "to hunt," "to process," "to take," "to trap," and "to waste" or "to be wasted," by reordering them within RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.08.010'>77.08.010</a> in alphabetical order by the spelling of the main verb word." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1597-S.SL.pdf?cite=2017 3rd sp.s. c 8 § 57'>2017 3rd sp.s. c 8 § 57</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2017 3rd sp.s. c 8:</span> "(1) The legislature finds that the commercial fishing industry is a benefit to the state as a whole, but particularly to coastal communities where it creates and sustains opportunities for employment. Maintaining a stable and economically viable commercial fishing industry requires:</div><div style="text-indent:0.75in;">(a) Preserving fishing opportunities by providing a fee structure for all commercial fishing permits that is not overly burdensome on the fishing industry; and</div><div style="text-indent:0.75in;">(b) Avoiding a strain on fish resources beyond sustainable spawning needs.</div><div style="text-indent:0.75in;">(2) The legislature intends to balance those needs by making certain adjustments to commercial fishing fees." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1597-S.SL.pdf?cite=2017 3rd sp.s. c 8 § 1'>2017 3rd sp.s. c 8 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2017 3rd sp.s. c 8:</span> "This act takes effect January 1, 2018." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1597-S.SL.pdf?cite=2017 3rd sp.s. c 8 § 59'>2017 3rd sp.s. c 8 § 59</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>2016 c 2 (Initiative Measure No. 1401):</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.15.135'>77.15.135</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2014 c 202:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.135.010'>77.135.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2011 c 324:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.15.770'>77.15.770</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Alphabetization<span style="font-family:times new roman;">—</span>2008 c 277:</span> "The code reviser is directed to put the defined terms in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.08.010'>77.08.010</a> in alphabetical order." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/2788-S.SL.pdf?cite=2008 c 277 § 1'>2008 c 277 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Purpose<span style="font-family:times new roman;">—</span>2002 c 281:</span> "The legislature recognizes the potential economic and environmental damage that can occur from the introduction of invasive aquatic species. The purpose of this act is to increase public awareness of invasive aquatic species and enhance the department of fish and wildlife's regulatory capability to address threats posed by these species." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/6553-S.SL.pdf?cite=2002 c 281 § 1'>2002 c 281 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>1996 c 207:</span> "It is the intent of the legislature to clarify hunting and fishing laws in light of the decision in <span style="font-style:italic;">State v. Bailey</span>, 77 Wn. App. 732 (1995). The fish and wildlife commission has the authority to establish hunting and fishing seasons. These seasons are defined by limiting the times, manners of taking, and places or waters for lawful hunting, fishing, or possession of game animals, game birds, or game fish, as well as by limiting the physical characteristics of the game animals, game birds, or game fish which may be lawfully taken at those times, in those manners, and at those places or waters." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/2396.SL.pdf?cite=1996 c 207 § 1'>1996 c 207 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1993 sp.s. c 2 §§ 1-6, 8-59, and 61-79:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.300.900'>43.300.900</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Legislative findings and intent<span style="font-family:times new roman;">—</span>1987 c 506:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.04.020'>77.04.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>Intent, construction<span style="font-family:times new roman;">—</span>Savings<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1980 c 78:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=77.04.010'>77.04.010</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

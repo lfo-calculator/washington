@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 46.93.170: Unfair practices.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=46.93.170" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ApdPLQt3ELqpY9cx6sgM4aAhmCjCKHLOO5fLNTqz6vs4W3EYiDVIKbruyvWCCwDTwEK1HNHLADaC1pMm5wtFQrEPn1Lb8IEhH9BSqJfn73ANQWp+I2Z+X5ZourbeOjZ5BDjDj1QyZ9jalBWgLRO/LPuIZVeVGejOHflA2YLXqd2qAGNQzk3MTzAdYkpfI4nmy8KRRjXRYOLyA+mYo2pMn7GLrTlKg8yM30pF0NwhGYK+eD3f/bs6R8ZY7rPm9zYFF8siaJia8mmX4P7DZv2sGm+3xxHItVFqr8YEyorNJDRlh6v8eSrUT25/jAxGe6flHdvQPdoZ4cffxwyTmouYlA==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=46">Title 46</a> > <a href="default.aspx?cite=46.93">Chapter 46.93</a> > <a href="default.aspx?cite=46.93.170">Section 46.93.170</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=46.93.160">46.93.160</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        46.93.170&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=46.93.180">46.93.180</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.93.170'>46.93.170</a></h3></div><div><h3>Unfair practices.</h3></div><div><div style="text-indent:0.5in;">(1) Notwithstanding the terms of a franchise agreement, a manufacturer, distributor, factory branch, or factory representative, or an agent, officer, parent company, wholly or partially owned subsidiary, affiliated entity, or other person controlled by or under common control with a manufacturer, distributor, factory branch, or factory representative, shall not:</div><div style="text-indent:0.5in;">(a) Discriminate between dealers by selling or offering to sell a like motorsports vehicle to one dealer at a lower actual price than the actual price offered to another dealer for the same model similarly equipped;</div><div style="text-indent:0.5in;">(b) Discriminate between dealers by selling or offering to sell parts or accessories to one dealer at a lower actual price than the actual price offered to another dealer;</div><div style="text-indent:0.5in;">(c) Discriminate between dealers by using a promotion plan, marketing plan, or other similar device that results in a lower actual price on vehicles, parts, or accessories being charged to one dealer over another dealer;</div><div style="text-indent:0.5in;">(d) Discriminate between dealers by adopting a method, or changing an existing method, for the allocation, scheduling, or delivery of new motorsports vehicles, parts, or accessories to its dealers that is not fair, reasonable, and equitable. Upon the request of a dealer, a manufacturer shall disclose in writing to the dealer the method by which new motorsports vehicles, parts, and accessories are allocated, scheduled, or delivered to its dealers handling the same line or make of vehicles;</div><div style="text-indent:0.5in;">(e) Give preferential treatment to some dealers over others by refusing or failing to deliver, in reasonable quantities and within a reasonable time after receipt of an order, to a dealer holding a franchise for a line or make of motorsports vehicles sold or distributed by the manufacturer, a new vehicle, parts, or accessories, if the vehicle, parts, or accessories are being delivered to other dealers, or require a dealer to purchase unreasonable advertising displays or other materials, or unreasonably require a dealer to remodel or renovate existing facilities as a prerequisite to receiving a model or series of vehicles;</div><div style="text-indent:0.5in;">(f) Compete with a dealer by acting in the capacity of a dealer, or by owning, operating, or controlling, whether directly or indirectly, a dealership in this state. It is not, however, a violation of this subsection for:</div><div style="text-indent:0.5in;">(i) A manufacturer to own or operate a dealership for a temporary period, not to exceed two years, during the transition from one owner of the dealership to another where the dealership was previously owned by a franchised dealer and is currently for sale to any qualified independent person at a fair and reasonable price. The temporary operation may be extended for one twelve-month period on petition of the temporary operator to the department. The matter will be handled as an adjudicative proceeding under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=34.05'>34.05</a> RCW. A dealer who is a franchisee of the petitioning manufacturer or distributor may intervene and participate in a proceeding under this subsection (1)(f)(i). The temporary operator has the burden of proof to show justification for the extension and a good faith effort to sell the dealership to an independent person at a fair and reasonable price;</div><div style="text-indent:0.5in;">(ii) A manufacturer to own or operate a dealership in conjunction with an independent person in a bona fide business relationship for the purpose of broadening the diversity of its dealer body and enhancing opportunities for qualified persons who are part of a group who have historically been underrepresented in its dealer body, or other qualified persons who lack the resources to purchase a dealership outright, and where the independent person (A) has made a significant, bona fide capital investment in the dealership that is subject to loss; (B) has an ownership interest in the dealership; and (C) operates the dealership under a bona fide written agreement with the manufacturer, distributor, factory branch, or factory representative under which he or she will acquire all of the ownership interest in the dealership within a reasonable period of time and under reasonable terms and conditions. The manufacturer has the burden of proof of establishing that the acquisition of the dealership by the independent person was made within a reasonable period of time and under reasonable terms and conditions;</div><div style="text-indent:0.5in;">(iii) A manufacturer to own or operate a dealership in conjunction with an independent person in a bona fide business relationship where the independent person (A) has made a significant, bona fide capital investment in the dealership that is subject to loss; (B) has an ownership interest in the dealership; and (C) operates the dealership under a bona fide written agreement with the manufacturer under which he or she will acquire all of the ownership interest in the dealership within a reasonable period of time and under reasonable terms and conditions. The manufacture [manufacturer] has the burden of proof of establishing that the acquisition of the dealership by the independent person was made within a reasonable period of time and under reasonable terms and conditions. The number of dealerships operated under this subsection (1)(f)(iii) may not exceed four percent rounded up to the nearest whole number of a manufacturer's total of dealer franchises in this state;</div><div style="text-indent:0.5in;">(iv) A manufacturer to own, operate, or control a dealership trading exclusively in a single line make of the manufacturer if (A) the manufacturer does not own, directly or indirectly, in the aggregate, in excess of forty-five percent of the total ownership interest in the dealership; (B) at the time the manufacturer first acquires ownership or assumes operation or control of any such dealership, the distance between any dealership thus owned, operated, or controlled and the nearest dealership trading in the same line make of vehicle and in which the manufacturer has no ownership or control complies with the applicable provisions in the relevant market area sections of this chapter; (C) all of the manufacturer's franchise agreements confer rights on the dealer of that line make to develop and operate within a defined geographic territory or area, as many dealership facilities as the dealer and the manufacturer agree are appropriate; and (D) the manufacturer had no more than four new motorsports vehicle dealers of that manufacturer's line make in this state, and at least half of those dealers owned and operated two or more dealership facilities in the geographic territory or area covered by their franchise agreements with the manufacturer;</div><div style="text-indent:0.5in;">(g) Compete with a dealer by owning, operating, or controlling, whether directly or indirectly, a service facility in this state for the repair or maintenance of motorsports vehicles under the manufacturer's new motorsports vehicle warranty and extended warranty. Nothing in this subsection (1)(g), however, prohibits a manufacturer from owning or operating a service facility for the purpose of providing or performing maintenance, repair, or service work on motorsports vehicles that are owned by the manufacturer;</div><div style="text-indent:0.5in;">(h) Use confidential or proprietary information obtained from a dealer to unfairly compete with the dealer without the prior written consent of the dealer. For purposes of this subsection (1)(h), "confidential or proprietary information" means trade secrets as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.108.010'>19.108.010</a>, business plans, marketing plans or strategies, customer lists, contracts, sales data, revenues, or other financial information;</div><div style="text-indent:0.5in;">(i) Coerce, threaten, intimidate, or require, either directly or indirectly, a dealer to accept, buy, or order any motorsports vehicle, part, or accessory, or any other commodity or service not voluntarily ordered, or requested, or to buy, order, or pay anything of value for such items in order to obtain a motorsports vehicle, part, accessory, or other commodity that has been voluntarily ordered or requested;</div><div style="text-indent:0.5in;">(j) Coerce, threaten, intimidate, or require, either directly or indirectly, a dealer to enter into any agreement that violates this chapter;</div><div style="text-indent:0.5in;">(k) Require a change in capital structure or means of financing for the dealership if the dealer at all times meets the reasonable, written, and uniformly applied capital standards determined by the manufacturer;</div><div style="text-indent:0.5in;">(l) Prevent or attempt to prevent a dealer from making reasonable changes in the capital structure of a dealership or the means by which the dealership is financed if the dealer meets the reasonable, written, and uniformly applied capital requirements determined by the manufacturer;</div><div style="text-indent:0.5in;">(m) Unreasonably require the dealer to change the location or require any substantial alterations to the place of business;</div><div style="text-indent:0.5in;">(n) Condition a renewal or extension of the franchise on the dealer's substantial renovation of the existing place of business or on the construction, purchase, acquisition, or re-lease of a new place of business unless written notice is first provided one hundred eighty days before the date of renewal or extension and the manufacturer demonstrates the reasonableness of the requested actions. The manufacturer shall agree to supply the dealer with an adequate quantity of motorsports vehicles, parts, and accessories to meet the sales level necessary to support the overhead resulting from substantial construction, acquisition, or lease of a new place of business;</div><div style="text-indent:0.5in;">(o) Coerce, threaten, intimidate, or require, either directly or indirectly, a dealer to order or accept delivery of a motorsports vehicle with special features, accessories, or equipment not included in the list price of the vehicle as advertised by the manufacturer, except items that have been voluntarily requested or ordered by the dealer, and except items required by law;</div><div style="text-indent:0.5in;">(p) Fail to hold harmless and indemnify a dealer against losses, including lawsuits and court costs, arising from: (i) The manufacture or performance of a motorsports vehicle, part, or accessory if the lawsuit involves representations by the manufacturer on the manufacture or performance of a motorsports vehicle without negligence on the part of the dealer; (ii) damage to merchandise in transit where the manufacturer specifies the carrier; (iii) the manufacturer's failure to jointly defend product liability suits concerning the motorsports vehicle, part, or accessory provided to the dealer; or (iv) any other act performed by the manufacturer;</div><div style="text-indent:0.5in;">(q) Unfairly prevent or attempt to prevent a dealer from receiving reasonable compensation for the value of a motorsports vehicle;</div><div style="text-indent:0.5in;">(r) Fail to pay to a dealer, within a reasonable time after receipt of a valid claim, a payment agreed to be made by the manufacturer on grounds that a new motorsports vehicle, or a prior year's model, is in the dealer's inventory at the time of introduction of new model motorsports vehicles;</div><div style="text-indent:0.5in;">(s) Deny a dealer the right of free association with any other dealer for any lawful purpose;</div><div style="text-indent:0.5in;">(t) Charge increased prices without having given written notice to the dealer at least fifteen days before the effective date of the price increases;</div><div style="text-indent:0.5in;">(u) Permit factory authorized warranty service to be performed upon motorsports vehicles or accessories by persons other than their franchised dealers;</div><div style="text-indent:0.5in;">(v) Require or coerce a dealer to sell, assign, or transfer a retail sales installment contract, or require the dealer to act as an agent for a manufacturer, in the securing of a promissory note, a security agreement given in connection with the sale of a motorsports vehicle, or securing of a policy of insurance for a motorsports vehicle. The manufacturer may not condition delivery of any motorsports vehicle, parts, or accessories upon the dealer's assignment, sale, or other transfer of sales installment contracts to specific finance companies;</div><div style="text-indent:0.5in;">(w) Require or coerce a dealer to grant a manufacturer a right of first refusal or other preference to purchase the dealer's franchise or place of business, or both.</div><div style="text-indent:0.5in;">(2) Subsections (1)(a), (b), and (c) of this section do not apply to sales to a dealer: (a) For resale to a federal, state, or local government agency; (b) where the motorsports vehicles will be sold or donated for use in a program of driver's education; (c) where the sale is made under a manufacturer's bona fide promotional program offering sales incentives or rebates; (d) where the sale of parts or accessories is under a manufacturer's bona fide quantity discount program; or (e) where the sale is made under a manufacturer's bona fide fleet vehicle discount program. For purposes of this subsection, "fleet" means a group of fifteen or more new motorsports vehicles purchased or leased by a dealer at one time under a single purchase or lease agreement for use as part of a fleet, and where the dealer has been assigned a fleet identifier code by the department.</div><div style="text-indent:0.5in;">(3) The following definitions apply to this section:</div><div style="text-indent:0.5in;">(a) "Actual price" means the price to be paid by the dealer less any incentive paid by the manufacturer, whether paid to the dealer or the ultimate purchaser of the motorsports vehicle.</div><div style="text-indent:0.5in;">(b) "Control" or "controlling" means (i) the possession of, title to, or control of ten percent or more of the voting equity interest in a person, whether directly or indirectly through a fiduciary, agent, or other intermediary, or (ii) the possession, direct or indirect, of the power to direct or cause the direction of the management or policies of a person, whether through the ownership of voting securities, through director control, by contract, or otherwise, except as expressly provided under the franchise agreement.</div><div style="text-indent:0.5in;">(c) "Operate" means to manage a dealership, whether directly or indirectly.</div><div style="text-indent:0.5in;">(d) "Own" or "ownership" means to hold the beneficial ownership of one percent or more of any class of equity interest in a dealership, whether the interest is that of a shareholder, partner, limited liability company member, or otherwise. To hold an ownership interest means to have possession of, title to, or control of the ownership interest, whether directly or indirectly through a fiduciary, agent, or other intermediary.</div><div style="text-indent:0.5in;">(4) A violation of this section is deemed to affect the public interest and constitutes an unlawful and unfair practice under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.86'>19.86</a> RCW. A person aggrieved by an alleged violation of this section may petition the department to have the matter handled as an adjudicative proceeding under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=34.05'>34.05</a> RCW.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/Senate/5407-S.SL.pdf?cite=2003 c 354 § 17'>2003 c 354 § 17</a>; (2009 c 517 § 1 expired August 1, 2009).]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2009 c 517:</span> "This act is necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and takes effect immediately [May 15, 2009]." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/2208-S.SL.pdf?cite=2009 c 517 § 2'>2009 c 517 § 2</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Expiration date<span style="font-family:times new roman;">—</span>2009 c 517:</span> "This act expires August 1, 2009." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/2208-S.SL.pdf?cite=2009 c 517 § 3'>2009 c 517 § 3</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 19.29.010: Rules for use of electrical apparatus or construction.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=19.29.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="xvfD3DguH/YFO1gvimN2c5bDNls4ZL8C248Scis5w7TqPssQeerK3Y3SIIOll1FxNHaABkEK8lTuYdPNNlBBLU945audwWBpEHdX2UZyJlAkoz/Kzo1m1DcXHNJpmby2l/RnCT7IOK6DuzYCMhZeuyRDc7ZlXFmQ+TIRKwKW4+Do7b8Ks5mOK83nOojyX3ydt+VN0IP1J0OE0kasi26D8IaJrORlqHVOgQ8xTWU9QGPR9vLTMBeTtASqApLpWhMvpbfZXzFgLf8emgCw7XfcHWsgfGvODBlnCc2gPer9xqY=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=19">Title 19</a> > <a href="default.aspx?cite=19.29">Chapter 19.29</a> > <a href="default.aspx?cite=19.29.010">Section 19.29.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        19.29.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=19.29.020">19.29.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.29.010'>19.29.010</a></h3></div><div><h3>Rules for use of electrical apparatus or construction.</h3></div><div><div style="text-indent:0.5in;">It shall be unlawful from and after the passage of this chapter for any officer, agent, or employee of the state of Washington, or of any county, city, or other political subdivision thereof, or for any other person, firm or corporation, or its officers, agents or employees, to run, place, erect, maintain, or use any electrical apparatus or construction, except as provided in the rules of this chapter.</div><div style="text-indent:0.5in;">Rule 1. No wire or cable, except the neutral, carrying a current of less than seven hundred fifty volts of electricity within the corporate limits of any city or town shall be run, placed, erected, maintained, or used on any insulator the center of which is less than thirteen inches from the center line of any pole. And no such wire, except the neutral, shall be run past any pole to which it is not attached at a distance of less than thirteen inches from the center line thereof. This rule shall not apply to any wire or cable where the same is run from under ground and placed vertically on the pole; nor to any wire or cable where the same is attached to the top of the pole; nor to a pole top fixture as between it and the same pole; nor to any wire or cable between the points where the same is made to leave any pole or fixture thereon for the purpose of entering any building or other structure and the point of attachment to such building or structure; nor to any jumper wire or cable carrying a current or connected with a transformer or other appliance on the same pole; nor to bridle or jumper wires on any pole which are attached to or connected with signal wires on the same pole; nor to any aerial cable as between such cable and any pole upon which it originates or terminates; nor to exclusive telephone or telegraph toll lines; nor to aerial cables containing telephone, telegraph, or signal wires, or wires continuing from same, where the cable is attached to poles on which no wires or cables other than the wires continuing from said cable are maintained, provided, that electric light or power wires or cables are in no case maintained on the same side of the street or highway on which said aerial cable is placed.</div><div style="text-indent:0.5in;">Rule 2. No wire or cable used to carry a current of over seven hundred fifty volts of electricity within the incorporate limits of any city or town shall be run, placed, erected, maintained, or used on any insulator the center of which is nearer than twenty-four inches to the center line of any pole. And no such wire or cable shall be run past any pole to which it is not attached at a distance of less than twenty-four inches from the center line thereof: PROVIDED, That this shall not apply to any wire or cable where the same is run from under ground and placed vertically on the pole; nor to any wire or cable where the same is attached to the top of the pole; nor to a pole top fixture, as between it and the same pole; nor to any wire or cable between the points where the same is made to leave any pole or fixture thereon for the purpose of entering any building or other structure, and the point of attachment to said building or structure; nor to any jumper wire or cable carrying a current or connected with transformers or other appliances on the same pole: PROVIDED FURTHER, That where said wire or cable is run vertically, it shall be rigidly supported and where possible run on the ends of the cross-arms.</div><div style="text-indent:0.5in;">Rule 3. No wire or cable carrying a current of more than seven hundred fifty volts, and less than seventy-five hundred volts of electricity, shall be run, placed, erected, maintained, or used within three feet of any wire or cable carrying a current of seven hundred fifty volts or less of electricity; and no wire or cable carrying a current of more than seventy-five hundred volts of electricity shall be run, placed, erected, maintained, or used within seven feet of any wire or cable carrying less than seventy-five hundred volts: PROVIDED, That the foregoing provisions of this paragraph shall not apply to any wire or cable within buildings or other structures; nor where the same are run from under ground and placed vertically upon the pole; nor to any service wire or cable where the same is made to leave any pole or fixture thereon for the purpose of entering any building or other structure, and the point of attachment to said building or structure; nor to any jumper wire or cable carrying a current or connected with a transformer or other appliance on the same pole: PROVIDED, That where run vertically, wires or cables shall be rigidly supported, and where possible run on the ends of the cross-arms: PROVIDED FURTHER, That as between any two wires or cables mentioned in Rules 1, 2, and 3 of this section, only the wires or cables last in point of time so run, placed, erected, or maintained, shall be held to be in violation of the provisions thereof.</div><div style="text-indent:0.5in;">Rule 4. No wire or cable used for telephone, telegraph, district messenger, or call bell circuit, fire or burglar alarm, or any other similar system, shall be run, placed, erected, maintained, or used on any pole at a distance of less than three feet from any wire or cable carrying a current of over three hundred volts of electricity; and in all cases (except those mentioned in exceptions to Rules 1, 2, and 3) where such wires or cables are run, above or below, or cross over or under electric light or power wires, or a trolley wire, a suitable method of construction, or insulation or protection to prevent contact shall be maintained as between such wire or cable and such electric light, power or trolley wire; and said methods of construction, insulation, or protection shall be installed by, or at the expense of the person owning the wire last placed in point of time: PROVIDED, That telephone, telegraph, or signal wires or cables operated for private use and not furnishing service to the public, may be placed less than three feet from any line carrying a voltage of less than seven hundred and fifty volts.</div><div style="text-indent:0.5in;">Rule 5. Transformers, either single or in bank, that exceed a total capacity of over ten K.W. shall be supported by a double cross-arm, or some fixture equally as strong. No transformer shall be placed, erected, maintained, or used on any cross-arm or other appliance on a pole upon which is placed a series electric arc lamp or arc light: PROVIDED, This shall not apply to a span wire supporting a lamp only. All aerial and underground transformers used for low potential distribution shall be subjected to an insulation test in accordance with the standardized rules of the American institute of electrical engineers. In addition to this each transformer shall be tested at rated line voltage prior to each installation and shall have attached to it a tag showing the date on which the test was made, and the name of the person making the test.</div><div style="text-indent:0.5in;">Rule 6. No wire or cable, other than ground wires, used to conduct or carry electricity, shall be placed, run, erected, maintained, or used vertically on any pole without causing such wire or cable to be at all times sufficiently insulated the full length thereof to insure the protection of anyone coming in contact with said wire or cable.</div><div style="text-indent:0.5in;">Rule 7. The neutral point or wire of all transformer secondaries strung or erected for use in low potential distributing systems shall be grounded in all cases where the normal maximum difference of potential between the ground and any point in the secondary circuit will not exceed one hundred and fifty volts. When no neutral point or wire is accessible one side of the secondary circuit shall be grounded in the case of single phase transformers, and any one common point in the case of interconnected polyphase bank or banks of transformers. Where the maximum difference of potential between the ground and any point in the secondary circuit will, when grounded, exceed one hundred fifty volts, grounding shall be permitted. Such grounding shall be done in the manner provided in Rule 30.</div><div style="text-indent:0.5in;">Rule 8. In all cases where a wire or cable larger than No. 14 B.W.G. originates or terminates on insulators attached to any pin or other appliance, said wire or cable shall be attached to at least two insulators: PROVIDED HOWEVER, That this section shall not apply to service wires to buildings; nor to wires run vertically on a pole; nor to wires originating or terminating on strain insulators or circuit breakers; nor to telephone, telegraph or signal wires outside the limits of any incorporated city or town.</div><div style="text-indent:0.5in;">Rule 9. Fixtures placed or erected for the support of wires on the roofs of buildings shall be of sufficient strength to withstand all strains to which they may be subjected, due to the breaking of all wires on one side thereof, and except where insulated wires or cables are held close to fire walls by straps or rings, shall be of such height and so placed that all of the wires supported by such fixtures shall be at least seven feet above any point of roofs less than one-quarter pitch over which they pass or may be attached, and no roof fixtures or wire shall be so placed that they will interfere with the free passage of persons upon, over, to or from the roofs.</div><div style="text-indent:0.5in;">Rule 10. No guy wire or cable shall be placed, run, erected, maintained, or used within the incorporate limits of any city or town on any pole or appliance to which is attached any wire or cable used to conduct electricity without causing said guy wire or cable to be efficiently insulated with circuit breakers at all times at a distance of not less than eight feet nor more than ten feet measured along the line of said guy wire or cable from each end thereof: PROVIDED, No circuit breaker shall be required at the lower end of the guy wire or cable where the same is attached to a ground anchor, nor shall any circuit breaker be required where said guy wire or cable runs direct from a grounded messenger wire to a grounded anchor rod.</div><div style="text-indent:0.5in;">Rule 11. In all span wires used for the purpose of supporting trolley wires or series arc lamps there shall be at least two circuit breakers, one of which shall at all times be maintained no less than four feet nor more than six feet distant from the trolley wire or series arc lamp, and in cases where the same is supported by a building or metallic pole, the other circuit breaker shall be maintained at the building or at the pole: PROVIDED, That in span wires which support two or more trolley wires no circuit breaker shall be required in the span wire between any two of the trolley wires: PROVIDED FURTHER, That in span wires supporting trolley wires attached to wooden poles only the circuit breaker adjacent to the trolley wire shall be required.</div><div style="text-indent:0.5in;">Rule 12. At all points where in case of a breakdown of trolley span wires, the trolley wire would be liable to drop within seven feet of the ground, there shall be double span wires and hangers placed at such points.</div><div style="text-indent:0.5in;">Rule 13. All energized wires or appliances installed inside of any building or vault, for the distribution of electrical energy, shall be sufficiently insulated, or so guarded, located, or arranged as to protect any person from injury.</div><div style="text-indent:0.5in;">Rule 14. The secondary circuit of current transformers, the casings of all potential regulators and arc light transformers, all metal frames of all switch boards, metal oil tanks used on oil switches except where the tank is part of the conducting system, all motor and generator frames, the entire frame of the crane and the tracks of all traveling cranes and hoisting devices, shall be thoroughly grounded, as provided in Rule 30.</div><div style="text-indent:0.5in;">Rule 15. All generators and motors having a potential of more than three hundred volts shall be provided with a suitable insulated platform or mat so arranged as to permit the attendant to stand upon such platform or mat when working upon the live parts of such generators or motors.</div><div style="text-indent:0.5in;">Rule 16. Suitable insulated platforms or mats shall be provided for the use of all persons while working on any live part of switchboards on which any wire or appliance carries a potential in excess of three hundred volts.</div><div style="text-indent:0.5in;">Rule 17. Every generator, motor, transformer, switch, or other similar piece of apparatus and device used in the generation, transmission or distribution of electrical energy in stations or substations, shall be either provided with a name plate giving the capacity in volts and amperes, or have this information stamped thereon in such a manner as to be clearly legible.</div><div style="text-indent:0.5in;">Rule 18. When lines of seven hundred fifty volts or over are cut out at the station or substation to allow employees to work upon them, they shall be short-circuited and grounded at the station, and shall in addition, if the line wires are bare, be short-circuited, and where possible grounded at the place where the work is being done.</div><div style="text-indent:0.5in;">Rule 19. All switches installed with overload protection devices, and all automatic overload circuit breakers must have the trip coils so adjusted as to afford complete protection against overloads and short circuits, and the same must be so arranged that no pole can be opened manually without opening all the poles, and the trip coils shall be instantly operative upon closing.</div><div style="text-indent:0.5in;">Rule 20. All feeders for electric railways must, before leaving the plant or substation, be protected by an approved circuit breaker which will cut off the circuit in case of an accidental ground or short circuit.</div><div style="text-indent:0.5in;">Rule 21. There shall be provided in all distributing stations a ground detecting device.</div><div style="text-indent:0.5in;">Rule 22. There shall be provided in all stations, plants, and buildings herein specified warning cards printed on red cardboard not less than two and one-quarter by four and one-half inches in size, which shall be attached to all switches opened for the purpose of lineworkers or other employees working on the wires. The person opening any line switch shall enter upon said card the name of the person ordering the switch opened, the time opened, the time line was reported clear and by whom, and shall sign his or her own name.</div><div style="text-indent:0.5in;">Rule 23. No manhole containing any wire carrying a current of over three hundred volts shall be less than six feet from floor to inside of roof; if circular in shape it shall not be less than six feet in diameter; if square it shall be six feet from wall to wall: PROVIDED HOWEVER, That this paragraph shall not apply to any manhole in which it shall not be required that any person enter to perform work: PROVIDED FURTHER, That the foregoing provisions of this paragraph shall not apply where satisfactory proof shall be submitted to the proper authorities that it is impracticable or physically impossible to comply with this law within the space or location designated by the proper authorities.</div><div style="text-indent:0.5in;">Rule 24. All manholes containing any wires or appliances carrying electrical current shall be kept in a sanitary condition, free from stagnant water or seepage or other drainage which is offensive or dangerous to health, either by sewer connection or otherwise, while any person is working in the same.</div><div style="text-indent:0.5in;">Rule 25. No manhole shall have an opening to the outer air of less than twenty-six inches in diameter, and the cover of same shall be provided with vent hole or holes equivalent to three square inches in area.</div><div style="text-indent:0.5in;">Rule 26. No manhole shall have an opening which is, at the surface of the ground, within a distance of three feet at any point from any rail of any railway or streetcar track: PROVIDED, That this shall not apply where satisfactory proof shall be submitted to the proper authorities that it is impracticable or physically impossible to comply with the provisions of this paragraph: PROVIDED, That in complying with the provisions of this rule only the construction last in point of time performed, placed, or erected shall be held to be in violation thereof.</div><div style="text-indent:0.5in;">Rule 27. Whenever persons are working in any manhole whose opening to the outer air is less than three feet from the rail of any railway or streetcar track, a watchperson or attendant shall be stationed on the surface at the entrance of such manhole at all times while work is being performed therein.</div><div style="text-indent:0.5in;">Rule 28. All persons employed in manholes shall be furnished with insulated platforms so as to protect the workers while at work in the manholes: PROVIDED, That this paragraph shall not apply to manholes containing only telephone, telegraph, or signal wires or cables.</div><div style="text-indent:0.5in;">Rule 29. No work shall be permitted to be done on any live wire, cable, or appliance carrying more than seven hundred fifty volts of electricity by less than two competent and experienced persons, who, at all times while performing such work shall be in the same room, chamber, manhole or other place in which, or on the same pole on which, such work is being done: PROVIDED, That in districts where only one competent and experienced person is regularly employed, and a second competent and experienced person cannot be obtained without delay at prevailing rate of pay in said district, such work shall be permitted to be done by one competent and experienced person and a helper who need not be on the same pole on which said work is being done.</div><div style="text-indent:0.5in;">No work shall be permitted to be done in any manhole or subway on any live wire, cable, or appliance carrying more than three hundred volts of electricity by less than two competent and experienced persons, who at all times while performing such work shall be in the same manhole or subway in which such work is being done.</div><div style="text-indent:0.5in;">Rule 30. The grounding provided for in these rules shall be done in the following manner: By connecting a wire or wires not less than No. 6 B.&amp;S. gauge to a water pipe of a metallic system outside of the meter, if there is one, or to a copper plate one-sixteenth inch thick and not less than three feet by six feet area buried in coke below the permanent moisture level, or to other device equally as efficient. The ground wire or wires of a direct current system of three or more wires shall not be smaller than the neutral wire at the central station, and not smaller than a No. 6 B.&amp;S. gauge elsewhere: PROVIDED, That the maximum cross section area of any ground wire or wires at the central station need not exceed one million circular mils. The ground wires shall be carried in as nearly a straight line as possible, and kinks, coils, and short bends shall be avoided: PROVIDED, That the provisions of this rule shall not apply as to size to ground wires run from instrument transformers or meters.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/5045.SL.pdf?cite=2011 c 336 § 530'>2011 c 336 § 530</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5063.SL.pdf?cite=2007 c 218 § 81'>2007 c 218 § 81</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c12.pdf?cite=1989 c 12 § 3'>1989 c 12 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1987c79.pdf?cite=1987 c 79 § 1'>1987 c 79 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1965ex1c65.pdf?cite=1965 ex.s. c 65 § 1'>1965 ex.s. c 65 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1913c130.pdf?cite=1913 c 130 § 1'>1913 c 130 § 1</a>; RRS § 5435.]  [1954 SLC-RO 29.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>Finding<span style="font-family:times new roman;">—</span>2007 c 218:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.08.020'>41.08.020</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

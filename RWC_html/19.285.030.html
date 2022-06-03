@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 19.285.030: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=19.285.030" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="EkmoHbSla7R+au3qa3aIhTBgCOIFHYAVSzOWbJh19ZUGtMyqsI0mMLzEjjMsOBQaXf7b6YbhunAUoux2qBRUpjRm++AG61rhI+Qn5Vdg0Rw0rKSf2zL9oGNERrH+H4EFBYgqaWDyMMUcqBd0ApHw1vbZXeUElCCibHW2D0Q3/nsRDoTY3HxWUC1rp3UMZIvjSFzPgUFFA1cT5w4HBT1tRQiW4+grNkGFoupXfFtOSD+YLTm3ME9pXczErojjC9LI+99LS+TM4lUgLAjUqhNLPxmIBcnWBfd6bFsRQhZDwwM7Pg2bc1oj+1rKJrCjwctPz73tn1g4VQGGzhFxuRUUPg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=19">Title 19</a> > <a href="default.aspx?cite=19.285">Chapter 19.285</a> > <a href="default.aspx?cite=19.285.030">Section 19.285.030</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=19.285.020">19.285.020</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        19.285.030&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=19.285.040">19.285.040</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.285.030'>19.285.030</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Attorney general" means the Washington state office of the attorney general.</div><div style="text-indent:0.5in;">(2) "Auditor" means: (a) The Washington state auditor's office or its designee for qualifying utilities under its jurisdiction that are not investor-owned utilities; or (b) an independent auditor selected by a qualifying utility that is not under the jurisdiction of the state auditor and is not an investor-owned utility.</div><div style="text-indent:0.5in;">(3)(a) "Biomass energy" includes: (i) Organic by-products of pulping and the wood manufacturing process; (ii) animal manure; (iii) solid organic fuels from wood; (iv) forest or field residues; (v) untreated wooden demolition or construction debris; (vi) food waste and food processing residuals; (vii) liquors derived from algae; (viii) dedicated energy crops; and (ix) yard waste.</div><div style="text-indent:0.5in;">(b) "Biomass energy" does not include: (i) Wood pieces that have been treated with chemical preservatives such as creosote, pentachlorophenol, or copper-chrome-arsenic; (ii) wood from old growth forests; or (iii) municipal solid waste.</div><div style="text-indent:0.5in;">(4) "Coal transition power" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=80.80.010'>80.80.010</a>.</div><div style="text-indent:0.5in;">(5) "Commission" means the Washington state utilities and transportation commission.</div><div style="text-indent:0.5in;">(6) "Conservation" means any reduction in electric power consumption resulting from increases in the efficiency of energy use, production, or distribution.</div><div style="text-indent:0.5in;">(7) "Cost-effective" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=80.52.030'>80.52.030</a>.</div><div style="text-indent:0.5in;">(8) "Council" means the Washington state apprenticeship and training council within the department of labor and industries.</div><div style="text-indent:0.5in;">(9) "Customer" means a person or entity that purchases electricity for ultimate consumption and not for resale.</div><div style="text-indent:0.5in;">(10) "Department" means the department of commerce or its successor.</div><div style="text-indent:0.5in;">(11) "Distributed generation" means an eligible renewable resource where the generation facility or any integrated cluster of such facilities has a generating capacity of not more than five megawatts.</div><div style="text-indent:0.5in;">(12) "Eligible renewable resource" means:</div><div style="text-indent:0.5in;">(a) Electricity from a generation facility powered by a renewable resource other than fresh water that commences operation after March 31, 1999, where: (i) The facility is located in the Pacific Northwest; or (ii) the electricity from the facility is delivered into Washington state on a real-time basis without shaping, storage, or integration services;</div><div style="text-indent:0.5in;">(b) Incremental electricity produced as a result of efficiency improvements completed after March 31, 1999, to hydroelectric generation projects owned by a qualifying utility and located in the Pacific Northwest where the additional generation does not result in new water diversions or impoundments;</div><div style="text-indent:0.5in;">(c) Hydroelectric generation from a project completed after March 31, 1999, where the generation facility is located in irrigation pipes, irrigation canals, water pipes whose primary purpose is for conveyance of water for municipal use, and wastewater pipes located in Washington where the generation does not result in new water diversions or impoundments;</div><div style="text-indent:0.5in;">(d) Qualified biomass energy;</div><div style="text-indent:0.5in;">(e) For a qualifying utility that serves customers in other states, electricity from a generation facility powered by a renewable resource other than fresh water that commences operation after March 31, 1999, where: (i) The facility is located within a state in which the qualifying utility serves retail electrical customers; and (ii) the qualifying utility owns the facility in whole or in part or has a long-term contract with the facility of at least twelve months or more;</div><div style="text-indent:0.5in;">(f)(i) Incremental electricity produced as a result of a capital investment completed after January 1, 2010, that increases, relative to a baseline level of generation prior to the capital investment, the amount of electricity generated in a facility that generates qualified biomass energy as defined under subsection (18)(c)(ii) of this section and that commenced operation before March 31, 1999.</div><div style="text-indent:0.5in;">(ii) Beginning January 1, 2007, the facility must demonstrate its baseline level of generation over a three-year period prior to the capital investment in order to calculate the amount of incremental electricity produced.</div><div style="text-indent:0.5in;">(iii) The facility must demonstrate that the incremental electricity resulted from the capital investment, which does not include expenditures on operation and maintenance in the normal course of business, through direct or calculated measurement;</div><div style="text-indent:0.5in;">(g) That portion of incremental electricity produced as a result of efficiency improvements completed after March 31, 1999, attributable to a qualifying utility's share of the electricity output from hydroelectric generation projects whose energy output is marketed by the Bonneville power administration where the additional generation does not result in new water diversions or impoundments; or</div><div style="text-indent:0.5in;">(h) The environmental attributes, including renewable energy credits, from (g) of this subsection transferred to investor-owned utilities pursuant to the Bonneville power administration's residential exchange program.</div><div style="text-indent:0.5in;">(13) "Investor-owned utility" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.29A.010'>19.29A.010</a>.</div><div style="text-indent:0.5in;">(14) "Load" means the amount of kilowatt-hours of electricity delivered in the most recently completed year by a qualifying utility to its Washington retail customers.</div><div style="text-indent:0.5in;">(15)(a) "Nonpower attributes" means all environmentally related characteristics, exclusive of energy, capacity reliability, and other electrical power service attributes, that are associated with the generation of electricity from a renewable resource, including but not limited to the facility's fuel type, geographic location, vintage, qualification as an eligible renewable resource, and avoided emissions of pollutants to the air, soil, or water, and avoided emissions of carbon dioxide and other greenhouse gases.</div><div style="text-indent:0.5in;">(b) "Nonpower attributes" does not include any aspects, claims, characteristics, and benefits associated with the on-site capture and destruction of methane or other greenhouse gases at a facility through a digester system, landfill gas collection system, or other mechanism, which may be separately marketable as greenhouse gas emission reduction credits, offsets, or similar tradable commodities. However, these separate avoided emissions may not result in or otherwise have the effect of attributing greenhouse gas emissions to the electricity.</div><div style="text-indent:0.5in;">(16) "Pacific Northwest" has the same meaning as defined for the Bonneville power administration in section 3 of the Pacific Northwest electric power planning and conservation act (94 Stat. 2698; 16 U.S.C. Sec. 839a).</div><div style="text-indent:0.5in;">(17) "Public facility" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.35C.010'>39.35C.010</a>.</div><div style="text-indent:0.5in;">(18) "Qualified biomass energy" means electricity produced from a biomass energy facility that: (a) Commenced operation before March 31, 1999; (b) contributes to the qualifying utility's load; and (c) is owned either by: (i) A qualifying utility; or (ii) an industrial facility that is directly interconnected with electricity facilities that are owned by a qualifying utility and capable of carrying electricity at transmission voltage.</div><div style="text-indent:0.5in;">(19) "Qualifying utility" means an electric utility, as the term "electric utility" is defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.29A.010'>19.29A.010</a>, that serves more than twenty-five thousand customers in the state of Washington. The number of customers served may be based on data reported by a utility in form 861, "annual electric utility report," filed with the energy information administration, United States department of energy.</div><div style="text-indent:0.5in;">(20) "Renewable energy credit" means a tradable certificate of proof of one megawatt-hour of an eligible renewable resource. The certificate includes all of the nonpower attributes associated with that one megawatt-hour of electricity, and the certificate is verified by a renewable energy credit tracking system selected by the department.</div><div style="text-indent:0.5in;">(21) "Renewable resource" means: (a) Water; (b) wind; (c) solar energy; (d) geothermal energy; (e) landfill gas; (f) wave, ocean, or tidal power; (g) gas from sewage treatment facilities; (h) biodiesel fuel that is not derived from crops raised on land cleared from old growth or first-growth forests where the clearing occurred after December 7, 2006; or (i) biomass energy.</div><div style="text-indent:0.5in;">(22) "Rule" means rules adopted by an agency or other entity of Washington state government to carry out the intent and purposes of this chapter.</div><div style="text-indent:0.5in;">(23) "Year" means the twelve-month period commencing January 1st and ending December 31st.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5116-S2.SL.pdf?cite=2019 c 288 § 28'>2019 c 288 § 28</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/Senate/5128.SL.pdf?cite=2017 c 315 § 1'>2017 c 315 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/House/2733.SL.pdf?cite=2014 c 45 § 1'>2014 c 45 § 1</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5297.SL.pdf?cite=2013 c 158 § 1'>2013 c 158 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/House/1154.SL.pdf?cite=2013 c 99 § 1'>2013 c 99 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5400-S.SL.pdf?cite=2013 c 61 § 1'>2013 c 61 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/5575-S.SL.pdf?cite=2012 c 22 § 2'>2012 c 22 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/2242.SL.pdf?cite=2009 c 565 § 20'>2009 c 565 § 20</a>;  <a href='?cite=2007 c 1 § 3'>2007 c 1 § 3</a> (Initiative Measure No. 937, approved November 7, 2006).]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2019 c 288:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.405.010'>19.405.010</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.405.901'>19.405.901</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2012 c 22:</span> "(1) The legislature finds that: (a) Pulping liquors can be used to reduce harmful pollution and produce electricity and thermal energy that enables pulp and paper facilities to be highly energy efficient; (b) biomass facilities and pulp and paper mills are typically located in communities that are disproportionately affected by economic downturns; (c) mill closures have occurred throughout the state for more than a decade and the remaining ones have become all the more dependent on selling wood residuals, which are used for electricity generation, in order to sustain their economic viability; (d) employment at pulp and paper mills in the state has also declined significantly, most recently in Grays Harbor and Snohomish counties; (e) wood derived biomass is a renewable fuel for generating electricity and considered carbon-neutral under the laws of the state of Washington; and (f) using food processing residues, food waste, and yard waste to generate renewable electricity can benefit rural economies, decrease the amount of solid waste that requires disposal, and reduce greenhouse gas emissions that result from organic decay.</div><div style="text-indent:0.75in;">(2) The legislature declares that, by promoting the generation of renewable energy from biomass, particularly in economically distressed communities, it intends to ensure greater economic stability for the communities that have suffered heavy job losses and chronic unemployment.</div><div style="text-indent:0.75in;">(3) The legislature further declares that: (a) The owners of qualified biomass energy facilities that must comply with the renewable energy standards under the energy independence act of 2006, either as a matter of law or contractual obligation, should be permitted to use qualified biomass energy credits to meet their obligations; and (b) electricity that is generated by a biomass energy facility that entered commercial operation after March 31, 1999, from the combustion of organic by-products of pulping and the wood manufacturing process should be treated as an eligible renewable resource." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/5575-S.SL.pdf?cite=2012 c 22 § 1'>2012 c 22 § 1</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 47.04.010: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=47.04.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ogneD1bNW2jFv/dnq/iux60zRWcssuKuMnSTTvGjMIcwrKlgl8weYsRYElAMv4fGXlCdnKc8BjQLcruFkes/2bNSMKNxfJN/PIefgXzIbjX8ay/gqBvNmUBzmMrPDv82jprWh9DAsQcgRIEtaW6xsd/MC1tTNS37NW7YyNFRqby5jgpWYQYgATlkIikvkOGYPzb8RGXJlQqtcgoSWn+mjY2WX9WdDzoabVVVOqTKTUZWFcIjMu80OK4dScjSbZDuIUCaWGeRsqZ2o1oxmH/f2ljibAB6isL0EJivhwTZ2kA=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=47">Title 47</a> > <a href="default.aspx?cite=47.04">Chapter 47.04</a> > <a href="default.aspx?cite=47.04.010">Section 47.04.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        47.04.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=47.04.015">47.04.015</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.04.010'>47.04.010</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The following words and phrases, wherever used in this title, shall have the meaning as in this section ascribed to them, unless where used the context thereof shall clearly indicate to the contrary or unless otherwise defined in the chapter of which they are a part:</div><div style="text-indent:0.5in;">(1) "Alley." A highway within the ordinary meaning of alley not designated for general travel and primarily used as a means of access to the rear of residences and business establishments;</div><div style="text-indent:0.5in;">(2) "Arterial highway." Every highway, as herein defined, or portion thereof designated as such by proper authority;</div><div style="text-indent:0.5in;">(3) "Business district." The territory contiguous to and including a highway, as herein defined, when within any six hundred feet along such highway there are buildings in use for business or industrial purposes, including but not limited to hotels, banks, or office buildings, railroad stations, and public buildings which occupy at least three hundred feet of frontage on one side or three hundred feet collectively on both sides of the highway;</div><div style="text-indent:0.5in;">(4) "Center line." The line, marked or unmarked parallel to and equidistant from the sides of a two-way traffic roadway of a highway except where otherwise indicated by painted lines or markers;</div><div style="text-indent:0.5in;">(5) "Center of intersection." The point of intersection of the center lines of the roadways of intersecting highways;</div><div style="text-indent:0.5in;">(6) "City street." Every highway as herein defined, or part thereof located within the limits of incorporated cities and towns, except alleys;</div><div style="text-indent:0.5in;">(7) "Combination of vehicles." Every combination of motor vehicle and motor vehicle, motor vehicle and trailer, or motor vehicle and semitrailer;</div><div style="text-indent:0.5in;">(8) "Commercial vehicle." Any vehicle the principal use of which is the transportation of commodities, merchandise, produce, freight, animals, or passengers for hire;</div><div style="text-indent:0.5in;">(9) "County road." Every highway as herein defined, or part thereof, outside the limits of incorporated cities and towns and which has not been designated as a state highway, or branch thereof;</div><div style="text-indent:0.5in;">(10) "Crosswalk." The portion of the roadway between the intersection area and a prolongation or connection of the farthest sidewalk line or in the event there are no sidewalks then between the intersection area and a line ten feet therefrom, except as modified by a marked crosswalk;</div><div style="text-indent:0.5in;">(11) "Highway." Every way, lane, road, street, boulevard, and every way or place in the state of Washington open as a matter of right to public vehicular travel both inside and outside the limits of incorporated cities and towns;</div><div style="text-indent:0.5in;">(12) "Intersection area." (a) The area embraced within the prolongation or connection of the lateral curb lines, or, if none, then the lateral boundary lines of the roadways of two or more highways which join one another at, or approximately at, right angles, or the area within which vehicles traveling upon different highways joining at any other angle may come in conflict;</div><div style="text-indent:0.5in;">(b) Where a highway includes two roadways thirty feet or more apart, then every crossing of each roadway of such divided highway by an intersecting highway shall be regarded as a separate intersection. In the event such intersecting highway also includes two roadways thirty feet or more apart, then every crossing of two roadways of such highways shall be regarded as a separate intersection;</div><div style="text-indent:0.5in;">(c) The junction of an alley with a street or highway shall not constitute an intersection;</div><div style="text-indent:0.5in;">(13) "Intersection control area." The intersection area as herein defined, together with such modification of the adjacent roadway area as results from the arc or curb corners and together with any marked or unmarked crosswalks adjacent to the intersection;</div><div style="text-indent:0.5in;">(14) "Laned highway." A highway the roadway of which is divided into clearly marked lanes for vehicular traffic;</div><div style="text-indent:0.5in;">(15) "Local authorities." Every county, municipal, or other local public board or body having authority to adopt local police regulations under the Constitution and laws of this state;</div><div style="text-indent:0.5in;">(16) "Marked crosswalk." Any portion of a roadway distinctly indicated for pedestrian crossing by lines or other markings on the surface thereof;</div><div style="text-indent:0.5in;">(17) "Metal tire." Every tire, the bearing surface of which in contact with the highway is wholly or partly of metal or other hard, nonresilient material;</div><div style="text-indent:0.5in;">(18) "Motor truck." Any motor vehicle, as herein defined, designed or used for the transportation of commodities, merchandise, produce, freight, or animals;</div><div style="text-indent:0.5in;">(19) "Motor vehicle." Every vehicle, as herein defined, which is in itself a self-propelled unit;</div><div style="text-indent:0.5in;">(20) "Multiple lane highway." Any highway the roadway of which is of sufficient width to reasonably accommodate two or more separate lanes of vehicular traffic in the same direction, each lane of which shall be not less than the maximum legal vehicle width, and whether or not such lanes are marked;</div><div style="text-indent:0.5in;">(21) "Operator." Every person who drives or is in actual physical control of a vehicle as herein defined;</div><div style="text-indent:0.5in;">(22) "Peace officer." Any officer authorized by law to execute criminal process or to make arrests for the violation of the statutes generally or of any particular statute or statutes relative to the highways of this state;</div><div style="text-indent:0.5in;">(23) "Pedestrian." Any person afoot or who is using a wheelchair, power wheelchair as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.04.415'>46.04.415</a>, or a means of conveyance propelled by human power other than a bicycle;</div><div style="text-indent:0.5in;">(24) "Person." Every natural person, firm, copartnership, corporation, association, or organization;</div><div style="text-indent:0.5in;">(25) "Personal wireless service." Any federally licensed personal wireless service;</div><div style="text-indent:0.5in;">(26) "Personal wireless service facilities." Unstaffed facilities that are used for the transmission or reception, or both, of personal wireless services including, but not necessarily limited to, antenna arrays, transmission cables, equipment shelters, and support structures;</div><div style="text-indent:0.5in;">(27) "Pneumatic tires." Every tire of rubber or other resilient material designed to be inflated with compressed air to support the load thereon;</div><div style="text-indent:0.5in;">(28) "Private road or driveway." Every way or place in private ownership and used for travel of vehicles by the owner or those having express or implied permission from the owner, but not by other persons;</div><div style="text-indent:0.5in;">(29) "Railroad." A carrier of persons or property upon vehicles, other than streetcars, operated upon stationary rails, the route of which is principally outside incorporated cities and towns;</div><div style="text-indent:0.5in;">(30) "Railroad sign or signal." Any sign, signal, or device erected by authority of a public body or official or by a railroad and intended to give notice of the presence of railroad tracks or the approach of a railroad train;</div><div style="text-indent:0.5in;">(31) "Residence district." The territory contiguous to and including the highway, as herein defined, not comprising a business district, as herein defined, when the property on such highway for a continuous distance of three hundred feet or more on either side thereof is in the main improved with residences or residences and buildings in use for business;</div><div style="text-indent:0.5in;">(32) "Roadway." The paved, improved, or proper driving portion of a highway designed, or ordinarily used for vehicular travel;</div><div style="text-indent:0.5in;">(33) "Safety zone." The area or space officially set apart within a roadway for the exclusive use of pedestrians and which is protected or is marked or indicated by painted marks, signs, buttons, standards, or otherwise so as to be plainly discernible;</div><div style="text-indent:0.5in;">(34) "Sidewalk." That property between the curb lines or the lateral lines of a roadway, as herein defined, and the adjacent property, set aside and intended for the use of pedestrians or such portion of private property parallel and in proximity to a highway and dedicated to use by pedestrians;</div><div style="text-indent:0.5in;">(35) "Solid tire." Every tire of rubber or other resilient material which does not depend upon inflation with compressed air for the support of the load thereon;</div><div style="text-indent:0.5in;">(36) "State highway." Every highway as herein defined, or part thereof, which has been designated as a state highway, or branch thereof, by legislative enactment;</div><div style="text-indent:0.5in;">(37) "Streetcar." A vehicle other than a train, as herein defined, for the transporting of persons or property and operated upon stationary rails principally within incorporated cities and towns;</div><div style="text-indent:0.5in;">(38) "Structurally deficient." A state bridge that is classified as in poor condition under the state bridge condition rating system and is reported by the state to the national bridge inventory as having a deck, superstructure, or substructure rating of four or below. Structurally deficient bridges are characterized by deteriorated conditions of significant bridge elements and potentially reduced load carrying capacity. Bridges deemed structurally deficient typically require significant maintenance and repair to remain in service, and require major rehabilitation or replacement to address the underlying deficiency;</div><div style="text-indent:0.5in;">(39) "Traffic." Pedestrians, ridden or herded animals, vehicles, streetcars, and other conveyances either singly or together while using any highways for purposes of travel;</div><div style="text-indent:0.5in;">(40) "Traffic control signal." Any traffic device, as herein defined, whether manually, electrically, or mechanically operated, by which traffic alternately is directed to stop or proceed or otherwise controlled;</div><div style="text-indent:0.5in;">(41) "Traffic devices." All signs, signals, markings, and devices not inconsistent with this title placed or erected by authority of a public body or official having jurisdiction, for the purpose of regulating, warning, or guiding traffic;</div><div style="text-indent:0.5in;">(42) "Train." A vehicle propelled by steam, electricity, or other motive power with or without cars coupled thereto, operated upon stationary rails, except streetcars;</div><div style="text-indent:0.5in;">(43) "Vehicle." Every device capable of being moved upon a highway and in, upon, or by which any person or property is or may be transported or drawn upon a highway, excepting power wheelchairs, as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.04.415'>46.04.415</a>, or devices moved by human or animal power or used exclusively upon stationary rails or tracks.</div><div style="text-indent:0.5in;">Words and phrases used herein in the past, present, or future tense shall include the past, present, and future tenses; words and phrases used herein in the masculine, feminine, or neuter gender shall include the masculine, feminine, and neuter genders; and words and phrases used herein in the singular or plural shall include the singular and plural; unless the context thereof shall indicate to the contrary.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/1219.SL.pdf?cite=2015 3rd sp.s. c 10 § 3'>2015 3rd sp.s. c 10 § 3</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/Senate/5977-S.SL.pdf?cite=2003 c 244 § 2'>2003 c 244 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/1937.SL.pdf?cite=2003 c 141 § 8'>2003 c 141 § 8</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1975c62.pdf?cite=1975 c 62 § 50'>1975 c 62 § 50</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1967ex1c145.pdf?cite=1967 ex.s. c 145 § 42'>1967 ex.s. c 145 § 42</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1961c13.pdf?cite=1961 c 13 § 47.04.010'>1961 c 13 § 47.04.010</a>; prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1937c53.pdf?cite=1937 c 53 § 1'>1937 c 53 § 1</a>; RRS § 6400-1.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Reviser's note:</span> The definitions in this section have been alphabetized pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.08.015'>1.08.015</a>(2)(k).</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2015 3rd sp.s. c 10:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.21C.480'>43.21C.480</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1975 c 62:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=36.75.010'>36.75.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Aeronautics, definitions relating to: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.68.020'>47.68.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Canal, defined: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.72.060'>47.72.060</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Department, commission, secretary<span style="font-family:times new roman;">—</span>Defined: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.01.021'>47.01.021</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Ferry workers, marine employees, definitions relating to: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.64.011'>47.64.011</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Junkyards, definitions relating to: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.41.020'>47.41.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Limited access facilities, definitions relating to: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.52.010'>47.52.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Signs and scenic vistas, definitions relating to: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.42.020'>47.42.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Toll bridges, roads, definitions relating to: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.56.010'>47.56.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Urban arterials, definitions relating to: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.26.040'>47.26.040</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.26.090'>47.26.090</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.26.100'>47.26.100</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.26.110'>47.26.110</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Urban public transportation systems<span style="font-family:times new roman;">—</span>Defined: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=47.04.082'>47.04.082</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

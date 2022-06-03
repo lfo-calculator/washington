@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 70A.65.010: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=70A.65.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="wdLnjdy6Jts9YXkMVrzglnPAeRmVg5ivq+T6ahKFf4h+MjlTIbisXQUKtdyCvWy592Mp7t1/KnNz7Ce5OgQN/oeVwoQs5tVoQtbCFh8jZxkUsy4OaVdBFpEBn3WpFqNCX5dnuzLNkqgQyXxU6P0y+xRpXX8XRsOBqbJmGYlAGEUG8/OtSKkgIXz6wQV15Gnb7SLKHrjtVTIc60AaS+ehiZuv85rhHhVRcwptp6Tuo8sM2mMU6dmMkXsgZ3KdBXxgWELTkPZ0gQxtOXuWrIcfrX2yoq2xY9ZtZK6IhQKFy9V3b/Yha1WwdRDTYNag7VUc24R8zK0Jn7kHVuQ3cCRWRg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=70A">Title 70A</a> > <a href="default.aspx?cite=70A.65">Chapter 70A.65</a> > <a href="default.aspx?cite=70A.65.010">Section 70A.65.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=70A.65.005">70A.65.005</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        70A.65.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=70A.65.020">70A.65.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.65.010'>70A.65.010</a></h3></div><div><h3>Definitions.</h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5842-S2.SL.pdf">5842-S2.SL</a>) ***</div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Allowance" means an authorization to emit up to one metric ton of carbon dioxide equivalent.</div><div style="text-indent:0.5in;">(2) "Allowance price containment reserve" means an account maintained by the department with allowances available for sale through separate reserve auctions at predefined prices to assist in containing compliance costs for covered and opt-in entities in the event of unanticipated high costs for compliance instruments.</div><div style="text-indent:0.5in;">(3) "Annual allowance budget" means the total number of greenhouse gas allowances allocated for auction and distribution for one calendar year by the department.</div><div style="text-indent:0.5in;">(4) "Asset controlling supplier" means any entity that owns or operates interconnected electricity generating facilities or serves as an exclusive marketer for these facilities even though it does not own them, and has been designated by the department and received a department-published emissions factor for the wholesale electricity procured from its system. The department shall use a methodology consistent with the methodology used by an external greenhouse gas emissions trading program that shares the regional electricity transmission system. Electricity from an asset controlling supplier is considered a specified source of electricity.</div><div style="text-indent:0.5in;">(5) "Auction" means the process of selling greenhouse gas allowances by offering them up for bid, taking bids, and then distributing the allowances to winning bidders.</div><div style="text-indent:0.5in;">(6) "Auction floor price" means a price for allowances below which bids at auction are not eligible to be accepted.</div><div style="text-indent:0.5in;">(7) "Auction purchase limit" means the limit on the number of allowances one registered entity or a group of affiliated registered entities may purchase from the share of allowances sold at an auction.</div><div style="text-indent:0.5in;">(8) "Balancing authority" means the responsible entity that integrates resource plans ahead of time, maintains load-interchange-generation balance within a balancing authority area, and supports interconnection frequency in real time.</div><div style="text-indent:0.5in;">(9) "Balancing authority area" means the collection of generation, transmission, and load within the metered boundaries of a balancing authority. A balancing authority maintains load-resource balance within this area.</div><div style="text-indent:0.5in;">(10) "Best available technology" means a technology or technologies that will achieve the greatest reduction in greenhouse gas emissions, taking into account the fuels, processes, and equipment used by facilities to produce goods of comparable type, quantity, and quality. Best available technology must be technically feasible, commercially available, economically viable, not create excessive environmental impacts, and be compliant with all applicable laws while not changing the characteristics of the good being manufactured.</div><div style="text-indent:0.5in;">(11) "Biomass" means nonfossilized and biodegradable organic material originating from plants, animals, and microorganisms, including products, by-products, residues, and waste from agriculture, forestry, and related industries as well as the nonfossilized and biodegradable organic fractions of industrial waste, including gases and liquids recovered from the decomposition of nonfossilized and biodegradable organic material.</div><div style="text-indent:0.5in;">(12) "Biomass-derived fuels," "biomass fuels," or "biofuels" means fuels derived from biomass that have at least 40 percent lower greenhouse gas emissions based on a full life-cycle analysis when compared to petroleum fuels for which biofuels are capable as serving as a substitute.</div><div style="text-indent:0.5in;">(13) "Carbon dioxide equivalents" means a measure used to compare the emissions from various greenhouse gases based on their global warming potential.</div><div style="text-indent:0.5in;">(14) "Carbon dioxide removal" means deliberate human activities removing carbon dioxide from the atmosphere and durably storing it in geological, terrestrial, or ocean reservoirs, or in products. "Carbon dioxide removal" includes existing and potential anthropogenic enhancement of biological or geochemical sinks and including, but not limited to, carbon mineralization and direct air capture and storage.</div><div style="text-indent:0.5in;">(15) "Climate commitment" means the process and mechanisms to ensure a coordinated and strategic approach to advancing climate resilience and environmental justice and achieving an equitable and inclusive transition to a carbon neutral economy.</div><div style="text-indent:0.5in;">(16) "Climate resilience" is the ongoing process of anticipating, preparing for, and adapting to changes in climate and minimizing negative impacts to our natural systems, infrastructure, and communities. For natural systems, increasing climate resilience involves restoring and increasing the health, function, and integrity of our ecosystems and improving their ability to absorb and recover from climate-affected disturbances. For communities, increasing climate resilience means enhancing their ability to understand, prevent, adapt, and recover from climate impacts to people and infrastructure.</div><div style="text-indent:0.5in;">(17) "Closed facility" means a facility at which the current owner or operator has elected to permanently stop production and will no longer be an emissions source.</div><div style="text-indent:0.5in;">(18) "Compliance instrument" means an allowance or offset credit issued by the department or by an external greenhouse gas emissions trading program to which Washington has linked its greenhouse gas emissions cap and invest program. One compliance instrument is equal to one metric ton of carbon dioxide equivalent.</div><div style="text-indent:0.5in;">(19) "Compliance obligation" means the requirement to submit to the department the number of compliance instruments equivalent to a covered or opt-in entity's covered emissions during the compliance period.</div><div style="text-indent:0.5in;">(20) "Compliance period" means the four-year period for which the compliance obligation is calculated for covered entities.</div><div style="text-indent:0.5in;">(21) "Cost burden" means the impact on rates or charges to customers of electric utilities in Washington state for the incremental cost of electricity service to serve load due to the compliance cost for greenhouse gas emissions caused by the program. Cost burden includes administrative costs from the utility's participation in the program.</div><div style="text-indent:0.5in;">(22) "Covered emissions" means the emissions for which a covered entity has a compliance obligation under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.65.080'>70A.65.080</a>.</div><div style="text-indent:0.5in;">(23) "Covered entity" means a person that is designated by the department as subject to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.65.060'>70A.65.060</a> through  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.65.210'>70A.65.210</a>.</div><div style="text-indent:0.5in;">(24) "Cumulative environmental health impact" has the same meaning as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div><div style="text-indent:0.5in;">(25) "Curtailed facility" means a facility at which the owner or operator has temporarily suspended production but for which the owner or operator maintains operating permits and retains the option to resume production if conditions become amenable.</div><div style="text-indent:0.5in;">(26) "Department" means the department of ecology.</div><div style="text-indent:0.5in;">(27) "Electricity importer" means:</div><div style="text-indent:0.5in;">(a) For electricity that is scheduled with a NERC e-tag to a final point of delivery into a balancing authority area located entirely within the state of Washington, the electricity importer is identified on the NERC e-tag as the purchasing-selling entity on the last segment of the tag's physical path with the point of receipt located outside the state of Washington and the point of delivery located inside the state of Washington;</div><div style="text-indent:0.5in;">(b) For facilities physically located outside the state of Washington with the first point of interconnection to a balancing authority area located entirely within the state of Washington when the electricity is not scheduled on a NERC e-tag, the electricity importer is the facility operator or owner;</div><div style="text-indent:0.5in;">(c) For electricity imported through a centralized market, the electricity importer will be defined by rule consistent with the rules required under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.65.080'>70A.65.080</a>(1)(c);</div><div style="text-indent:0.5in;">(d) For electricity from facilities allocated to serve retail electricity customers of a multijurisdictional electric company, the electricity importer is the multijurisdictional electric company;</div><div style="text-indent:0.5in;">(e) If the importer identified under (a) of this subsection is a federal power marketing administration over which the state of Washington does not have jurisdiction, and the federal power marketing administration has not voluntarily elected to comply with the program, then the electricity importer is the next purchasing-selling entity in the physical path on the NERC e-tag, or if no additional purchasing-selling entity over which the state of Washington has jurisdiction, then the electricity importer is the electric utility that operates the Washington transmission or distribution system, or the generation balancing authority;</div><div style="text-indent:0.5in;">(f) For electricity that is imported into the state by a federal power marketing administration and sold to a public body or cooperative customer or direct service industrial customer located in Washington pursuant to section 5(b) or (d) of the Pacific Northwest electric power planning and conservation act of 1980, P.L. 96-501, the electricity importer is the federal marketing administration;</div><div style="text-indent:0.5in;">(g) If the importer identified under (f) of this subsection has not voluntarily elected to comply with the program, then the electricity importer is the public body or cooperative customer or direct service industrial customer; or</div><div style="text-indent:0.5in;">(h) For electricity from facilities allocated to a consumer-owned utility inside the state of Washington from a multijurisdictional consumer-owned utility, the electricity importer is the consumer-owned utility inside the state of Washington.</div><div style="text-indent:0.5in;">(28) "Emissions containment reserve allowance" means a conditional allowance that is withheld from sale at an auction by the department or its agent to secure additional emissions reductions in the event prices fall below the emissions containment reserve trigger price.</div><div style="text-indent:0.5in;">(29) "Emissions containment reserve trigger price" means the price below which allowances will be withheld from sale by the department or its agent at an auction, as determined by the department by rule.</div><div style="text-indent:0.5in;">(30) "Emissions threshold" means the greenhouse gas emission level at or above which a person has a compliance obligation.</div><div style="text-indent:0.5in;">(31) "Environmental benefits" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div><div style="text-indent:0.5in;">(32) "Environmental harm" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div><div style="text-indent:0.5in;">(33) "Environmental impacts" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div><div style="text-indent:0.5in;">(34) "Environmental justice" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div><div style="text-indent:0.5in;">(35) "Environmental justice assessment" has the same meaning as identified in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.060'>70A.02.060</a>.</div><div style="text-indent:0.5in;">(36) "External greenhouse gas emissions trading program" means a government program, other than Washington's program created in this chapter, that restricts greenhouse gas emissions from sources outside of Washington and that allows emissions trading.</div><div style="text-indent:0.5in;">(37) "Facility" means any physical property, plant, building, structure, source, or stationary equipment located on one or more contiguous or adjacent properties in actual physical contact or separated solely by a public roadway or other public right-of-way and under common ownership or common control, that emits or may emit any greenhouse gas.</div><div style="text-indent:0.5in;">(38) "First jurisdictional deliverer" means the owner or operator of an electric generating facility in Washington or an electricity importer.</div><div style="text-indent:0.5in;">(39) "General market participant" means a registered entity that is not identified as a covered entity or an opt-in entity that is registered in the program registry and intends to purchase, hold, sell, or voluntarily retire compliance instruments.</div><div style="text-indent:0.5in;">(40) "Greenhouse gas" has the same meaning as in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.45.010'>70A.45.010</a>.</div><div style="text-indent:0.5in;">(41) "Holding limit" means the maximum number of allowances that may be held for use or trade by a registered entity at any one time.</div><div style="text-indent:0.5in;">(42) "Imported electricity" means electricity generated outside the state of Washington with a final point of delivery within the state.</div><div style="text-indent:0.5in;">(a) "Imported electricity" includes electricity from an organized market, such as the energy imbalance market.</div><div style="text-indent:0.5in;">(b) "Imported electricity" includes imports from linked jurisdictions, but such imports shall be construed as having no emissions.</div><div style="text-indent:0.5in;">(c) Electricity from a system that is marketed by a federal power marketing administration shall be construed as "imported electricity," not electricity generated in the state of Washington.</div><div style="text-indent:0.5in;">(d) "Imported electricity" does not include electricity imports of unspecified electricity that are netted by exports of unspecified electricity to any jurisdiction not covered by a linked program by the same entity within the same hour.</div><div style="text-indent:0.5in;">(e) For a multijurisdictional electric company, "imported electricity" means electricity, other than from in-state facilities, that contributes to a common system power pool. Where a multijurisdictional electric company has a cost allocation methodology approved by the utilities and transportation commission, the allocation of specific facilities to Washington's retail load will be in accordance with that methodology.</div><div style="text-indent:0.5in;">(f) For a multijurisdictional consumer-owned utility, "imported electricity" includes electricity from facilities that contribute to a common system power pool that are allocated to a consumer-owned utility inside the state of Washington pursuant to a methodology approved by the governing board of the consumer-owned utility.</div><div style="text-indent:0.5in;">(43) "Leakage" means a reduction in emissions of greenhouse gases within the state that is offset by a directly attributable increase in greenhouse gas emissions outside the state and outside the geography of another jurisdiction with a linkage agreement with Washington.</div><div style="text-indent:0.5in;">(44) "Limits" means the greenhouse gas emissions reductions required by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.45.020'>70A.45.020</a>.</div><div style="text-indent:0.5in;">(45) "Linkage" means a bilateral or multilateral decision under a linkage agreement between greenhouse gas market programs to accept compliance instruments issued by a participating jurisdiction to meet the obligations of regulated entities in a partner jurisdiction and to otherwise coordinate activities to facilitate operation of a joint market.</div><div style="text-indent:0.5in;">(46) "Linkage agreement" means a nonbinding agreement that connects two or more greenhouse gas market programs and articulates a mutual understanding of how the participating jurisdictions will work together to facilitate a connected greenhouse gas market.</div><div style="text-indent:0.5in;">(47) "Linked jurisdiction" means a jurisdiction with which Washington has entered into a linkage agreement.</div><div style="text-indent:0.5in;">(48) "Multijurisdictional consumer-owned utility" means a consumer-owned utility that provides electricity to member owners in Washington and in one or more other states in a contiguous service territory or from a common power system.</div><div style="text-indent:0.5in;">(49) "Multijurisdictional electric company" means an investor-owned utility that provides electricity to customers in Washington and in one or more other states in a contiguous service territory or from a common power system.</div><div style="text-indent:0.5in;">(50) "NERC e-tag" means North American electric reliability corporation (NERC) energy tag representing transactions on the North American bulk electricity market scheduled to flow between or across balancing authority areas.</div><div style="text-indent:0.5in;">(51) "Offset credit" means a tradable compliance instrument that represents an emissions reduction or emissions removal of one metric ton of carbon dioxide equivalent.</div><div style="text-indent:0.5in;">(52) "Offset project" means a project that reduces or removes greenhouse gases that are not covered emissions under this chapter.</div><div style="text-indent:0.5in;">(53) "Offset protocols" means a set of procedures and standards to quantify greenhouse gas reductions or greenhouse gas removals achieved by an offset project.</div><div style="text-indent:0.5in;">(54) "Overburdened community" means a geographic area where vulnerable populations face combined, multiple environmental harms and health impacts or risks due to exposure to environmental pollutants or contaminants through multiple pathways, which may result in significant disparate adverse health outcomes or effects.</div><div style="text-indent:0.5in;">(a) "Overburdened community" includes, but is not limited to:</div><div style="text-indent:0.5in;">(i) Highly impacted communities as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.405.020'>19.405.020</a>;</div><div style="text-indent:0.5in;">(ii) Communities located in census tracts that are fully or partially on "Indian country" as defined in 18 U.S.C. Sec. 1151; and</div><div style="text-indent:0.5in;">(iii) Populations, including Native Americans or immigrant populations, who may be exposed to environmental contaminants and pollutants outside of the geographic area in which they reside based on the populations' use of traditional or cultural foods and practices, such as the use of resources, access to which is protected under treaty rights in ceded areas, when those exposures in conjunction with other exposures may result in disproportionately greater risks, including risks of certain cancers or other adverse health effects and outcomes.</div><div style="text-indent:0.5in;">(b) Overburdened communities identified by the department may include the same communities as those identified by the department through its process for identifying overburdened communities under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div><div style="text-indent:0.5in;">(55) "Person" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.15.2200'>70A.15.2200</a>(5)(h)(iii).</div><div style="text-indent:0.5in;">(56) "Point of delivery" means a point on the electricity transmission or distribution system where a deliverer makes electricity available to a receiver, or available to serve load. This point may be an interconnection with another system or a substation where the transmission provider's transmission and distribution systems are connected to another system, or a distribution substation where electricity is imported into the state over a multijurisdictional retail provider's distribution system.</div><div style="text-indent:0.5in;">(57) "Price ceiling unit" means the units issued at a fixed price by the department for the purpose of limiting price increases and funding further investments in greenhouse gas reductions.</div><div style="text-indent:0.5in;">(58) "Program" means the greenhouse gas emissions cap and invest program created by and implemented pursuant to this chapter.</div><div style="text-indent:0.5in;">(59) "Program registry" means the data system in which covered entities, opt-in entities, and general market participants are registered and in which compliance instruments are recorded and tracked.</div><div style="text-indent:0.5in;">(60) "Registered entity" means a covered entity, opt-in entity, or general market participant that has completed the process for registration in the program registry.</div><div style="text-indent:0.5in;">(61) "Resilience" means the ability to prepare, mitigate and plan for, withstand, recover from, and more successfully adapt to adverse events and changing conditions, and reorganize in an equitable manner that results in a new and better condition.</div><div style="text-indent:0.5in;">(62) "Retire" means to permanently remove a compliance instrument such that the compliance instrument may never be sold, traded, or otherwise used again.</div><div style="text-indent:0.5in;">(63) "Specified source of electricity" or "specified source" means a facility, unit, or asset controlling supplier that is permitted to be claimed as the source of electricity delivered. The reporting entity must have either full or partial ownership in the facility or a written power contract to procure electricity generated by that facility or unit or from an asset controlling supplier at the time of entry into the transaction to procure electricity.</div><div style="text-indent:0.5in;">(64) "Supplier" means a supplier of fuel in Washington state as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.15.2200'>70A.15.2200</a>(5)(h)(ii).</div><div style="text-indent:0.5in;">(65) "Tribal lands" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div><div style="text-indent:0.5in;">(66) "Unspecified source of electricity" or "unspecified source" means a source of electricity that is not a specified source at the time of entry into the transaction to procure electricity.</div><div style="text-indent:0.5in;">(67) "Voluntary renewable reserve account" means a holding account maintained by the department from which allowances may be retired for voluntary renewable electricity generation, which is directly delivered to the state and has not and will not be sold or used to meet any other mandatory requirements in the state or any other jurisdiction, on behalf of voluntary renewable energy purchasers or end users.</div><div style="text-indent:0.5in;">(68) "Vulnerable populations" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.02.010'>70A.02.010</a>.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5126-S2.SL.pdf?cite=2021 c 316 § 2'>2021 c 316 § 2</a>.]</div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

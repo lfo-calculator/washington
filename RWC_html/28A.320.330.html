@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 28A.320.330: School district funds.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=28A.320.330" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8wEBNqnjJTyK9fP6JWsVHDdKveiHsCaXIxr/Lc8dqzlrsyAOplW0aKJckCaZQMSaJmgx1RX25VMAziHMakLntapoUoeiJMkJfJrZYDdCenGZoOxsZ0FaoREdjTLX/yWrx8W3vLGc0EuApkiJCUjIz2Qwn232GeuV9E2ji7bfIYkbSqtvE2P8hbwwLnakxzQ73c+iN4HSIjrkBE5Ecy7OjW9OHyg+OEzKudYztEoKoOiLtrmfimvThJ/jK3lyPIWE+a/N8Gvf9bWN3YIu6yA8edcYneJK35BOTPzwE74olhhxgalW4VoZqgFKLAlZwvmC/VbRLwrkzkI7B/RzDZUDRQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=28A">Title 28A</a> > <a href="default.aspx?cite=28A.320">Chapter 28A.320</a> > <a href="default.aspx?cite=28A.320.330">Section 28A.320.330</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=28A.320.320">28A.320.320</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        28A.320.330&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=28A.320.400">28A.320.400</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.320.330'>28A.320.330</a></h3></div><div><h3>School district funds.</h3></div><div><div style="text-indent:0.5in;">School districts shall establish the following funds in addition to those provided elsewhere by law:</div><div style="text-indent:0.5in;">(1)(a) A general fund for the school district to account for all financial operations of the school district except those required to be accounted for in another fund.</div><div style="text-indent:0.5in;">(b) By the 2018-19 school year, a local revenue subfund of its general fund to account for the financial operations of a school district that are paid from local revenues. The local revenues that must be deposited in the local revenue subfund are enrichment levies and transportation vehicle levies collected under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.52.053'>84.52.053</a>, local effort assistance funding received under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.500'>28A.500</a> RCW, and other school district local revenues including, but not limited to, grants, donations, and state and federal payments in lieu of taxes, but do not include other federal revenues, or local revenues that operate as an offset to the district's basic education allocation under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.250'>28A.150.250</a>. School districts must track expenditures from this subfund separately to account for the expenditure of each of these streams of revenue by source, and must provide the supplemental expenditure schedule under (c) of this subsection, and any other supplemental expenditure schedules required by the superintendent of public instruction or state auditor, for purposes of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.09.2856'>43.09.2856</a>.</div><div style="text-indent:0.5in;">(c) Beginning in the 2019-20 school year, the superintendent of public instruction must require school districts to provide a supplemental expenditure schedule by revenue source that identifies the amount expended by object for each of the following supplementary enrichment activities beyond the state funded amount:</div><div style="text-indent:0.5in;">(i) Minimum instructional offerings under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.220'>28A.150.220</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.260'>28A.150.260</a> not otherwise included on other lines;</div><div style="text-indent:0.5in;">(ii) Staffing ratios or program components under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.260'>28A.150.260</a>, including providing additional staff for class size reduction beyond class sizes allocated in the prototypical school model and additional staff beyond the staffing ratios allocated in the prototypical school formula;</div><div style="text-indent:0.5in;">(iii) Program components under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.200'>28A.150.200</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.220'>28A.150.220</a>, or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.260'>28A.150.260</a>, not otherwise included on other lines;</div><div style="text-indent:0.5in;">(iv) Program components to support students in the program of special education;</div><div style="text-indent:0.5in;">(v) Program components of professional learning, as defined by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.415.430'>28A.415.430</a>, beyond that allocated under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.415'>28A.150.415</a>;</div><div style="text-indent:0.5in;">(vi) Extracurricular activities;</div><div style="text-indent:0.5in;">(vii) Extended school days or an extended school year;</div><div style="text-indent:0.5in;">(viii) Additional course offerings beyond the minimum instructional program established in the state's statutory program of basic education;</div><div style="text-indent:0.5in;">(ix) Activities associated with early learning programs;</div><div style="text-indent:0.5in;">(x) Activities associated with providing the student transportation program;</div><div style="text-indent:0.5in;">(xi) Any additional salary costs attributable to the provision or administration of the enrichment activities allowed under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.276'>28A.150.276</a>;</div><div style="text-indent:0.5in;">(xii) Additional activities or enhancements that the office of the superintendent of public instruction determines to be a documented and demonstrated enrichment of the state's statutory program of basic education under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.276'>28A.150.276</a>; and</div><div style="text-indent:0.5in;">(xiii) All other costs not otherwise identified in other line items.</div><div style="text-indent:0.5in;">(d) For any salary and related benefit costs identified in (c)(xi), (xii), and (xiii) of this subsection, the school district shall maintain a record describing how these expenditures are documented and demonstrated enrichment of the state's statutory program of basic education. School districts shall maintain these records until the state auditor has completed the audit under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.09.2856'>43.09.2856</a>.</div><div style="text-indent:0.5in;">(2) A capital projects fund shall be established for major capital purposes. All statutory references to a "building fund" shall mean the capital projects fund so established. Money to be deposited into the capital projects fund shall include, but not be limited to, bond proceeds, proceeds from excess levies authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.52.053'>84.52.053</a>, state apportionment proceeds as authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.270'>28A.150.270</a>, earnings from capital projects fund investments as authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.320.310'>28A.320.310</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.320.320'>28A.320.320</a>, and state forest revenues transferred pursuant to subsection (3) of this section.</div><div style="text-indent:0.5in;">Money derived from the sale of bonds, including interest earnings thereof, may only be used for those purposes described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.530.010'>28A.530.010</a>, except that accrued interest paid for bonds shall be deposited in the debt service fund.</div><div style="text-indent:0.5in;">Money to be deposited into the capital projects fund shall include but not be limited to rental and lease proceeds as authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.335.060'>28A.335.060</a>, and proceeds from the sale of real property as authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.335.130'>28A.335.130</a>.</div><div style="text-indent:0.5in;">Money legally deposited into the capital projects fund from other sources may be used for the purposes described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.530.010'>28A.530.010</a>, and for the purposes of:</div><div style="text-indent:0.5in;">(a) Major renovation and replacement of facilities and systems where periodical repairs are no longer economical or extend the useful life of the facility or system beyond its original planned useful life. Such renovation and replacement shall include, but shall not be limited to, major repairs, exterior painting of facilities, replacement and refurbishment of roofing, exterior walls, windows, heating and ventilating systems, floor covering in classrooms and public or common areas, and electrical and plumbing systems.</div><div style="text-indent:0.5in;">(b) Renovation and rehabilitation of playfields, athletic fields, and other district real property.</div><div style="text-indent:0.5in;">(c) The conduct of preliminary energy audits and energy audits of school district buildings. For the purpose of this section:</div><div style="text-indent:0.5in;">(i) "Preliminary energy audits" means a determination of the energy consumption characteristics of a building, including the size, type, rate of energy consumption, and major energy using systems of the building.</div><div style="text-indent:0.5in;">(ii) "Energy audit" means a survey of a building or complex which identifies the type, size, energy use level, and major energy using systems; which determines appropriate energy conservation maintenance or operating procedures and assesses any need for the acquisition and installation of energy conservation measures, including solar energy and renewable resource measures.</div><div style="text-indent:0.5in;">(iii) "Energy capital improvement" means the installation, or modification of the installation, of energy conservation measures in a building which measures are primarily intended to reduce energy consumption or allow the use of an alternative energy source.</div><div style="text-indent:0.5in;">(d) Those energy capital improvements which are identified as being cost-effective in the audits authorized by this section.</div><div style="text-indent:0.5in;">(e) Purchase or installation of additional major items of equipment and furniture: PROVIDED, That vehicles shall not be purchased with capital projects fund money.</div><div style="text-indent:0.5in;">(f)(i) Costs associated with implementing technology systems, facilities, and projects, including acquiring hardware, licensing software, and online applications and training related to the installation of the foregoing. However, the software or applications must be an integral part of the district's technology systems, facilities, or projects.</div><div style="text-indent:0.5in;">(ii) Costs associated with the application and modernization of technology systems for operations and instruction including, but not limited to, the ongoing fees for online applications, subscriptions, or software licenses, including upgrades and incidental services, and ongoing training related to the installation and integration of these products and services. However, to the extent the funds are used for the purpose under this subsection (2)(f)(ii), the school district shall transfer to the district's general fund the portion of the capital projects fund used for this purpose. The office of the superintendent of public instruction shall develop accounting guidelines for these transfers in accordance with internal revenue service regulations.</div><div style="text-indent:0.5in;">(g) Major equipment repair, painting of facilities, and other major preventative maintenance purposes. However, to the extent the funds are used for the purpose under this subsection (2)(g), the school district shall transfer to the district's general fund the portion of the capital projects fund used for this purpose. The office of the superintendent of public instruction shall develop accounting guidelines for these transfers in accordance with internal revenue service regulations. Based on the district's most recent two-year history of general fund maintenance expenditures, funds used for this purpose may not replace routine annual preventive maintenance expenditures made from the district's general fund.</div><div style="text-indent:0.5in;">(h) During the 2021-2023 fiscal biennium, renovation and replacement of facilities and systems, purchase or installation of items of equipment and furniture, including maintenance vehicles and machinery, and other preventative maintenance or infrastructure improvement purposes.</div><div style="text-indent:0.5in;">(3) A debt service fund to provide for tax proceeds, other revenues, and disbursements as authorized in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.44'>39.44</a> RCW. State forestland revenues that are deposited in a school district's debt service fund pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=79.64.110'>79.64.110</a> and to the extent not necessary for payment of debt service on school district bonds may be transferred by the school district into the district's capital projects fund.</div><div style="text-indent:0.5in;">(4) An associated student body fund as authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.325.030'>28A.325.030</a>.</div><div style="text-indent:0.5in;">(5) Advance refunding bond funds and refunded bond funds to provide for the proceeds and disbursements as authorized in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=39.53'>39.53</a> RCW.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1080-S.SL.pdf?cite=2021 c 332 § 7045'>2021 c 332 § 7045</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/2140-S.SL.pdf?cite=2019 c 411 § 3'>2019 c 411 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5313-S.SL.pdf?cite=2019 c 410 § 3'>2019 c 410 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/Senate/6362-S2.SL.pdf?cite=2018 c 266 § 302'>2018 c 266 § 302</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2242.SL.pdf?cite=2017 3rd sp.s. c 13 § 601'>2017 3rd sp.s. c 13 § 601</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1619-S.SL.pdf?cite=2009 c 460 § 1'>2009 c 460 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/2357.SL.pdf?cite=2007 c 503 § 2'>2007 c 503 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1280-S2.SL.pdf?cite=2007 c 129 § 2'>2007 c 129 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/6515-S.SL.pdf?cite=2002 c 275 § 2'>2002 c 275 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1990c33.pdf?cite=1990 c 33 § 337'>1990 c 33 § 337</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1983c59.pdf?cite=1983 c 59 § 13'>1983 c 59 § 13</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1982c191.pdf?cite=1982 c 191 § 6'>1982 c 191 § 6</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1981c250.pdf?cite=1981 c 250 § 2'>1981 c 250 § 2</a>. Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.58.441'>28A.58.441</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2021 c 332:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.19.501'>43.19.501</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>2017 3rd sp.s. c 13:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.150.410'>28A.150.410</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>2007 c 129:</span> "The legislature recognizes that technology has become an integral part of the facilities and educational delivery systems in our schools. In order to prepare our state's students to participate fully in our state's economy, school districts are making substantial capital investments in their technology systems, facilities, and projects. Districts are implementing, applying, and modernizing their technology systems. Software companies are shifting from selling software as a one-time package to a license or an extended contractual relationship requiring a subscription and ongoing payments. School districts must be empowered to respond to the changing business models in the software industry and be given flexibility and authority to use capital projects funds to pay for licenses or online application fees. It is the intent of the legislature that these investments be deemed major capital purpose and are also permitted uses of the district's two to six-year levies authorized by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.52.053'>84.52.053</a>." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1280-S2.SL.pdf?cite=2007 c 129 § 1'>2007 c 129 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Declaration<span style="font-family:times new roman;">—</span>2002 c 275:</span> "The legislature recognizes and acknowledges that technology has become an integral part of the facilities and educational delivery systems in our schools. In order to prepare our state's students to participate fully in our state's economy, substantial capital investments must continue to be made in our schools' comprehensive technology systems, facilities, and projects. These investments are declared to be a major capital purpose." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/6515-S.SL.pdf?cite=2002 c 275 § 1'>2002 c 275 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1983 c 59:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.505.010'>28A.505.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1982 c 191:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.335.210'>28A.335.210</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1981 c 250:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.335.060'>28A.335.060</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

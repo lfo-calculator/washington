@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 71.24.580: Criminal justice treatment account.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=71.24.580" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="oEPHiZNCNaViSXqKyfcMnvA4ckBTBkPxl4XDh1/ti1N4/h+8v8fvQDo3zDurOHCk+f2ugQbNU7kk5dqjfBnE7d5bn5NUdQnDJHjOEWcgEQwwATVmqbxFHxJTZJD1DhyrmoQWk9yQuG9T8Y+0U5JHkrKt54mLdjAu4WraRa/Cj6iBuoxy2P0TaP6iVGc6qNnaVMp8XfB/XTOSJvKYC60sp2CqqVqyw9HbgMpca7LX8vkrw96oMARlBbgwR89xDV7XOlwdbWnkV1AJ7pvNB4H128ttInrr6fcSET9r71KKGYuYBE/M8KLKKjgNyJ4D0hXofPIKGqIwoeEKLIfJ9ylsXw==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=71">Title 71</a> > <a href="default.aspx?cite=71.24">Chapter 71.24</a> > <a href="default.aspx?cite=71.24.580">Section 71.24.580</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=71.24.575">71.24.575</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        71.24.580&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=71.24.585">71.24.585</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.580'>71.24.580</a></h3></div><div><h3>Criminal justice treatment account.</h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5693-S.SL.pdf">5693-S.SL</a>) ***</div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5616-S2.SL.pdf">5616-S2.SL</a>) ***</div><div><div style="text-indent:0.5in;">(1) The criminal justice treatment account is created in the state treasury. Moneys in the account may be expended solely for: (a) Substance use disorder treatment and treatment support services for offenders with a substance use disorder that, if not treated, would result in addiction, against whom charges are filed by a prosecuting attorney in Washington state; (b) the provision of substance use disorder treatment services and treatment support services for nonviolent offenders within a drug court program; and (c) the administrative and overhead costs associated with the operation of a drug court. Amounts provided in this subsection must be used for treatment and recovery support services for criminally involved offenders and authorization of these services shall not be subject to determinations of medical necessity. During the 2019-2021 and 2021-2023 fiscal biennia, funding from the criminal justice treatment account may be used to provide treatment and support services through the conclusion of an individual's treatment plan to individuals participating in a drug court program as of February 24, 2021, if that individual wishes to continue treatment following dismissal of charges they were facing under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.4013'>69.50.4013</a>(1). Such participation is voluntary and contingent upon substantial compliance with drug court program requirements. During the 2019-2021 and 2021-2023 fiscal biennia, the legislature may appropriate from the account for municipal drug courts and increased treatment options. During the 2019-2021 fiscal biennium, the legislature may direct the state treasurer to make transfers of moneys in the criminal justice treatment account to the home security fund account created in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.185C.060'>43.185C.060</a>. Moneys in the account may be spent only after appropriation.</div><div style="text-indent:0.5in;">(2) For purposes of this section:</div><div style="text-indent:0.5in;">(a) "Treatment" means services that are critical to a participant's successful completion of his or her substance use disorder treatment program, including but not limited to the recovery support and other programmatic elements outlined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.30.030'>2.30.030</a> authorizing therapeutic courts; and</div><div style="text-indent:0.5in;">(b) "Treatment support" includes transportation to or from inpatient or outpatient treatment services when no viable alternative exists, and child care services that are necessary to ensure a participant's ability to attend outpatient treatment sessions.</div><div style="text-indent:0.5in;">(3) Revenues to the criminal justice treatment account consist of: (a) Funds transferred to the account pursuant to this section; and (b) any other revenues appropriated to or deposited in the account.</div><div style="text-indent:0.5in;">(4)(a) For the fiscal year beginning July 1, 2005, and each subsequent fiscal year, the state treasurer shall transfer eight million two hundred fifty thousand dollars from the general fund to the criminal justice treatment account, divided into four equal quarterly payments. For the fiscal year beginning July 1, 2006, and each subsequent fiscal year, the amount transferred shall be increased on an annual basis by the implicit price deflator as published by the federal bureau of labor statistics.</div><div style="text-indent:0.5in;">(b) In each odd-numbered year, the legislature shall appropriate the amount transferred to the criminal justice treatment account in (a) of this subsection to the department for the purposes of subsection (5) of this section.</div><div style="text-indent:0.5in;">(5) Moneys appropriated to the authority from the criminal justice treatment account shall be distributed as specified in this subsection. The authority may retain up to three percent of the amount appropriated under subsection (4)(b) of this section for its administrative costs.</div><div style="text-indent:0.5in;">(a) Seventy percent of amounts appropriated to the authority from the account shall be distributed to counties pursuant to the distribution formula adopted under this section. The authority, in consultation with the department of corrections, the Washington state association of counties, the Washington state association of drug court professionals, the superior court judges' association, the Washington association of prosecuting attorneys, representatives of the criminal defense bar, representatives of substance use disorder treatment providers, and any other person deemed by the authority to be necessary, shall establish a fair and reasonable methodology for distribution to counties of moneys in the criminal justice treatment account. County or regional plans submitted for the expenditure of formula funds must be approved by the panel established in (b) of this subsection.</div><div style="text-indent:0.5in;">(b) Thirty percent of the amounts appropriated to the authority from the account shall be distributed as grants for purposes of treating offenders against whom charges are filed by a county prosecuting attorney. The authority shall appoint a panel of representatives from the Washington association of prosecuting attorneys, the Washington association of sheriffs and police chiefs, the superior court judges' association, the Washington state association of counties, the Washington defender's association or the Washington association of criminal defense lawyers, the department of corrections, the Washington state association of drug court professionals, and substance use disorder treatment providers. The panel shall review county or regional plans for funding under (a) of this subsection and grants approved under this subsection. The panel shall attempt to ensure that treatment as funded by the grants is available to offenders statewide.</div><div style="text-indent:0.5in;">(6) The county alcohol and drug coordinator, county prosecutor, county sheriff, county superior court, a substance abuse treatment provider appointed by the county legislative authority, a member of the criminal defense bar appointed by the county legislative authority, and, in counties with a drug court, a representative of the drug court shall jointly submit a plan, approved by the county legislative authority or authorities, to the panel established in subsection (5)(b) of this section, for disposition of all the funds provided from the criminal justice treatment account within that county. The submitted plan should incorporate current evidence-based practices in substance use disorder treatment. The funds shall be used solely to provide approved alcohol and substance use disorder treatment pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.560'>71.24.560</a> and treatment support services. No more than ten percent of the total moneys received under subsections (4) and (5) of this section by a county or group of counties participating in a regional agreement shall be spent for treatment support services.</div><div style="text-indent:0.5in;">(7) Counties are encouraged to consider regional agreements and submit regional plans for the efficient delivery of treatment under this section.</div><div style="text-indent:0.5in;">(8) Moneys allocated under this section shall be used to supplement, not supplant, other federal, state, and local funds used for substance abuse treatment.</div><div style="text-indent:0.5in;">(9) If a region or county uses criminal justice treatment account funds to support a therapeutic court, the therapeutic court must allow the use of all medications approved by the federal food and drug administration for the treatment of opioid use disorder as deemed medically appropriate for a participant by a medical professional. If appropriate medication-assisted treatment resources are not available or accessible within the jurisdiction, the health care authority's designee for assistance must assist the court with acquiring the resource.</div><div style="text-indent:0.5in;">(10) Counties must meet the criteria established in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.30.030'>2.30.030</a>(3).</div><div style="text-indent:0.5in;">(11) The authority shall annually review and monitor the expenditures made by any county or group of counties that receives appropriated funds distributed under this section. Counties shall repay any funds that are not spent in accordance with the requirements of its contract with the authority.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5092-S.SL.pdf?cite=2021 c 334 § 989'>2021 c 334 § 989</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/6168-S.SL.pdf?cite=2020 c 357 § 917'>2020 c 357 § 917</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/1109-S.SL.pdf?cite=2019 c 415 § 980'>2019 c 415 § 980</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5432-S2.SL.pdf?cite=2019 c 325 § 1040'>2019 c 325 § 1040</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5380-S.SL.pdf?cite=2019 c 314 § 27'>2019 c 314 § 27</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1524-S.SL.pdf?cite=2018 c 205 § 2'>2018 c 205 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1388-S.SL.pdf?cite=2018 c 201 § 4044'>2018 c 201 § 4044</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/Senate/5883-S.SL.pdf?cite=2017 3rd sp.s. c 1 § 981'>2017 3rd sp.s. c 1 § 981</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/1713-S3.SL.pdf?cite=2016 sp.s. c 29 § 511'>2016 sp.s. c 29 § 511</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/6052-S.SL.pdf?cite=2015 3rd sp.s. c 4 § 968'>2015 3rd sp.s. c 4 § 968</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5107.SL.pdf?cite=2015 c 291 § 10'>2015 c 291 § 10</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5034-S.SL.pdf?cite=2013 2nd sp.s. c 4 § 990'>2013 2nd sp.s. c 4 § 990</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2058-S.SL.pdf?cite=2011 2nd sp.s. c 9 § 910'>2011 2nd sp.s. c 9 § 910</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/5891-S.SL.pdf?cite=2011 1st sp.s. c 40 § 34'>2011 1st sp.s. c 40 § 34</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/5073-S.SL.pdf?cite=2009 c 479 § 50'>2009 c 479 § 50</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1919-S.SL.pdf?cite=2009 c 445 § 1'>2009 c 445 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/2687-S.SL.pdf?cite=2008 c 329 § 918'>2008 c 329 § 918</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/Senate/5990-S.SL.pdf?cite=2003 c 379 § 11'>2003 c 379 § 11</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/House/2338-S2.SL.pdf?cite=2002 c 290 § 4'>2002 c 290 § 4</a>. Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.96A.350'>70.96A.350</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Conflict with federal requirements<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2021 c 334:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.79.555'>43.79.555</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2020 c 357:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.79.545'>43.79.545</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2019 c 415:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.20.476'>28B.20.476</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2019 c 325:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.24.011'>71.24.011</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Declaration<span style="font-family:times new roman;">—</span>2019 c 314:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.22.810'>18.22.810</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2018 c 205:</span> "Drug courts remove a defendant's or respondent's case from the criminal and civil court traditional trial track and allow those defendants or respondents the opportunity to obtain treatment services to address particular issues that may have contributed to the conduct that led to their arrest or other issues before the court. Such courts, by focusing on specific individuals' needs, provide treatment for the issues presented and ensure rapid and appropriate accountability for program violations, which decreases recidivism, improves the safety of the community, and improves the life of the program participant and the lives of the participant's family members by decreasing the severity and frequency of the specific behavior addressed by the therapeutic court. Therefore, the legislature finds compelling the research conducted by the Washington state institute for public policy and the research and data analysis division of the department of social and health services showing that providing recovery support services to clients in drug courts creates a benefit to the state of approximately seven dollars and sixty cents in reduced public expenditures and reduced costs of victimization for each dollar spent. Therefore, it is the intent of the legislature to allow the use of a portion of the criminal justice treatment account to provide such services to foster increased success in drug courts." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1524-S.SL.pdf?cite=2018 c 205 § 1'>2018 c 205 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2018 c 201:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.05.018'>41.05.018</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2017 3rd sp.s. c 1:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.41.455'>43.41.455</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>2016 sp.s. c 29:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.05.760'>71.05.760</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Short title<span style="font-family:times new roman;">—</span>Right of action<span style="font-family:times new roman;">—</span>2016 sp.s. c 29:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.05.010'>71.05.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>2015 3rd sp.s. c 4:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.15.069'>28B.15.069</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Conflict with federal requirements<span style="font-family:times new roman;">—</span>2015 c 291:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.30.010'>2.30.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>2013 2nd sp.s. c 4:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.68.020'>2.68.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>2011 2nd sp.s. c 9:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.50.837'>28B.50.837</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>Recalculation of community custody terms<span style="font-family:times new roman;">—</span>2011 1st sp.s. c 40:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9.94A.501'>9.94A.501</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2009 c 479:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.56.030'>2.56.030</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2008 c 329:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.105.110'>28B.105.110</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>Effective dates<span style="font-family:times new roman;">—</span>2003 c 379:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9.94A.728'>9.94A.728</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2002 c 290 §§ 1, 4-6, 12, 13, 26, and 27:</span> "Sections 1, 4 through 6, 12, 13, 26, and 27 of this act are necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and take effect immediately [April 1, 2002]." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/House/2338-S2.SL.pdf?cite=2002 c 290 § 32'>2002 c 290 § 32</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>2002 c 290:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9.94A.517'>9.94A.517</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

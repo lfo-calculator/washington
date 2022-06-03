@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 57.08.005: Powers.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=57.08.005" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="265N3Nm82lkg7gBhRTzXhxPmxT/pKxms3+VL6JWLWvYfC7DjhQBBX7BxoGoLSRWlp1BN/yaOmXsVKIAeSQ0P+v4iMXc4ep+R0WdfCiobkB/XORw5Ay+2xpn1SqRVW7IMB6PnEyTKPmFoAgkBgb0sRV4xoLe56+ADL0xNpuGmgf2dLnaevWLUjqlpgHa4zvhJEKF9ZkxSLEN9RPPxahpHfVubk7lPRInMarqirmyPoxR4RUBbzM2dimzaVIcMh8Doks53GmvUPhoLU9k4Ub3sB2tyu995szaAF0OXyAh6LeU=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=57">Title 57</a> > <a href="default.aspx?cite=57.08">Chapter 57.08</a> > <a href="default.aspx?cite=57.08.005">Section 57.08.005</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        57.08.005&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=57.08.007">57.08.007</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.08.005'>57.08.005</a></h3></div><div><h3>Powers.</h3></div><div><div style="text-indent:0.5in;">A district shall have the following powers:</div><div style="text-indent:0.5in;">(1) To acquire by purchase or condemnation, or both, all lands, property and property rights, and all water and water rights, both within and without the district, necessary for its purposes. The right of eminent domain shall be exercised in the same manner and by the same procedure as provided for cities and towns, insofar as consistent with this title, except that all assessment or reassessment rolls to be prepared and filed by eminent domain commissioners or commissioners appointed by the court shall be prepared and filed by the district, and the duties devolving upon the city treasurer are imposed upon the county treasurer;</div><div style="text-indent:0.5in;">(2) To lease real or personal property necessary for its purposes for a term of years for which that leased property may reasonably be needed;</div><div style="text-indent:0.5in;">(3) To construct, condemn and purchase, add to, maintain, and supply waterworks to furnish the district and inhabitants thereof and any other persons, both within and without the district, with an ample supply of water for all uses and purposes public and private with full authority to regulate and control the use, content, distribution, and price thereof in such a manner as is not in conflict with general law and may construct, acquire, or own buildings and other necessary district facilities. Where a customer connected to the district's system uses the water on an intermittent or transient basis, a district may charge for providing water service to such a customer, regardless of the amount of water, if any, used by the customer. District waterworks may include facilities which result in combined water supply and electric generation, if the electricity generated thereby is a by-product of the water supply system. That electricity may be used by the district or sold to any entity authorized by law to use or distribute electricity. Electricity is deemed a by-product when the electrical generation is subordinate to the primary purpose of water supply. For such purposes, a district may take, condemn and purchase, acquire, and retain water from any public or navigable lake, river or watercourse, or any underflowing water, and by means of aqueducts or pipeline conduct the same throughout the district and any city or town therein and carry it along and upon public highways, roads, and streets, within and without such district. For the purpose of constructing or laying aqueducts or pipelines, dams, or waterworks or other necessary structures in storing and retaining water or for any other lawful purpose such district may occupy the beds and shores up to the high water mark of any such lake, river, or other watercourse, and may acquire by purchase or condemnation such property or property rights or privileges as may be necessary to protect its water supply from pollution. For the purposes of waterworks which include facilities for the generation of electricity as a by-product, nothing in this section may be construed to authorize a district to condemn electric generating, transmission, or distribution rights or facilities of entities authorized by law to distribute electricity, or to acquire such rights or facilities without the consent of the owner;</div><div style="text-indent:0.5in;">(4) To purchase and take water from any municipal corporation, private person, or entity. A district contiguous to Canada may contract with a Canadian corporation for the purchase of water and for the construction, purchase, maintenance, and supply of waterworks to furnish the district and inhabitants thereof and residents of Canada with an ample supply of water under the terms approved by the board of commissioners;</div><div style="text-indent:0.5in;">(5) To construct, condemn and purchase, add to, maintain, and operate systems of sewers for the purpose of furnishing the district, the inhabitants thereof, and persons outside the district with an adequate system of sewers for all uses and purposes, public and private, including but not limited to on-site sewage disposal facilities, approved septic tanks or approved septic tank systems, on-site sanitary sewerage systems, inspection services and maintenance services for private and public on-site systems, point and nonpoint water pollution monitoring programs that are directly related to the sewerage facilities and programs operated by a district, other facilities, programs, and systems for the collection, interception, treatment, and disposal of wastewater, and for the control of pollution from wastewater with full authority to regulate the use and operation thereof and the service rates to be charged. Under this chapter, after July 1, 1998, any requirements for pumping the septic tank of an on-site sewage system should be based, among other things, on actual measurement of accumulation of sludge and scum by a trained inspector, trained owner's agent, or trained owner. Training must occur in a program approved by the state board of health or by a local health officer. Sewage facilities may include facilities which result in combined sewage disposal or treatment and electric or methane gas generation, except that the electricity or methane gas generated thereby is a by-product of the system of sewers. Such electricity or methane gas may be used by the district or sold to any entity authorized by law to distribute electricity or methane gas. Electricity and methane gas are deemed by-products when the electrical or methane gas generation is subordinate to the primary purpose of sewage disposal or treatment. The district may also sell surplus methane gas, which may be produced as a by-product. For such purposes a district may conduct sewage throughout the district and throughout other political subdivisions within the district, and construct and lay sewer pipe along and upon public highways, roads, and streets, within and without the district, and condemn and purchase or acquire land and rights-of-way necessary for such sewer pipe. A district may erect sewage treatment plants within or without the district, and may acquire, by purchase or condemnation, properties or privileges necessary to be had to protect any lakes, rivers, or watercourses and also other areas of land from pollution from its sewers or its sewage treatment plant. For the purposes of sewage facilities which include facilities that result in combined sewage disposal or treatment and electric generation where the electric generation is a by-product, nothing in this section may be construed to authorize a district to condemn electric generating, transmission, or distribution rights or facilities of entities authorized by law to distribute electricity, or to acquire such rights or facilities without the consent of the owners;</div><div style="text-indent:0.5in;">(6) The authority to construct, condemn and purchase, add to, maintain, and operate systems of reclaimed water as authorized by chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=90.46'>90.46</a> RCW for the purpose of furnishing the district and the inhabitants thereof with reclaimed water for all authorized uses and purposes, public and private, including with full authority to regulate the use and operation thereof and the service rates to be charged. In compliance with other sections of this chapter, a district may also provide reclaimed water services to persons outside the district;</div><div style="text-indent:0.5in;">(7)(a) To construct, condemn and purchase, add to, maintain, and operate systems of drainage for the benefit and use of the district, the inhabitants thereof, and persons outside the district with an adequate system of drainage, including but not limited to facilities and systems for the collection, interception, treatment, and disposal of storm or surface waters, and for the protection, preservation, and rehabilitation of surface and underground waters, and drainage facilities for public highways, streets, and roads, with full authority to regulate the use and operation thereof and, except as provided in (b) of this subsection, the service rates to be charged.</div><div style="text-indent:0.5in;">(b) The rate a district may charge under this section for storm or surface water sewer systems or the portion of the rate allocable to the storm or surface water sewer system of combined sanitary sewage and storm or surface water sewer systems shall be reduced by a minimum of ten percent for any new or remodeled commercial building that utilizes a permissive rainwater harvesting system. Rainwater harvesting systems shall be properly sized to utilize the available roof surface of the building. The jurisdiction shall consider rate reductions in excess of ten percent dependent upon the amount of rainwater harvested.</div><div style="text-indent:0.5in;">(c) Drainage facilities may include natural systems. Drainage facilities may include facilities which result in combined drainage facilities and electric generation, except that the electricity generated thereby is a by-product of the drainage system. Such electricity may be used by the district or sold to any entity authorized by law to distribute electricity. Electricity is deemed a by-product when the electrical generation is subordinate to the primary purpose of drainage collection, disposal, and treatment. For such purposes, a district may conduct storm or surface water throughout the district and throughout other political subdivisions within the district, construct and lay drainage pipe and culverts along and upon public highways, roads, and streets, within and without the district, and condemn and purchase or acquire land and rights-of-way necessary for such drainage systems. A district may provide or erect facilities and improvements for the treatment and disposal of storm or surface water within or without the district, and may acquire, by purchase or condemnation, properties or privileges necessary to be had to protect any lakes, rivers, or watercourses and also other areas of land from pollution from storm or surface waters. For the purposes of drainage facilities which include facilities that also generate electricity as a by-product, nothing in this section may be construed to authorize a district to condemn electric generating, transmission, or distribution rights or facilities of entities authorized by law to distribute electricity, or to acquire such rights or facilities without the consent of the owners;</div><div style="text-indent:0.5in;">(8) To construct, condemn, acquire, and own buildings and other necessary district facilities;</div><div style="text-indent:0.5in;">(9) To compel all property owners within the district located within an area served by the district's system of sewers to connect their private drain and sewer systems with the district's system under such penalty as the commissioners shall prescribe by resolution. The district may for such purpose enter upon private property and connect the private drains or sewers with the district system and the cost thereof shall be charged against the property owner and shall be a lien upon property served;</div><div style="text-indent:0.5in;">(10) Where a district contains within its borders, abuts, or is located adjacent to any lake, stream, groundwater as defined by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=90.44.035'>90.44.035</a>, or other waterway within the state of Washington, to provide for the reduction, minimization, or elimination of pollutants from those waters in accordance with the district's comprehensive plan, and to issue general obligation bonds, revenue bonds, local improvement district bonds, or utility local improvement bonds for the purpose of paying all or any part of the cost of reducing, minimizing, or eliminating the pollutants from these waters;</div><div style="text-indent:0.5in;">(11) Subject to subsection (7) of this section, to fix rates and charges for water, sewer, reclaimed water, and drain service supplied and to charge property owners seeking to connect to the district's systems, as a condition to granting the right to so connect, in addition to the cost of the connection, such reasonable connection charge as the board of commissioners shall determine to be proper in order that those property owners shall bear their equitable share of the cost of the system. For the purposes of calculating a connection charge, the board of commissioners shall determine the pro rata share of the cost of existing facilities and facilities planned for construction within the next ten years and contained in an adopted comprehensive plan and other costs borne by the district which are directly attributable to the improvements required by property owners seeking to connect to the system. The cost of existing facilities shall not include those portions of the system which have been donated or which have been paid for by grants. The connection charge may include interest charges applied from the date of construction of the system until the connection, or for a period not to exceed ten years, whichever is shorter, at a rate commensurate with the rate of interest applicable to the district at the time of construction or major rehabilitation of the system, or at the time of installation of the lines to which the property owner is seeking to connect. In lieu of requiring the installation of permanent local facilities not planned for construction by the district, a district may permit connection to the water and/or sewer systems through temporary facilities installed at the property owner's expense, provided the property owner pays a connection charge consistent with the provisions of this chapter and agrees, in the future, to connect to permanent facilities when they are installed; or a district may permit connection to the water and/or sewer systems through temporary facilities and collect from property owners so connecting a proportionate share of the estimated cost of future local facilities needed to serve the property, as determined by the district. The amount collected, including interest at a rate commensurate with the rate of interest applicable to the district at the time of construction of the temporary facilities, shall be held for contribution to the construction of the permanent local facilities by other developers or the district. The amount collected shall be deemed full satisfaction of the proportionate share of the actual cost of construction of the permanent local facilities. If the permanent local facilities are not constructed within fifteen years of the date of payment, the amount collected, including any accrued interest, shall be returned to the property owner, according to the records of the county auditor on the date of return. If the amount collected is returned to the property owner, and permanent local facilities capable of serving the property are constructed thereafter, the property owner at the time of construction of such permanent local facilities shall pay a proportionate share of the cost of such permanent local facilities, in addition to reasonable connection charges and other charges authorized by this section. A district may permit payment of the cost of connection and the reasonable connection charge to be paid with interest in installments over a period not exceeding fifteen years. The county treasurer may charge and collect a fee of three dollars for each year for the treasurer's services. Those fees shall be a charge to be included as part of each annual installment, and shall be credited to the county current expense fund by the county treasurer. Revenues from connection charges excluding permit fees are to be considered payments in aid of construction as defined by department of revenue rule. Rates or charges for on-site inspection and maintenance services may not be imposed under this chapter on the development, construction, or reconstruction of property.</div><div style="text-indent:0.5in;">Before adopting on-site inspection and maintenance utility services, or incorporating residences into an on-site inspection and maintenance or sewer utility under this chapter, notification must be provided, prior to the applicable public hearing, to all residences within the proposed service area that have on-site systems permitted by the local health officer. The notice must clearly state that the residence is within the proposed service area and must provide information on estimated rates or charges that may be imposed for the service.</div><div style="text-indent:0.5in;">A water-sewer district shall not provide on-site sewage system inspection, pumping services, or other maintenance or repair services under this section using water-sewer district employees unless the on-site system is connected by a publicly owned collection system to the water-sewer district's sewerage system, and the on-site system represents the first step in the sewage disposal process.</div><div style="text-indent:0.5in;">Except as otherwise provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=90.03.525'>90.03.525</a>, any public entity and public property, including the state of Washington and state property, shall be subject to rates and charges for sewer, water, stormwater control, drainage, and street lighting facilities to the same extent private persons and private property are subject to those rates and charges that are imposed by districts. In setting those rates and charges, consideration may be made of in-kind services, such as stream improvements or donation of property;</div><div style="text-indent:0.5in;">(12) To contract with individuals, associations and corporations, the state of Washington, and the United States;</div><div style="text-indent:0.5in;">(13) To employ such persons as are needed to carry out the district's purposes and fix salaries and any bond requirements for those employees;</div><div style="text-indent:0.5in;">(14) To contract for the provision of engineering, legal, and other professional services as in the board of commissioner's discretion is necessary in carrying out their duties;</div><div style="text-indent:0.5in;">(15) To sue and be sued;</div><div style="text-indent:0.5in;">(16) To loan and borrow funds and to issue bonds and instruments evidencing indebtedness under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.20'>57.20</a> RCW and other applicable laws;</div><div style="text-indent:0.5in;">(17) To transfer funds, real or personal property, property interests, or services subject to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.08.015'>57.08.015</a>;</div><div style="text-indent:0.5in;">(18) To levy taxes in accordance with this chapter and chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.04'>57.04</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.20'>57.20</a> RCW;</div><div style="text-indent:0.5in;">(19) To provide for making local improvements and to levy and collect special assessments on property benefited thereby, and for paying for the same or any portion thereof in accordance with chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.16'>57.16</a> RCW;</div><div style="text-indent:0.5in;">(20) To establish street lighting systems under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.08.060'>57.08.060</a>;</div><div style="text-indent:0.5in;">(21) To exercise such other powers as are granted to water-sewer districts by this title or other applicable laws; and</div><div style="text-indent:0.5in;">(22) To exercise any of the powers granted to cities and counties with respect to the acquisition, construction, maintenance, operation of, and fixing rates and charges for waterworks and systems of sewerage and drainage.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1532-S.SL.pdf?cite=2009 c 253 § 1'>2009 c 253 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5231-S.SL.pdf?cite=2007 c 31 § 8'>2007 c 31 § 8</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/Senate/6208-S.SL.pdf?cite=2004 c 202 § 1'>2004 c 202 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/2088-S.SL.pdf?cite=2003 c 394 § 5'>2003 c 394 § 5</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/1264.SL.pdf?cite=1999 c 153 § 2'>1999 c 153 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/5838-S.SL.pdf?cite=1997 c 447 § 16'>1997 c 447 § 16</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/Senate/6091-S.SL.pdf?cite=1996 c 230 § 301'>1996 c 230 § 301</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Part headings not law<span style="font-family:times new roman;">—</span>1999 c 153:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.04.050'>57.04.050</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Purpose<span style="font-family:times new roman;">—</span>1997 c 447:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.05.074'>70.05.074</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Part headings not law<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>1996 c 230:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=57.02.001'>57.02.001</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

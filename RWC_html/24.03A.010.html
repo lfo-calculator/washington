@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 24.03A.010: Definitions. (<i>Effective January 1, 2022.</i>)
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=24.03A.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Bjy2sPeJVAh29DqnpQcd4HanYcljXgVB2T+LiH/6XR1+qkBanF5FKmIyvIWI7hWCv8W/3rLmFv1XGJTu8k11BnWYri0nAMMRijFGF8Mzv5J7jA4CiuO4mbUHktULfoTACUWCWTesdpBeiLWKR6shjsEESVzsXe6q9xWyvjwEMgQB9hbH/aRpOPbVipaIDWKJJxOQPJWdiXYnXa9uOv0Usy0ZnrtugAFxg7W/JVeWTcg5cEaJ+cjaxL3onCGKjQNkR+k8ryUaIjAkYdU8/f3dldYMGGzziUktk2aQbSlx5fgoRfX6MyDjs+mUhmevnsvGn8IJB6svoeCyptJVo7T0rQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=24">Title 24</a> > <a href="default.aspx?cite=24.03A">Chapter 24.03A</a> > <a href="default.aspx?cite=24.03A.010">Section 24.03A.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=24.03A.005">24.03A.005</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        24.03A.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=24.03A.015">24.03A.015</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=24.03A.010'>24.03A.010</a></h3></div><div><h3>Definitions. <span style="font-style:italic;">(Effective January 1, 2022.)</span></h3></div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Address," unless otherwise specified, means either a physical mailing address or an electronic address.</div><div style="text-indent:0.5in;">(2) "Articles" or "articles of incorporation" means the original articles of incorporation as modified by all amendments thereof, as filed by the secretary of state. If any record filed under this chapter restates the articles in their entirety, thenceforth the articles shall not include any prior filings.</div><div style="text-indent:0.5in;">(3) "Board" or "board of directors" means the team or body of individuals ultimately responsible for the management of the activities and affairs of the nonprofit corporation, regardless of the name used to refer to the team or body.</div><div style="text-indent:0.5in;">(4) "Bylaws" means the code or codes of rules, other than the articles, adopted for the regulation and governance of the internal affairs of the nonprofit corporation, regardless of the name or names used to refer to those rules, excluding separate policies or procedures adopted by the board.</div><div style="text-indent:0.5in;">(5) "Charitable corporation" means a domestic nonprofit corporation that is operated primarily or exclusively for one or more charitable purposes.</div><div style="text-indent:0.5in;">(6) "Charitable purpose" means a purpose that:</div><div style="text-indent:0.5in;">(a) Would make a corporation organized and operated exclusively for that purpose eligible to be exempt from taxation under section 501(c)(3) of the internal revenue code; or</div><div style="text-indent:0.5in;">(b) Is considered charitable under applicable law other than this chapter or the internal revenue code.</div><div style="text-indent:0.5in;">(7) "Contribution" means the payment, donation, or promise, for consideration or otherwise, of any money or property of any kind or value which contribution is wholly or partly induced by a solicitation.</div><div style="text-indent:0.5in;">(8) "Corporation" means a domestic nonprofit corporation, unless otherwise specified.</div><div style="text-indent:0.5in;">(9) "Delegate" means a person elected or appointed to vote in a representative capacity for the election of directors or on other matters.</div><div style="text-indent:0.5in;">(10) "Deliver" or "delivery" of a record means delivery by hand, United States mail, private courier service, electronic transmission, or other methods of delivery used in conventional commercial practice, except that delivery to the secretary of state means actual receipt by the secretary of state.</div><div style="text-indent:0.5in;">(11) "Director" means an individual designated, elected, or appointed, by that or any other name or title, to act as a member of the board of directors, while the individual is holding that position.</div><div style="text-indent:0.5in;">(12) "Domestic," with respect to an entity, means governed as to its internal affairs by the law of this state.</div><div style="text-indent:0.5in;">(13) "Domestic corporation" or "domestic nonprofit corporation" means a domestic corporation incorporated under or subject to this chapter.</div><div style="text-indent:0.5in;">(14) "Domestic unincorporated entity" means an unincorporated entity whose internal affairs are governed by the laws of this state.</div><div style="text-indent:0.5in;">(15) "Electronic" means relating to technology having electrical, digital, magnetic, wireless, optical, electromagnetic, or similar capabilities.</div><div style="text-indent:0.5in;">(16) "Electronic transmission" means an electronic communication:</div><div style="text-indent:0.5in;">(a) Not directly involving the physical transfer of a record in a tangible medium; and</div><div style="text-indent:0.5in;">(b) That may be retained, retrieved, and reviewed by the sender and the recipient thereof, and that may be directly reproduced in a tangible medium by such a sender and recipient.</div><div style="text-indent:0.5in;">(17) "Electronically transmitted" means that the sender of an electronic transmission initiated the electronic transmission.</div><div style="text-indent:0.5in;">(18) "Eligible entity" means a domestic or foreign unincorporated entity, a domestic nonprofit corporation incorporated under a corporations statute other than this chapter or its predecessor statutes, or a domestic or foreign for-profit corporation.</div><div style="text-indent:0.5in;">(19) "Employee" does not include an individual serving as an officer or director who is not otherwise employed by the corporation.</div><div style="text-indent:0.5in;">(20) "Entitled to vote" means entitled to vote on the matter under consideration pursuant to the articles or bylaws of the nonprofit corporation or any applicable controlling provision of law.</div><div style="text-indent:0.5in;">(21) "Entity" means an organization or artificial legal person that either has a separate legal existence or has the power to acquire an estate in real property in its own name and includes, but is not limited to:</div><div style="text-indent:0.5in;">(a) A domestic or foreign for-profit corporation;</div><div style="text-indent:0.5in;">(b) A domestic or foreign nonprofit corporation;</div><div style="text-indent:0.5in;">(c) A domestic or foreign general or limited partnership;</div><div style="text-indent:0.5in;">(d) A domestic or foreign limited liability partnership;</div><div style="text-indent:0.5in;">(e) A domestic or foreign limited liability company;</div><div style="text-indent:0.5in;">(f) Any other domestic or foreign unincorporated entity;</div><div style="text-indent:0.5in;">(g) A domestic or foreign estate or trust;</div><div style="text-indent:0.5in;">(h) The federal government;</div><div style="text-indent:0.5in;">(i) A tribal government; and</div><div style="text-indent:0.5in;">(j) A state or local government, foreign government, or governmental subdivision.</div><div style="text-indent:0.5in;">(22) "Ex officio director" means an individual who becomes a member of the board of directors not through the regular elections process but by virtue of another position that he or she holds. Unless the articles or bylaws specifically state that an ex officio director does not have the right to vote, such a director has the same right to vote as any other director.</div><div style="text-indent:0.5in;">(23) "Execute" or "executed" means:</div><div style="text-indent:0.5in;">(a) Signed, with respect to a written record;</div><div style="text-indent:0.5in;">(b) Electronically transmitted along with sufficient information to determine the sender's identity and intent to execute; or</div><div style="text-indent:0.5in;">(c) With respect to a record to be filed by the secretary of state, in compliance with the standards for filing as prescribed by this chapter; chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=23.95'>23.95</a> RCW; or the secretary of state.</div><div style="text-indent:0.5in;">(24) "Federal government" includes a district, authority, bureau, commission, department, and any other agency of the federal government of the United States.</div><div style="text-indent:0.5in;">(25) "Filing entity" means an unincorporated entity that is created by filing a public organic record.</div><div style="text-indent:0.5in;">(26) "For-profit corporation" or "domestic for-profit corporation" means a domestic business corporation incorporated under or subject to Title <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=23B'>23B</a> RCW or any successor provisions.</div><div style="text-indent:0.5in;">(27) "Foreign," with respect to an entity, means governed as to its internal affairs by the law of a jurisdiction other than this state.</div><div style="text-indent:0.5in;">(28) "Foreign for-profit corporation" means a foreign corporation that would be a for-profit corporation if incorporated under the law of this state.</div><div style="text-indent:0.5in;">(29) "Foreign corporation" or "foreign nonprofit corporation" means a foreign corporation that would be a nonprofit corporation if incorporated under the law of this state.</div><div style="text-indent:0.5in;">(30) "Foreign unincorporated entity" means an unincorporated entity whose internal affairs are governed by an organic law of a jurisdiction other than this state.</div><div style="text-indent:0.5in;">(31) "Fundamental transaction" means an amendment of the articles or bylaws, merger, sale of all or substantially all of the assets, domestication, conversion, or dissolution of a nonprofit corporation.</div><div style="text-indent:0.5in;">(32) "Gift instrument" means a record or records under which property is donated to, transferred to, granted to, or held by the corporation. A solicitation constitutes a gift instrument with respect to a donation, transfer, or grant of property made in response to the solicitation only if:</div><div style="text-indent:0.5in;">(a) The solicitation was in the form of a record , including[,] but not limited to, invitations made by electronic transmission or in electronic media, or was documented in the form of a record created no later than ninety days after the solicitation was made; and</div><div style="text-indent:0.5in;">(b) The donation, transfer, or grant of property was made within one year of the solicitation.</div><div style="text-indent:0.5in;">(33) "Governmental subdivision" includes an authority, county, district, and municipality formed or authorized by any federal, state, or local government.</div><div style="text-indent:0.5in;">(34) "Includes" denotes a partial definition.</div><div style="text-indent:0.5in;">(35) "Individual" means a natural person.</div><div style="text-indent:0.5in;">(36) "Interest" means either or both of the following rights under the organic law of an unincorporated entity:</div><div style="text-indent:0.5in;">(a) The right to receive distributions from the entity either in the ordinary course or upon liquidation; or</div><div style="text-indent:0.5in;">(b) The right to receive notice or vote on issues involving its internal affairs, other than as an agent, assignee, proxy, or person responsible for managing its business, activities, or affairs.</div><div style="text-indent:0.5in;">(37) "Interest holder" means a person who holds of record an interest.</div><div style="text-indent:0.5in;">(38) "Interest holder liability" means personal liability for a debt, obligation, or liability of a domestic or foreign for-profit or nonprofit corporation or unincorporated entity that is imposed on a person:</div><div style="text-indent:0.5in;">(a) Solely by reason of the person's status as a shareholder, interest holder, or member; or</div><div style="text-indent:0.5in;">(b) By the articles, bylaws, or an organic record pursuant to a provision of the organic law authorizing the articles, bylaws, or an organic record to make one or more specified shareholders, interest holders, or members liable in their capacity as shareholders, interest holders, or members for all or specified debts, obligations, or liabilities of the entity.</div><div style="text-indent:0.5in;">(39) "Internal revenue code" means Title 26 U.S.C., the federal internal revenue code of 1986, as amended, or any successor statute.</div><div style="text-indent:0.5in;">(40) "Jurisdiction," when used to refer to a political entity, means the United States, a state, a foreign country, or a political subdivision of a foreign country.</div><div style="text-indent:0.5in;">(41) "Jurisdiction of formation" means the jurisdiction whose law includes the organic law of an entity.</div><div style="text-indent:0.5in;">(42) "Material interest" means an actual or potential benefit or detriment, other than one that would devolve on the nonprofit corporation or the members generally, that would reasonably be expected to impair the objectivity of an individual's judgment when participating in the action to be taken.</div><div style="text-indent:0.5in;">(43) "Material relationship" means a familial, financial, professional, employment, or other relationship that would reasonably be expected to impair the objectivity of an individual's judgment when participating in the action to be taken.</div><div style="text-indent:0.5in;">(44) "Means" denotes an exhaustive definition.</div><div style="text-indent:0.5in;">(45) "Member" means:</div><div style="text-indent:0.5in;">(a) Where the articles state that the corporation has members, a person who has a right set forth in the articles or bylaws, not as a delegate, to select or vote for the election of directors or delegates or to vote on at least one type of fundamental transaction.</div><div style="text-indent:0.5in;">(b) For a corporation formed before January 1, 2022, the articles of which do not state that the corporation has members, a person who:</div><div style="text-indent:0.5in;">(i) Is defined as a member in the bylaws; and</div><div style="text-indent:0.5in;">(ii) Has a right provided in the bylaws, not as a delegate, to select or vote for the election of directors or delegates or to vote on at least one type of fundamental transaction.</div><div style="text-indent:0.5in;">(c) A delegate or group of delegates, to the extent:</div><div style="text-indent:0.5in;">(i) The powers, functions, or authority of the members have been vested in, or are exercised by, such a delegate or group of delegates; and</div><div style="text-indent:0.5in;">(ii) The provision of this chapter in which the term appears is relevant to the discharge by the delegate or group of delegates of its powers, functions, or authority.</div><div style="text-indent:0.5in;">(46) "Membership" means the rights and any obligations of a member in a nonprofit corporation.</div><div style="text-indent:0.5in;">(47) "Membership corporation" means a nonprofit corporation whose articles provide that it has members, or that has members as defined in subsection (45) of this section.</div><div style="text-indent:0.5in;">(48) "Nonfiling entity" means an unincorporated entity that is not created by filing a public organic record.</div><div style="text-indent:0.5in;">(49) "Nonmembership corporation" means a nonprofit corporation whose articles do not provide that it has members and that does not have members as defined in subsection (45)(b) of this section.</div><div style="text-indent:0.5in;">(50) "Nonprofit corporation" means a domestic nonprofit corporation, unless otherwise specified.</div><div style="text-indent:0.5in;">(51) "Notice" has the same meaning as described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=24.03A.015'>24.03A.015</a>.</div><div style="text-indent:0.5in;">(52) "Notify" means to provide notice as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=24.03A.015'>24.03A.015</a>.</div><div style="text-indent:0.5in;">(53) "Officer" includes:</div><div style="text-indent:0.5in;">(a) A person who is an officer as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=24.03A.585'>24.03A.585</a>; and</div><div style="text-indent:0.5in;">(b) If a nonprofit corporation is in the hands of a custodian, receiver, trustee, or other court-appointed fiduciary, that fiduciary or any person appointed by that fiduciary to act as an officer for any purpose under this chapter.</div><div style="text-indent:0.5in;">(54) "Organic law" means the law of an entity's jurisdiction of formation governing the internal affairs of the entity.</div><div style="text-indent:0.5in;">(55) "Organic record" means a public organic record or the private organic rules.</div><div style="text-indent:0.5in;">(56) "Person" includes an individual or an entity.</div><div style="text-indent:0.5in;">(57) "Principal office" means the office designated in the annual report required under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=23.95.255'>23.95.255</a> as the location of the principal executive office of a domestic or foreign nonprofit corporation, whether or not in this state.</div><div style="text-indent:0.5in;">(58) "Private organic rules" means the rules, whether or not in a record, that govern the internal affairs of an unincorporated entity, are binding on all of its interest holders, and are not part of its public organic record, if any.</div><div style="text-indent:0.5in;">(59) "Proceeding" means any civil suit or criminal, administrative, or investigatory action.</div><div style="text-indent:0.5in;">(60) "Property" means all property, whether real, personal, or mixed or tangible or intangible, including cash, securities, or real property, or any right or interest therein.</div><div style="text-indent:0.5in;">(61) "Property held for charitable purposes" is as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=24.03A.165'>24.03A.165</a>.</div><div style="text-indent:0.5in;">(62) "Public organic record" means the record, if any, that is filed as a public record to create an unincorporated entity and any amendment to or restatement of that record.</div><div style="text-indent:0.5in;">(63) "Record" means information inscribed on a tangible medium or that is stored in an electronic or other medium and is retrievable in perceivable form. An electronic transmission not directly involving the physical transfer of a record in a tangible medium is a record only if:</div><div style="text-indent:0.5in;">(a) It may be retained, retrieved, and reviewed by the sender and the recipient thereof; and</div><div style="text-indent:0.5in;">(b) It may be directly reproduced in a tangible medium by the sender and the recipient thereof.</div><div style="text-indent:0.5in;">(64) "Record date" means the date established under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=24.03A.420'>24.03A.420</a> on which a nonprofit corporation determines the identity of its members and the membership rights they hold for purposes of this chapter. The determinations shall be made as of 12:01 a.m. on the record date unless another time for doing so is specified when the record date is fixed.</div><div style="text-indent:0.5in;">(65) "Registered foreign nonprofit corporation" means a foreign nonprofit corporation registered to do business in this state.</div><div style="text-indent:0.5in;">(66) "Religious corporation" means a charitable corporation including, but not limited to, a church, mosque, synagogue, temple, nondenominational ministry, interdenominational or ecumenical organization, or faith-based social service agency, that is:</div><div style="text-indent:0.5in;">(a) Organized primarily for religious purposes;</div><div style="text-indent:0.5in;">(b) Operated primarily, in good faith, to carry out religious purposes;</div><div style="text-indent:0.5in;">(c) Held out to the public as carrying out religious purposes; and</div><div style="text-indent:0.5in;">(d) Not engaged primarily or substantially in the exchange of goods or services for consideration, unless the consideration does not exceed nominal amounts.</div><div style="text-indent:0.5in;">(67) "Shareholder" means the person in whose name shares are registered in the records of a domestic or foreign for-profit corporation or the beneficial owner of shares to the extent of the rights granted by a nominee certificate on file with such a corporation.</div><div style="text-indent:0.5in;">(68) "Shares" means the units into which the proprietary interests in a domestic or foreign for-profit corporation, or a nonprofit corporation incorporated under organic law other than this chapter that permits proprietary interests in such a corporation, are divided.</div><div style="text-indent:0.5in;">(69) "Solicitation" means any oral or written request for a contribution, including an offer or attempt by the solicitor to sell any property, rights, services, or other thing, in connection with which:</div><div style="text-indent:0.5in;">(a) Any appeal is made for any charitable purpose;</div><div style="text-indent:0.5in;">(b) The name of any charitable corporation, or any foreign nonprofit corporation that would be a charitable corporation if it were incorporated under this chapter, is used as an inducement for making the contribution or consummating the sale; or</div><div style="text-indent:0.5in;">(c) Any statement is made that implies that the whole or any part of the contribution or the proceeds from the sale will be applied toward any charitable purpose or donated to any entity organized or operated for charitable purposes.</div><div style="text-indent:0.5in;">(70) "State" means a state of the United States, the District of Columbia, Puerto Rico, the United States Virgin Islands, or any territory or insular possession subject to the jurisdiction of the United States, and any agency or governmental subdivision of any of the foregoing.</div><div style="text-indent:0.5in;">(71) "Tangible medium" means a writing, copy of a writing, facsimile, or a physical reproduction, each on paper or on other tangible material.</div><div style="text-indent:0.5in;">(72) "Unincorporated entity" means an entity that is not any of the following: A domestic or foreign for-profit or nonprofit corporation, an estate, a trust, a governmental subdivision, the federal government, a tribal government, a state or local government, a municipal corporation, a foreign government, or a governmental subdivision. The term includes a general partnership, limited liability company, limited partnership, cooperative association, limited cooperative association, business or statutory trust, joint stock association, and unincorporated nonprofit association.</div><div style="text-indent:0.5in;">(73) "Vote," "voting," or "casting a vote" includes voting occurring at a meeting; voting of members by ballot or proxy; and the giving of consent in the form of a record without a meeting by a person entitled to vote. Whether or not the person entitled to vote characterizes such conduct as voting or casting a vote, the term does not include either recording the fact of abstention or failing to vote for:</div><div style="text-indent:0.5in;">(a) A candidate; or</div><div style="text-indent:0.5in;">(b) Approval or disapproval of a matter.</div><div style="text-indent:0.5in;">(74) "Voting group" means one or more classes of members that under the articles, bylaws, or this chapter are entitled to vote and be counted together collectively on a matter at a meeting of members. All members entitled by the articles, bylaws, or this chapter to vote generally on that matter are for that purpose a single voting group.</div><div style="text-indent:0.5in;">(75) "Voting power" means the current power to vote in the election of directors or delegates, or to vote on approval of any type of fundamental transaction.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5034-S.SL.pdf?cite=2021 c 176 § 1102'>2021 c 176 § 1102</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2021 c 176:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=24.03A.005'>24.03A.005</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

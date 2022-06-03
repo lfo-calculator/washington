@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 18.79.240: Construction. (<i>Effective until July 1, 2022.</i>)
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=18.79.240" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="vE6prgey17oZ8/6732Ks3AuIsIkIPxGHZgdXEH7cMi9W2iMM5hNNAAfzkp0RY04co91Qc/jQfydYcweqoiKOCj7XNqhsyOYWvkFJS2O0+NA/OwDxw72mwZ4afdTOQ0FvhZFbvS5TNw2AIVPA6/IkpMRXO9XHcZZduc6JsGS/fWU9INY/SaE9uyKS0rV1lHYw2KJWLply6BnmONxxAFm6d+LSwaB1CrNECTDXbCtyqT0xX2XC8Dmd5JMbOporTvpHwVV23qDmvzn6bJeAW1hxLehs1RHQDU8GkWFjX6eQM2ArImJpKNWb84WoidXB5vFSHm6/N5nQBTjO048EgFe5aQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=18">Title 18</a> > <a href="default.aspx?cite=18.79">Chapter 18.79</a> > <a href="default.aspx?cite=18.79.240">Section 18.79.240</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=18.79.230">18.79.230</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        18.79.240&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=18.79.250">18.79.250</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.240'>18.79.240</a></h3></div><div><h3>Construction. <span style="font-style:italic;">(Effective until July 1, 2022.)</span></h3></div><div><div style="text-indent:0.5in;">(1) In the context of the definition of registered nursing practice and advanced registered nursing practice, this chapter shall not be construed as:</div><div style="text-indent:0.5in;">(a) Prohibiting the incidental care of the sick by domestic servants or persons primarily employed as housekeepers, so long as they do not practice registered nursing within the meaning of this chapter;</div><div style="text-indent:0.5in;">(b) Preventing a person from the domestic administration of family remedies or the furnishing of nursing assistance in case of emergency;</div><div style="text-indent:0.5in;">(c) Prohibiting the practice of nursing by students enrolled in approved schools as may be incidental to their course of study or prohibiting the students from working as nursing technicians;</div><div style="text-indent:0.5in;">(d) Prohibiting auxiliary services provided by persons carrying out duties necessary for the support of nursing services, including those duties that involve minor nursing services for persons performed in hospitals, nursing homes, or elsewhere under the direction of licensed physicians or the supervision of licensed registered nurses;</div><div style="text-indent:0.5in;">(e) Prohibiting the practice of nursing in this state by a legally qualified nurse of another state or territory whose engagement requires him or her to accompany and care for a patient temporarily residing in this state during the period of one such engagement, not to exceed six months in length, if the person does not represent or hold himself or herself out as a registered nurse licensed to practice in this state;</div><div style="text-indent:0.5in;">(f) Prohibiting nursing or care of the sick, with or without compensation, when done in connection with the practice of the religious tenets of a church by adherents of the church so long as they do not engage in the practice of nursing as defined in this chapter;</div><div style="text-indent:0.5in;">(g) Prohibiting the practice of a legally qualified nurse of another state who is employed by the United States government or a bureau, division, or agency thereof, while in the discharge of his or her official duties;</div><div style="text-indent:0.5in;">(h) Permitting the measurement of the powers or range of human vision, or the determination of the accommodation and refractive state of the human eye or the scope of its functions in general, or the fitting or adaptation of lenses for the aid thereof;</div><div style="text-indent:0.5in;">(i) Permitting the prescribing or directing the use of, or using, an optical device in connection with ocular exercises, visual training, vision training, or orthoptics;</div><div style="text-indent:0.5in;">(j) Permitting the prescribing of contact lenses for, or the fitting and adaptation of contact lenses to, the human eye;</div><div style="text-indent:0.5in;">(k) Prohibiting the performance of routine visual screening;</div><div style="text-indent:0.5in;">(l) Permitting the practice of dentistry or dental hygiene as defined in chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.32'>18.32</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.29'>18.29</a> RCW, respectively;</div><div style="text-indent:0.5in;">(m) Permitting the practice of chiropractic as defined in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.25'>18.25</a> RCW including the adjustment or manipulation of the articulation of the spine;</div><div style="text-indent:0.5in;">(n) Permitting the practice of podiatric medicine and surgery as defined in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.22'>18.22</a> RCW;</div><div style="text-indent:0.5in;">(o) Permitting the performance of major surgery, except such minor surgery as the commission may have specifically authorized by rule adopted in accordance with chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=34.05'>34.05</a> RCW;</div><div style="text-indent:0.5in;">(p) Permitting the prescribing of controlled substances as defined in Schedule I of the Uniform Controlled Substances Act, chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50'>69.50</a> RCW;</div><div style="text-indent:0.5in;">(q) Prohibiting the determination and pronouncement of death;</div><div style="text-indent:0.5in;">(r) Prohibiting advanced registered nurse practitioners, approved by the commission as certified registered nurse anesthetists from selecting, ordering, or administering controlled substances as defined in Schedules II through IV of the Uniform Controlled Substances Act, chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50'>69.50</a> RCW, consistent with their commission-recognized scope of practice; subject to facility-specific protocols, and subject to a request for certified registered nurse anesthetist anesthesia services issued by a physician licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.71'>18.71</a> RCW, an osteopathic physician and surgeon licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.57'>18.57</a> RCW, a dentist licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.32'>18.32</a> RCW, or a podiatric physician and surgeon licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.22'>18.22</a> RCW; the authority to select, order, or administer Schedule II through IV controlled substances being limited to those drugs that are to be directly administered to patients who require anesthesia for diagnostic, operative, obstetrical, or therapeutic procedures in a hospital, clinic, ambulatory surgical facility, or the office of a practitioner licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.71'>18.71</a>, 18.22, 18.36, 18.36A, 18.57, 18.57A, or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.32'>18.32</a> RCW; "select" meaning the decision-making process of choosing a drug, dosage, route, and time of administration; and "order" meaning the process of directing licensed individuals pursuant to their statutory authority to directly administer a drug or to dispense, deliver, or distribute a drug for the purpose of direct administration to a patient, under instructions of the certified registered nurse anesthetist. "Protocol" means a statement regarding practice and documentation concerning such items as categories of patients, categories of medications, or categories of procedures rather than detailed case-specific formulas for the practice of nurse anesthesia;</div><div style="text-indent:0.5in;">(s) Prohibiting advanced registered nurse practitioners from ordering or prescribing controlled substances as defined in Schedules II through IV of the Uniform Controlled Substances Act, chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50'>69.50</a> RCW, if and to the extent that doing so is permitted by their scope of practice;</div><div style="text-indent:0.5in;">(t) Prohibiting the practice of registered nursing or advanced registered nursing by a student enrolled in an approved school if:</div><div style="text-indent:0.5in;">(i) The student performs services without compensation or expectation of compensation as part of a volunteer activity;</div><div style="text-indent:0.5in;">(ii) The student is under the direct supervision of a registered nurse or advanced registered nurse practitioner licensed under this chapter, a pharmacist licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.64'>18.64</a> RCW, an osteopathic physician and surgeon licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.57'>18.57</a> RCW, or a physician licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.71'>18.71</a> RCW;</div><div style="text-indent:0.5in;">(iii) The services the student performs are within the scope of practice of: (A) The nursing profession for which the student is receiving training; and (B) the person supervising the student;</div><div style="text-indent:0.5in;">(iv) The school in which the student is enrolled verifies the student has demonstrated competency through his or her education and training to perform the services; and</div><div style="text-indent:0.5in;">(v) The student provides proof of current malpractice insurance to the volunteer activity organizer prior to performing any services.</div><div style="text-indent:0.5in;">(2) In the context of the definition of licensed practical nursing practice, this chapter shall not be construed as:</div><div style="text-indent:0.5in;">(a) Prohibiting the incidental care of the sick by domestic servants or persons primarily employed as housekeepers, so long as they do not practice practical nursing within the meaning of this chapter;</div><div style="text-indent:0.5in;">(b) Preventing a person from the domestic administration of family remedies or the furnishing of nursing assistance in case of emergency;</div><div style="text-indent:0.5in;">(c) Prohibiting the practice of practical nursing by students enrolled in approved schools as may be incidental to their course of study or prohibiting the students from working as nursing assistants;</div><div style="text-indent:0.5in;">(d) Prohibiting auxiliary services provided by persons carrying out duties necessary for the support of nursing services, including those duties that involve minor nursing services for persons performed in hospitals, nursing homes, or elsewhere under the direction of licensed physicians or the supervision of licensed registered nurses;</div><div style="text-indent:0.5in;">(e) Prohibiting or preventing the practice of nursing in this state by a legally qualified nurse of another state or territory whose engagement requires him or her to accompany and care for a patient temporarily residing in this state during the period of one such engagement, not to exceed six months in length, if the person does not represent or hold himself or herself out as a licensed practical nurse licensed to practice in this state;</div><div style="text-indent:0.5in;">(f) Prohibiting nursing or care of the sick, with or without compensation, when done in connection with the practice of the religious tenets of a church by adherents of the church so long as they do not engage in licensed practical nurse practice as defined in this chapter;</div><div style="text-indent:0.5in;">(g) Prohibiting the practice of a legally qualified nurse of another state who is employed by the United States government or any bureau, division, or agency thereof, while in the discharge of his or her official duties.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/1726.SL.pdf?cite=2019 c 270 § 4'>2019 c 270 § 4</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/1479.SL.pdf?cite=2005 c 28 § 1'>2005 c 28 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/Senate/5829-S.SL.pdf?cite=2003 c 258 § 6'>2003 c 258 § 6</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/5805-S.SL.pdf?cite=2000 c 64 § 3'>2000 c 64 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/2676-S.SL.pdf?cite=1994 sp.s. c 9 § 424'>1994 sp.s. c 9 § 424</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2003 c 258:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.330'>18.79.330</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2000 c 64 §§ 1-3:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.050'>18.79.050</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>2000 c 64:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.050'>18.79.050</a>.</div></div><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.240'>18.79.240</a></h3></div><div><h3>Construction. <span style="font-style:italic;">(Effective July 1, 2022.)</span></h3></div><div><div style="text-indent:0.5in;">(1) In the context of the definition of registered nursing practice and advanced registered nursing practice, this chapter shall not be construed as:</div><div style="text-indent:0.5in;">(a) Prohibiting the incidental care of the sick by domestic servants or persons primarily employed as housekeepers, so long as they do not practice registered nursing within the meaning of this chapter;</div><div style="text-indent:0.5in;">(b) Preventing a person from the domestic administration of family remedies or the furnishing of nursing assistance in case of emergency;</div><div style="text-indent:0.5in;">(c) Prohibiting the practice of nursing by students enrolled in approved schools as may be incidental to their course of study or prohibiting the students from working as nursing technicians;</div><div style="text-indent:0.5in;">(d) Prohibiting auxiliary services provided by persons carrying out duties necessary for the support of nursing services, including those duties that involve minor nursing services for persons performed in hospitals, nursing homes, or elsewhere under the direction of licensed physicians or the supervision of licensed registered nurses;</div><div style="text-indent:0.5in;">(e) Prohibiting the practice of nursing in this state by a legally qualified nurse of another state or territory whose engagement requires him or her to accompany and care for a patient temporarily residing in this state during the period of one such engagement, not to exceed six months in length, if the person does not represent or hold himself or herself out as a registered nurse licensed to practice in this state;</div><div style="text-indent:0.5in;">(f) Prohibiting nursing or care of the sick, with or without compensation, when done in connection with the practice of the religious tenets of a church by adherents of the church so long as they do not engage in the practice of nursing as defined in this chapter;</div><div style="text-indent:0.5in;">(g) Prohibiting the practice of a legally qualified nurse of another state who is employed by the United States government or a bureau, division, or agency thereof, while in the discharge of his or her official duties;</div><div style="text-indent:0.5in;">(h) Permitting the measurement of the powers or range of human vision, or the determination of the accommodation and refractive state of the human eye or the scope of its functions in general, or the fitting or adaptation of lenses for the aid thereof;</div><div style="text-indent:0.5in;">(i) Permitting the prescribing or directing the use of, or using, an optical device in connection with ocular exercises, visual training, vision training, or orthoptics;</div><div style="text-indent:0.5in;">(j) Permitting the prescribing of contact lenses for, or the fitting and adaptation of contact lenses to, the human eye;</div><div style="text-indent:0.5in;">(k) Prohibiting the performance of routine visual screening;</div><div style="text-indent:0.5in;">(l) Permitting the practice of dentistry or dental hygiene as defined in chapters  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.32'>18.32</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.29'>18.29</a> RCW, respectively;</div><div style="text-indent:0.5in;">(m) Permitting the practice of chiropractic as defined in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.25'>18.25</a> RCW including the adjustment or manipulation of the articulation of the spine;</div><div style="text-indent:0.5in;">(n) Permitting the practice of podiatric medicine and surgery as defined in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.22'>18.22</a> RCW;</div><div style="text-indent:0.5in;">(o) Permitting the performance of major surgery, except such minor surgery as the commission may have specifically authorized by rule adopted in accordance with chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=34.05'>34.05</a> RCW;</div><div style="text-indent:0.5in;">(p) Permitting the prescribing of controlled substances as defined in Schedule I of the Uniform Controlled Substances Act, chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50'>69.50</a> RCW;</div><div style="text-indent:0.5in;">(q) Prohibiting the determination and pronouncement of death;</div><div style="text-indent:0.5in;">(r) Prohibiting advanced registered nurse practitioners, approved by the commission as certified registered nurse anesthetists from selecting, ordering, or administering controlled substances as defined in Schedules II through IV of the Uniform Controlled Substances Act, chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50'>69.50</a> RCW, consistent with their commission-recognized scope of practice; subject to facility-specific protocols, and subject to a request for certified registered nurse anesthetist anesthesia services issued by a physician licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.71'>18.71</a> RCW, an osteopathic physician and surgeon licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.57'>18.57</a> RCW, a dentist licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.32'>18.32</a> RCW, or a podiatric physician and surgeon licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.22'>18.22</a> RCW; the authority to select, order, or administer Schedule II through IV controlled substances being limited to those drugs that are to be directly administered to patients who require anesthesia for diagnostic, operative, obstetrical, or therapeutic procedures in a hospital, clinic, ambulatory surgical facility, or the office of a practitioner licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.71'>18.71</a>, 18.22, 18.36, 18.36A, 18.57, or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.32'>18.32</a> RCW; "select" meaning the decision-making process of choosing a drug, dosage, route, and time of administration; and "order" meaning the process of directing licensed individuals pursuant to their statutory authority to directly administer a drug or to dispense, deliver, or distribute a drug for the purpose of direct administration to a patient, under instructions of the certified registered nurse anesthetist. "Protocol" means a statement regarding practice and documentation concerning such items as categories of patients, categories of medications, or categories of procedures rather than detailed case-specific formulas for the practice of nurse anesthesia;</div><div style="text-indent:0.5in;">(s) Prohibiting advanced registered nurse practitioners from ordering or prescribing controlled substances as defined in Schedules II through IV of the Uniform Controlled Substances Act, chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50'>69.50</a> RCW, if and to the extent that doing so is permitted by their scope of practice;</div><div style="text-indent:0.5in;">(t) Prohibiting the practice of registered nursing or advanced registered nursing by a student enrolled in an approved school if:</div><div style="text-indent:0.5in;">(i) The student performs services without compensation or expectation of compensation as part of a volunteer activity;</div><div style="text-indent:0.5in;">(ii) The student is under the direct supervision of a registered nurse or advanced registered nurse practitioner licensed under this chapter, a pharmacist licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.64'>18.64</a> RCW, an osteopathic physician and surgeon licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.57'>18.57</a> RCW, or a physician licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.71'>18.71</a> RCW;</div><div style="text-indent:0.5in;">(iii) The services the student performs are within the scope of practice of: (A) The nursing profession for which the student is receiving training; and (B) the person supervising the student;</div><div style="text-indent:0.5in;">(iv) The school in which the student is enrolled verifies the student has demonstrated competency through his or her education and training to perform the services; and</div><div style="text-indent:0.5in;">(v) The student provides proof of current malpractice insurance to the volunteer activity organizer prior to performing any services.</div><div style="text-indent:0.5in;">(2) In the context of the definition of licensed practical nursing practice, this chapter shall not be construed as:</div><div style="text-indent:0.5in;">(a) Prohibiting the incidental care of the sick by domestic servants or persons primarily employed as housekeepers, so long as they do not practice practical nursing within the meaning of this chapter;</div><div style="text-indent:0.5in;">(b) Preventing a person from the domestic administration of family remedies or the furnishing of nursing assistance in case of emergency;</div><div style="text-indent:0.5in;">(c) Prohibiting the practice of practical nursing by students enrolled in approved schools as may be incidental to their course of study or prohibiting the students from working as nursing assistants;</div><div style="text-indent:0.5in;">(d) Prohibiting auxiliary services provided by persons carrying out duties necessary for the support of nursing services, including those duties that involve minor nursing services for persons performed in hospitals, nursing homes, or elsewhere under the direction of licensed physicians or the supervision of licensed registered nurses;</div><div style="text-indent:0.5in;">(e) Prohibiting or preventing the practice of nursing in this state by a legally qualified nurse of another state or territory whose engagement requires him or her to accompany and care for a patient temporarily residing in this state during the period of one such engagement, not to exceed six months in length, if the person does not represent or hold himself or herself out as a licensed practical nurse licensed to practice in this state;</div><div style="text-indent:0.5in;">(f) Prohibiting nursing or care of the sick, with or without compensation, when done in connection with the practice of the religious tenets of a church by adherents of the church so long as they do not engage in licensed practical nurse practice as defined in this chapter;</div><div style="text-indent:0.5in;">(g) Prohibiting the practice of a legally qualified nurse of another state who is employed by the United States government or any bureau, division, or agency thereof, while in the discharge of his or her official duties.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/2378-S.SL.pdf?cite=2020 c 80 § 17'>2020 c 80 § 17</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/1726.SL.pdf?cite=2019 c 270 § 4'>2019 c 270 § 4</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/1479.SL.pdf?cite=2005 c 28 § 1'>2005 c 28 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/Senate/5829-S.SL.pdf?cite=2003 c 258 § 6'>2003 c 258 § 6</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/5805-S.SL.pdf?cite=2000 c 64 § 3'>2000 c 64 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/2676-S.SL.pdf?cite=1994 sp.s. c 9 § 424'>1994 sp.s. c 9 § 424</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2020 c 80 §§ 12-59:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=7.68.030'>7.68.030</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>2020 c 80:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.71A.010'>18.71A.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2003 c 258:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.330'>18.79.330</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2000 c 64 §§ 1-3:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.050'>18.79.050</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>2000 c 64:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.79.050'>18.79.050</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

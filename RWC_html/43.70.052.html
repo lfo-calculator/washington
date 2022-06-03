@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 43.70.052: Hospital financial and patient discharge data—Financial reports—Data retrieval—American Indian health data—Reporting—Patient discharge data—Confidentiality and protection.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=43.70.052" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="M8gN0N/vwPl1eVLmG+/R2epz0nG1xxMkev1QATyptCcBwaZ4UrBDxVVIRkkwijM1n70AxAqyteInbmptuNfhg6Wy2VePFB3qEAxTjCTNCxkiDzK+0QnMivm81YnCSnyQHVTkYproa9RT3259MtNKen9NheXFUc0+Z++cbrNAmNt5lkvH/02nX7/BgdcrkSQGhl6vLUCL+ZQpiPjN8IZ+mO27GvqjnpWMlBBk+QEYHqiaFh1v5NpR/nLozGWsZhUNyZTYqEwD+rY+Uks5MbNg3ZdkchDuwl8N+cDxe/HGkodLuS8oElQ+HNzMnTIRRQ4l+7SMyiztSG741Qmzif8xIw==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=43">Title 43</a> > <a href="default.aspx?cite=43.70">Chapter 43.70</a> > <a href="default.aspx?cite=43.70.052">Section 43.70.052</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=43.70.050">43.70.050</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        43.70.052&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=43.70.053">43.70.053</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.70.052'>43.70.052</a></h3></div><div><h3>Hospital financial and patient discharge data<span style="font-family:times new roman;">—</span>Financial reports<span style="font-family:times new roman;">—</span>Data retrieval<span style="font-family:times new roman;">—</span>American Indian health data<span style="font-family:times new roman;">—</span>Reporting<span style="font-family:times new roman;">—</span>Patient discharge data<span style="font-family:times new roman;">—</span>Confidentiality and protection.</h3></div><div><div style="text-indent:0.5in;">(1)(a) To promote the public interest consistent with the purposes of chapter 492, Laws of 1993 as amended by chapter 267, Laws of 1995, the department shall require hospitals to submit hospital financial and patient discharge information, including any applicable information reported pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.70.053'>43.70.053</a>, which shall be collected, maintained, analyzed, and disseminated by the department. The department shall, if deemed cost-effective and efficient, contract with a private entity for any or all parts of data collection. Data elements shall be reported in conformance with a uniform reporting system established by the department. This includes data elements identifying each hospital's revenues, expenses, contractual allowances, charity care, bad debt, other income, total units of inpatient and outpatient services, and other financial and employee compensation information reasonably necessary to fulfill the purposes of this section.</div><div style="text-indent:0.5in;">(b) Data elements relating to use of hospital services by patients shall be the same as those currently compiled by hospitals through inpatient discharge abstracts. The department shall encourage and permit reporting by electronic transmission or hard copy as is practical and economical to reporters.</div><div style="text-indent:0.5in;">(c) By January 1, 2023, the department must revise the uniform reporting system to further delineate hospital expenses reported in the other direct expense category in the statement of revenue and expense. The department must include the following additional categories of expenses within the other direct expenses category:</div><div style="text-indent:0.5in;">(i) Blood supplies;</div><div style="text-indent:0.5in;">(ii) Contract staffing;</div><div style="text-indent:0.5in;">(iii) Information technology, including licenses and maintenance;</div><div style="text-indent:0.5in;">(iv) Insurance and professional liability;</div><div style="text-indent:0.5in;">(v) Laundry services;</div><div style="text-indent:0.5in;">(vi) Legal, audit, and tax professional services;</div><div style="text-indent:0.5in;">(vii) Purchased laboratory services;</div><div style="text-indent:0.5in;">(viii) Repairs and maintenance;</div><div style="text-indent:0.5in;">(ix) Shared services or system office allocation;</div><div style="text-indent:0.5in;">(x) Staff recruitment;</div><div style="text-indent:0.5in;">(xi) Training costs;</div><div style="text-indent:0.5in;">(xii) Taxes;</div><div style="text-indent:0.5in;">(xiii) Utilities; and</div><div style="text-indent:0.5in;">(xiv) Other noncategorized expenses.</div><div style="text-indent:0.5in;">(d) The department must revise the uniform reporting system to further delineate hospital revenues reported in the other operating revenue category in the statement of revenue and expense. The department must include the following additional categories of revenues within the other operating revenues category:</div><div style="text-indent:0.5in;">(i) Donations;</div><div style="text-indent:0.5in;">(ii) Grants;</div><div style="text-indent:0.5in;">(iii) Joint venture revenue;</div><div style="text-indent:0.5in;">(iv) Local taxes;</div><div style="text-indent:0.5in;">(v) Outpatient pharmacy;</div><div style="text-indent:0.5in;">(vi) Parking;</div><div style="text-indent:0.5in;">(vii) Quality incentive payments;</div><div style="text-indent:0.5in;">(viii) Reference laboratories;</div><div style="text-indent:0.5in;">(ix) Rental income;</div><div style="text-indent:0.5in;">(x) Retail cafeteria; and</div><div style="text-indent:0.5in;">(xi) Other noncategorized revenues.</div><div style="text-indent:0.5in;">(e)(i) A hospital, other than a hospital designated by medicare as a critical access hospital or sole community hospital, must report line items and amounts for any expenses or revenues in the other noncategorized expenses category in (c)(xiv) of this subsection or the other noncategorized revenues category in (d)(xi) of this subsection that either have a value: (A) Of $1,000,000 or more; or (B) representing one percent or more of the total expenses or total revenues; or</div><div style="text-indent:0.5in;">(ii) A hospital designated by medicare as a critical access hospital or sole community hospital must report line items and amounts for any expenses or revenues in the other noncategorized expenses category in (c)(xiv) of this subsection or the other noncategorized revenues category in (d)(xi) of this subsection that represent the greater of: (A) $1,000,000; or (B) one percent or more of the total expenses or total revenues.</div><div style="text-indent:0.5in;">(f) A hospital must report any money, including loans, received by the hospital or a health system to which it belongs from a federal, state, or local government entity in response to a national or state-declared emergency, including a pandemic. Hospitals must report this information as it relates to federal, state, or local money received after January 1, 2020, in association with the COVID-19 pandemic. The department shall provide guidance on reporting pursuant to this subsection.</div><div style="text-indent:0.5in;">(2) In identifying financial reporting requirements, the department may require both annual reports and condensed quarterly reports from hospitals, so as to achieve both accuracy and timeliness in reporting, but shall craft such requirements with due regard of the data reporting burdens of hospitals.</div><div style="text-indent:0.5in;">(3)(a) Beginning with compensation information for 2012, unless a hospital is operated on a for-profit basis, the department shall require a hospital licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.41'>70.41</a> RCW to annually submit employee compensation information. To satisfy employee compensation reporting requirements to the department, a hospital shall submit information as directed in (a)(i) or (ii) of this subsection. A hospital may determine whether to report under (a)(i) or (ii) of this subsection for purposes of reporting.</div><div style="text-indent:0.5in;">(i) Within one hundred thirty-five days following the end of each hospital's fiscal year, a nonprofit hospital shall file the appropriate schedule of the federal internal revenue service form 990 that identifies the employee compensation information with the department. If the lead administrator responsible for the hospital or the lead administrator's compensation is not identified on the schedule of form 990 that identifies the employee compensation information, the hospital shall also submit the compensation information for the lead administrator as directed by the department's form required in (b) of this subsection.</div><div style="text-indent:0.5in;">(ii) Within one hundred thirty-five days following the end of each hospital's calendar year, a hospital shall submit the names and compensation of the five highest compensated employees of the hospital who do not have any direct patient responsibilities. Compensation information shall be reported on a calendar year basis for the calendar year immediately preceding the reporting date. If those five highest compensated employees do not include the lead administrator for the hospital, compensation information for the lead administrator shall also be submitted. Compensation information shall include base compensation, bonus and incentive compensation, other payments that qualify as reportable compensation, retirement and other deferred compensation, and nontaxable benefits.</div><div style="text-indent:0.5in;">(b) To satisfy the reporting requirements of this subsection (3), the department shall create a form and make it available no later than August 1, 2012. To the greatest extent possible, the form shall follow the format and reporting requirements of the portion of the internal revenue service form 990 schedule relating to compensation information. If the internal revenue service substantially revises its schedule, the department shall update its form.</div><div style="text-indent:0.5in;">(4) The health care data collected, maintained, and studied by the department shall only be available for retrieval in original or processed form to public and private requestors pursuant to subsection (9) of this section and shall be available within a reasonable period of time after the date of request. The cost of retrieving data for state officials and agencies shall be funded through the state general appropriation. The cost of retrieving data for individuals and organizations engaged in research or private use of data or studies shall be funded by a fee schedule developed by the department that reflects the direct cost of retrieving the data or study in the requested form.</div><div style="text-indent:0.5in;">(5) The department shall, in consultation and collaboration with tribes, urban or other Indian health service organizations, and the federal area Indian health service, design, develop, and maintain an American Indian-specific health data, statistics information system.</div><div style="text-indent:0.5in;">(6)(a) Except as provided in subsection (c) of this section, beginning January 1, 2023, patient discharge information reported by hospitals to the department must identify patients by race, ethnicity, gender identity, sexual orientation, preferred language, any disability, and zip code of primary residence. The department shall provide guidance on reporting pursuant to this subsection. When requesting demographic information under this subsection, a hospital must inform patients that providing the information is voluntary. If a hospital fails to report demographic information under this subsection because a patient refused to provide the information, the department may not take any action against the hospital for failure to comply with reporting requirements or other licensing standards on that basis.</div><div style="text-indent:0.5in;">(b) The department must develop a waiver process for the requirements of (a) of this subsection for a hospital that is certified by the centers for medicare and medicaid services as a critical access hospital, is certified by the centers of medicare and medicaid services as a sole community hospital, or qualifies as a medicare dependent hospital due to economic hardship, technological limitations that are not reasonably in the control of the hospital, or other exceptional circumstance demonstrated by the hospital. The waiver must be limited to one year or less, or for any other specified time frame set by the department. Hospitals may apply for waiver extensions.</div><div style="text-indent:0.5in;">(c) Subject to funding appropriated specifically for this purpose, the department shall establish a process no later than October 1, 2022, for any hospital that is certified by the centers for medicare and medicaid services as a critical access hospital, is certified by the centers for medicare and medicaid services as a sole community hospital, or qualifies as a medicare dependent hospital, to apply for a grant to support updating the hospital's electronic health records system to comply with the requirements of this subsection, subject to the following:</div><div style="text-indent:0.5in;">(i) A hospital owned or operated by a health system that owns or operates two or more hospitals is not eligible to apply for a grant under this subsection;</div><div style="text-indent:0.5in;">(ii) In considering a hospital application, the department may consider information about the hospital's need for financial support to alter the hospital's electronic health records system, including, but not limited to, demonstrated costs necessary to update the hospital's current electronic health record system to comply with the requirements in this section and evidence of need for financial assistance. The department may provide grant amounts of varying sizes depending on the need of the applicant hospital;</div><div style="text-indent:0.5in;">(iii) A hospital that receives a grant under this section must update the hospital's electronic health records system to comply with the requirements of this section before the hospital may make other changes to its electronic health records system, except for changes that are required for security, compliance, or privacy purposes; and</div><div style="text-indent:0.5in;">(iv) A hospital that receives a grant under this section must comply with subsection (a) of this section no later than July 1, 2023.</div><div style="text-indent:0.5in;">(d) The department shall adopt rules to implement this subsection (6) no later than July 1, 2022.</div><div style="text-indent:0.5in;">(7) Beginning January 1, 2023, each hospital must report to the department, on a quarterly basis, the number of submitted and completed charity care applications that the hospital received in the prior quarter and the number of charity care applications approved in the prior quarter pursuant to the hospital's charity care policy, consistent with chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.170'>70.170</a> RCW. The department shall develop a standard form for hospitals to use in submitting information pursuant to this subsection.</div><div style="text-indent:0.5in;">(8) All persons subject to the data collection requirements of this section shall comply with departmental requirements established by rule in the acquisition of data.</div><div style="text-indent:0.5in;">(9) The department must maintain the confidentiality of patient discharge data it collects under subsections (1) and (6) of this section. Patient discharge data that includes direct and indirect identifiers is not subject to public inspection and the department may only release such data as allowed for in this section. Any agency that receives patient discharge data under (a) or (b) of this subsection must also maintain the confidentiality of the data and may not release the data except as consistent with subsection (10)(b) of this section. The department may release the data as follows:</div><div style="text-indent:0.5in;">(a) Data that includes direct and indirect patient identifiers, as specifically defined in rule, may be released to:</div><div style="text-indent:0.5in;">(i) Federal, state, and local government agencies upon receipt of a signed data use agreement with the department; and</div><div style="text-indent:0.5in;">(ii) Researchers with approval of the Washington state institutional review board upon receipt of a signed confidentiality agreement with the department.</div><div style="text-indent:0.5in;">(b) Data that does not contain direct patient identifiers but may contain indirect patient identifiers may be released to agencies, researchers, and other persons upon receipt of a signed data use agreement with the department.</div><div style="text-indent:0.5in;">(c) Data that does not contain direct or indirect patient identifiers may be released on request.</div><div style="text-indent:0.5in;">(10) Recipients of data under subsection (9)(a) and (b) of this section must agree in a written data use agreement, at a minimum, to:</div><div style="text-indent:0.5in;">(a) Take steps to protect direct and indirect patient identifying information as described in the data use agreement; and</div><div style="text-indent:0.5in;">(b) Not redisclose the data except as authorized in their data use agreement consistent with the purpose of the agreement.</div><div style="text-indent:0.5in;">(11) Recipients of data under subsection (9)(b) and (c) of this section must not attempt to determine the identity of persons whose information is included in the data set or use the data in any manner that identifies individuals or their families.</div><div style="text-indent:0.5in;">(12) For the purposes of this section:</div><div style="text-indent:0.5in;">(a) "Direct patient identifier" means information that identifies a patient; and</div><div style="text-indent:0.5in;">(b) "Indirect patient identifier" means information that may identify a patient when combined with other information.</div><div style="text-indent:0.5in;">(13) The department must adopt rules necessary to carry out its responsibilities under this section. The department must consider national standards when adopting rules.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1272-S2.SL.pdf?cite=2021 c 162 § 1'>2021 c 162 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/6265-S.SL.pdf?cite=2014 c 220 § 2'>2014 c 220 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2229-S.SL.pdf?cite=2012 c 98 § 1'>2012 c 98 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/1589-S.SL.pdf?cite=1995 c 267 § 1'>1995 c 267 § 1</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2014 c 220:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.02.290'>70.02.290</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Captions not law<span style="font-family:times new roman;">—</span>1995 c 267:</span> "Captions as used in this act constitute no part of the law." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/1589-S.SL.pdf?cite=1995 c 267 § 16'>1995 c 267 § 16</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1995 c 267:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/1589-S.SL.pdf?cite=1995 c 267 § 17'>1995 c 267 § 17</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>1995 c 267:</span> "This act is necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and shall take effect July 1, 1995, except sections 8 through 11 of this act which shall take effect immediately [May 8, 1995]." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/1589-S.SL.pdf?cite=1995 c 267 § 18'>1995 c 267 § 18</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

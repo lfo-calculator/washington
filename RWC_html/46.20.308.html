@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 46.20.308: Implied consent—Test refusal—Procedures.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=46.20.308" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="HYEWbn5JTniHJRL4cjnBnPlrLm6ADZFMVnDtqgh+kcB2OrSu2s658lY7x5v+ofVJu9t283TMubBh7UeZFXWzrv8xxsC6tVDZsR5wiS7RpIZO/dFAMQBEgS6ydFiN7ea9jWJgLwLDNY4p1QTGiCLgiyzNhIIQidr4nSNwPKUR0chhYhd5rkzBi+UtyYEjG6ZODke/Lpy9QuQsmsmcqu8MG+HroywRZpzrka9vWdl4vrKV2z+CMvw3Ig1mQCqrlVt+YYw6/JloDwAz64hGgZbkBG+2/ZwtewKf+8Ei29H4XrA5qH8W8XK7cjBiocK06E3rZ03fXy3biAyifwwvi6/yMg==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=46">Title 46</a> > <a href="default.aspx?cite=46.20">Chapter 46.20</a> > <a href="default.aspx?cite=46.20.308">Section 46.20.308</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=46.20.305">46.20.305</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        46.20.308&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=46.20.3101">46.20.3101</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.20.308'>46.20.308</a></h3></div><div><h3>Implied consent<span style="font-family:times new roman;">—</span>Test refusal<span style="font-family:times new roman;">—</span>Procedures.</h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1210-S2.SL.pdf">1210-S2.SL</a>) ***</div><div><div style="text-indent:0.5in;">(1) Any person who operates a motor vehicle within this state is deemed to have given consent, subject to the provisions of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.506'>46.61.506</a>, to a test or tests of his or her breath for the purpose of determining the alcohol concentration in his or her breath if arrested for any offense where, at the time of the arrest, the arresting officer has reasonable grounds to believe the person had been driving or was in actual physical control of a motor vehicle while under the influence of intoxicating liquor or any drug or was in violation of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.503'>46.61.503</a>.</div><div style="text-indent:0.5in;">(2) The test or tests of breath shall be administered at the direction of a law enforcement officer having reasonable grounds to believe the person to have been driving or in actual physical control of a motor vehicle within this state while under the influence of intoxicating liquor or any drug or the person to have been driving or in actual physical control of a motor vehicle while having alcohol in a concentration in violation of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.503'>46.61.503</a> in his or her system and being under the age of twenty-one. Prior to administering a breath test pursuant to this section, the officer shall inform the person of his or her right under this section to refuse the breath test, and of his or her right to have additional tests administered by any qualified person of his or her choosing as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.506'>46.61.506</a>. The officer shall warn the driver, in substantially the following language, that:</div><div style="text-indent:0.5in;">(a) If the driver refuses to take the test, the driver's license, permit, or privilege to drive will be revoked or denied for at least one year; and</div><div style="text-indent:0.5in;">(b) If the driver refuses to take the test, the driver's refusal to take the test may be used in a criminal trial; and</div><div style="text-indent:0.5in;">(c) If the driver submits to the test and the test is administered, the driver's license, permit, or privilege to drive will be suspended, revoked, or denied for at least ninety days if:</div><div style="text-indent:0.5in;">(i) The driver is age twenty-one or over and the test indicates either that the alcohol concentration of the driver's breath is 0.08 or more; or</div><div style="text-indent:0.5in;">(ii) The driver is under age twenty-one and the test indicates either that the alcohol concentration of the driver's breath is 0.02 or more; or</div><div style="text-indent:0.5in;">(iii) The driver is under age twenty-one and the driver is in violation of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.502'>46.61.502</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.504'>46.61.504</a>; and</div><div style="text-indent:0.5in;">(d) If the driver's license, permit, or privilege to drive is suspended, revoked, or denied the driver may be eligible to immediately apply for an ignition interlock driver's license.</div><div style="text-indent:0.5in;">(3) If, following his or her arrest and receipt of warnings under subsection (2) of this section, the person arrested exercises the right, granted herein, by refusing upon the request of a law enforcement officer to submit to a test or tests of his or her breath, no test shall be given except as otherwise authorized by law.</div><div style="text-indent:0.5in;">(4) Nothing in subsection (1), (2), or (3) of this section precludes a law enforcement officer from obtaining a person's blood to test for alcohol, marijuana, or any drug, pursuant to a search warrant, a valid waiver of the warrant requirement, when exigent circumstances exist, or under any other authority of law. Any blood drawn for the purpose of determining the person's alcohol, marijuana levels, or any drug, is drawn pursuant to this section when the officer has reasonable grounds to believe that the person is in physical control or driving a vehicle under the influence or in violation of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.503'>46.61.503</a>.</div><div style="text-indent:0.5in;">(5) If, after arrest and after any other applicable conditions and requirements of this section have been satisfied, a test or tests of the person's blood or breath is administered and the test results indicate that the alcohol concentration of the person's breath or blood is 0.08 or more, or the THC concentration of the person's blood is 5.00 or more, if the person is age twenty-one or over, or that the alcohol concentration of the person's breath or blood is 0.02 or more, or the THC concentration of the person's blood is above 0.00, if the person is under the age of twenty-one, or the person refuses to submit to a test, the arresting officer or other law enforcement officer at whose direction any test has been given, or the department, where applicable, if the arrest results in a test of the person's blood, shall:</div><div style="text-indent:0.5in;">(a) Serve notice in writing on the person on behalf of the department of its intention to suspend, revoke, or deny the person's license, permit, or privilege to drive as required by subsection (6) of this section;</div><div style="text-indent:0.5in;">(b) Serve notice in writing on the person on behalf of the department of his or her right to a hearing, specifying the steps he or she must take to obtain a hearing as provided by subsection (7) of this section;</div><div style="text-indent:0.5in;">(c) Serve notice in writing that the license or permit, if any, is a temporary license that is valid for thirty days from the date of arrest or from the date notice has been given in the event notice is given by the department following a blood test, or until the suspension, revocation, or denial of the person's license, permit, or privilege to drive is sustained at a hearing pursuant to subsection (7) of this section, whichever occurs first. No temporary license is valid to any greater degree than the license or permit that it replaces; and</div><div style="text-indent:0.5in;">(d) Immediately notify the department of the arrest and transmit to the department within seventy-two hours, except as delayed as the result of a blood test, a sworn report or report under a declaration authorized by chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=5.50'>5.50</a> RCW that states:</div><div style="text-indent:0.5in;">(i) That the officer had reasonable grounds to believe the arrested person had been driving or was in actual physical control of a motor vehicle within this state while under the influence of intoxicating liquor or drugs, or both, or was under the age of twenty-one years and had been driving or was in actual physical control of a motor vehicle while having an alcohol or THC concentration in violation of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.503'>46.61.503</a>;</div><div style="text-indent:0.5in;">(ii) That after receipt of any applicable warnings required by subsection (2) of this section the person refused to submit to a test of his or her breath, or a test was administered and the results indicated that the alcohol concentration of the person's breath or blood was 0.08 or more, or the THC concentration of the person's blood was 5.00 or more, if the person is age twenty-one or over, or that the alcohol concentration of the person's breath or blood was 0.02 or more, or the THC concentration of the person's blood was above 0.00, if the person is under the age of twenty-one; and</div><div style="text-indent:0.5in;">(iii) Any other information that the director may require by rule.</div><div style="text-indent:0.5in;">(6) The department of licensing, upon the receipt of a sworn report or report under a declaration authorized by chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=5.50'>5.50</a> RCW under subsection (5)(d) of this section, shall suspend, revoke, or deny the person's license, permit, or privilege to drive or any nonresident operating privilege, as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.20.3101'>46.20.3101</a>, such suspension, revocation, or denial to be effective beginning thirty days from the date of arrest or from the date notice has been given in the event notice is given by the department following a blood test, or when sustained at a hearing pursuant to subsection (7) of this section, whichever occurs first.</div><div style="text-indent:0.5in;">(7) A person receiving notification under subsection (5)(b) of this section may, within seven days after the notice has been given, request in writing a formal hearing before the department. The person shall pay a fee of three hundred seventy-five dollars as part of the request. If the request is mailed, it must be postmarked within seven days after receipt of the notification. Upon timely receipt of such a request for a formal hearing, including receipt of the required three hundred seventy-five dollar fee, the department shall afford the person an opportunity for a hearing. The department may waive the required three hundred seventy-five dollar fee if the person is an indigent as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=10.101.010'>10.101.010</a>. Except as otherwise provided in this section, the hearing is subject to and shall be scheduled and conducted in accordance with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.20.329'>46.20.329</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.20.332'>46.20.332</a>. The hearing shall be conducted in the county of the arrest, except that all or part of the hearing may, at the discretion of the department, be conducted by telephone or other electronic means. The hearing shall be held within thirty days, excluding Saturdays, Sundays, and legal holidays, following the date of timely receipt of such request for a formal hearing before the department or thirty days, excluding Saturdays, Sundays, and legal holidays following the date notice has been given in the event notice is given by the department following a blood test, unless otherwise agreed to by the department and the person, in which case the action by the department shall be stayed, and any valid temporary license under subsection (5) of this section extended, if the person is otherwise eligible for licensing. Unless otherwise agreed to by the department and the person, the department must give five days notice of the hearing to the person. For the purposes of this section, the scope of the hearing shall cover the issues of whether a law enforcement officer had reasonable grounds to believe the person had been driving or was in actual physical control of a motor vehicle within this state while under the influence of intoxicating liquor or any drug or had been driving or was in actual physical control of a motor vehicle within this state while having alcohol in his or her system in a concentration of 0.02 or more, or THC in his or her system in a concentration above 0.00, if the person was under the age of twenty-one, whether the person was placed under arrest, and (a) whether the person refused to submit to the test or tests upon request of the officer after having been informed that such refusal would result in the revocation of the person's license, permit, or privilege to drive, or (b) if a test or tests were administered, whether the applicable requirements of this section were satisfied before the administration of the test or tests, whether the person submitted to the test or tests, or whether a test was administered pursuant to a search warrant, a valid waiver of the warrant requirement, when exigent circumstances exist, or under any other authority of law as permitted under this section, and whether the test or tests indicated that the alcohol concentration of the person's breath or blood was 0.08 or more, or the THC concentration of the person's blood was 5.00 or more, if the person was age twenty-one or over at the time of the arrest, or that the alcohol concentration of the person's breath or blood was 0.02 or more, or the THC concentration of the person's blood was above 0.00, if the person was under the age of twenty-one at the time of the arrest. Where a person is found to be in actual physical control of a motor vehicle while under the influence of intoxicating liquor or any drug or was under the age of twenty-one at the time of the arrest and was in physical control of a motor vehicle while having alcohol in his or her system in a concentration of 0.02 or THC concentration above 0.00, the person may petition the hearing officer to apply the affirmative defense found in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.504'>46.61.504</a>(3) and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.503'>46.61.503</a>(2). The driver has the burden to prove the affirmative defense by a preponderance of the evidence. The sworn report or report under a declaration authorized by chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=5.50'>5.50</a> RCW submitted by a law enforcement officer is prima facie evidence that the officer had reasonable grounds to believe the person had been driving or was in actual physical control of a motor vehicle within this state while under the influence of intoxicating liquor or drugs, or both, or the person had been driving or was in actual physical control of a motor vehicle within this state while having alcohol in his or her system in a concentration of 0.02 or more, or THC in his or her system in a concentration above 0.00, and was under the age of twenty-one and that the officer complied with the requirements of this section.</div><div style="text-indent:0.5in;">A hearing officer shall conduct the hearing, may issue subpoenas for the attendance of witnesses and the production of documents, and shall administer oaths to witnesses. The hearing officer shall not issue a subpoena for the attendance of a witness at the request of the person unless the request is accompanied by the fee required by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=5.56.010'>5.56.010</a> for a witness in district court. The sworn report or report under a declaration authorized by chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=5.50'>5.50</a> RCW of the law enforcement officer and any other evidence accompanying the report shall be admissible without further evidentiary foundation and the certifications authorized by the criminal rules for courts of limited jurisdiction shall be admissible without further evidentiary foundation. The person may be represented by counsel, may question witnesses, may present evidence, and may testify. The department shall order that the suspension, revocation, or denial either be rescinded or sustained.</div><div style="text-indent:0.5in;">(8) If the suspension, revocation, or denial is sustained after such a hearing, the person whose license, privilege, or permit is suspended, revoked, or denied has the right to file a petition in the superior court of the county of arrest to review the final order of revocation by the department in the same manner as an appeal from a decision of a court of limited jurisdiction. Notice of appeal must be filed within thirty days after the date the final order is served or the right to appeal is waived. Notwithstanding RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.20.334'>46.20.334</a>, RALJ 1.1, or other statutes or rules referencing de novo review, the appeal shall be limited to a review of the record of the administrative hearing. The appellant must pay the costs associated with obtaining the record of the hearing before the hearing officer. The filing of the appeal does not stay the effective date of the suspension, revocation, or denial. A petition filed under this subsection must include the petitioner's grounds for requesting review. Upon granting petitioner's request for review, the court shall review the department's final order of suspension, revocation, or denial as expeditiously as possible. The review must be limited to a determination of whether the department has committed any errors of law. The superior court shall accept those factual determinations supported by substantial evidence in the record: (a) That were expressly made by the department; or (b) that may reasonably be inferred from the final order of the department. The superior court may reverse, affirm, or modify the decision of the department or remand the case back to the department for further proceedings. The decision of the superior court must be in writing and filed in the clerk's office with the other papers in the case. The court shall state the reasons for the decision. If judicial relief is sought for a stay or other temporary remedy from the department's action, the court shall not grant such relief unless the court finds that the appellant is likely to prevail in the appeal and that without a stay the appellant will suffer irreparable injury. If the court stays the suspension, revocation, or denial it may impose conditions on such stay.</div><div style="text-indent:0.5in;">(9)(a) If a person whose driver's license, permit, or privilege to drive has been or will be suspended, revoked, or denied under subsection (6) of this section, other than as a result of a breath test refusal, and who has not committed an offense for which he or she was granted a deferred prosecution under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=10.05'>10.05</a> RCW, petitions a court for a deferred prosecution on criminal charges arising out of the arrest for which action has been or will be taken under subsection (6) of this section, or notifies the department of licensing of the intent to seek such a deferred prosecution, then the license suspension or revocation shall be stayed pending entry of the deferred prosecution. The stay shall not be longer than one hundred fifty days after the date charges are filed, or two years after the date of the arrest, whichever time period is shorter. If the court stays the suspension, revocation, or denial, it may impose conditions on such stay. If the person is otherwise eligible for licensing, the department shall issue a temporary license, or extend any valid temporary license under subsection (5) of this section, for the period of the stay. If a deferred prosecution treatment plan is not recommended in the report made under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=10.05.050'>10.05.050</a>, or if treatment is rejected by the court, or if the person declines to accept an offered treatment plan, or if the person violates any condition imposed by the court, then the court shall immediately direct the department to cancel the stay and any temporary license or extension of a temporary license issued under this subsection.</div><div style="text-indent:0.5in;">(b) A suspension, revocation, or denial imposed under this section, other than as a result of a breath test refusal, shall be stayed if the person is accepted for deferred prosecution as provided in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=10.05'>10.05</a> RCW for the incident upon which the suspension, revocation, or denial is based. If the deferred prosecution is terminated, the stay shall be lifted and the suspension, revocation, or denial reinstated. If the deferred prosecution is completed, the stay shall be lifted and the suspension, revocation, or denial canceled.</div><div style="text-indent:0.5in;">(c) The provisions of (b) of this subsection relating to a stay of a suspension, revocation, or denial and the cancellation of any suspension, revocation, or denial do not apply to the suspension, revocation, denial, or disqualification of a person's commercial driver's license or privilege to operate a commercial motor vehicle.</div><div style="text-indent:0.5in;">(10) When it has been finally determined under the procedures of this section that a nonresident's privilege to operate a motor vehicle in this state has been suspended, revoked, or denied, the department shall give information in writing of the action taken to the motor vehicle administrator of the state of the person's residence and of any state in which he or she has a license.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5017-S.SL.pdf?cite=2019 c 232 § 21'>2019 c 232 § 21</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/2700-S.SL.pdf?cite=2016 c 203 § 15'>2016 c 203 § 15</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/1276-S2.SL.pdf?cite=2015 2nd sp.s. c 3 § 5'>2015 2nd sp.s. c 3 § 5</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5912-S2.SL.pdf?cite=2013 2nd sp.s. c 35 § 36'>2013 2nd sp.s. c 35 § 36</a>. Prior:  <a href='?cite=2013 c 3 § 31'>2013 c 3 § 31</a> (Initiative Measure No. 502, approved November 6, 2012);  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2443-S2.SL.pdf?cite=2012 c 183 § 7'>2012 c 183 § 7</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/6150-S.SL.pdf?cite=2012 c 80 § 12'>2012 c 80 § 12</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/3254-S2.SL.pdf?cite=2008 c 282 § 2'>2008 c 282 § 2</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/Senate/6103-S.SL.pdf?cite=2005 c 314 § 307'>2005 c 314 § 307</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/Senate/5644-S.SL.pdf?cite=2005 c 269 § 1'>2005 c 269 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/2532-S.SL.pdf?cite=2004 c 187 § 1'>2004 c 187 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/2660-S.SL.pdf?cite=2004 c 95 § 2'>2004 c 95 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/3055-S.SL.pdf?cite=2004 c 68 § 2'>2004 c 68 § 2</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/5399-S.SL.pdf?cite=1999 c 331 § 2'>1999 c 331 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/5374.SL.pdf?cite=1999 c 274 § 2'>1999 c 274 § 2</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/6257.SL.pdf?cite=1998 c 213 § 1'>1998 c 213 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/6142.SL.pdf?cite=1998 c 209 § 1'>1998 c 209 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/House/3070-S2.SL.pdf?cite=1998 c 207 § 7'>1998 c 207 § 7</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/House/1501-S2.SL.pdf?cite=1998 c 41 § 4'>1998 c 41 § 4</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/Senate/5141-S.SL.pdf?cite=1995 c 332 § 1'>1995 c 332 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/6047-S.SL.pdf?cite=1994 c 275 § 13'>1994 c 275 § 13</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c337.pdf?cite=1989 c 337 § 8'>1989 c 337 § 8</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1987c22.pdf?cite=1987 c 22 § 1'>1987 c 22 § 1</a>; prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c153.pdf?cite=1986 c 153 § 5'>1986 c 153 § 5</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c64.pdf?cite=1986 c 64 § 1'>1986 c 64 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1985c407.pdf?cite=1985 c 407 § 3'>1985 c 407 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1983c165.pdf?cite=1983 c 165 § 2'>1983 c 165 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1983c165.pdf?cite=1983 c 165 § 1'>1983 c 165 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1981c260.pdf?cite=1981 c 260 § 11'>1981 c 260 § 11</a>; prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1979ex1c176.pdf?cite=1979 ex.s. c 176 § 3'>1979 ex.s. c 176 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1979ex1c136.pdf?cite=1979 ex.s. c 136 § 59'>1979 ex.s. c 136 § 59</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1979c158.pdf?cite=1979 c 158 § 151'>1979 c 158 § 151</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1975ex1c287.pdf?cite=1975 1st ex.s. c 287 § 4'>1975 1st ex.s. c 287 § 4</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1969c1.pdf?cite=1969 c 1 § 1'>1969 c 1 § 1</a> (Initiative Measure No. 242, approved November 5, 1968).]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2016 c 203 § 15:</span> "Section 15 of this act takes effect January 1, 2019." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/2700-S.SL.pdf?cite=2016 c 203 § 21'>2016 c 203 § 21</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2015 2nd sp.s. c 3:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=10.21.055'>10.21.055</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>2013 c 3 (Initiative Measure No. 502):</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.101'>69.50.101</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2012 c 183:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9.94A.475'>9.94A.475</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2012 c 80 §§ 5-13:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.20.055'>46.20.055</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2008 c 282:</span> "Sections 2, 4 through 8, and 11 through 14 of this act take effect January 1, 2009." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/3254-S2.SL.pdf?cite=2008 c 282 § 23'>2008 c 282 § 23</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2005 c 314 §§ 101-107, 109, 303-309, and 401:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.68.290'>46.68.290</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Part headings not law<span style="font-family:times new roman;">—</span>2005 c 314:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.68.035'>46.68.035</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2004 c 187 §§ 1, 5, 7, 8, and 10:</span> "Sections 1, 5, 7, 8, and 10 of this act take effect July 1, 2005." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/2532-S.SL.pdf?cite=2004 c 187 § 11'>2004 c 187 § 11</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Contingent effect<span style="font-family:times new roman;">—</span>2004 c 95 § 2:</span> "Section 2 of this act takes effect if section 2 of Substitute House Bill No. 3055 is enacted into law." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/2660-S.SL.pdf?cite=2004 c 95 § 17'>2004 c 95 § 17</a>.]  2004 c 68 § 2 was enacted into law, effective June 10, 2004.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2004 c 68:</span> "The legislature finds that previous attempts to curtail the incidence of driving while intoxicated have been inadequate. The legislature further finds that property loss, injury, and death caused by drinking drivers continue at unacceptable levels. This act is intended to convey the seriousness with which the legislature views this problem. To that end the legislature seeks to ensure swift and certain consequences for those who drink and drive.</div><div style="text-indent:0.75in;">To accomplish this goal, the legislature adopts standards governing the admissibility of tests of a person's blood or breath. These standards will provide a degree of uniformity that is currently lacking, and will reduce the delays caused by challenges to various breath test instrument components and maintenance procedures. Such challenges, while allowed, will no longer go to admissibility of test results. Instead, such challenges are to be considered by the finder of fact in deciding what weight to place upon an admitted blood or breath test result.</div><div style="text-indent:0.75in;">The legislature's authority to adopt standards governing the admissibility of evidence involving alcohol is well established by the Washington Supreme Court. See generally <span style="font-style:italic;">State v. Long</span>, 113 Wn.2d 266, 778 P.2d 1027 (1989); <span style="font-style:italic;">State v. Sears</span>, 4 Wn.2d 200, 215, 103 P.2d 337 (1940) (the legislature has the power to enact laws which create rules of evidence); <span style="font-style:italic;">State v. Pavelich</span>, 153 Wash. 379, 279 P. 1102 (1929) ("rules of evidence are substantive law")." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2003-04/Pdf/Bills/Session Laws/House/3055-S.SL.pdf?cite=2004 c 68 § 1'>2004 c 68 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1999 c 331:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9.94A.525'>9.94A.525</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1998 c 213:</span> "This act takes effect January 1, 1999." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/6257.SL.pdf?cite=1998 c 213 § 9'>1998 c 213 § 9</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1998 c 209:</span> "This act takes effect January 1, 1999." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/6142.SL.pdf?cite=1998 c 209 § 6'>1998 c 209 § 6</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1998 c 207:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.5055'>46.61.5055</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>Construction<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>1998 c 41:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.20.265'>46.20.265</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1995 c 332:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/Senate/5141-S.SL.pdf?cite=1995 c 332 § 23'>1995 c 332 § 23</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>1995 c 332:</span> "This act shall take effect September 1, 1995, except for sections 13 and 22 of this act which are necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and shall take effect immediately [May 11, 1995]." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/Senate/5141-S.SL.pdf?cite=1995 c 332 § 24'>1995 c 332 § 24</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Short title<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>1994 c 275:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.04.015'>46.04.015</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>1985 c 407:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.04.480'>46.04.480</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Legislative finding, intent<span style="font-family:times new roman;">—</span>1983 c 165:</span> "The legislature finds that previous attempts to curtail the incidence of driving while intoxicated have been inadequate. The legislature further finds that property loss, injury, and death caused by drinking drivers have reached unacceptable levels. This act is intended to convey the seriousness with which the legislature views this problem. To that end the legislature seeks to insure swift and certain punishment for those who drink and drive. The legislature does not intend to discourage or deter courts and other agencies from directing or providing treatment for problem drinkers. However, it is the intent that such treatment, where appropriate, be in addition to and not in lieu of the sanctions to be applied to all those convicted of driving while intoxicated." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1983c165.pdf?cite=1983 c 165 § 44'>1983 c 165 § 44</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>1983 c 165:</span> "Sections 2, 3 through 12, 14, 16, 18, 22, 24, and 26 of chapter 165, Laws of 1983 shall take effect on January 1, 1986. The remainder of chapter 165, Laws of 1983 is necessary for the immediate preservation of the public peace, health, and safety, the support of the state government and its existing public institutions, and shall take effect on July 1, 1983. The director of licensing may immediately take such steps as are necessary to insure that all sections of chapter 165, Laws of 1983 are implemented on their respective effective dates." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1984c219.pdf?cite=1984 c 219 § 1'>1984 c 219 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1983c165.pdf?cite=1983 c 165 § 47'>1983 c 165 § 47</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1983 c 165:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1983c165.pdf?cite=1983 c 165 § 48'>1983 c 165 § 48</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1979 ex.s. c 176:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.502'>46.61.502</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1979 ex.s. c 136:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.63.010'>46.63.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Liability of medical personnel withdrawing blood: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.508'>46.61.508</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Refusal of test<span style="font-family:times new roman;">—</span>Admissibility as evidence: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=46.61.517'>46.61.517</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

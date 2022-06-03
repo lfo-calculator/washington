@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 72.27.010: Compact enacted.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=72.27.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8NbhFgZjua9JRl3Sls8125yzUxdEsvtqGpDM9KjsCK3872tso4iwIKzajGKZtW1ndR/7UJmqo72TBtcWIIcJ7cNsaqDfpm3FqgBTnP8QRWh0NKTwz36QqZxcLen9PSoTjrDOM2/OX3IjhgRQF0oXBUngjyImiXIsbnecoArSvdpV5Y7/CINY3SRWhFeuHfseF4tTfmFmyICeE/0nTmzJP0ZPTe7L0EIkyWiFCjwDiI2A7a59GBvTYAWkfkmRxZPz4xUJxve6tNuaXXPi5YAZ1xnqOe4TW7UakGZiccU72hU=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=72">Title 72</a> > <a href="default.aspx?cite=72.27">Chapter 72.27</a> > <a href="default.aspx?cite=72.27.010">Section 72.27.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        72.27.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=72.27.020">72.27.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=72.27.010'>72.27.010</a></h3></div><div><h3>Compact enacted.</h3></div><div><div style="text-indent:0.5in;">The Interstate Compact on Mental Health is hereby enacted into law and entered into by this state with all other states legally joining therein in the form substantially as follows:</div><div style="text-indent:0.5in;">The contracting states solemnly agree that:</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE I</div><div style="margin-top:4.5pt;text-indent:0.5in;">The party states find that the proper and expeditious treatment of the mentally ill and mentally deficient can be facilitated by cooperative action, to the benefit of the patients, their families, and society as a whole. Further, the party states find that the necessity of and desirability for furnishing such care and treatment bears no primary relation to the residence or citizenship of the patient but that, on the contrary, the controlling factors of community safety and humanitarianism require that facilities and services be made available for all who are in need of them. Consequently, it is the purpose of this compact and of the party states to provide the necessary legal basis for the institutionalization or other appropriate care and treatment of the mentally ill and mentally deficient under a system that recognizes the paramount importance of patient welfare and to establish the responsibilities of the party states in terms of such welfare.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE II</div><div style="margin-top:4.5pt;text-indent:0.5in;">As used in this compact:</div><div style="text-indent:0.5in;">(a) "Sending state" shall mean a party state from which a patient is transported pursuant to the provisions of the compact or from which it is contemplated that a patient may be so sent.</div><div style="text-indent:0.5in;">(b) "Receiving state" shall mean a party state to which a patient is transported pursuant to the provisions of the compact or to which it is contemplated that a patient may be so sent.</div><div style="text-indent:0.5in;">(c) "Institution" shall mean any hospital or other facility maintained by a party state or political subdivision thereof for the care and treatment of mental illness or mental deficiency.</div><div style="text-indent:0.5in;">(d) "Patient" shall mean any person subject to or eligible as determined by the laws of the sending state, for institutionalization or other care, treatment, or supervision pursuant to the provisions of this compact.</div><div style="text-indent:0.5in;">(e) "After-care" shall mean care, treatment and services provided a patient, as defined herein, on convalescent status or conditional release.</div><div style="text-indent:0.5in;">(f) "Mental illness" shall mean mental disease to such extent that a person so afflicted requires care and treatment for his own welfare, or the welfare of others, or of the community.</div><div style="text-indent:0.5in;">(g) "Mental deficiency" shall mean mental deficiency as defined by appropriate clinical authorities to such extent that a person so afflicted is incapable of managing himself and his affairs, but shall not include mental illness as defined herein.</div><div style="text-indent:0.5in;">(h) "State" shall mean any state, territory or possession of the United States, the District of Columbia, and the Commonwealth of Puerto Rico.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE III</div><div style="margin-top:4.5pt;text-indent:0.5in;">(a) Whenever a person physically present in any party state shall be in need of institutionalization by reason of mental illness or mental deficiency, he shall be eligible for care and treatment in an institution in that state irrespective of his residence, settlement or citizenship qualifications.</div><div style="text-indent:0.5in;">(b) The provisions of paragraph (a) of this article to the contrary notwithstanding, any patient may be transferred to an institution in another state whenever there are factors based upon clinical determinations indicating that the care and treatment of said patient would be facilitated or improved thereby. Any such institutionalization may be for the entire period of care and treatment or for any portion or portions thereof. The factors referred to in this paragraph shall include the patient's full record with due regard for the location of the patient's family, character of the illness and probable duration thereof, and such other factors as shall be considered appropriate.</div><div style="text-indent:0.5in;">(c) No state shall be obliged to receive any patient pursuant to the provisions of paragraph (b) of this article unless the sending state has given advance notice of its intention to send the patient; furnished all available medical and other pertinent records concerning the patient; given the qualified medical or other appropriate clinical authorities of the receiving state an opportunity to examine the patient if said authorities so wish; and unless the receiving state shall agree to accept the patient.</div><div style="text-indent:0.5in;">(d) In the event that the laws of the receiving state establish a system of priorities for the admission of patients, an interstate patient under this compact shall receive the same priority as a local patient and shall be taken in the same order and at the same time that he would be taken if he were a local patient.</div><div style="text-indent:0.5in;">(e) Pursuant to this compact, the determination as to the suitable place of institutionalization for a patient may be reviewed at any time and such further transfer of the patient may be made as seems likely to be in the best interest of the patient.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE IV</div><div style="margin-top:4.5pt;text-indent:0.5in;">(a) Whenever, pursuant to the laws of the state in which a patient is physically present, it shall be determined that the patient should receive after-care or supervision, such care or supervision may be provided in a receiving state. If the medical or other appropriate clinical authorities having responsibility for the care and treatment of the patient in the sending state shall have reason to believe that after-care in another state would be in the best interest of the patient and would not jeopardize the public safety, they shall request the appropriate authorities in the receiving state to investigate the desirability of affording the patient such after-care in said receiving state, and such investigation shall be made with all reasonable speed. The request for investigation shall be accompanied by complete information concerning the patient's intended place of residence and the identity of the person in whose charge it is proposed to place the patient, the complete medical history of the patient, and such other documents as may be pertinent.</div><div style="text-indent:0.5in;">(b) If the medical or other appropriate clinical authorities having responsibility for the care and treatment of the patient in the sending state and the appropriate authorities in the receiving state find that the best interest of the patient would be served thereby, and if the public safety would not be jeopardized thereby, the patient may receive after-care or supervision in the receiving state.</div><div style="text-indent:0.5in;">(c) In supervising, treating, or caring for a patient on after-care pursuant to the terms of this article, a receiving state shall employ the same standards of visitation, examination, care, and treatment that it employs for similar local patients.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE V</div><div style="margin-top:4.5pt;text-indent:0.5in;">Whenever a dangerous or potentially dangerous patient escapes from an institution in any party state, that state shall promptly notify all appropriate authorities within and without the jurisdiction of the escape in a manner reasonably calculated to facilitate the speedy apprehension of the escapee. Immediately upon the apprehension and identification of any such dangerous or potentially dangerous patient, he shall be detained in the state where found pending disposition in accordance with law.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE VI</div><div style="margin-top:4.5pt;text-indent:0.5in;">The duly accredited officers of any state party to this compact, upon the establishment of their authority and the identity of the patient, shall be permitted to transport any patient being moved pursuant to this compact through any and all states party to this compact, without interference.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE VII</div><div style="margin-top:4.5pt;text-indent:0.5in;">(a) No person shall be deemed a patient of more than one institution at any given time. Completion of transfer of any patient to an institution in a receiving state shall have the effect of making the person a patient of the institution in the receiving state.</div><div style="text-indent:0.5in;">(b) The sending state shall pay all costs of and incidental to the transportation of any patient pursuant to this compact, but any two or more party states may, by making a specific agreement for that purpose, arrange for a different allocation of costs as among themselves.</div><div style="text-indent:0.5in;">(c) No provision of this compact shall be construed to alter or affect any internal relationships among the departments, agencies and officers of and in the government of a party state, or between a party state and its subdivisions, as to the payment of costs, or responsibilities therefor.</div><div style="text-indent:0.5in;">(d) Nothing in this compact shall be construed to prevent any party state or subdivision thereof from asserting any right against any person, agency or other entity in regard to costs for which such party state or subdivision thereof may be responsible pursuant to any provision of this compact.</div><div style="text-indent:0.5in;">(e) Nothing in this compact shall be construed to invalidate any reciprocal agreement between a party state and a nonparty state relating to institutionalization, care or treatment of the mentally ill or mentally deficient, or any statutory authority pursuant to which such agreements may be made.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE VIII</div><div style="margin-top:4.5pt;text-indent:0.5in;">(a) Nothing in this compact shall be construed to abridge, diminish, or in any way impair the rights, duties, and responsibilities of any patient's guardian on his own behalf or in respect of any patient for whom he may serve, except that where the transfer of any patient to another jurisdiction makes advisable the appointment of a supplemental or substitute guardian, any court of competent jurisdiction in the receiving state may make such supplemental or substitute appointment and the court which appointed the previous guardian shall upon being duly advised of the new appointment, and upon the satisfactory completion of such accounting and other acts as such court may by law require, relieve the previous guardian of power and responsibility to whatever extent shall be appropriate in the circumstances: PROVIDED, HOWEVER, That in the case of any patient having settlement in the sending state, the court of competent jurisdiction in the sending state shall have the sole discretion to relieve a guardian appointed by it or continue his power and responsibility, whichever it shall deem advisable. The court in the receiving state may, in its discretion, confirm or reappoint the person or persons previously serving as guardian in the sending state in lieu of making a supplemental or substitute appointment.</div><div style="text-indent:0.5in;">(b) The term "guardian" as used in paragraph (a) of this article shall include any guardian, trustee, legal committee, conservator, or other person or agency however denominated who is charged by law with power to act for or responsibility for the person or property of a patient.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE IX</div><div style="margin-top:4.5pt;text-indent:0.5in;">(a) No provision of this compact except Article V shall apply to any person institutionalized while under sentence in a penal or correctional institution or while subject to trial on a criminal charge, or whose institutionalization is due to the commission of an offense for which, in the absence of mental illness or mental deficiency, said person would be subject to incarceration in a penal or correctional institution.</div><div style="text-indent:0.5in;">(b) To every extent possible, it shall be the policy of states party to this compact that no patient shall be placed or detained in any prison, jail or lockup, but such patient shall, with all expedition, be taken to a suitable institutional facility for mental illness or mental deficiency.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE X</div><div style="margin-top:4.5pt;text-indent:0.5in;">(a) Each party state shall appoint a "compact administrator" who, on behalf of his state, shall act as general coordinator of activities under the compact in his state and who shall receive copies of all reports, correspondence, and other documents relating to any patient processed under the compact by his state either in the capacity of sending or receiving state. The compact administrator or his duly designated representative shall be the official with whom other party states shall deal in any matter relating to the compact or any patient processed thereunder.</div><div style="text-indent:0.5in;">(b) The compact administrators of the respective party states shall have power to promulgate reasonable rules and regulations to carry out more effectively the terms and provisions of this compact.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE XI</div><div style="margin-top:4.5pt;text-indent:0.5in;">The duly constituted administrative authorities of any two or more party states may enter into supplementary agreements for the provision of any service or facility or for the maintenance of any institution on a joint or cooperative basis whenever the states concerned shall find that such agreements will improve services, facilities, or institutional care and treatment in the fields of mental illness or mental deficiency. No such supplementary agreement shall be construed so as to relieve any party state of any obligation which it otherwise would have under other provisions of this compact.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE XII</div><div style="margin-top:4.5pt;text-indent:0.5in;">This compact shall enter into full force and effect as to any state when enacted by it into law and such state shall thereafter be a party thereto with any and all states legally joining therein.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE XIII</div><div style="margin-top:4.5pt;text-indent:0.5in;">(a) A state party to this compact may withdraw therefrom by enacting a statute repealing the same. Such withdrawal shall take effect one year after notice thereof has been communicated officially and in writing to the governors and compact administrators of all other party states. However, the withdrawal of any state shall not change the status of any patient who has been sent to said state or sent out of said state pursuant to the provisions of the compact.</div><div style="text-indent:0.5in;">(b) Withdrawal from any agreement permitted by Article VII(b) as to costs or from any supplementary agreement made pursuant to Article XI shall be in accordance with the terms of such agreement.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE XIV</div><div style="margin-top:4.5pt;text-indent:0.5in;">This compact shall be liberally construed so as to effectuate the purposes thereof. The provisions of this compact shall be severable and if any phrase, clause, sentence or provision of this compact is declared to be contrary to the constitution of any party state or of the United States or the applicability thereof to any government, agency, person or circumstance is held invalid, the validity of the remainder of this compact and the applicability thereof to any government, agency, person or circumstance shall not be affected thereby. If this compact shall be held contrary to the constitution of any state party thereto, the compact shall remain in full force and effect as to the remaining states and in full force and effect as to the state affected as to all severable matters.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1965ex1c26.pdf?cite=1965 ex.s. c 26 § 1'>1965 ex.s. c 26 § 1</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Chapter added:</span> "The foregoing provisions of this act are added to chapter 28, Laws of 1959 and to Title <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=72'>72</a> RCW, and shall constitute a new chapter therein." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1965ex1c26.pdf?cite=1965 ex.s. c 26 § 8'>1965 ex.s. c 26 § 8</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1965 ex.s. c 26:</span> "This act shall take effect upon July 1, 1965." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1965ex1c26.pdf?cite=1965 ex.s. c 26 § 9'>1965 ex.s. c 26 § 9</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

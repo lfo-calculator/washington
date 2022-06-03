@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 62A.1-201: General definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=62A.1-201" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GmaCKsWg6ZWyGjwHZAzFwzLn5f4j8xSFzmMAhCCYBTyaPbK/B+Yj62I5RZaahbwXoCjW3pfkOVQfdYukEnGyeHdqdobNj7jcV7FfhbM0+1zP5gnrhARNuovndbFnxsBFIWsZ1TC77RmXUmt+VWtv0RmcGUjjTnUc0D0rnAhMiB8LARCi/7nc4dpIgH3KTcCYJRSjyccPjPV5W2qP8GoZNKNHV/hSQNyYQngpGuaM3cNNG0h8b2Fb3bmMuLxNjggMFuoz2EgwM+SgSMhB41tF+eNWtZjUPr1vM56l25pD/dPTXiQSc4pr5Syb3YB7uxUZ9Z2zT3ckykUxF00wO3QQ3Q==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=62A">Title 62A</a> > <a href="default.aspx?cite=62A.1">Chapter 62A.1</a> > <a href="default.aspx?cite=62A.1-201">Section 62A.1-201</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=62A.1-190">62A.1-190</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        62A.1-201&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=62A.1-202">62A.1-202</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.1-201'>62A.1-201</a></h3></div><div><h3>General definitions.</h3></div><div><div style="text-indent:0.5in;">(a) Unless the context otherwise requires, words or phrases defined in this section, or in the additional definitions contained in other articles of this title that apply to particular articles or parts thereof, have the meanings stated.</div><div style="text-indent:0.5in;">(b) Subject to definitions contained in other articles of this title that apply to particular articles or parts thereof:</div><div style="text-indent:0.5in;">(1) "Action," in the sense of a judicial proceeding, includes recoupment, counterclaim, set-off, suit in equity, and any other proceeding in which rights are determined.</div><div style="text-indent:0.5in;">(2) "Aggrieved party" means a party entitled to pursue a remedy.</div><div style="text-indent:0.5in;">(3) "Agreement," as distinguished from "contract," means the bargain of the parties in fact, as found in their language or inferred from other circumstances, including course of performance, course of dealing, or usage of trade as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.1-303'>62A.1-303</a>. </div><div style="text-indent:0.5in;">(4) "Bank" means a person engaged in the business of banking and includes a savings bank, savings and loan association, credit union, and trust company.</div><div style="text-indent:0.5in;">(5) "Bearer" means a person in control of a negotiable electronic document of title or a person in possession of a negotiable instrument, negotiable tangible document of title, or certificated security that is payable to bearer or indorsed in blank.</div><div style="text-indent:0.5in;">(6) "Bill of lading" means a document of title evidencing the receipt of goods for shipment issued by a person engaged in the business of directly or indirectly transporting or forwarding goods. The term does not include a warehouse receipt.</div><div style="text-indent:0.5in;">(7) "Branch" includes a separately incorporated foreign branch of a bank.</div><div style="text-indent:0.5in;">(8) "Burden of establishing" a fact means the burden of persuading the trier of fact that the existence of the fact is more probable than its nonexistence.</div><div style="text-indent:0.5in;">(9) "Buyer in ordinary course of business" means a person that buys goods in good faith, without knowledge that the sale violates the rights of another person in the goods, and in the ordinary course from a person, other than a pawnbroker, in the business of selling goods of that kind. A person buys goods in the ordinary course if the sale to the person comports with the usual or customary practices in the kind of business in which the seller is engaged or with the seller's own usual or customary practices. A person that sells oil, gas, or other minerals at the wellhead or minehead is a person in the business of selling goods of that kind. A buyer in ordinary course of business may buy for cash, by exchange of other property, or on secured or unsecured credit, and may acquire goods or documents of title under a preexisting contract for sale. Only a buyer that takes possession of the goods or has a right to recover the goods from the seller under Article 2 of this title may be a buyer in ordinary course of business. "Buyer in ordinary course of business" does not include a person that acquires goods in a transfer in bulk or as security for or in total or partial satisfaction of a money debt.</div><div style="text-indent:0.5in;">(10) "Conspicuous," with reference to a term, means so written, displayed, or presented that a reasonable person against which it is to operate ought to have noticed it. Whether a term is "conspicuous" or not is a decision for the court. Conspicuous terms include the following:</div><div style="text-indent:0.5in;">(A) A heading in capitals equal to or greater in size than the surrounding text, or in contrasting type, font, or color to the surrounding text of the same or lesser size; and</div><div style="text-indent:0.5in;">(B) Language in the body of a record or display in larger type than the surrounding text, or in contrasting type, font, or color to the surrounding text of the same size, or set off from surrounding text of the same size by symbols or other marks that call attention to the language.</div><div style="text-indent:0.5in;">(11) "Consumer" means an individual who enters into a transaction primarily for personal, family, or household purposes.</div><div style="text-indent:0.5in;">(12) "Contract," as distinguished from "agreement," means the total legal obligation that results from the parties' agreement as determined by this title as supplemented by any other applicable laws.</div><div style="text-indent:0.5in;">(13) "Creditor" includes a general creditor, a secured creditor, a lien creditor, and any representative of creditors, including an assignee for the benefit of creditors, a trustee in bankruptcy, a receiver in equity, and an executor or administrator of an insolvent debtor's or assignor's estate.</div><div style="text-indent:0.5in;">(14) "Defendant" includes a person in the position of defendant in a counterclaim, cross-claim, or third-party claim.</div><div style="text-indent:0.5in;">(15) "Delivery," with respect to an electronic document of title means voluntary transfer of control and with respect to an instrument, a tangible document of title, or chattel paper, means voluntary transfer of possession.</div><div style="text-indent:0.5in;">(16) "Document of title" means a record (i) that in the regular course of business or financing is treated as adequately evidencing that the person in possession or control of the record is entitled to receive, control, hold, and dispose of the record and the goods the record covers and (ii) that purports to be issued by or addressed to a bailee and to cover goods in the bailee's possession which are either identified or are fungible portions of an identified mass. The term includes a bill of lading, transport document, dock warrant, dock receipt, warehouse receipt, and order for delivery of goods. An electronic document of title means a document of title evidenced by a record consisting of information stored in an electronic medium. A tangible document of title means a document of title evidenced by a record consisting of information that is inscribed on a tangible medium.</div><div style="text-indent:0.5in;">(17) "Fault" means a default, breach, or wrongful act or omission.</div><div style="text-indent:0.5in;">(18) "Fungible goods" means:</div><div style="text-indent:0.5in;">(A) Goods of which any unit, by nature or usage of trade, is the equivalent of any other like unit; or</div><div style="text-indent:0.5in;">(B) Goods that by agreement are treated as equivalent.</div><div style="text-indent:0.5in;">(19) "Genuine" means free of forgery or counterfeiting.</div><div style="text-indent:0.5in;">(20) "Good faith," except as otherwise provided in Article 5 of this title, means honesty in fact and the observance of reasonable commercial standards of fair dealing.</div><div style="text-indent:0.5in;">(21) "Holder" with respect to a negotiable instrument, means:</div><div style="text-indent:0.5in;">(A) The person in possession of a negotiable instrument that is payable either to bearer or to an identified person that is the person in possession;</div><div style="text-indent:0.5in;">(B) The person in possession of a negotiable tangible document of title if the goods are deliverable either to bearer or to the order of the person in possession; or</div><div style="text-indent:0.5in;">(C) The person in control of a negotiable electronic document of title.</div><div style="text-indent:0.5in;">(22) "Insolvency proceeding" includes an assignment for the benefit of creditors or other proceeding intended to liquidate or rehabilitate the estate of the person involved.</div><div style="text-indent:0.5in;">(23) "Insolvent" means:</div><div style="text-indent:0.5in;">(A) Having generally ceased to pay debts in the ordinary course of business other than as a result of bona fide dispute;</div><div style="text-indent:0.5in;">(B) Being unable to pay debts as they become due; or</div><div style="text-indent:0.5in;">(C) Being insolvent within the meaning of federal bankruptcy law.</div><div style="text-indent:0.5in;">(24) "Money" means a medium of exchange currently authorized or adopted by a domestic or foreign government. The term includes a monetary unit of account established by an intergovernmental organization or by agreement between two or more countries.</div><div style="text-indent:0.5in;">(25) "Organization" means a person other than an individual.</div><div style="text-indent:0.5in;">(26) "Party," as distinguished from "third party," means a person that has engaged in a transaction or made an agreement subject to this title.</div><div style="text-indent:0.5in;">(27) "Person" means an individual, corporation, business trust, estate, trust, partnership, limited liability company, association, joint venture, government, governmental subdivision, agency, or instrumentality, public corporation, or any other legal or commercial entity.</div><div style="text-indent:0.5in;">(28) "Present value" means the amount as of a date certain of one or more sums payable in the future, discounted to the date certain by use of either an interest rate specified by the parties if that rate is not manifestly unreasonable at the time the transaction is entered into or, if an interest rate is not so specified, a commercially reasonable rate that takes into account the facts and circumstances at the time the transaction is entered into.</div><div style="text-indent:0.5in;">(29) "Purchase" means taking by sale, lease, discount, negotiation, mortgage, pledge, lien, security interest, issue or reissue, gift, or any other voluntary transaction creating an interest in property.</div><div style="text-indent:0.5in;">(30) "Purchaser" means a person that takes by purchase.</div><div style="text-indent:0.5in;">(31) "Record" means information that is inscribed on a tangible medium or that is stored in an electronic or other medium and is retrievable in perceivable form.</div><div style="text-indent:0.5in;">(32) "Remedy" means any remedial right to which an aggrieved party is entitled with or without resort to a tribunal.</div><div style="text-indent:0.5in;">(33) "Representative" means a person empowered to act for another, including an agent, an officer of a corporation or association, and a trustee, executor, or administrator of an estate.</div><div style="text-indent:0.5in;">(34) "Right" includes remedy.</div><div style="text-indent:0.5in;">(35) "Security interest" means an interest in personal property or fixtures which secures payment or performance of an obligation. "Security interest" includes any interest of a consignor and a buyer of accounts, chattel paper, a payment intangible, or a promissory note in a transaction that is subject to Article 9A of this title. "Security interest" does not include the special property interest of a buyer of goods on identification of those goods to a contract for sale under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.2-401'>62A.2-401</a>, but a buyer may also acquire a "security interest" by complying with Article 9A of this title. Except as otherwise provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.2-505'>62A.2-505</a>, the right of a seller or lessor of goods under Article 2 or 2A of this title to retain or acquire possession of the goods is not a "security interest," but a seller or lessor may also acquire a "security interest" by complying with Article 9A of this title. The retention or reservation of title by a seller of goods notwithstanding shipment or delivery to the buyer under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.2-401'>62A.2-401</a> is limited in effect to a reservation of a "security interest." Whether a transaction in the form of a lease creates a "security interest" is determined pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.1-203'>62A.1-203</a>.</div><div style="text-indent:0.5in;">(36) "Send" in connection with a writing, record, or notice means:</div><div style="text-indent:0.5in;">(A) To deposit in the mail or deliver for transmission by any other usual means of communication with postage or cost of transmission provided for and properly addressed and, in the case of an instrument, to an address specified thereon or otherwise agreed, or if there be none to any address reasonable under the circumstances; or</div><div style="text-indent:0.5in;">(B) In any other way to cause to be received any record or notice within the time it would have arrived if properly sent.</div><div style="text-indent:0.5in;">(37) "Signed" includes using any symbol executed or adopted with present intention to adopt or accept a writing.</div><div style="text-indent:0.5in;">(38) "State" means a State of the United States, the District of Columbia, Puerto Rico, the United States Virgin Islands, or any territory or insular possession subject to the jurisdiction of the United States.</div><div style="text-indent:0.5in;">(39) "Surety" includes a guarantor or other secondary obligor.</div><div style="text-indent:0.5in;">(40) "Term" means a portion of an agreement that relates to a particular matter.</div><div style="text-indent:0.5in;">(41) "Unauthorized signature" means a signature made without actual, implied, or apparent authority. The term includes a forgery.</div><div style="text-indent:0.5in;">(42) "Warehouse receipt" means a document of title issued by a person engaged in the business of storing goods for hire.</div><div style="text-indent:0.5in;">(43) "Writing" includes printing, typewriting, or any other intentional reduction to tangible form. "Written" has a corresponding meaning.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/2197-S.SL.pdf?cite=2012 c 214 § 109'>2012 c 214 § 109</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/5053.SL.pdf?cite=2001 c 32 § 9'>2001 c 32 § 9</a>; 2000 c 250 § 9A-802;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/1182-S2.SL.pdf?cite=1996 c 77 § 1'>1996 c 77 § 1</a>. Prior: 1993 c 230 § 2A-602;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/1014-S.SL.pdf?cite=1993 c 229 § 1'>1993 c 229 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1991-92/Pdf/Bills/Session Laws/House/2299-S.SL.pdf?cite=1992 c 134 § 14'>1992 c 134 § 14</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1990c228.pdf?cite=1990 c 228 § 1'>1990 c 228 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c35.pdf?cite=1986 c 35 § 53'>1986 c 35 § 53</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1981c41.pdf?cite=1981 c 41 § 2'>1981 c 41 § 2</a>; 1965 ex.s. c 157 § 1-201.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Reviser's note:</span> This table indicates the latest comparable former Washington sources of the material contained in the various subsections of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.1-201'>62A.1-201</a>. Complete histories of the former sections are carried in the Revised Code of Washington Disposition Tables.</div></div><div style="margin-left:1.725in;margin-right:1.725in;"><table style="width:243.0pt;font-size:10pt;border-collapse:collapse;margin:0px auto;"><colgroup><col style="width:40pt;" /><col style="width:20pt;" /><col style="width:30pt;" /><col style="width:50pt;" /><col style="width:103.0pt;" /></colgroup><tr><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:center;padding-left:6pt;padding-right:6pt;">HEREIN</div><div style="text-indent:0pt;text-align:center;padding-left:6pt;padding-right:6pt;">SUBD.</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-align:center;padding-left:6pt;padding-right:6pt;">COMPARE</div><div style="text-align:center;padding-left:6pt;padding-right:6pt;">FORMER</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(1)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(2)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(3)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(4)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 30.52.010</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(5)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(6)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="padding-left:6pt;padding-right:6pt;">81.32.011<span style="top:-.5em;font-size:80%;position:relative;">1</span></div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(7)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(8)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(9)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">61.20.010</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(10)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(11)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 63.04.040</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 63.04.720</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(12)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(13)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(14)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(15)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(16)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(17)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 63.04.060</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 63.04.070</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(18)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(19)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(2)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 23.80.220(2)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 63.04.755(2)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 81.32.531(2)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(20)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(21)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(22)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(23)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">63.04.755(3)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(24)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">62.01.006(5)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(25)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">62.01.056</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(26)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(27)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(28)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 23.80.220(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 61.20.010</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(v) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(vi) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(29)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(30)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 23.80.220(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 61.20.010</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(v) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(vi) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(31)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(32)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 23.80.220(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 61.20.010</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(v) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(33)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 23.80.220(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 61.20.010</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(v) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(34)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(35)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(36)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(37)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">61.20.010</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(38)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(39)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(40)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(41)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(42)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(43)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">None</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(44)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.585(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 23.80.220(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iii) 61.20.010</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(iv) 62.01.025</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(v) 62.01.026</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(vi) 62.01.027</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(vii) 62.01.191</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(viii) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ix) 81.32.531(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(45)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW:</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(i) 22.04.020</div></td></tr><tr><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">(ii) 63.04.755(1)</div></td></tr><tr><td style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">(46)</div></td><td style="vertical-align:top;"><div style="margin-top:0pt;margin-bottom:0pt;"> </div></td><td colspan="2" style="vertical-align:top;"><div style="text-indent:0pt;text-align:right;padding-left:6pt;padding-right:6pt;">RCW</div></td><td style="vertical-align:top;"><div style="text-indent:0pt;padding-left:6pt;padding-right:6pt;">62.01.191</div></td></tr></table></div><div style="font-size:8pt;margin-top:4.5pt;text-indent:0.5in;"><span style="top:-.5em;font-size:80%;position:relative;">1</span>The repeal of RCW sections 81.32.010 through  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.32.561'>81.32.561</a> ". . . shall not affect the validity of sections 81.29.010 through  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.29.050'>81.29.050</a>, chapter 14, Laws of 1961 (RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.29.010'>81.29.010</a> through  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.29.050'>81.29.050</a>)." Section 10-102(a)(xvii), chapter 157, Laws of 1965 ex. sess.</div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>Savings<span style="font-family:times new roman;">—</span>2012 c 214:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.1-101'>62A.1-101</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2001 c 32:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.9A-102'>62A.9A-102</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2000 c 250:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.9A-701'>62A.9A-701</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1993 c 230:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.11-110'>62A.11-110</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Recovery of attorneys' fees<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>1993 c 229:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.11-111'>62A.11-111</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.11-112'>62A.11-112</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Short title<span style="font-family:times new roman;">—</span>1992 c 134:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=63.19.900'>63.19.900</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1981 c 41:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=62A.11-101'>62A.11-101</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

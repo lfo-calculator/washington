@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 31.04.015: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=31.04.015" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="H1D59UlJucnx2PXOSLoeFeD6OiI1YnAQozuzYgWza8QvRkcSNJT6Mp+gCdylC+sFY7wBSjcW7h0im3w1V4VADGjEsPCB9YmHGexue5AYhpgTCiUOgNgspUYCvhDQKfHDNwnIvdlOXfSMCGRU8kHIEqf3AunniA0JzLEi/KBxMd+3MFeY9HbJz70jp8fWihj7JuslA+6eRb7kzG0tIIAtMKwMoOEvX/CgV8j0C13o3Y8JTtNirertH4KILfRqL7X8IZIMMM2zUC+sLef9cp7DaHSQKiRZ2uCiGhq45lFlMSw=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=31">Title 31</a> > <a href="default.aspx?cite=31.04">Chapter 31.04</a> > <a href="default.aspx?cite=31.04.015">Section 31.04.015</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        31.04.015&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=31.04.025">31.04.025</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=31.04.015'>31.04.015</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The definitions set forth in this section apply throughout this chapter unless the context clearly requires a different meaning.</div><div style="text-indent:0.5in;">(1) "Add-on method" means the method of precomputing interest payable on a loan whereby the interest to be earned is added to the principal balance and the total plus any charges allowed under this chapter is stated as the loan amount, without further provision for the payment of interest except for failure to pay according to loan terms. The director may adopt by rule a more detailed explanation of the meaning and use of this method.</div><div style="text-indent:0.5in;">(2) "Affiliate" means any person who, directly or indirectly through one or more intermediaries, controls, or is controlled by, or is under common control with another person.</div><div style="text-indent:0.5in;">(3) "Applicant" means a person applying for a license under this chapter.</div><div style="text-indent:0.5in;">(4) "Borrower" means any person who consults with or retains a licensee or person subject to this chapter in an effort to obtain, or who seeks information about obtaining a loan, regardless of whether that person actually obtains such a loan. "Borrower" includes a person who consults with or retains a licensee or person subject to this chapter in an effort to obtain, or who seeks information about obtaining a residential mortgage loan modification, regardless of whether that person actually obtains a residential mortgage loan modification.</div><div style="text-indent:0.5in;">(5) "Department" means the state department of financial institutions.</div><div style="text-indent:0.5in;">(6) "Depository institution" has the same meaning as in section 3 of the federal deposit insurance act on July 26, 2009, and includes credit unions.</div><div style="text-indent:0.5in;">(7) "Director" means the director of financial institutions.</div><div style="text-indent:0.5in;">(8) "Educational institution" means any entity that is a degree-granting institution as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.85.010'>28B.85.010</a>, a private vocational school as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28C.10.020'>28C.10.020</a>, or school as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.16.020'>18.16.020</a>.</div><div style="text-indent:0.5in;">(9) "Federal banking agencies" means the board of governors of the federal reserve system, comptroller of the currency, director of the office of thrift supervision, national credit union administration, and federal deposit insurance corporation.</div><div style="text-indent:0.5in;">(10) "Individual servicing a mortgage loan" means a person on behalf of a lender or servicer licensed by this state, who collects or receives payments including payments of principal, interest, escrow amounts, and other amounts due, on existing obligations due and owing to the licensed lender or servicer for a residential mortgage loan when the borrower is in default, or in reasonably foreseeable likelihood of default, working with the borrower and the licensed lender or servicer, collects data and makes decisions necessary to modify either temporarily or permanently certain terms of those obligations, or otherwise finalizing collection through the foreclosure process.</div><div style="text-indent:0.5in;">(11) "Insurance" means life insurance, disability insurance, property insurance, involuntary unemployment insurance, and such other insurance as may be authorized by the insurance commissioner.</div><div style="text-indent:0.5in;">(12) "License" means a single license issued under the authority of this chapter.</div><div style="text-indent:0.5in;">(13) "Licensee" means a person to whom one or more licenses have been issued. "Licensee" also means any person, whether located within or outside of this state, who fails to obtain a license required by this chapter.</div><div style="text-indent:0.5in;">(14) "Loan" means a sum of money lent at interest or for a fee or other charge and includes both open-end and closed-end loan transactions.</div><div style="text-indent:0.5in;">(15) "Loan processor or underwriter" means an individual who performs clerical or support duties as an employee at the direction of and subject to the supervision and instruction of a person licensed, or exempt from licensing, under this chapter.</div><div style="text-indent:0.5in;">(16) "Making a loan" means advancing, offering to advance, or making a commitment to advance funds to a borrower for a loan.</div><div style="text-indent:0.5in;">(17) "Mortgage broker" means the same as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.146.010'>19.146.010</a>, except that for purposes of this chapter, a licensee or person subject to this chapter cannot receive compensation as both a consumer loan licensee making the loan and as a consumer loan licensee acting as the mortgage broker in the same loan transaction.</div><div style="text-indent:0.5in;">(18)(a) "Mortgage loan originator" means an individual who for compensation or gain (i) takes a residential mortgage loan application, or (ii) offers or negotiates terms of a residential mortgage loan. "Mortgage loan originator" also includes individuals who hold themselves out to the public as able to perform any of these activities. "Mortgage loan originator" does not include any individual who performs purely administrative or clerical tasks; and does not include a person or entity solely involved in extensions of credit relating to timeshare plans, as that term is defined in section 101(53D) of Title 11, United States Code. For the purposes of this definition, administrative or clerical tasks means the receipt, collection, and distribution of information common for the processing of a loan in the mortgage industry and communication with a consumer to obtain information necessary for the processing of a residential mortgage loan.</div><div style="text-indent:0.5in;">(b) "Mortgage loan originator" also includes an individual who for direct or indirect compensation or gain performs residential mortgage loan modification services or holds himself or herself out as being able to perform residential mortgage loan modification services.</div><div style="text-indent:0.5in;">(c) "Mortgage loan originator" does not include a person or entity that only performs real estate brokerage activities and is licensed or registered in accordance with applicable state law, unless the person or entity is compensated by a lender, a mortgage broker, or other mortgage loan originator or by any agent of such a lender, mortgage broker, or other mortgage loan originator. For the purposes of chapter 120, Laws of 2009, the term "real estate brokerage activity" means any activity that involves offering or providing real estate brokerage services to the public, including:</div><div style="text-indent:0.5in;">(i) Acting as a real estate agent or real estate broker for a buyer, seller, lessor, or lessee of real property;</div><div style="text-indent:0.5in;">(ii) Bringing together parties interested in the sale, purchase, lease, rental, or exchange of real property;</div><div style="text-indent:0.5in;">(iii) Negotiating, on behalf of any party, any portion of a contract relating to the sale, purchase, lease, rental, or exchange of real property, other than in connection with providing financing with respect to such a transaction;</div><div style="text-indent:0.5in;">(iv) Engaging in any activity for which a person engaged in the activity is required to be registered or licensed as a real estate agent or real estate broker under any applicable law; and</div><div style="text-indent:0.5in;">(v) Offering to engage in any activity, or act in any capacity, described in (c)(i) through (iv) of this subsection.</div><div style="text-indent:0.5in;">(d) This subsection does not apply to employees of a housing counseling agency approved by the United States department of housing and urban development unless the employees of a housing counseling agency are required under federal law to be individually licensed as mortgage loan originators.</div><div style="text-indent:0.5in;">(19) "Nationwide mortgage licensing system" means a licensing system developed and maintained by the conference of state bank supervisors for licensing and registration.</div><div style="text-indent:0.5in;">(20) "Officer" means an official appointed by the company for the purpose of making business decisions or corporate decisions.</div><div style="text-indent:0.5in;">(21) "Person" includes individuals, partnerships, associations, limited liability companies, limited liability partnerships, trusts, corporations, and all other legal entities.</div><div style="text-indent:0.5in;">(22) "Principal" means any person who controls, directly or indirectly through one or more intermediaries, alone or in concert with others, a ten percent or greater interest in a partnership; company; association or corporation; or a limited liability company, and the owner of a sole proprietorship.</div><div style="text-indent:0.5in;">(23) "Registered mortgage loan originator" means any individual who meets the definition of mortgage loan originator and is an employee of a depository institution; a subsidiary that is owned and controlled by a depository institution and regulated by a federal banking agency; or an institution regulated by the farm credit administration and is registered with, and maintains a unique identifier through, the nationwide mortgage licensing system.</div><div style="text-indent:0.5in;">(24) "Residential mortgage loan" means any loan primarily for personal, family, or household use that is secured by a mortgage, deed of trust, or other consensual security interest on a dwelling, as defined in the truth in lending act, or residential real estate upon which is constructed or intended to be constructed a dwelling.</div><div style="text-indent:0.5in;">(25) "Residential mortgage loan modification" means a change in one or more of a residential mortgage loan's terms or conditions. Changes to a residential mortgage loan's terms or conditions include but are not limited to forbearances; repayment plans; changes in interest rates, loan terms, or loan types; capitalizations of arrearages; or principal reductions.</div><div style="text-indent:0.5in;">(26) "Residential mortgage loan modification services" includes negotiating, attempting to negotiate, arranging, attempting to arrange, or otherwise offering to perform a residential mortgage loan modification for compensation or gain. "Residential mortgage loan modification services" also includes the collection of data for submission to an entity performing mortgage loan modification services.</div><div style="text-indent:0.5in;">(27) "S.A.F.E. act" means the secure and fair enforcement for mortgage licensing act of 2008, Title V of the housing and economic recovery act of 2008 ("HERA"), P.L. 110-289, effective July 30, 2008.</div><div style="text-indent:0.5in;">(28) "Senior officer" means an officer of a licensee at the vice president level or above.</div><div style="text-indent:0.5in;">(29) "Service or servicing a loan" means on behalf of the lender or investor of a residential mortgage loan: (a) Collecting or receiving payments on existing obligations due and owing to the lender or investor, including payments of principal, interest, escrow amounts, and other amounts due; (b) collecting fees due to the servicer; (c) working with the borrower and the licensed lender or servicer to collect data and make decisions necessary to modify certain terms of those obligations either temporarily or permanently; (d) otherwise finalizing collection through the foreclosure process; or (e) servicing a reverse mortgage loan.</div><div style="text-indent:0.5in;">(30) "Service or servicing a reverse mortgage loan" means, pursuant to an agreement with the owner of a reverse mortgage loan: Calculating, collecting, or receiving payments of interest or other amounts due; administering advances to the borrower; and providing account statements to the borrower or lender.</div><div style="text-indent:0.5in;">(31) "Simple interest method" means the method of computing interest payable on a loan by applying the annual percentage interest rate or its periodic equivalent to the unpaid balances of the principal of the loan outstanding for the time outstanding.</div><div style="text-indent:0.5in;">(a) On a nonresidential loan each payment is applied first to any unpaid penalties, fees, or charges, then to accumulated interest, and the remainder of the payment applied to the unpaid balance of the principal until paid in full. In using such method, interest must not be payable in advance nor compounded. The prohibition on compounding interest does not apply to reverse mortgage loans made in accordance with the Washington state reverse mortgage act. The director may adopt by rule a more detailed explanation of the meaning and use of this method.</div><div style="text-indent:0.5in;">(b) On a residential mortgage loan payments are applied as determined in the security instrument.</div><div style="text-indent:0.5in;">(32) "Student education loan" means any loan solely for personal use to finance postsecondary education and costs of attendance at an educational institution. A student education loan includes a loan made to refinance a student education loan. A student education loan does not include a payment plan or accounts receivable at a higher education institution as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28B.07.020'>28B.07.020</a>(4) only during the time of a student's enrollment in the higher education institution, not to include a refinanced payment plan or accounts receivable, an extension of credit under an open-end consumer credit plan, a reverse mortgage transaction, a residential mortgage transaction, or any other loan that is secured by real property or a dwelling.</div><div style="text-indent:0.5in;">(33) "Student education loan borrower" means: (a) Any resident of this state who has received or agreed to pay a student education loan; or (b) any person who shares responsibility with such resident for repaying the student education loan.</div><div style="text-indent:0.5in;">(34) "Student education loan servicer" means any person, wherever located, responsible for the servicing of any student education loan to any student education loan borrower.</div><div style="text-indent:0.5in;">(35) "Student education loan servicing" or "service a student education loan" means: (a) Receiving any scheduled periodic payments from a student education loan borrower pursuant to the terms of a student education loan; (b) applying the payments of principal and interest and such other payments with respect to the amounts received from a student education loan borrower, as may be required pursuant to the terms of a student education loan; (c) working with the student education loan borrower to collect data, or collecting data, to make decisions to modify the loan; or (d) performing other administrative services with respect to a student education loan including collection activities. "Student education loan servicing" does not include third-party student education loan modification services.</div><div style="text-indent:0.5in;">(36) "Third-party residential mortgage loan modification services" means residential mortgage loan modification services offered or performed by any person other than the owner or servicer of the loan.</div><div style="text-indent:0.5in;">(37) "Third-party service provider" means any person other than the licensee or a mortgage broker who provides goods or services to the licensee or borrower in connection with the preparation of the borrower's loan and includes, but is not limited to, credit reporting agencies, real estate brokers or salespersons, title insurance companies and agents, appraisers, structural and pest inspectors, or escrow companies.</div><div style="text-indent:0.5in;">(38) "Third-party student education loan modification services" means for compensation or other consideration by or on behalf of the borrower working with the student education loan borrower or his or her representative to collect data or prepare or submit documents, or collecting data and preparing or submitting documents, to modify, refinance, or consolidate the loan, or change repayment plans.</div><div style="text-indent:0.5in;">(39) "Unique identifier" means a number or other identifier assigned by protocols established by the nationwide mortgage licensing system.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/Senate/6029-S2.SL.pdf?cite=2018 c 62 § 9'>2018 c 62 § 9</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5299-S.SL.pdf?cite=2015 c 229 § 19'>2015 c 229 § 19</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5207.SL.pdf?cite=2013 c 29 § 1'>2013 c 29 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/2608.SL.pdf?cite=2010 c 35 § 1'>2010 c 35 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1311.SL.pdf?cite=2009 c 149 § 12'>2009 c 149 § 12</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1621-S.SL.pdf?cite=2009 c 120 § 2'>2009 c 120 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/House/1205.SL.pdf?cite=2001 c 81 § 1'>2001 c 81 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/2438-S.SL.pdf?cite=1994 c 92 § 161'>1994 c 92 § 161</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1991-92/Pdf/Bills/Session Laws/House/1743-S.SL.pdf?cite=1991 c 208 § 2'>1991 c 208 § 2</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Declarations<span style="font-family:times new roman;">—</span>2009 c 120:</span> "The legislature finds and declares that accessibility to credit is vital to the citizens of this state. The legislature declares that it is essential for the protection of citizens of this state and the stability of the state's economy that standards for licensing and regulation of the business practices of lenders be imposed. The legislature further finds that the activities of lenders and mortgage loan originators and the origination or offering of financing for residential real property have a direct, valuable, and immediate impact upon this state's consumers, this state's economy, the neighborhoods and communities of this state, and the housing and real estate industry. The legislature therefore declares that this act is necessary to encourage responsible lending in all credit transactions, to protect borrowers, and to preserve access to credit in the residential real estate lending market." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1621-S.SL.pdf?cite=2009 c 120 § 1'>2009 c 120 § 1</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

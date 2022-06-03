@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 9A.56.010: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=9A.56.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="C82IiFoVguneat0Jq3FBlOBDwzDK0Gy9n93WobTG07sGNbYNMNk/XbVuQE0g+IvNN4CrFixjWjIfpd9ulgV8mt3Nl+U8J4ajxqgCDzbR1JO2voZBVgas9Gt7XIO/QwcPu8kxk1FG24bwa8ymfwRLZrN5Gi3mOcwLWzCqOd25oSUfgLvMZ4j6HAREAkL+A/2Gw3ArJ91p5h/F3v52HpbpVVl/bNghv9D156pk3/PcHa3OOyJmeSO7F/3cAvf3xfeSmFz9MvrF1HRnolowzqc7W5+Q7YD2vf5LaMNTDeTz2VY=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=9A">Title 9A</a> > <a href="default.aspx?cite=9A.56">Chapter 9A.56</a> > <a href="default.aspx?cite=9A.56.010">Section 9A.56.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        9A.56.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=9A.56.020">9A.56.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.56.010'>9A.56.010</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The following definitions are applicable in this chapter unless the context otherwise requires:</div><div style="text-indent:0.5in;">(1) "Access device" means any card, plate, code, account number, or other means of account access that can be used alone or in conjunction with another access device to obtain money, goods, services, or anything else of value, or that can be used to initiate a transfer of funds, other than a transfer originated solely by paper instrument;</div><div style="text-indent:0.5in;">(2) "Appropriate lost or misdelivered property or services" means obtaining or exerting control over the property or services of another which the actor knows to have been lost or mislaid, or to have been delivered under a mistake as to identity of the recipient or as to the nature or amount of the property;</div><div style="text-indent:0.5in;">(3) "Beverage crate" means a plastic or metal box-like container used by a manufacturer or distributor in the transportation or distribution of individually packaged beverages to retail outlets, and affixed with language stating "property of . . . . .," "owned by . . . . .," or other markings or words identifying ownership;</div><div style="text-indent:0.5in;">(4) "By color or aid of deception" means that the deception operated to bring about the obtaining of the property or services; it is not necessary that deception be the sole means of obtaining the property or services;</div><div style="text-indent:0.5in;">(5) "Deception" occurs when an actor knowingly:</div><div style="text-indent:0.5in;">(a) Creates or confirms another's false impression which the actor knows to be false; or</div><div style="text-indent:0.5in;">(b) Fails to correct another's impression which the actor previously has created or confirmed; or</div><div style="text-indent:0.5in;">(c) Prevents another from acquiring information material to the disposition of the property involved; or</div><div style="text-indent:0.5in;">(d) Transfers or encumbers property without disclosing a lien, adverse claim, or other legal impediment to the enjoyment of the property, whether that impediment is or is not valid, or is or is not a matter of official record; or</div><div style="text-indent:0.5in;">(e) Promises performance which the actor does not intend to perform or knows will not be performed;</div><div style="text-indent:0.5in;">(6) "Deprive" in addition to its common meaning means to make unauthorized use or an unauthorized copy of records, information, data, trade secrets, or computer programs;</div><div style="text-indent:0.5in;">(7) "Mail," in addition to its common meaning, means any letter, postal card, package, bag, or other item that is addressed to a specific address for delivery by the United States postal service or any commercial carrier performing the function of delivering similar items to residences or businesses, provided the mail:</div><div style="text-indent:0.5in;">(a)(i) Is addressed with a specific person's name, family name, or company, business, or corporation name on the outside of the item of mail or on the contents inside; and</div><div style="text-indent:0.5in;">(ii) Is not addressed to a generic unnamed occupant or resident of the address without an identifiable person, family, or company, business, or corporation name on the outside of the item of mail or on the contents inside; and</div><div style="text-indent:0.5in;">(b) Has been left for collection or delivery in any letter box, mailbox, mail receptacle, or other authorized depository for mail, or given to a mail carrier, or left with any private business that provides mailboxes or mail addresses for customers or when left in a similar location for collection or delivery by any commercial carrier; or</div><div style="text-indent:0.5in;">(c) Is in transit with a postal service, mail carrier, letter carrier, commercial carrier, or that is at or in a postal vehicle, postal station, mailbox, postal airplane, transit station, or similar location of a commercial carrier; or</div><div style="text-indent:0.5in;">(d) Has been delivered to the intended address, but has not been received by the intended addressee.</div><div style="text-indent:0.5in;">Mail, for purposes of chapter 164, Laws of 2011, does not include magazines, catalogs, direct mail inserts, newsletters, advertising circulars, or any mail that is considered third-class mail by the United States postal service;</div><div style="text-indent:0.5in;">(8) "Mailbox," in addition to its common meaning, means any authorized depository or receptacle of mail for the United States postal service or authorized depository for a commercial carrier that provides services to the general public, including any address to which mail is or can be addressed, or a place where the United States postal service or equivalent commercial carrier delivers mail to its addressee;</div><div style="text-indent:0.5in;">(9) "Merchandise pallet" means a wood or plastic carrier designed and manufactured as an item on which products can be placed before or during transport to retail outlets, manufacturers, or contractors, and affixed with language stating "property of . . .," "owned by . . .," or other markings or words identifying ownership;</div><div style="text-indent:0.5in;">(10) "Obtain control over" in addition to its common meaning, means:</div><div style="text-indent:0.5in;">(a) In relation to property, to bring about a transfer or purported transfer to the obtainer or another of a legally recognized interest in the property; or</div><div style="text-indent:0.5in;">(b) In relation to labor or service, to secure performance thereof for the benefits of the obtainer or another;</div><div style="text-indent:0.5in;">(11) "Owner" means a person, other than the actor, who has possession of or any other interest in the property or services involved, and without whose consent the actor has no authority to exert control over the property or services;</div><div style="text-indent:0.5in;">(12) "Parking area" means a parking lot or other property provided by retailers for use by a customer for parking an automobile or other vehicle;</div><div style="text-indent:0.5in;">(13) "Receive" includes, but is not limited to, acquiring title, possession, control, or a security interest, or any other interest in the property;</div><div style="text-indent:0.5in;">(14) "Received by the intended addressee" means that the addressee, owner of the delivery mailbox, or authorized agent has removed the delivered mail from its delivery mailbox;</div><div style="text-indent:0.5in;">(15) "Services" includes, but is not limited to, labor, professional services, transportation services, electronic computer services, the supplying of hotel accommodations, restaurant services, entertainment, the supplying of equipment for use, and the supplying of commodities of a public utility nature such as gas, electricity, steam, and water;</div><div style="text-indent:0.5in;">(16) "Shopping cart" means a basket mounted on wheels or similar container generally used in a retail establishment by a customer for the purpose of transporting goods of any kind;</div><div style="text-indent:0.5in;">(17) "Stolen" means obtained by theft, robbery, or extortion;</div><div style="text-indent:0.5in;">(18) "Subscription television service" means cable or encrypted video and related audio and data services intended for viewing on a home television by authorized members of the public only, who have agreed to pay a fee for the service. Subscription services include but are not limited to those video services presently delivered by coaxial cable, fiber optic cable, terrestrial microwave, television broadcast, and satellite transmission;</div><div style="text-indent:0.5in;">(19) "Telecommunication device" means (a) any type of instrument, device, machine, or equipment that is capable of transmitting or receiving telephonic or electronic communications; or (b) any part of such an instrument, device, machine, or equipment, or any computer circuit, computer chip, electronic mechanism, or other component, that is capable of facilitating the transmission or reception of telephonic or electronic communications;</div><div style="text-indent:0.5in;">(20) "Telecommunication service" includes any service other than subscription television service provided for a charge or compensation to facilitate the transmission, transfer, or reception of a telephonic communication or an electronic communication;</div><div style="text-indent:0.5in;">(21) Value. (a) "Value" means the market value of the property or services at the time and in the approximate area of the criminal act.</div><div style="text-indent:0.5in;">(b) Whether or not they have been issued or delivered, written instruments, except those having a readily ascertained market value, shall be evaluated as follows:</div><div style="text-indent:0.5in;">(i) The value of an instrument constituting an evidence of debt, such as a check, draft, or promissory note, shall be deemed the amount due or collectible thereon or thereby, that figure ordinarily being the face amount of the indebtedness less any portion thereof which has been satisfied;</div><div style="text-indent:0.5in;">(ii) The value of a ticket or equivalent instrument which evidences a right to receive transportation, entertainment, or other service shall be deemed the price stated thereon, if any; and if no price is stated thereon, the value shall be deemed the price of such ticket or equivalent instrument which the issuer charged the general public;</div><div style="text-indent:0.5in;">(iii) The value of any other instrument that creates, releases, discharges, or otherwise affects any valuable legal right, privilege, or obligation shall be deemed the greatest amount of economic loss which the owner of the instrument might reasonably suffer by virtue of the loss of the instrument.</div><div style="text-indent:0.5in;">(c) Except as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.56.340'>9A.56.340</a>(4) and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.56.350'>9A.56.350</a>(4), whenever any series of transactions which constitute theft, would, when considered separately, constitute theft in the third degree because of value, and said series of transactions are a part of a criminal episode or a common scheme or plan, then the transactions may be aggregated in one count and the sum of the value of all said transactions shall be the value considered in determining the degree of theft involved.</div><div style="text-indent:0.5in;">For purposes of this subsection, "criminal episode" means a series of thefts committed by the same person from one or more mercantile establishments on three or more occasions within a five-day period.</div><div style="text-indent:0.5in;">(d) Whenever any person is charged with possessing stolen property and such person has unlawfully in his possession at the same time the stolen property of more than one person, then the stolen property possessed may be aggregated in one count and the sum of the value of all said stolen property shall be the value considered in determining the degree of theft involved. Thefts committed by the same person in different counties that have been aggregated in one county may be prosecuted in any county in which one of the thefts occurred.</div><div style="text-indent:0.5in;">(e) Property or services having value that cannot be ascertained pursuant to the standards set forth above shall be deemed to be of a value not exceeding two hundred and fifty dollars;</div><div style="text-indent:0.5in;">(22) "Vulnerable adult" includes a person eighteen years of age or older who:</div><div style="text-indent:0.5in;">(a) Is functionally, mentally, or physically unable to care for himself or herself; or</div><div style="text-indent:0.5in;">(b) Is suffering from a cognitive impairment other than voluntary intoxication;</div><div style="text-indent:0.5in;">(23) "Wrongfully obtains" or "exerts unauthorized control" means:</div><div style="text-indent:0.5in;">(a) To take the property or services of another;</div><div style="text-indent:0.5in;">(b) Having any property or services in one's possession, custody or control as bailee, factor, lessee, pledgee, renter, servant, attorney, agent, employee, trustee, executor, administrator, guardian, or officer of any person, estate, association, or corporation, or as a public officer, or person authorized by agreement or competent authority to take or hold such possession, custody, or control, to secrete, withhold, or appropriate the same to his or her own use or to the use of any person other than the true owner or person entitled thereto; or</div><div style="text-indent:0.5in;">(c) Having any property or services in one's possession, custody, or control as partner, to secrete, withhold, or appropriate the same to his or her use or to the use of any person other than the true owner or person entitled thereto, where the use is unauthorized by the partnership agreement.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1153-S.SL.pdf?cite=2017 c 266 § 7'>2017 c 266 § 7</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/1145-S.SL.pdf?cite=2011 c 164 § 2'>2011 c 164 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/2704.SL.pdf?cite=2006 c 277 § 4'>2006 c 277 § 4</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/House/2605.SL.pdf?cite=2002 c 97 § 1'>2002 c 97 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/1142.SL.pdf?cite=1999 c 143 § 36'>1999 c 143 § 36</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/5769-S.SL.pdf?cite=1998 c 236 § 1'>1998 c 236 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/House/2059-S.SL.pdf?cite=1997 c 346 § 2'>1997 c 346 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/Senate/5820-S.SL.pdf?cite=1995 c 92 § 1'>1995 c 92 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1987c140.pdf?cite=1987 c 140 § 1'>1987 c 140 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c257.pdf?cite=1986 c 257 § 2'>1986 c 257 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1985c382.pdf?cite=1985 c 382 § 1'>1985 c 382 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1984c273.pdf?cite=1984 c 273 § 6'>1984 c 273 § 6</a>; 1975-'76 2nd ex.s. c 38 § 8;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1975ex1c260.pdf?cite=1975 1st ex.s. c 260 § 9A.56.010'>1975 1st ex.s. c 260 § 9A.56.010</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2017 c 266:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.42.020'>9A.42.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>2011 c 164:</span> "It is important to the citizens of this state to have confidence in the security of the mail. Mail contains personal information, medical records, and financial documents. Theft of mail has become a serious problem in our state because mail is a key source of information for identity thieves. Currently, there is no law that adequately addresses the seriousness of this crime. This act is intended to accurately recognize the seriousness of taking personal, medical, or financial identifying information and compromising the integrity of our mail system." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/1145-S.SL.pdf?cite=2011 c 164 § 1'>2011 c 164 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1986 c 257:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c257.pdf?cite=1986 c 257 § 37'>1986 c 257 § 37</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1985 c 382:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1985c382.pdf?cite=1985 c 382 § 3'>1985 c 382 § 3</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1975-'76 2nd ex.s. c 38:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.08.020'>9A.08.020</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

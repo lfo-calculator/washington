@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 7.105.010: Definitions. (<i>Effective July 1, 2022.</i>)
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=7.105.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GfktJDaKUgIMVc/NfkvLUo7Tbn/GLHClMoFLLTEErkxEn+tZjVMo+0SOrCl3lY2Q94iFPAdX/W1ro49lbEEis8QnDweK1lUY2u0Xc4JhPOCw99u6iRI6WgRKMQwrgDB5XThhaGYLVWFIu6b7ovEkkHCaLVLLFA096yBYRt4THw52Eq4YPo4G1cpdDWsc22LvBMKVsi/NzcRLMifjcPBs2JYIH/kAg0ivZNTUzOIHtHIP8x46QsoXQnIgWhQ9UeLyjeDDJWBv7fF76eGPFCI9bU10UvCqQ4r0iMLXZxYnT1Q=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=7">Title 7</a> > <a href="default.aspx?cite=7.105">Chapter 7.105</a> > <a href="default.aspx?cite=7.105.010">Section 7.105.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        7.105.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=7.105.050">7.105.050</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=7.105.010'>7.105.010</a></h3></div><div><h3>Definitions. <span style="font-style:italic;">(Effective July 1, 2022.)</span></h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1901-S.SL.pdf">1901-S.SL</a>) ***</div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5628-S.SL.pdf">5628-S.SL</a>) ***</div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Abandonment" means action or inaction by a person or entity with a duty of care for a vulnerable adult that leaves the vulnerable adult without the means or ability to obtain necessary food, clothing, shelter, or health care.</div><div style="text-indent:0.5in;">(2) "Abuse," for the purposes of a vulnerable adult protection order, means intentional, willful, or reckless action or inaction that inflicts injury, unreasonable confinement, intimidation, or punishment on a vulnerable adult. In instances of abuse of a vulnerable adult who is unable to express or demonstrate physical harm, pain, or mental anguish, the abuse is presumed to cause physical harm, pain, or mental anguish. "Abuse" includes sexual abuse, mental abuse, physical abuse, personal exploitation, and improper use of restraint against a vulnerable adult, which have the following meanings:</div><div style="text-indent:0.5in;">(a) "Improper use of restraint" means the inappropriate use of chemical, physical, or mechanical restraints for convenience or discipline, or in a manner that: (i) Is inconsistent with federal or state licensing or certification requirements for facilities, hospitals, or programs authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.12'>71A.12</a> RCW; (ii) is not medically authorized; or (iii) otherwise constitutes abuse under this section.</div><div style="text-indent:0.5in;">(b) "Mental abuse" means an intentional, willful, or reckless verbal or nonverbal action that threatens, humiliates, harasses, coerces, intimidates, isolates, unreasonably confines, or punishes a vulnerable adult. "Mental abuse" may include ridiculing, yelling, swearing, or withholding or tampering with prescribed medications or their dosage.</div><div style="text-indent:0.5in;">(c) "Personal exploitation" means an act of forcing, compelling, or exerting undue influence over a vulnerable adult causing the vulnerable adult to act in a way that is inconsistent with relevant past behavior, or causing the vulnerable adult to perform services for the benefit of another.</div><div style="text-indent:0.5in;">(d) "Physical abuse" means the intentional, willful, or reckless action of inflicting bodily injury or physical mistreatment. "Physical abuse" includes, but is not limited to, striking with or without an object, slapping, pinching, strangulation, suffocation, kicking, shoving, or prodding.</div><div style="text-indent:0.5in;">(e) "Sexual abuse" means any form of nonconsensual sexual conduct including, but not limited to, unwanted or inappropriate touching, rape, molestation, indecent liberties, sexual coercion, sexually explicit photographing or recording, voyeurism, indecent exposure, and sexual harassment. "Sexual abuse" also includes any sexual conduct between a staff person, who is not also a resident or client, of a facility or a staff person of a program authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.12'>71A.12</a> RCW, and a vulnerable adult living in that facility or receiving service from a program authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.12'>71A.12</a> RCW, whether or not the sexual conduct is consensual.</div><div style="text-indent:0.5in;">(3) "Chemical restraint" means the administration of any drug to manage a vulnerable adult's behavior in a way that reduces the safety risk to the vulnerable adult or others, has the temporary effect of restricting the vulnerable adult's freedom of movement, and is not standard treatment for the vulnerable adult's medical or psychiatric condition.</div><div style="text-indent:0.5in;">(4) "Consent" in the context of sexual acts means that at the time of sexual contact, there are actual words or conduct indicating freely given agreement to that sexual contact. Consent must be ongoing and may be revoked at any time. Conduct short of voluntary agreement does not constitute consent as a matter of law. Consent cannot be freely given when a person does not have capacity due to disability, intoxication, or age. Consent cannot be freely given when the other party has authority or control over the care or custody of a person incarcerated or detained.</div><div style="text-indent:0.5in;">(5)(a) "Course of conduct" means a pattern of conduct composed of a series of acts over a period of time, however short, evidencing a continuity of purpose. "Course of conduct" includes any form of communication, contact, or conduct, including the sending of an electronic communication, but does not include constitutionally protected free speech. Constitutionally protected activity is not included within the meaning of "course of conduct."</div><div style="text-indent:0.5in;">(b) In determining whether the course of conduct serves any legitimate or lawful purpose, a court should consider whether:</div><div style="text-indent:0.5in;">(i) Any current contact between the parties was initiated by the respondent only or was initiated by both parties;</div><div style="text-indent:0.5in;">(ii) The respondent has been given clear notice that all further contact with the petitioner is unwanted;</div><div style="text-indent:0.5in;">(iii) The respondent's course of conduct appears designed to alarm, annoy, or harass the petitioner;</div><div style="text-indent:0.5in;">(iv) The respondent is acting pursuant to any statutory authority including, but not limited to, acts which are reasonably necessary to:</div><div style="text-indent:0.5in;">(A) Protect property or liberty interests;</div><div style="text-indent:0.5in;">(B) Enforce the law; or</div><div style="text-indent:0.5in;">(C) Meet specific statutory duties or requirements;</div><div style="text-indent:0.5in;">(v) The respondent's course of conduct has the purpose or effect of unreasonably interfering with the petitioner's privacy or the purpose or effect of creating an intimidating, hostile, or offensive living environment for the petitioner; or</div><div style="text-indent:0.5in;">(vi) Contact by the respondent with the petitioner or the petitioner's family has been limited in any manner by any previous court order.</div><div style="text-indent:0.5in;">(6) "Court clerk" means court administrators in courts of limited jurisdiction and elected court clerks.</div><div style="text-indent:0.5in;">(7) "Dating relationship" means a social relationship of a romantic nature. Factors that the court may consider in making this determination include: (a) The length of time the relationship has existed; (b) the nature of the relationship; and (c) the frequency of interaction between the parties.</div><div style="text-indent:0.5in;">(8) "Domestic violence" means:</div><div style="text-indent:0.5in;">(a) Physical harm, bodily injury, assault, or the infliction of fear of physical harm, bodily injury, or assault; nonconsensual sexual conduct or nonconsensual sexual penetration; unlawful harassment; or stalking of one intimate partner by another intimate partner; or</div><div style="text-indent:0.5in;">(b) Physical harm, bodily injury, assault, or the infliction of fear of physical harm, bodily injury, or assault; nonconsensual sexual conduct or nonconsensual sexual penetration; unlawful harassment; or stalking of one family or household member by another family or household member.</div><div style="text-indent:0.5in;">(9) "Electronic monitoring" has the same meaning as in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9.94A.030'>9.94A.030</a>.</div><div style="text-indent:0.5in;">(10) "Essential personal effects" means those items necessary for a person's immediate health, welfare, and livelihood. "Essential personal effects" includes, but is not limited to, clothing, cribs, bedding, medications, personal hygiene items, cellular phones and other electronic devices, and documents, including immigration, health care, financial, travel, and identity documents.</div><div style="text-indent:0.5in;">(11) "Facility" means a residence licensed or required to be licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.20'>18.20</a> RCW, assisted living facilities; chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=18.51'>18.51</a> RCW, nursing homes; chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.128'>70.128</a> RCW, adult family homes; chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=72.36'>72.36</a> RCW, soldiers' homes; chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.20'>71A.20</a> RCW, residential habilitation centers; or any other facility licensed or certified by the department of social and health services.</div><div style="text-indent:0.5in;">(12) "Family or household members" means: (a) Persons related by blood, marriage, domestic partnership, or adoption; (b) persons who currently or formerly resided together; (c) persons who have a biological or legal parent-child relationship, including stepparents and stepchildren and grandparents and grandchildren, or a parent's intimate partner and children; and (d) a person who is acting or has acted as a legal guardian.</div><div style="text-indent:0.5in;">(13) "Financial exploitation" means the illegal or improper use of, control over, or withholding of, the property, income, resources, or trust funds of the vulnerable adult by any person or entity for any person's or entity's profit or advantage other than for the vulnerable adult's profit or advantage. "Financial exploitation" includes, but is not limited to:</div><div style="text-indent:0.5in;">(a) The use of deception, intimidation, or undue influence by a person or entity in a position of trust and confidence with a vulnerable adult to obtain or use the property, income, resources, government benefits, health insurance benefits, or trust funds of the vulnerable adult for the benefit of a person or entity other than the vulnerable adult;</div><div style="text-indent:0.5in;">(b) The breach of a fiduciary duty, including, but not limited to, the misuse of a power of attorney, trust, or a guardianship or conservatorship appointment, that results in the unauthorized appropriation, sale, or transfer of the property, income, resources, or trust funds of the vulnerable adult for the benefit of a person or entity other than the vulnerable adult; or</div><div style="text-indent:0.5in;">(c) Obtaining or using a vulnerable adult's property, income, resources, or trust funds without lawful authority, by a person or entity who knows or clearly should know that the vulnerable adult lacks the capacity to consent to the release or use of the vulnerable adult's property, income, resources, or trust funds.</div><div style="text-indent:0.5in;">(14) "Firearm" means a weapon or device from which a projectile or projectiles may be fired by an explosive such as gunpowder. "Firearm" does not include a flare gun or other pyrotechnic visual distress signaling device, or a powder-actuated tool or other device designed solely to be used for construction purposes. "Firearm" also includes parts that can be assembled to make a firearm.</div><div style="text-indent:0.5in;">(15) "Full hearing" means a hearing where the court determines whether to issue a full protection order.</div><div style="text-indent:0.5in;">(16) "Full protection order" means a protection order that is issued by the court after notice to the respondent and where the parties had the opportunity for a full hearing by the court. "Full protection order" includes a protection order entered by the court by agreement of the parties to resolve the petition for a protection order without a full hearing.</div><div style="text-indent:0.5in;">(17) "Hospital" means a facility licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.41'>70.41</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71.12'>71.12</a> RCW or a state hospital defined in chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=72.23'>72.23</a> RCW and any employee, agent, officer, director, or independent contractor thereof.</div><div style="text-indent:0.5in;">(18) "Interested person" means a person who demonstrates to the court's satisfaction that the person is interested in the welfare of a vulnerable adult, that the person has a good faith belief that the court's intervention is necessary, and that the vulnerable adult is unable, due to incapacity, undue influence, or duress at the time the petition is filed, to protect his or her own interests.</div><div style="text-indent:0.5in;">(19) "Intimate partner" means: (a) Spouses or domestic partners; (b) former spouses or former domestic partners; (c) persons who have a child in common regardless of whether they have been married or have lived together at any time; or (d) persons who have or have had a dating relationship where both persons are at least 13 years of age or older.</div><div style="text-indent:0.5in;">(20)(a) "Isolate" or "isolation" means to restrict a person's ability to communicate, visit, interact, or otherwise associate with persons of his or her choosing. Isolation may be evidenced by acts including, but not limited to:</div><div style="text-indent:0.5in;">(i) Acts that prevent a person from sending, making, or receiving his or her personal mail, electronic communications, or telephone calls; or</div><div style="text-indent:0.5in;">(ii) Acts that prevent or obstruct a person from meeting with others, such as telling a prospective visitor or caller that the person is not present or does not wish contact, where the statement is contrary to the express wishes of the person.</div><div style="text-indent:0.5in;">(b) The term "isolate" or "isolation" may not be construed in a manner that prevents a guardian or limited guardian from performing his or her fiduciary obligations under *chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.92'>11.92</a> RCW or prevents a hospital or facility from providing treatment consistent with the standard of care for delivery of health services.</div><div style="text-indent:0.5in;">(21) "Judicial day" means days of the week other than Saturdays, Sundays, or legal holidays.</div><div style="text-indent:0.5in;">(22) "Mechanical restraint" means any device attached or adjacent to a vulnerable adult's body that the vulnerable adult cannot easily remove that restricts freedom of movement or normal access to the vulnerable adult's body. "Mechanical restraint" does not include the use of devices, materials, or equipment that are (a) medically authorized, as required, and (b) used in a manner that is consistent with federal or state licensing or certification requirements for facilities, hospitals, or programs authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.12'>71A.12</a> RCW.</div><div style="text-indent:0.5in;">(23) "Minor" means a person who is under 18 years of age.</div><div style="text-indent:0.5in;">(24) "Neglect" means: (a) A pattern of conduct or inaction by a person or entity with a duty of care that fails to provide the goods and services that maintain the physical or mental health of a vulnerable adult, or that fails to avoid or prevent physical or mental harm or pain to a vulnerable adult; or (b) an act or omission by a person or entity with a duty of care that demonstrates a serious disregard of consequences of such a magnitude as to constitute a clear and present danger to the vulnerable adult's health, welfare, or safety including, but not limited to, conduct prohibited under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.42.100'>9A.42.100</a>.</div><div style="text-indent:0.5in;">(25) "Nonconsensual" means a lack of freely given consent.</div><div style="text-indent:0.5in;">(26) "Nonphysical contact" includes, but is not limited to, written notes, mail, telephone calls, email, text messages, contact through social media applications, contact through other technologies, and contact through third parties.</div><div style="text-indent:0.5in;">(27) "Petitioner" means any named petitioner or any other person identified in the petition on whose behalf the petition is brought.</div><div style="text-indent:0.5in;">(28) "Physical restraint" means the application of physical force without the use of any device, for the purpose of restraining the free movement of a vulnerable adult's body. "Physical restraint" does not include (a) briefly holding, without undue force, a vulnerable adult in order to calm or comfort him or her, or (b) holding a vulnerable adult's hand to safely escort him or her from one area to another.</div><div style="text-indent:0.5in;">(29) "Possession" means having an item in one's custody or control. Possession may be either actual or constructive. Actual possession occurs when the item is in the actual physical custody of the person charged with possession. Constructive possession occurs when there is no actual physical possession, but there is dominion and control over the item.</div><div style="text-indent:0.5in;">(30) "Respondent" means the person who is identified as the respondent in a petition filed under this chapter.</div><div style="text-indent:0.5in;">(31) "Sexual conduct" means any of the following:</div><div style="text-indent:0.5in;">(a) Any intentional or knowing touching or fondling of the genitals, anus, or breasts, directly or indirectly, including through clothing;</div><div style="text-indent:0.5in;">(b) Any intentional or knowing display of the genitals, anus, or breasts for the purposes of arousal or sexual gratification of the respondent;</div><div style="text-indent:0.5in;">(c) Any intentional or knowing touching or fondling of the genitals, anus, or breasts, directly or indirectly, including through clothing, that the petitioner is forced to perform by another person or the respondent;</div><div style="text-indent:0.5in;">(d) Any forced display of the petitioner's genitals, anus, or breasts for the purposes of arousal or sexual gratification of the respondent or others;</div><div style="text-indent:0.5in;">(e) Any intentional or knowing touching of the clothed or unclothed body of a child under the age of 16, if done for the purpose of sexual gratification or arousal of the respondent or others; or</div><div style="text-indent:0.5in;">(f) Any coerced or forced touching or fondling by a child under the age of 16, directly or indirectly, including through clothing, of the genitals, anus, or breasts of the respondent or others.</div><div style="text-indent:0.5in;">(32) "Sexual penetration" means any contact, however slight, between the sex organ or anus of one person by an object, the sex organ, mouth, or anus of another person, or any intrusion, however slight, of any part of the body of one person or of any animal or object into the sex organ or anus of another person including, but not limited to, cunnilingus, fellatio, or anal penetration. Evidence of emission of semen is not required to prove sexual penetration.</div><div style="text-indent:0.5in;">(33) "Stalking" means any of the following:</div><div style="text-indent:0.5in;">(a) Any act of stalking as defined under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.46.110'>9A.46.110</a>;</div><div style="text-indent:0.5in;">(b) Any act of cyberstalking as defined under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9.61.260'>9.61.260</a>; or</div><div style="text-indent:0.5in;">(c) Any course of conduct involving repeated or continuing contacts, attempts to contact, monitoring, tracking, surveillance, keeping under observation, disrupting activities in a harassing manner, or following of another person that:</div><div style="text-indent:0.5in;">(i) Would cause a reasonable person to feel intimidated, frightened, under duress, significantly disrupted, or threatened and that actually causes such a feeling;</div><div style="text-indent:0.5in;">(ii) Serves no lawful purpose; and</div><div style="text-indent:0.5in;">(iii) The respondent knows, or reasonably should know, threatens, frightens, or intimidates the person, even if the respondent did not intend to intimidate, frighten, or threaten the person.</div><div style="text-indent:0.5in;">(34) "Temporary protection order" means a protection order that is issued before the court has decided whether to issue a full protection order. "Temporary protection order" includes ex parte temporary protection orders, as well as temporary protection orders that are reissued by the court pending the completion of a full hearing to decide whether to issue a full protection order. An "ex parte temporary protection order" means a temporary protection order that is issued without prior notice to the respondent.</div><div style="text-indent:0.5in;">(35) "Unlawful harassment" means:</div><div style="text-indent:0.5in;">(a) A knowing and willful course of conduct directed at a specific person that seriously alarms, annoys, harasses, or is detrimental to such person, and that serves no legitimate or lawful purpose. The course of conduct must be such as would cause a reasonable person to suffer substantial emotional distress, and must actually cause substantial emotional distress to the petitioner; or</div><div style="text-indent:0.5in;">(b) A single act of violence or threat of violence directed at a specific person that seriously alarms, annoys, harasses, or is detrimental to such person, and that serves no legitimate or lawful purpose, which would cause a reasonable person to suffer substantial emotional distress, and must actually cause substantial emotional distress to the petitioner. A single threat of violence must include: (i) A malicious and intentional threat as described in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=9A.36.080'>9A.36.080</a>(1)(c); or (ii) the presence of a firearm or other weapon.</div><div style="text-indent:0.5in;">(36) "Vulnerable adult" includes a person:</div><div style="text-indent:0.5in;">(a) Sixty years of age or older who has the functional, mental, or physical inability to care for himself or herself; or</div><div style="text-indent:0.5in;">(b) Subject to a guardianship under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.130.265'>11.130.265</a> or adult subject to conservatorship under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.130.360'>11.130.360</a>; or</div><div style="text-indent:0.5in;">(c) Who has a developmental disability as defined under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.10.020'>71A.10.020</a>; or</div><div style="text-indent:0.5in;">(d) Admitted to any facility; or</div><div style="text-indent:0.5in;">(e) Receiving services from home health, hospice, or home care agencies licensed or required to be licensed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.127'>70.127</a> RCW; or</div><div style="text-indent:0.5in;">(f) Receiving services from a person under contract with the department of social and health services to provide services in the home under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.09'>74.09</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.39A'>74.39A</a> RCW; or</div><div style="text-indent:0.5in;">(g) Who self-directs his or her own care and receives services from a personal aide under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.39'>74.39</a> RCW.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1320-S2.SL.pdf?cite=2021 c 215 § 2'>2021 c 215 § 2</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">*Reviser's note: </span>Chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=11.92'>11.92</a> RCW was repealed in its entirety by 2020 c 312 § 904, effective January 1, 2022.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2021 c 215:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=7.105.900'>7.105.900</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

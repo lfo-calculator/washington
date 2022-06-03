@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 26.18.170: Medical support—Enforcement—Rules.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=26.18.170" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="jbOLyb9P6xssskpPnEq+/RCDQvG+lzXdAaC0bam1JJOIVzNQlBuryXRnrBZR+P/oJXl7eMxRk/bwu+C0THwS2zE4ZahH8gwlKEhjmZenZ4xBO+ta4LF+5JLqNZjIYVWs3BKqKjql9FoAS1r+xgV7u8nCQXcAxF3VvJgSwEvHF6y3aNN32stdXQyVHu9DBgYNkvilHzBMPuIgwMEwhj/GW1dWHZqnpmTVwR4bskuDYCfaTjdXTGknE7PxWdZ4goMGwy7nf7kbzZc1aPlwiZOM4F4xmT/i/5lOPxETnBDxCI5YjfgxmK+MGqy6s+ZGhUAJv8dMKZOnmzyrGBm7XKqeRQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=26">Title 26</a> > <a href="default.aspx?cite=26.18">Chapter 26.18</a> > <a href="default.aspx?cite=26.18.170">Section 26.18.170</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=26.18.160">26.18.160</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        26.18.170&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=26.18.180">26.18.180</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.18.170'>26.18.170</a></h3></div><div><h3>Medical support<span style="font-family:times new roman;">—</span>Enforcement<span style="font-family:times new roman;">—</span>Rules.</h3></div><div><div style="text-indent:0.5in;">(1) Whenever a parent has been ordered to provide medical support for a dependent child, the department or the other parent may seek enforcement of the medical support as provided under this section.</div><div style="text-indent:0.5in;">(a) If the obligated parent provides proof that he or she provides accessible health care coverage for the child, that parent has satisfied his or her obligation to provide health care coverage.</div><div style="text-indent:0.5in;">(b) If the obligated parent does not provide proof of coverage, either the department or the other parent may take appropriate action as provided in this section to enforce the obligation.</div><div style="text-indent:0.5in;">(2) An obligated parent may satisfy his or her health care coverage obligation by enrolling the child in public health care coverage, but that parent is also required to provide accessible health insurance coverage for the child if it is available at no cost through the parent's employer or union.</div><div style="text-indent:0.5in;">(3) The fact that one parent enrolled the child in public health care coverage does not satisfy the other parent's health care coverage obligation unless the support order provides otherwise. A parent may satisfy the obligation to provide health care coverage by:</div><div style="text-indent:0.5in;">(a) First enrolling the child in available and accessible health insurance coverage through the parent's employer or union if such coverage is available for no more than twenty-five percent of the parent's basic support obligation;</div><div style="text-indent:0.5in;">(b) If there is no accessible health insurance coverage for the child available through the parent's employer or union, contributing a proportionate share of any premium paid by the other parent or the state for public health care coverage for the child.</div><div style="text-indent:0.5in;">(4) The department may attempt to enforce a parent's obligation to provide health insurance coverage for the dependent child. If health insurance coverage is not available through the parent's employment or union at a cost not to exceed twenty-five percent of the parent's basic support obligation, or as otherwise provided in the support order, the department may enforce any monthly payment toward the premium ordered to be provided under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.09.105'>26.09.105</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.20A.300'>74.20A.300</a>.</div><div style="text-indent:0.5in;">(5) A parent seeking to enforce another parent's monthly payment toward the premium under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.09.105'>26.09.105</a> may:</div><div style="text-indent:0.5in;">(a) Apply for support enforcement services from the division of child support as provided by rule; or</div><div style="text-indent:0.5in;">(b) Take action on his or her own behalf by:</div><div style="text-indent:0.5in;">(i) Filing a motion in the underlying superior court action; or</div><div style="text-indent:0.5in;">(ii) Initiating an action in superior court to determine the amount owed by the obligated parent, if there is not already an underlying superior court action.</div><div style="text-indent:0.5in;">(6)(a) The department may serve a notice of support owed under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.23.110'>26.23.110</a> on a parent to determine the amount of that parent's monthly payment toward the premium.</div><div style="text-indent:0.5in;">(b) Whether or not the child receives temporary assistance for needy families or medicaid, the department may enforce the responsible parent's monthly payment toward the premium. When the child receives public health care coverage for which there is an assignment, the department may disburse amounts collected to the custodial parent to be used for the medical costs of the child or the department may retain amounts collected and apply them toward the cost of providing the child's state-financed medical coverage. The department may disregard monthly payments toward the premium which are passed through to the family in accordance with federal law.</div><div style="text-indent:0.5in;">(7)(a) If the order to provide health insurance coverage contains language notifying the parent ordered to provide coverage that failure to provide such coverage or proof that such coverage is unavailable may result in direct enforcement of the order and orders payments through, or has been submitted to, the Washington state support registry for enforcement, then the department may, without further notice to the parent, send a national medical support notice pursuant to 42 U.S.C. Sec. 666(a)(19), and sections 401 (e) and (f) of the federal child support and performance incentive act of 1998 to the parent's employer or union. The notice shall be served:</div><div style="text-indent:0.5in;">(i) By regular mail;</div><div style="text-indent:0.5in;">(ii) In the manner prescribed for the service of a summons in a civil action;</div><div style="text-indent:0.5in;">(iii) By certified mail, return receipt requested; or</div><div style="text-indent:0.5in;">(iv) By electronic means if there is an agreement between the secretary of the department and the person, firm, corporation, association, political subdivision, department of the state, or agency, subdivision, or instrumentality of the United States to accept service by electronic means.</div><div style="text-indent:0.5in;">(b) The notice shall require the employer or union to enroll the child in the health insurance plan as provided in subsection (10) of this section.</div><div style="text-indent:0.5in;">(c) The returned part A of the national medical support notice to the division of child support by the employer constitutes proof of service of the notice in the case where the notice was served by regular mail.</div><div style="text-indent:0.5in;">(8) Upon receipt of a national medical support notice from a child support agency operating under Title IV-D of the federal social security act:</div><div style="text-indent:0.5in;">(a) The parent's employer or union shall comply with the provisions of the notice, including meeting response time frames and withholding requirements required under part A of the notice;</div><div style="text-indent:0.5in;">(b) The parent's employer or union shall also be responsible for complying with forwarding part B of the notice to the child's plan administrator, if required by the notice;</div><div style="text-indent:0.5in;">(c) The plan administrator is responsible for complying with the provisions of the notice.</div><div style="text-indent:0.5in;">(9) If the parent's order to provide health insurance coverage does not order payments through, and has not been submitted to, the Washington state support registry for enforcement:</div><div style="text-indent:0.5in;">(a) The parent seeking enforcement may, without further notice to the obligated parent, send a certified copy of the order requiring health insurance coverage to the parent's employer or union by certified mail, return receipt requested; and</div><div style="text-indent:0.5in;">(b) The parent seeking enforcement shall attach a notarized statement to the order declaring that the order is the latest order addressing coverage entered by the court and require the employer or union to enroll the child in the health insurance plan as provided in subsection (10) of this section.</div><div style="text-indent:0.5in;">(10) Upon receipt of an order that provides for health insurance coverage:</div><div style="text-indent:0.5in;">(a) The parent's employer or union shall answer the party who sent the order within twenty days and confirm that the child:</div><div style="text-indent:0.5in;">(i) Has been enrolled in the health insurance plan;</div><div style="text-indent:0.5in;">(ii) Will be enrolled; or</div><div style="text-indent:0.5in;">(iii) Cannot be covered, stating the reasons why such coverage cannot be provided;</div><div style="text-indent:0.5in;">(b) The employer or union shall withhold any required premium from the parent's income or wages;</div><div style="text-indent:0.5in;">(c) If more than one plan is offered by the employer or union, and each plan may be extended to cover the child, then the child shall be enrolled in the parent's plan. If the parent's plan does not provide coverage which is accessible to the child, the child shall be enrolled in the least expensive plan otherwise available to the parent;</div><div style="text-indent:0.5in;">(d) The employer or union shall provide information about the name of the health insurance coverage provider or issuer and the extent of coverage available to the parent and shall make available any necessary claim forms or enrollment membership cards.</div><div style="text-indent:0.5in;">(11) If the order for coverage contains no language notifying either or both parents that failure to provide health insurance coverage or proof that such coverage is unavailable may result in direct enforcement of the order, the department or the parent seeking enforcement may serve a written notice of intent to enforce the order on the obligated parent by certified mail, return receipt requested, or by personal service. If the parent required to provide medical support fails to provide written proof that such coverage has been obtained or applied for or fails to provide proof that such coverage is unavailable within twenty days of service of the notice, the department or the parent seeking enforcement may proceed to enforce the order directly as provided in subsection (7) of this section.</div><div style="text-indent:0.5in;">(12) If the parent ordered to provide health insurance coverage elects to provide coverage that will not be accessible to the child because of geographic or other limitations when accessible coverage is otherwise available, the department or the parent seeking enforcement may serve a written notice of intent to purchase health insurance coverage on the obligated parent by certified mail, return receipt requested. The notice shall also specify the type and cost of coverage.</div><div style="text-indent:0.5in;">(13) If the department serves a notice under subsection (12) of this section the parent required to provide medical support shall, within twenty days of the date of service:</div><div style="text-indent:0.5in;">(a) File an application for an adjudicative proceeding; or</div><div style="text-indent:0.5in;">(b) Provide written proof to the department that the obligated parent has either applied for, or obtained, coverage accessible to the child.</div><div style="text-indent:0.5in;">(14) If the parent seeking enforcement serves a notice under subsection (12) of this section, within twenty days of the date of service the parent required to provide medical support shall provide written proof to the parent seeking enforcement that he or she has either applied for, or obtained, coverage accessible to the child.</div><div style="text-indent:0.5in;">(15) If the parent required to provide medical support fails to respond to a notice served under subsection (12) of this section to the party who served the notice, the party who served the notice may purchase the health insurance coverage specified in the notice directly.</div><div style="text-indent:0.5in;">(a) If the obligated parent is the responsible parent, the amount of the monthly premium shall be added to the support debt and be collectible without further notice.</div><div style="text-indent:0.5in;">(b) If the obligated parent is the custodial parent, the responsible parent may file an application for enforcement services and ask the department to establish and enforce the custodial parent's obligation.</div><div style="text-indent:0.5in;">(c) The amount of the monthly premium may be collected or accrued until the parent required to provide medical support provides proof of the required coverage.</div><div style="text-indent:0.5in;">(16) The signature of the parent seeking enforcement or of a department employee shall be a valid authorization to the coverage provider or issuer for purposes of processing a payment to the child's health services provider. An order for health insurance coverage shall operate as an assignment of all benefit rights to the parent seeking enforcement or to the child's health services provider, and in any claim against the coverage provider or issuer, the parent seeking enforcement or his or her assignee shall be subrogated to the rights of the parent obligated to provide medical support for the child. Notwithstanding the provisions of this section regarding assignment of benefits, this section shall not require a health care service contractor authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=48.44'>48.44</a> RCW or a health maintenance organization authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=48.46'>48.46</a> RCW to deviate from their contractual provisions and restrictions regarding reimbursement for covered services. If the coverage is terminated, the employer shall mail a notice of termination to the department or the parent seeking enforcement at that parent's last known address within thirty days of the termination date.</div><div style="text-indent:0.5in;">(17) This section shall not be construed to limit the right of the parents or parties to the support order to bring an action in superior court at any time to enforce, modify, or clarify the original support order.</div><div style="text-indent:0.5in;">(18) Where a child does not reside in the issuer's service area, an issuer shall cover no less than urgent and emergent care. Where the issuer offers broader coverage, whether by policy or reciprocal agreement, the issuer shall provide such coverage to any child otherwise covered that does not reside in the issuer's service area.</div><div style="text-indent:0.5in;">(19) If a parent required to provide medical support fails to pay his or her portion, determined under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.19.080'>26.19.080</a>, of any premium, deductible, copay, or uninsured medical expense incurred on behalf of the child, pursuant to a child support order, the department or the parent seeking reimbursement of medical expenses may enforce collection of the obligated parent's portion of the premium, deductible, copay, or uninsured medical expense incurred on behalf of the child.</div><div style="text-indent:0.5in;">(a) If the department is enforcing the order and the responsible parent is the obligated parent, the obligated parent's portion of the premium, deductible, copay, or uninsured medical expenses incurred on behalf of the child added to the support debt and be collectible without further notice, following the reduction of the expenses to a sum certain either in a court order or by the department, pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.23.110'>26.23.110</a>.</div><div style="text-indent:0.5in;">(b) If the custodial parent is the obligated parent, the responsible parent may file an application for enforcement services and ask the department to establish and enforce the custodial parent's obligation.</div><div style="text-indent:0.5in;">(20) As used in this section:</div><div style="text-indent:0.5in;">(a) "Accessible" means health insurance coverage which provides primary care services to the child or children with reasonable effort by the custodian.</div><div style="text-indent:0.5in;">(b) "Cash medical support" means a combination of: (i) A parent's monthly payment toward the premium paid for coverage by either the other parent or the state, which represents the obligated parent's proportionate share of the premium paid, but no more than twenty-five percent of the obligated parent's basic support obligation; and (ii) a parent's proportionate share of uninsured medical expenses.</div><div style="text-indent:0.5in;">(c) "Uninsured medical expenses" includes premiums, copays, deductibles, along with other health care costs not covered by insurance.</div><div style="text-indent:0.5in;">(d) "Obligated parent" means a parent ordered to provide health insurance coverage for the children.</div><div style="text-indent:0.5in;">(e) "Monthly payment toward the premium" means a parent's contribution toward premiums paid by the other parent or the state for insurance coverage for the child, which is based on the obligated parent's proportionate share of the premium paid, but no more than twenty-five percent of the obligated parent's basic support obligation.</div><div style="text-indent:0.5in;">(21) The department has rule-making authority to enact rules consistent with 42 U.S.C. Sec. 652(f) and 42 U.S.C. Sec. 666(a)(19) as amended by section 7307 of the deficit reduction act of 2005. Additionally, the department has rule-making authority to implement regulations required under 45 C.F.R. Parts 302, 303, 304, 305, and 308.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/Senate/6334-S.SL.pdf?cite=2018 c 150 § 103'>2018 c 150 § 103</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/1845-S.SL.pdf?cite=2009 c 476 § 2'>2009 c 476 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5244-S.SL.pdf?cite=2007 c 143 § 1'>2007 c 143 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/2579.SL.pdf?cite=2000 c 86 § 2'>2000 c 86 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/Senate/5419-S.SL.pdf?cite=1995 c 34 § 7'>1995 c 34 § 7</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/2488-S.SL.pdf?cite=1994 c 230 § 7'>1994 c 230 § 7</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/1760-S.SL.pdf?cite=1993 c 426 § 14'>1993 c 426 § 14</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c416.pdf?cite=1989 c 416 § 5'>1989 c 416 § 5</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2009 c 476:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.09.105'>26.09.105</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>2007 c 143:</span> "If any provision of this act or its application to any person or circumstance is held invalid, the remainder of the act or the application of the provision to other persons or circumstances is not affected." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5244-S.SL.pdf?cite=2007 c 143 § 10'>2007 c 143 § 10</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

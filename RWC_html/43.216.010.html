@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 43.216.010: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=43.216.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="NfRkwlSI0ouF4BS//LRo6v4nr4zTCwnDa08QI6s/qw4Ro8jgQOnluCICy5XB2kcjKjpfMCjRdqmMFnY8zTTmXx2+3C9ZdiU6RAXnq6bZvytY+OY9m2zyr5cq8oO6VWO7vK9ahxPtqhV3P3TGOCNxMjLB80mqC9v3MVzRBRNN62sosCTYdMZZgjOtv07TpEuJeqkqlU/63i4s0bg/hz+P2chVTC+Zwsa1s8hHyIytC0Pl5+YZTLMm5lk07q2zRwFYOyZJC6iiSBFnM+boxfMTbUj5zr6LhC/ejbyhLN0NlfIbXqn+JzOIH0gR7D7hi++K28ED/zjF4PJrPQv4+n4xsw==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=43">Title 43</a> > <a href="default.aspx?cite=43.216">Chapter 43.216</a> > <a href="default.aspx?cite=43.216.010">Section 43.216.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=43.216.005">43.216.005</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        43.216.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=43.216.015">43.216.015</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.010'>43.216.010</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Agency" means any person, firm, partnership, association, corporation, or facility that provides child care and early learning services outside a child's own home and includes the following irrespective of whether there is compensation to the agency:</div><div style="text-indent:0.5in;">(a) "Child day care center" and "child care center" mean an agency that regularly provides early childhood education and early learning services for a group of children for periods of less than 24 hours;</div><div style="text-indent:0.5in;">(b) "Early learning" includes but is not limited to programs and services for child care; state, federal, private, and nonprofit preschool; child care subsidies; child care resource and referral; parental education and support; and training and professional development for early learning professionals;</div><div style="text-indent:0.5in;">(c) "Family day care provider" and "family home provider" mean a child care provider who regularly provides early childhood education and early learning services for not more than 12 children at any given time in the provider's home in the family living quarters except as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.692'>43.216.692</a>;</div><div style="text-indent:0.5in;">(d) "Nongovernmental private-public partnership" means an entity registered as a nonprofit corporation in Washington state with a primary focus on early learning, school readiness, and parental support, and an ability to raise a minimum of $5,000,000 in contributions;</div><div style="text-indent:0.5in;">(e) "Outdoor nature-based child care" means an agency or an agency-offered program that:</div><div style="text-indent:0.5in;">(i) Enrolls preschool or school-age children;</div><div style="text-indent:0.5in;">(ii) Provides early learning services to the enrolled children in an outdoor natural space approved by the department for not less than four hours per day or fifty percent of the daily program hours, whichever is less; and</div><div style="text-indent:0.5in;">(iii) Teaches a nature-based curriculum to enrolled children;</div><div style="text-indent:0.5in;">(f) "Service provider" means the entity that operates a community facility.</div><div style="text-indent:0.5in;">(2) "Agency" does not include the following:</div><div style="text-indent:0.5in;">(a) Persons related to the child in the following ways:</div><div style="text-indent:0.5in;">(i) Any blood relative, including those of half-blood, and including first cousins, nephews or nieces, and persons of preceding generations as denoted by prefixes of grand, great, or great-great;</div><div style="text-indent:0.5in;">(ii) Stepfather, stepmother, stepbrother, and stepsister;</div><div style="text-indent:0.5in;">(iii) A person who legally adopts a child or the child's parent as well as the natural and other legally adopted children of such persons, and other relatives of the adoptive parents in accordance with state law; or</div><div style="text-indent:0.5in;">(iv) Spouses of any persons named in (a)(i), (ii), or (iii) of this subsection, even after the marriage is terminated;</div><div style="text-indent:0.5in;">(b) Persons who are legal guardians of the child;</div><div style="text-indent:0.5in;">(c) Persons who care for a neighbor's or friend's child or children, with or without compensation, where the person providing care for periods of less than 24 hours does not conduct such activity on an ongoing, regularly scheduled basis for the purpose of engaging in business, which includes, but is not limited to, advertising such care;</div><div style="text-indent:0.5in;">(d) Parents on a mutually cooperative basis exchange care of one another's children;</div><div style="text-indent:0.5in;">(e) Nursery schools that are engaged primarily in early childhood education with preschool children and in which no child is enrolled on a regular basis for more than four hours per day;</div><div style="text-indent:0.5in;">(f) Schools, including boarding schools, that are engaged primarily in education, operate on a definite school year schedule, follow a stated academic curriculum, and accept only school age children;</div><div style="text-indent:0.5in;">(g) Seasonal camps. For purposes of this chapter, "seasonal camp" means a program that:</div><div style="text-indent:0.5in;">(i) Operates for three months or less within a period of twelve consecutive months;</div><div style="text-indent:0.5in;">(ii) Is engaged primarily in recreational or educational activities conducted on a closely supervised basis; and</div><div style="text-indent:0.5in;">(iii) Is owned by any person, organization, association, or corporation, or is operated by a federal, state, county, or municipal government;</div><div style="text-indent:0.5in;">(h) Facilities providing child care for periods of less than 24 hours when a parent or legal guardian of the child remains on the premises of the facility for the purpose of participating in:</div><div style="text-indent:0.5in;">(i) Activities other than employment; or</div><div style="text-indent:0.5in;">(ii) Employment of up to two hours per day when the facility is operated by a nonprofit entity that also operates a licensed child care program at the same facility in another location or at another facility;</div><div style="text-indent:0.5in;">(i) Any entity that provides recreational or educational programming for school age children only and the entity meets all of the following requirements:</div><div style="text-indent:0.5in;">(i) The entity utilizes a drop-in model for programming, where children are able to attend during any or all program hours without a formal reservation;</div><div style="text-indent:0.5in;">(ii) The entity does not assume responsibility in lieu of the parent, unless for coordinated transportation;</div><div style="text-indent:0.5in;">(iii) The entity is a local affiliate of a national nonprofit; and</div><div style="text-indent:0.5in;">(iv) The entity is in compliance with all safety and quality standards set by the associated national agency;</div><div style="text-indent:0.5in;">(j) A program operated by any unit of local, state, or federal government;</div><div style="text-indent:0.5in;">(k) A program located within the boundaries of a federally recognized Indian reservation, licensed by the Indian tribe;</div><div style="text-indent:0.5in;">(l) A program located on a federal military reservation, except where the military authorities request that such agency be subject to the licensing requirements of this chapter;</div><div style="text-indent:0.5in;">(m) A program that offers early learning and support services, such as parent education, and does not provide child care services on a regular basis.</div><div style="text-indent:0.5in;">(3) "Applicant" means a person who requests or seeks employment in an agency.</div><div style="text-indent:0.5in;">(4) "Certificate of parental improvement" means a certificate issued under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.13.720'>74.13.720</a> to an individual who has a founded finding of physical abuse or negligent treatment or maltreatment, or a court finding that the individual's child was dependent as a result of a finding that the individual abused or neglected their child pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=13.34.030'>13.34.030</a>(6)(b).</div><div style="text-indent:0.5in;">(5) "Conviction information" means criminal history record information relating to an incident which has led to a conviction or other disposition adverse to the applicant.</div><div style="text-indent:0.5in;">(6) "Department" means the department of children, youth, and families.</div><div style="text-indent:0.5in;">(7) "Early achievers" means a program that improves the quality of early learning programs and supports and rewards providers for their participation.</div><div style="text-indent:0.5in;">(8) "Early childhood education and assistance program contractor" means an organization that provides early childhood education and assistance program services under a signed contract with the department.</div><div style="text-indent:0.5in;">(9) "Early childhood education and assistance program provider" means an organization that provides site level, direct, and high quality early childhood education and assistance program services under the direction of an early childhood education and assistance program contractor.</div><div style="text-indent:0.5in;">(10) "Education data center" means the education data center established in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.41.400'>43.41.400</a>, commonly referred to as the education research and data center.</div><div style="text-indent:0.5in;">(11) "Employer" means a person or business that engages the services of one or more people, especially for wages or salary to work in an agency.</div><div style="text-indent:0.5in;">(12) "Enforcement action" means denial, suspension, revocation, modification, or nonrenewal of a license pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.325'>43.216.325</a>(1) or assessment of civil monetary penalties pursuant to RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.325'>43.216.325</a>(3).</div><div style="text-indent:0.5in;">(13) "Extended day program" means an early childhood education and assistance program that offers early learning education for at least 10 hours per day, a minimum of 2,000 hours per year, at least four days per week, and operates year-round.</div><div style="text-indent:0.5in;">(14) "Family resource and referral linkage system" means a system that connects families to resources, services, and programs for which families are eligible and uses a database that is developed and maintained in partnership with communities, health care providers, and early learning providers.</div><div style="text-indent:0.5in;">(15) "Family resource center" means a unified single point of entry where families, individuals, children, and youth in communities can obtain information, an assessment of needs, referral to, or direct delivery of family services in a manner that is welcoming and strength-based.</div><div style="text-indent:0.5in;">(a) A family resource center is designed to meet the needs, cultures, and interests of the communities that the family resource center serves.</div><div style="text-indent:0.5in;">(b) Family services may be delivered directly to a family at the family resource center by family resource center staff or by providers who contract with or have provider agreements with the family resource center. Any family resource center that provides family services shall comply with applicable state and federal laws and regulations regarding the delivery of such family services, unless required waivers or exemptions have been granted by the appropriate governing body.</div><div style="text-indent:0.5in;">(c) Each family resource center shall have one or more family advocates who screen and assess a family's needs and strengths. If requested by the family, the family advocate shall assist the family with setting its own goals and, together with the family, develop a written plan to pursue the family's goals in working towards a greater level of self-reliance or in attaining self-sufficiency.</div><div style="text-indent:0.5in;">(16) "Full day program" means an early childhood education and assistance program that offers early learning education for a minimum of 1,000 hours per year.</div><div style="text-indent:0.5in;">(17) "Inspection report" means a written or digital record or report created by the department that identifies or describes licensing violations or conditions within an agency. An inspection report does not include a child care facility licensing compliance agreement as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.395'>43.216.395</a>.</div><div style="text-indent:0.5in;">(18) "Low-income child care provider" means a person who administers a child care program that consists of at least 80 percent of children receiving working connections child care subsidy.</div><div style="text-indent:0.5in;">(19) "Low-income neighborhood" means a district or community where more than 20 percent of households are below the federal poverty level.</div><div style="text-indent:0.5in;">(20) "Negative action" means a court order, court judgment, or an adverse action taken by an agency, in any state, federal, tribal, or foreign jurisdiction, which results in a finding against the applicant reasonably related to the individual's character, suitability, and competence to care for or have unsupervised access to children in child care. This may include, but is not limited to:</div><div style="text-indent:0.5in;">(a) A decision issued by an administrative law judge;</div><div style="text-indent:0.5in;">(b) A final determination, decision, or finding made by an agency following an investigation;</div><div style="text-indent:0.5in;">(c) An adverse agency action, including termination, revocation, or denial of a license or certification, or if pending adverse agency action, the voluntary surrender of a license, certification, or contract in lieu of the adverse action;</div><div style="text-indent:0.5in;">(d) A revocation, denial, or restriction placed on any professional license; or</div><div style="text-indent:0.5in;">(e) A final decision of a disciplinary board.</div><div style="text-indent:0.5in;">(21) "Nonconviction information" means arrest, founded allegations of child abuse, or neglect pursuant to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.44'>26.44</a> RCW, or other negative action adverse to the applicant.</div><div style="text-indent:0.5in;">(22) "Nonschool age child" means a child who is age six years or younger and who is not enrolled in a public or private school.</div><div style="text-indent:0.5in;">(23) "Part day program" means an early childhood education and assistance program that offers early learning education for at least two and one-half hours per class session, at least 320 hours per year, for a minimum of 30 weeks per year.</div><div style="text-indent:0.5in;">(24) "Private school" means a private school approved by the state under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.195'>28A.195</a> RCW.</div><div style="text-indent:0.5in;">(25) "Probationary license" means a license issued as a disciplinary measure to an agency that has previously been issued a full license but is out of compliance with licensing standards.</div><div style="text-indent:0.5in;">(26) "Requirement" means any rule, regulation, or standard of care to be maintained by an agency.</div><div style="text-indent:0.5in;">(27) "School age child" means a child who is five years of age through 12 years of age and is attending a public or private school or is receiving home-based instruction under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.200'>28A.200</a> RCW.</div><div style="text-indent:0.5in;">(28) "Secretary" means the secretary of the department.</div><div style="text-indent:0.5in;">(29) "Washington state preschool program" means an education program for children three-to-five years of age who have not yet entered kindergarten, such as the early childhood education and assistance program.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5151-S.SL.pdf?cite=2021 c 304 § 2'>2021 c 304 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/Senate/5237-S2.SL.pdf?cite=2021 c 199 § 501'>2021 c 199 § 501</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1237.SL.pdf?cite=2021 c 39 § 4'>2021 c 39 § 4</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/1645-S2.SL.pdf?cite=2020 c 270 § 11'>2020 c 270 § 11</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/1661-S2.SL.pdf?cite=2017 3rd sp.s. c 6 § 201'>2017 3rd sp.s. c 6 § 201</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/6371.SL.pdf?cite=2016 c 231 § 1'>2016 c 231 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/2511-S.SL.pdf?cite=2016 c 169 § 3'>2016 c 169 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/1491-S2.SL.pdf?cite=2015 3rd sp.s. c 7 § 19'>2015 3rd sp.s. c 7 § 19</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/House/1723-S2.SL.pdf?cite=2013 c 323 § 3'>2013 c 323 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/House/1547.SL.pdf?cite=2013 c 130 § 1'>2013 c 130 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/1903-S2.SL.pdf?cite=2011 c 295 § 3'>2011 c 295 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/Senate/5172.SL.pdf?cite=2011 c 78 § 1'>2011 c 78 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5317-S.SL.pdf?cite=2007 c 415 § 2'>2007 c 415 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5828-S2.SL.pdf?cite=2007 c 394 § 2'>2007 c 394 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/2964-S2.SL.pdf?cite=2006 c 265 § 102'>2006 c 265 § 102</a>. Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.215.010'>43.215.010</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Reviser's note:</span><span> This section was amended by 2021 c 199 § 501 and by 2021 c 304 § 2, each without reference to the other. Both amendments are incorporated in the publication of this section under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.12.025'>1.12.025</a>(2). For rule of construction, see RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.12.025'>1.12.025</a>(1).</span></div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Short title<span style="font-family:times new roman;">—</span>Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Conflict with federal requirements<span style="font-family:times new roman;">—</span>2021 c 199:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.770'>43.216.770</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>Findings<span style="font-family:times new roman;">—</span>2021 c 39:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.14C.010'>74.14C.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2020 c 270:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=74.13.720'>74.13.720</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2017 3rd sp.s. c 6 §§ 102, 104-115, 201-227, 301-337, 401-419, 501-513, 801-803, and 805-822:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.025'>43.216.025</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2016 c 169:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.735'>43.216.735</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2015 3rd sp.s. c 7:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.216.085'>43.216.085</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Declaration<span style="font-family:times new roman;">—</span>2007 c 394:</span> "The legislature finds that education is the single most effective investment that can be made in children, the state, the economy, and the future. A well-educated citizenry is essential both for the preservation of democracy and for enhancing the state's ability to compete in the knowledge-based global economy.</div><div style="text-indent:0.75in;">As recommended by Washington learns, the legislature declares that the overarching goal for education in the state is to have a world-class, learner-focused, seamless education system that educates more Washingtonians to the highest levels of educational attainment." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5828-S2.SL.pdf?cite=2007 c 394 § 1'>2007 c 394 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Captions not law<span style="font-family:times new roman;">—</span>2007 c 394:</span> "Captions used in this act are not any part of the law." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5828-S2.SL.pdf?cite=2007 c 394 § 8'>2007 c 394 § 8</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

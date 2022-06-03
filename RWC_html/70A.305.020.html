@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 70A.305.020: Definitions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=70A.305.020" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="rF8iuUH7qEm2l0TU8nAD4Os7GhGt8KdjVVngCaOLI5zGDNvh347g8Pj+85cEghAtmaSJVicL7hS0PRCv2YfBD1teEfUWIUdqp6KBTee/fvJQyP+c3VA39WRVWzuAB5zau/7TK+c9cBZbSSjvXqkrZ1wfEIjaAL3G1gkBFaeyV6RkAs3lu21rjdzylsPPD5lDjN28oYxTKmUndT6MFOtK/WSZjdzX/cldJUK2jxo3WFjRJSOhFyRlMGoluNCgfFBIaQ+jf2AVewCkBY/3QWSK8fA3uqd4SB1C4Q+Ob0fuCyQk5HmDvqy8lx1sX7x33vuATc20Kh2gdtbZd17dZCIN1A==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=70A">Title 70A</a> > <a href="default.aspx?cite=70A.305">Chapter 70A.305</a> > <a href="default.aspx?cite=70A.305.020">Section 70A.305.020</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=70A.305.010">70A.305.010</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        70A.305.020&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=70A.305.030">70A.305.030</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.020'>70A.305.020</a></h3></div><div><h3>Definitions.</h3></div><div><div style="text-indent:0.5in;">The definitions in this section apply throughout this chapter unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(1) "Agreed order" means an order issued by the department under this chapter with which the potentially liable person or prospective purchaser receiving the order agrees to comply. An agreed order may be used to require or approve any cleanup or other remedial actions but it is not a settlement under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.040'>70A.305.040</a>(4) and shall not contain a covenant not to sue, or provide protection from claims for contribution, or provide eligibility for public funding of remedial actions under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.190'>70A.305.190</a>(4)(a) (v) and (vi).</div><div style="text-indent:0.5in;">(2) "Area-wide groundwater contamination" means groundwater contamination on multiple adjacent properties with different ownerships consisting of hazardous substances from multiple sources that have resulted in commingled plumes of contaminated groundwater that are not practicable to address separately.</div><div style="text-indent:0.5in;">(3) "Brownfield property" means previously developed and currently abandoned or underutilized real property and adjacent surface waters and sediment where environmental, economic, or community reuse objectives are hindered by the release or threatened release of hazardous substances that the department has determined requires remedial action under this chapter or that the United States environmental protection agency has determined requires remedial action under the federal cleanup law.</div><div style="text-indent:0.5in;">(4) "City" means a city or town.</div><div style="text-indent:0.5in;">(5) "Department" means the department of ecology.</div><div style="text-indent:0.5in;">(6) "Director" means the director of ecology or the director's designee.</div><div style="text-indent:0.5in;">(7) "Environmental covenant" has the same meaning as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.70.020'>64.70.020</a>.</div><div style="text-indent:0.5in;">(8) "Facility" means (a) any building, structure, installation, equipment, pipe or pipeline (including any pipe into a sewer or publicly owned treatment works), well, pit, pond, lagoon, impoundment, ditch, landfill, storage container, motor vehicle, rolling stock, vessel, or aircraft, or (b) any site or area where a hazardous substance, other than a consumer product in consumer use, has been deposited, stored, disposed of, or placed, or otherwise come to be located.</div><div style="text-indent:0.5in;">(9) "Federal cleanup law" means the federal comprehensive environmental response, compensation, and liability act of 1980, 42 U.S.C. Sec. 9601 et seq., as amended by Public Law 99-499.</div><div style="text-indent:0.5in;">(10)(a) "Fiduciary" means a person acting for the benefit of another party as a bona fide trustee; executor; administrator; custodian; guardian of estates or guardian ad litem; receiver; conservator; committee of estates of incapacitated persons; trustee in bankruptcy; trustee, under an indenture agreement, trust agreement, lease, or similar financing agreement, for debt securities, certificates of interest or certificates of participation in debt securities, or other forms of indebtedness as to which the trustee is not, in the capacity of trustee, the lender. Except as provided in subsection (22)(b)(iii) of this section, the liability of a fiduciary under this chapter shall not exceed the assets held in the fiduciary capacity.</div><div style="text-indent:0.5in;">(b) "Fiduciary" does not mean:</div><div style="text-indent:0.5in;">(i) A person acting as a fiduciary with respect to a trust or other fiduciary estate that was organized for the primary purpose of, or is engaged in, actively carrying on a trade or business for profit, unless the trust or other fiduciary estate was created as part of, or to facilitate, one or more estate plans or because of the incapacity of a natural person;</div><div style="text-indent:0.5in;">(ii) A person who acquires ownership or control of a facility with the objective purpose of avoiding liability of the person or any other person. It is prima facie evidence that the fiduciary acquired ownership or control of the facility to avoid liability if the facility is the only substantial asset in the fiduciary estate at the time the facility became subject to the fiduciary estate;</div><div style="text-indent:0.5in;">(iii) A person who acts in a capacity other than that of a fiduciary or in a beneficiary capacity and in that capacity directly or indirectly benefits from a trust or fiduciary relationship;</div><div style="text-indent:0.5in;">(iv) A person who is a beneficiary and fiduciary with respect to the same fiduciary estate, and who while acting as a fiduciary receives benefits that exceed customary or reasonable compensation, and incidental benefits permitted under applicable law;</div><div style="text-indent:0.5in;">(v) A person who is a fiduciary and receives benefits that substantially exceed customary or reasonable compensation, and incidental benefits permitted under applicable law; or</div><div style="text-indent:0.5in;">(vi) A person who acts in the capacity of trustee of state or federal lands or resources.</div><div style="text-indent:0.5in;">(11) "Fiduciary capacity" means the capacity of a person holding title to a facility, or otherwise having control of an interest in the facility pursuant to the exercise of the responsibilities of the person as a fiduciary.</div><div style="text-indent:0.5in;">(12) "Foreclosure and its equivalents" means purchase at a foreclosure sale, acquisition, or assignment of title in lieu of foreclosure, termination of a lease, or other repossession, acquisition of a right to title or possession, an agreement in satisfaction of the obligation, or any other comparable formal or informal manner, whether pursuant to law or under warranties, covenants, conditions, representations, or promises from the borrower, by which the holder acquires title to or possession of a facility securing a loan or other obligation.</div><div style="text-indent:0.5in;">(13) "Hazardous substance" means:</div><div style="text-indent:0.5in;">(a) Any dangerous or extremely hazardous waste as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.300.010'>70A.300.010</a> (1) and (7), or any dangerous or extremely dangerous waste designated by rule pursuant to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.300'>70A.300</a> RCW;</div><div style="text-indent:0.5in;">(b) Any hazardous substance as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.300.010'>70A.300.010</a>(10) or any hazardous substance as defined by rule pursuant to chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.300'>70A.300</a> RCW;</div><div style="text-indent:0.5in;">(c) Any substance that, on March 1, 1989, is a hazardous substance under section 101(14) of the federal cleanup law, 42 U.S.C. Sec. 9601(14);</div><div style="text-indent:0.5in;">(d) Petroleum or petroleum products; and</div><div style="text-indent:0.5in;">(e) Any substance or category of substances, including solid waste decomposition products, determined by the director by rule to present a threat to human health or the environment if released into the environment.</div><div style="text-indent:0.5in;">The term hazardous substance does not include any of the following when contained in an underground storage tank from which there is not a release: Crude oil or any fraction thereof or petroleum, if the tank is in compliance with all applicable federal, state, and local law.</div><div style="text-indent:0.5in;">(14) "Holder" means a person who holds indicia of ownership primarily to protect a security interest. A holder includes the initial holder such as the loan originator, any subsequent holder such as a successor-in-interest or subsequent purchaser of the security interest on the secondary market, a guarantor of an obligation, surety, or any other person who holds indicia of ownership primarily to protect a security interest, or a receiver, court-appointed trustee, or other person who acts on behalf or for the benefit of a holder. A holder can be a public or privately owned financial institution, receiver, conservator, loan guarantor, or other similar persons that loan money or guarantee repayment of a loan. Holders typically are banks or savings and loan institutions but may also include others such as insurance companies, pension funds, or private individuals that engage in loaning of money or credit.</div><div style="text-indent:0.5in;">(15) "Independent remedial actions" means remedial actions conducted without department oversight or approval, and not under an order, agreed order, or consent decree.</div><div style="text-indent:0.5in;">(16) "Indicia of ownership" means evidence of a security interest, evidence of an interest in a security interest, or evidence of an interest in a facility securing a loan or other obligation, including any legal or equitable title to a facility acquired incident to foreclosure and its equivalents. Evidence of such interests includes, mortgages, deeds of trust, sellers interest in a real estate contract, liens, surety bonds, and guarantees of obligations, title held pursuant to a lease financing transaction in which the lessor does not select initially the leased facility, or legal or equitable title obtained pursuant to foreclosure and their equivalents. Evidence of such interests also includes assignments, pledges, or other rights to or other forms of encumbrance against the facility that are held primarily to protect a security interest.</div><div style="text-indent:0.5in;">(17) "Industrial properties" means properties that are or have been characterized by, or are to be committed to, traditional industrial uses such as processing or manufacturing of materials, marine terminal and transportation areas and facilities, fabrication, assembly, treatment, or distribution of manufactured products, or storage of bulk materials, that are either:</div><div style="text-indent:0.5in;">(a) Zoned for industrial use by a city or county conducting land use planning under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=36.70A'>36.70A</a> RCW; or</div><div style="text-indent:0.5in;">(b) For counties not planning under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=36.70A'>36.70A</a> RCW and the cities within them, zoned for industrial use and adjacent to properties currently used or designated for industrial purposes.</div><div style="text-indent:0.5in;">(18) "Institutional controls" means measures undertaken to limit or prohibit activities that may interfere with the integrity of a remedial action or result in exposure to or migration of hazardous substances at a site. "Institutional controls" include environmental covenants.</div><div style="text-indent:0.5in;">(19) "Local government" means any political subdivision of the state, including a town, city, county, special purpose district, or other municipal corporation, including brownfield renewal authority created under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.160'>70A.305.160</a>.</div><div style="text-indent:0.5in;">(20) "Model remedy" or "model remedial action" means a set of technologies, procedures, and monitoring protocols identified by the department for use in routine types of clean-up projects at facilities that have common features and lower risk to human health and the environment.</div><div style="text-indent:0.5in;">(21) "Operating a facility primarily to protect a security interest" occurs when all of the following are met: (a) Operating the facility where the borrower has defaulted on the loan or otherwise breached the security agreement; (b) operating the facility to preserve the value of the facility as an ongoing business; (c) the operation is being done in anticipation of a sale, transfer, or assignment of the facility; and (d) the operation is being done primarily to protect a security interest. Operating a facility for longer than one year prior to foreclosure or its equivalents shall be presumed to be operating the facility for other than to protect a security interest.</div><div style="text-indent:0.5in;">(22) "Owner or operator" means:</div><div style="text-indent:0.5in;">(a) Any person with any ownership interest in the facility or who exercises any control over the facility; or</div><div style="text-indent:0.5in;">(b) In the case of an abandoned facility, any person who had owned, or operated, or exercised control over the facility any time before its abandonment;</div><div style="text-indent:0.5in;">The term does not include:</div><div style="text-indent:0.5in;">(i) An agency of the state or unit of local government which acquired ownership or control through a drug forfeiture action under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.505'>69.50.505</a>, or involuntarily through bankruptcy, tax delinquency, abandonment, or other circumstances in which the government involuntarily acquires title. This exclusion does not apply to an agency of the state or unit of local government which has caused or contributed to the release or threatened release of a hazardous substance from the facility;</div><div style="text-indent:0.5in;">(ii) A person who, without participating in the management of a facility, holds indicia of ownership primarily to protect the person's security interest in the facility. Holders after foreclosure and its equivalent and holders who engage in any of the activities identified in subsection (23)(e) through (g) of this section shall not lose this exemption provided the holder complies with all of the following:</div><div style="text-indent:0.5in;">(A) The holder properly maintains the environmental compliance measures already in place at the facility;</div><div style="text-indent:0.5in;">(B) The holder complies with the reporting requirements in the rules adopted under this chapter;</div><div style="text-indent:0.5in;">(C) The holder complies with any order issued to the holder by the department to abate an imminent or substantial endangerment;</div><div style="text-indent:0.5in;">(D) The holder allows the department or potentially liable persons under an order, agreed order, or settlement agreement under this chapter access to the facility to conduct remedial actions and does not impede the conduct of such remedial actions;</div><div style="text-indent:0.5in;">(E) Any remedial actions conducted by the holder are in compliance with any preexisting requirements identified by the department, or, if the department has not identified such requirements for the facility, the remedial actions are conducted consistent with the rules adopted under this chapter; and</div><div style="text-indent:0.5in;">(F) The holder does not exacerbate an existing release. The exemption in this subsection (22)(b)(ii) does not apply to holders who cause or contribute to a new release or threatened release or who are otherwise liable under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.040'>70A.305.040</a>(1) (b), (c), (d), and (e); provided, however, that a holder shall not lose this exemption if it establishes that any such new release has been remediated according to the requirements of this chapter and that any hazardous substances remaining at the facility after remediation of the new release are divisible from such new release;</div><div style="text-indent:0.5in;">(iii) A fiduciary in his, her, or its personal or individual capacity. This exemption does not preclude a claim against the assets of the estate or trust administered by the fiduciary or against a nonemployee agent or independent contractor retained by a fiduciary. This exemption also does not apply to the extent that a person is liable under this chapter independently of the person's ownership as a fiduciary or for actions taken in a fiduciary capacity which cause or contribute to a new release or exacerbate an existing release of hazardous substances. This exemption applies provided that, to the extent of the fiduciary's powers granted by law or by the applicable governing instrument granting fiduciary powers, the fiduciary complies with all of the following:</div><div style="text-indent:0.5in;">(A) The fiduciary properly maintains the environmental compliance measures already in place at the facility;</div><div style="text-indent:0.5in;">(B) The fiduciary complies with the reporting requirements in the rules adopted under this chapter;</div><div style="text-indent:0.5in;">(C) The fiduciary complies with any order issued to the fiduciary by the department to abate an imminent or substantial endangerment;</div><div style="text-indent:0.5in;">(D) The fiduciary allows the department or potentially liable persons under an order, agreed order, or settlement agreement under this chapter access to the facility to conduct remedial actions and does not impede the conduct of such remedial actions;</div><div style="text-indent:0.5in;">(E) Any remedial actions conducted by the fiduciary are in compliance with any preexisting requirements identified by the department, or, if the department has not identified such requirements for the facility, the remedial actions are conducted consistent with the rules adopted under this chapter; and</div><div style="text-indent:0.5in;">(F) The fiduciary does not exacerbate an existing release.</div><div style="text-indent:0.5in;">The exemption in this subsection (22)(b)(iii) does not apply to fiduciaries who cause or contribute to a new release or threatened release or who are otherwise liable under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.040'>70A.305.040</a>(1) (b), (c), (d), and (e); provided however, that a fiduciary shall not lose this exemption if it establishes that any such new release has been remediated according to the requirements of this chapter and that any hazardous substances remaining at the facility after remediation of the new release are divisible from such new release. The exemption in this subsection (22)(b)(iii) also does not apply where the fiduciary's powers to comply with this subsection (22)(b)(iii) are limited by a governing instrument created with the objective purpose of avoiding liability under this chapter or of avoiding compliance with this chapter; or</div><div style="text-indent:0.5in;">(iv) Any person who has any ownership interest in, operates, or exercises control over real property where a hazardous substance has come to be located solely as a result of migration of the hazardous substance to the real property through the groundwater from a source off the property, if:</div><div style="text-indent:0.5in;">(A) The person can demonstrate that the hazardous substance has not been used, placed, managed, or otherwise handled on the property in a manner likely to cause or contribute to a release of the hazardous substance that has migrated onto the property;</div><div style="text-indent:0.5in;">(B) The person has not caused or contributed to the release of the hazardous substance;</div><div style="text-indent:0.5in;">(C) The person does not engage in activities that damage or interfere with the operation of remedial actions installed on the person's property or engage in activities that result in exposure of humans or the environment to the contaminated groundwater that has migrated onto the property;</div><div style="text-indent:0.5in;">(D) If requested, the person allows the department, potentially liable persons who are subject to an order, agreed order, or consent decree, and the authorized employees, agents, or contractors of each, access to the property to conduct remedial actions required by the department. The person may attempt to negotiate an access agreement before allowing access; and</div><div style="text-indent:0.5in;">(E) Legal withdrawal of groundwater does not disqualify a person from the exemption in this subsection (22)(b)(iv).</div><div style="text-indent:0.5in;">(23) "Participation in management" means exercising decision-making control over the borrower's operation of the facility, environmental compliance, or assuming or manifesting responsibility for the overall management of the enterprise encompassing the day-to-day decision making of the enterprise.</div><div style="text-indent:0.5in;">The term does not include any of the following: (a) A holder with the mere capacity or ability to influence, or the unexercised right to control facility operations; (b) a holder who conducts or requires a borrower to conduct an environmental audit or an environmental site assessment at the facility for which indicia of ownership is held; (c) a holder who requires a borrower to come into compliance with any applicable laws or regulations at the facility for which indicia of ownership is held; (d) a holder who requires a borrower to conduct remedial actions including setting minimum requirements, but does not otherwise control or manage the borrower's remedial actions or the scope of the borrower's remedial actions except to prepare a facility for sale, transfer, or assignment; (e) a holder who engages in workout or policing activities primarily to protect the holder's security interest in the facility; (f) a holder who prepares a facility for sale, transfer, or assignment or requires a borrower to prepare a facility for sale, transfer, or assignment; (g) a holder who operates a facility primarily to protect a security interest, or requires a borrower to continue to operate, a facility primarily to protect a security interest; and (h) a prospective holder who, as a condition of becoming a holder, requires an owner or operator to conduct an environmental audit, conduct an environmental site assessment, come into compliance with any applicable laws or regulations, or conduct remedial actions prior to holding a security interest is not participating in the management of the facility.</div><div style="text-indent:0.5in;">(24) "Person" means an individual, firm, corporation, association, partnership, consortium, joint venture, commercial entity, state government agency, unit of local government, federal government agency, or Indian tribe.</div><div style="text-indent:0.5in;">(25) "Policing activities" means actions the holder takes to ensure that the borrower complies with the terms of the loan or security interest or actions the holder takes or requires the borrower to take to maintain the value of the security. Policing activities include: Requiring the borrower to conduct remedial actions at the facility during the term of the security interest; requiring the borrower to comply or come into compliance with applicable federal, state, and local environmental and other laws, regulations, and permits during the term of the security interest; securing or exercising authority to monitor or inspect the facility including on-site inspections, or to monitor or inspect the borrower's business or financial condition during the term of the security interest; or taking other actions necessary to adequately police the loan or security interest such as requiring a borrower to comply with any warranties, covenants, conditions, representations, or promises from the borrower.</div><div style="text-indent:0.5in;">(26) "Potentially liable person" means any person whom the department finds, based on credible evidence, to be liable under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.040'>70A.305.040</a>. The department shall give notice to any such person and allow an opportunity for comment before making the finding, unless an emergency requires otherwise.</div><div style="text-indent:0.5in;">(27) "Prepare a facility for sale, transfer, or assignment" means to secure access to the facility; perform routine maintenance on the facility; remove inventory, equipment, or structures; properly maintain environmental compliance measures already in place at the facility; conduct remedial actions to cleanup releases at the facility; or to perform other similar activities intended to preserve the value of the facility where the borrower has defaulted on the loan or otherwise breached the security agreement or after foreclosure and its equivalents and in anticipation of a pending sale, transfer, or assignment, primarily to protect the holder's security interest in the facility. A holder can prepare a facility for sale, transfer, or assignment for up to one year prior to foreclosure and its equivalents and still stay within the security interest exemption in subsection (22)(b)(ii) of this section.</div><div style="text-indent:0.5in;">(28) "Primarily to protect a security interest" means the indicia of ownership is held primarily for the purpose of securing payment or performance of an obligation. The term does not include indicia of ownership held primarily for investment purposes nor indicia of ownership held primarily for purposes other than as protection for a security interest. A holder may have other, secondary reasons, for maintaining indicia of ownership, but the primary reason must be for protection of a security interest. Holding indicia of ownership after foreclosure or its equivalents for longer than five years shall be considered to be holding the indicia of ownership for purposes other than primarily to protect a security interest. For facilities that have been acquired through foreclosure or its equivalents prior to July 23, 1995, this five-year period shall begin as of July 23, 1995.</div><div style="text-indent:0.5in;">(29) "Prospective purchaser" means a person who is not currently liable for remedial action at a facility and who proposes to purchase, redevelop, or reuse the facility.</div><div style="text-indent:0.5in;">(30) "Public notice" means, at a minimum, adequate notice mailed to all persons who have made timely request of the department and to persons residing in the potentially affected vicinity of the proposed action; mailed to appropriate news media; published in the newspaper of largest circulation in the city or county of the proposed action; and opportunity for interested persons to comment.</div><div style="text-indent:0.5in;">(31) "Redevelopment opportunity zone" means a geographic area designated under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70A.305.150'>70A.305.150</a>.</div><div style="text-indent:0.5in;">(32) "Release" means any intentional or unintentional entry of any hazardous substance into the environment, including but not limited to the abandonment or disposal of containers of hazardous substances.</div><div style="text-indent:0.5in;">(33) "Remedy" or "remedial action" means any action or expenditure consistent with the purposes of this chapter to identify, eliminate, or minimize any threat or potential threat posed by hazardous substances to human health or the environment including any investigative and monitoring activities with respect to any release or threatened release of a hazardous substance and any health assessments or health effects studies conducted in order to determine the risk or potential risk to human health.</div><div style="text-indent:0.5in;">(34) "Security interest" means an interest in a facility created or established for the purpose of securing a loan or other obligation. Security interests include deeds of trusts, sellers interest in a real estate contract, liens, legal, or equitable title to a facility acquired incident to foreclosure and its equivalents, and title pursuant to lease financing transactions. Security interests may also arise from transactions such as sale and leasebacks, conditional sales, installment sales, trust receipt transactions, certain assignments, factoring agreements, accounts receivable financing arrangements, easements, and consignments, if the transaction creates or establishes an interest in a facility for the purpose of securing a loan or other obligation.</div><div style="text-indent:0.5in;">(35) "Workout activities" means those actions by which a holder, at any time prior to foreclosure and its equivalents, seeks to prevent, cure, or mitigate a default by the borrower or obligor; or to preserve, or prevent the diminution of, the value of the security. Workout activities include: Restructuring or renegotiating the terms of the security interest; requiring payment of additional rent or interest; exercising forbearance; requiring or exercising rights pursuant to an assignment of accounts or other amounts owed to an obligor; requiring or exercising rights pursuant to an escrow agreement pertaining to amounts owed to an obligor; providing specific or general financial or other advice, suggestions, counseling, or guidance; and exercising any right or remedy the holder is entitled to by law or under any warranties, covenants, conditions, representations, or promises from the borrower.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/House/2246-S.SL.pdf?cite=2020 c 20 § 1306'>2020 c 20 § 1306</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5296-S2.SL.pdf?cite=2013 2nd sp.s. c 1 § 2'>2013 2nd sp.s. c 1 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5421.SL.pdf?cite=2007 c 104 § 18'>2007 c 104 § 18</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/1208-S.SL.pdf?cite=2005 c 191 § 1'>2005 c 191 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/5873-S.SL.pdf?cite=1998 c 6 § 1'>1998 c 6 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/7900.SL.pdf?cite=1997 c 406 § 2'>1997 c 406 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1995-96/Pdf/Bills/Session Laws/House/1856-S.SL.pdf?cite=1995 c 70 § 1'>1995 c 70 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/6123-S.SL.pdf?cite=1994 c 254 § 2'>1994 c 254 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1989c2.pdf?cite=1989 c 2 § 2'>1989 c 2 § 2</a> (Initiative Measure No. 97, approved November 8, 1988). Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.105D.020'>70.105D.020</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2013 2nd sp.s. c 1:</span> "The legislature finds that there are a large number of toxic waste sites that have been identified in the department of ecology's priority list as ready for immediate cleanup. The legislature further finds that addressing the cleanup of these toxic waste sites will provide needed jobs to citizens of Washington state. It is the intent of the legislature to prioritize the spending of revenues under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.105D'>70.105D</a> RCW, the model toxics control act, on cleaning up the most toxic sites, while also providing jobs in communities around the state." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5296-S2.SL.pdf?cite=2013 2nd sp.s. c 1 § 1'>2013 2nd sp.s. c 1 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2013 2nd sp.s. c 1:</span> "This act is necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and takes effect July 1, 2013." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/Senate/5296-S2.SL.pdf?cite=2013 2nd sp.s. c 1 § 20'>2013 2nd sp.s. c 1 § 20</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>Construction<span style="font-family:times new roman;">—</span>2007 c 104:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.70.015'>64.70.015</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

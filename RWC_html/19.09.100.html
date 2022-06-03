@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 19.09.100: Conditions applicable to solicitations.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=19.09.100" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="yFQebY2R6oh7W4xcOMDc+L9nuInMPkk0+Ojj9/hY3xC+CCvy37dvTT9pWxrhA4R/MFoaYdiZ4xNcKaGm36H9jtEqxTTMeRrX/usGmsXKmf+aOpaVV2b54KtvBtuzGYD4PG5Qur9M0V/Caq80Jk2WVEWNBO2aOHLYrvimtvYovBGCX3WoJYax2JzBUzzaUbhuzK3ZucLheQg/B8Df/HzOI1WAmNlBfcX6ABgFTgiIQQnw+mAlbBk9n2h2AYe7SobDlmCeYcLKoYAnzcjCbQUTv/wQ2WYKWkVv8i8f/59JjXkPWTsr+CX63ixx5+XZUCnN3MtTPxPeNKRBZaO1RSKwMQ==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=19">Title 19</a> > <a href="default.aspx?cite=19.09">Chapter 19.09</a> > <a href="default.aspx?cite=19.09.100">Section 19.09.100</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=19.09.097">19.09.097</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        19.09.100&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=19.09.191">19.09.191</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.09.100'>19.09.100</a></h3></div><div><h3>Conditions applicable to solicitations.</h3></div><div><div style="text-indent:0.5in;">All entities soliciting contributions for charitable purposes must comply with the requirements of this section except entities exempted from registration are not required to make the disclosures under subsections (1)(c), (4)(b) or (c), and (5)(b) of this section. The following conditions apply to solicitations as defined by RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.09.020'>19.09.020</a>:</div><div style="text-indent:0.5in;">(1) Any entity that directly solicits contributions from the public in this state must make the following clear and conspicuous disclosures at the point of solicitation:</div><div style="text-indent:0.5in;">(a) The name of the individual making the solicitation;</div><div style="text-indent:0.5in;">(b) The identity of the charitable organization and the city of the principal place of business of the charitable organization;</div><div style="text-indent:0.5in;">(c) The published number and website of the office of the secretary, if requested, for the donor to obtain additional financial and other information on file with the secretary. The disclosure must be made during an oral solicitation of a contribution, and at the same time at which a written request for a contribution is made.</div><div style="text-indent:0.5in;">(2) A commercial fund-raiser must meet the required disclosures described in subsection (1) of this section clearly and conspicuously at the point of solicitation and must also disclose the name of the entity for which the fund-raiser is an agent or employee and the name and city of the charitable organization for which the solicitation is being conducted.</div><div style="text-indent:0.5in;">(3) Telephone solicitations must include the disclosures required under subsection (1) or (2) of this section prior to asking for a contribution. The required disclosures must also be provided in writing within five business days to anyone who makes a pledge by telephone to donate.</div><div style="text-indent:0.5in;">(4) In the case of a solicitation by advertisement or mass distribution, including postal, electronic, posters, leaflets, automatic dialing machines, publications, and audio or video broadcasts, it must be clearly and conspicuously disclosed in the body of the solicitation material that:</div><div style="text-indent:0.5in;">(a) The solicitation is conducted by a named commercial fund-raiser, if it is;</div><div style="text-indent:0.5in;">(b) The registration required by the charitable solicitation act is on file with the secretary's office; and</div><div style="text-indent:0.5in;">(c) The potential donor can obtain additional financial and other information at a published number or website for the office of the secretary.</div><div style="text-indent:0.5in;">(5) A container or vending machine displaying a solicitation must display:</div><div style="text-indent:0.5in;">(a) In a clear and conspicuous manner the name of the charitable organization for which funds are solicited, the name, business address, and telephone number of the individual or any commercial fund-raiser responsible for collecting funds placed in the containers or vending machines;</div><div style="text-indent:0.5in;">(b) The statement: "This organization is currently registered with the secretary's office under the charitable solicitation act - call 1-800-332-4483," if the charitable organization for which funds are solicited is required to register under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.09'>19.09</a> RCW.</div><div style="text-indent:0.5in;">(6) No entity may represent that tickets to any fund-raising event will be donated for use by another person unless all the following requirements are met:</div><div style="text-indent:0.5in;">(a) The entity prior to conducting a solicitation has written commitments from persons stating that they will accept donated tickets and specifying the number of tickets they will accept;</div><div style="text-indent:0.5in;">(b) The written commitments are kept on file by the entity for three years and are made available to the secretary, attorney general, or county prosecutor on demand;</div><div style="text-indent:0.5in;">(c) The contributions solicited for donated tickets may not be more than the amount representing the number of ticket commitments received from persons and kept on file under (a) of this subsection; and</div><div style="text-indent:0.5in;">(d) Not later than seven calendar days prior to the date of the event for which ticket donations are solicited, the entity must give all donated tickets to the persons who made the written commitments to accept them.</div><div style="text-indent:0.5in;">(7) Any entity soliciting charitable contributions must not misrepresent orally or in writing:</div><div style="text-indent:0.5in;">(a) The tax deductibility of a contribution;</div><div style="text-indent:0.5in;">(b) That the person soliciting the charitable contribution is a volunteer or words of similar meaning or effect that create the impression that the person soliciting is not a paid solicitor unless such person is unpaid for his or her services;</div><div style="text-indent:0.5in;">(c) That the person soliciting the charitable contribution is a member, staffer, helper, or employee of the charitable organization or words of similar meaning or effect that create the impression that the person soliciting is not a paid solicitor if the person soliciting is employed, contracted, or paid by a commercial fund-raiser.</div><div style="text-indent:0.5in;">(8) If the charitable organization is associated with, or has a name that is similar to, any unit of government the entity soliciting contributions must disclose to each person solicited whether the charitable organization is or is not part of any unit of government and the true nature of its relationship to the unit of government. This subsection does not apply to a foundation or other charitable organization that is organized, operated, or controlled by or in connection with a registered public charity, including any governmental agency or unit, from which it derives its name.</div><div style="text-indent:0.5in;">(9) No entity may, in conducting any solicitation, use the name "police," "sheriff," "firefighters," or a similar name unless properly authorized by the police, sheriff, or firefighter organization or police, sheriff, or fire department it is representing. Authorization must be in writing and signed by two authorized officials of the organization or department. The written authorization must be retained in accordance with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.09.200'>19.09.200</a>.</div><div style="text-indent:0.5in;">(10) An entity may not, in conducting any solicitation, use the name of a federally chartered or nationally recognized military veterans' service organization as determined by the United States veterans' administration unless authorized in writing by the highest ranking official of that organization in this state. The written authorization must be retained in accordance with RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.09.200'>19.09.200</a>.</div><div style="text-indent:0.5in;">(11) Entities must comply with all local governmental regulations that apply to soliciting for or on behalf of charitable organizations.</div><div style="text-indent:0.5in;">(12) Any entity required to register under this chapter must not engage in any solicitation for contributions unless it complies with all provisions of this chapter.</div><div style="text-indent:0.5in;">(13) Solicitations must not be conducted by a charitable organization or commercial fund-raiser that has, or if a corporation, its officers, directors, or principals have, been convicted of a crime involving solicitations for or on behalf of a charitable organization in this state, the United States, or any other state or foreign country within the past ten years or has been subject to any permanent injunction or administrative order or judgment under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.86.080'>19.86.080</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.86.090'>19.86.090</a>, involving a violation or violations of RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=19.86.020'>19.86.020</a>, within the past ten years, or of restraining a false or misleading promotional plan involving solicitations for charitable organizations.</div><div style="text-indent:0.5in;">(14) Any entity subject to this chapter must not use or exploit the fact of registration under this chapter to lead the public to believe that registration constitutes an endorsement or approval by the state, but the use of the following is not deemed prohibited: "Currently registered with the Washington state secretary of state as required by law. Registration number . . . ."</div><div style="text-indent:0.5in;">(15) Any entity soliciting contributions for a charitable purpose must not include in any solicitation, or in any advertising material for a solicitation, or in any promotional plan for a solicitation, any statement that is false, misleading, or deceptive. All solicitations, advertising materials, and promotional plans must fully and fairly disclose the identity of the entity on whose behalf the solicitation is made.</div><div style="text-indent:0.5in;">(16) No entity may place a telephone call to a donor or potential donor for the purpose of soliciting contributions for a charitable purpose, before eight o'clock a.m. or after nine o'clock p.m. pacific time.</div><div style="text-indent:0.5in;">(17) No entity may, when contacting a donor or potential donor for the purpose of soliciting contributions for a charitable purpose, engage in any conduct the natural consequence of which is to harass, intimidate, or torment any person in connection with the contact.</div><div style="text-indent:0.5in;">(18) Any entity that solicits contributions may not collect or attempt to collect contributions in person or by courier unless:</div><div style="text-indent:0.5in;">(a) The contributions are noncash items such as contributions of tangible personal property; or</div><div style="text-indent:0.5in;">(b) The solicitations are made in person and the collections, or attempts to collect, are made at the time of the solicitations; or</div><div style="text-indent:0.5in;">(c) The contributor has agreed to purchase goods or items in connection with the solicitation and the collection or attempt to collect is made at the time of delivery of the goods or items.</div><div style="text-indent:0.5in;">(19) Failure to comply with subsections (1) through (18) of this section is a violation of this chapter.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2011-12/Pdf/Bills/Session Laws/House/1485-S.SL.pdf?cite=2011 c 199 § 14'>2011 c 199 § 14</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1777-S.SL.pdf?cite=2007 c 471 § 8'>2007 c 471 § 8</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/Senate/5063.SL.pdf?cite=2007 c 218 § 64'>2007 c 218 § 64</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/6230-S.SL.pdf?cite=1994 c 287 § 2'>1994 c 287 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/5237-S2.SL.pdf?cite=1993 c 471 § 9'>1993 c 471 § 9</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c230.pdf?cite=1986 c 230 § 11'>1986 c 230 § 11</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1983c265.pdf?cite=1983 c 265 § 9'>1983 c 265 § 9</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1982c227.pdf?cite=1982 c 227 § 7'>1982 c 227 § 7</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1977ex1c222.pdf?cite=1977 ex.s. c 222 § 6'>1977 ex.s. c 222 § 6</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1974ex1c106.pdf?cite=1974 ex.s. c 106 § 3'>1974 ex.s. c 106 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1973ex1c13.pdf?cite=1973 1st ex.s. c 13 § 10'>1973 1st ex.s. c 13 § 10</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>Finding<span style="font-family:times new roman;">—</span>2007 c 218:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.08.020'>41.08.020</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1982 c 227:</span> "Sections 5 and 6 of this act shall take effect June 30, 1983. The remaining sections of this act are necessary for the immediate preservation of the public peace, health, and safety, the support of the state government and its existing public institutions, and shall take effect March 1, 1982." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1982c227.pdf?cite=1982 c 227 § 25'>1982 c 227 § 25</a>.]</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

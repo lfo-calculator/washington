@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 17.34.010: Compact provisions.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=17.34.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="u+ME6GDo/41HEtXCZlX5RTo/xtu4WO/nFXtx/Ix4groMTlKl8HfiiXRUnZXvRTeYcc0FCDCjPCRPf81ACcbyEHvjmtt85t/CjLjd6ZOS3N5k403tJ19jY50X97DXaxprgGZY5JmvCHGX4spd0V4Zf5MqdqK4U8ODxBeO6STkpynyKHecO5cPN6B5zGK9eVK9knRBV6X7kPUANUfVQ2EzlUl/jD3qZoSXp8mDkCXLXyhHO/ykBVR30q3ziCHjioQQVrXS4FgjgLWBvgFOmgh4PA6MT3OBFYjBRITtzeW5FNk=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=17">Title 17</a> > <a href="default.aspx?cite=17.34">Chapter 17.34</a> > <a href="default.aspx?cite=17.34.010">Section 17.34.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        17.34.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=17.34.020">17.34.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=17.34.010'>17.34.010</a></h3></div><div><h3>Compact provisions.</h3></div><div><div style="text-indent:0.5in;">The pest control compact is hereby enacted into law and entered into with all other jurisdiction legally joining therein in the form substantially as follows:</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE I</div><div style="text-align:center;">FINDINGS</div><div style="text-indent:0pt;margin-top:4.5pt;">The party states find that:</div><div style="text-indent:0.5in;">1. In the absence of the higher degree of cooperation among them possible under this compact, the annual loss of approximately seven billion dollars from the depredations of pests is virtually certain to continue, if not to increase.</div><div style="text-indent:0.5in;">2. Because of varying climatic, geographic and economic factors, each state may be affected differently by particular species of pests; but all states share the inability to protect themselves fully against those pests which present serious dangers to them.</div><div style="text-indent:0.5in;">3. The migratory character of pest infestations makes it necessary for states both adjacent to and distant from one another, to complement each other's activities when faced with conditions of infestation and reinfestation.</div><div style="text-indent:0.5in;">4. While every state is seriously affected by a substantial number of pests, and every state is susceptible of infestation by many species of pests not now causing damage to its crop and plant life and products, the fact that relatively few species of pests present equal danger to or are of interest to all states makes the establishment and operation of an Insurance Fund, from which individual states may obtain financial support for pest control programs of benefit to them in other states and to which they may contribute in accordance with their relative interests, the most equitable means of financing cooperative pest eradication and control programs.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE II</div><div style="text-align:center;">DEFINITIONS</div><div style="text-indent:0pt;margin-top:4.5pt;">As used in this compact, unless the context clearly requires a different construction:</div><div style="text-indent:0.5in;">1. "State" means a state, territory or possession of the United States, the District of Columbia, and the Commonwealth of Puerto Rico.</div><div style="text-indent:0.5in;">2. "Requesting state" means a state which invokes the procedures of the compact to secure the undertaking or intensification of measures to control or eradicate one or more pests within one or more other states.</div><div style="text-indent:0.5in;">3. "Responding state" means a state request to undertake or intensify the measures referred to in subdivision (2) of this Article.</div><div style="text-indent:0.5in;">4. "Pest" means any invertebrate animal, pathogen, parasitic plant or similar or allied organism which can cause disease or damage in any crops, trees, shrubs, grasses or other plants of substantial value.</div><div style="text-indent:0.5in;">5. "Insurance Fund" means the Pest Control Insurance Fund established pursuant to this compact.</div><div style="text-indent:0.5in;">6. "Governing Board" means the administrators of this compact representing all of the party states when such administrators are acting as a body in pursuance of authority vested in them by this compact.</div><div style="text-indent:0.5in;">7. "Executive Committee" means the committee established pursuant to Article V(E) of this compact.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE III</div><div style="text-align:center;">THE INSURANCE FUND</div><div style="text-indent:0pt;margin-top:4.5pt;">There is hereby established the Pest Control Insurance Fund for the purpose of financing other than normal pest control operations which states may be called upon to engage in pursuant to this compact. The Insurance Fund shall contain moneys appropriated to it by the party states and any donations and grants accepted by it. All appropriations, except as conditioned by the rights and obligations of party states expressly set forth in this compact, shall be unconditional and may not be restricted by the appropriating state to use in the control of any specified pest or pests. Donations and grants may be conditional or unconditional, provided that the Insurance Fund shall not accept any donation or grant whose terms are inconsistent with any provision of this compact.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE IV</div><div style="text-align:center;">THE INSURANCE FUND, INTERNAL OPERATIONS AND MANAGEMENT</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund shall be administered by a Governing Board and Executive Committee as hereinafter provided. The actions of the Governing Board and Executive Committee pursuant to this compact shall be deemed the actions of the Insurance Fund.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">B.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The members of the Governing Board shall be entitled to one vote each on such Board. No action of the Governing Board shall be binding unless taken at a meeting at which a majority of the total number of votes on the Governing Board are cast in favor thereof. Action of the Governing Board shall be only at a meeting at which a majority of the members are present.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">C.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund shall have a seal which may be employed as an official symbol and which may be affixed to documents and otherwise used as the Governing Board may provide.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">D.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Governing Board shall elect annually, from among its members, a chairman, a vice chairman, a secretary and a treasurer. The chairman may not succeed himself. The Governing Board may appoint an executive director and fix his duties and his compensation, if any. Such executive director shall serve at the pleasure of the Governing Board. The Governing Board shall make provisions for the bonding of such of the officers and employees of the Insurance Fund as may be appropriate.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">E.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Irrespective of the civil service, personnel or other merit system laws of any of the party states, the executive director, or if there be no executive director, the chairman, in accordance with such procedures as the bylaws may provide, shall appoint, remove or discharge such personnel as may be necessary for the performance of the functions of the Insurance Fund and shall fix the duties and compensation of such personnel. The Governing Board in its bylaws shall provide for the personnel policies and programs of the Insurance Fund.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">F.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund may borrow, accept or contract for the services of personnel from any state, the United States, or any other governmental agency, or from any person, firm, association or corporation.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">G.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund may accept for any of its purposes and functions under this compact any and all donations, and grants of money, equipment, supplies, materials and services, conditional or otherwise, from any state, the United States, or any other governmental agency, or from any person, firm, association or corporation, and may receive, utilize and dispose of the same. Any donation, gift or grant accepted by the Governing Board pursuant to this paragraph or services borrowed pursuant to paragraph (F) of this Article shall be reported in the annual report of the Insurance Fund. Such report shall include the nature, amount and conditions, if any, of the donation, gift, grant or services borrowed and the identity of the donor or lender.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">H.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Governing Board shall adopt bylaws for the conduct of the business of the Insurance Fund and shall have the power to amend and rescind these bylaws. The Insurance Fund shall publish its bylaws in convenient form and shall file a copy thereof and a copy of any amendment thereto with the appropriate agency or officer in each of the party states.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">I.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund annually shall make to the Governor and legislature of each party state a report covering its activities for the preceding year. The Insurance Fund may make such additional reports as it may deem desirable.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">J.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">In addition to the powers and duties specifically authorized and imposed, the Insurance Fund may do such other things as are necessary and incidental to the conduct of its affairs pursuant to this compact.</td></tr></table><div style="text-align:center;margin-top:4.5pt;">ARTICLE V</div><div style="text-indent:0pt;text-align:center;">COMPACT AND INSURANCE FUND ADMINISTRATION</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">In each party state there shall be a compact administrator, who shall be selected and serve in such manner as the laws of his state may provide, and who shall:</td></tr></table><div style="margin-left:1.5in;margin-right:0pt;text-indent:-25px;padding-left:25px;">1. Assist in the coordination of activities pursuant to the compact in his state; and</div><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">2. Represent his state on the Governing Board of the Insurance Fund.</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">B.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">If the laws of the United States specifically so provide, or if administrative provision is made therefor within the Federal Government, the United States may be represented on the Governing Board of the Insurance Fund by not to exceed three representatives. Any such representative or representatives of the United States shall be appointed and serve in such manner as may be provided by or pursuant to federal law, but no such representative shall have a vote on the Governing Board or on the Executive Committee thereof.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">C.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Governing Board shall meet at least once each year for the purpose of determining policies and procedures in the administration of the Insurance Fund and, consistent with the provisions of the compact, supervising and giving direction to the expenditure of moneys from the Insurance Fund. Additional meetings of the Governing Board shall be held on call of the chairman, the Executive Committee, or a majority of the membership of the Governing Board.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">D.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">At such times as it may be meeting, the Governing Board shall pass upon applications for assistance from the Insurance Fund and authorize disbursements therefrom. When the Governing Board is not in session, the Executive Committee thereof shall act as agent of the Governing Board, with full authority to act for it in passing upon such applications.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">E.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Executive Committee shall be composed of the chairman of the Governing Board and four additional members of the Governing Board chosen by it so that there shall be one member representing each of four geographic groupings of party states. The Governing Board shall make such geographic groupings. If there is representation of the United States on the Governing Board one such representative may meet with the Executive Committee. The chairman of the Governing Board shall be chairman of the Executive Committee. No action of the Executive Committee shall be binding unless taken at a meeting at which at least four members of such Committee are present and vote in favor thereof. Necessary expenses of each of the five members of the Executive Committee incurred in attending meetings of such Committee, when not held at the same time and place as a meeting of the Governing Board, shall be charges against the Insurance Fund.</td></tr></table><div style="text-align:center;margin-top:4.5pt;">ARTICLE VI</div><div style="text-indent:0pt;text-align:center;">ASSISTANCE AND REIMBURSEMENT</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Each party state pledges to each other party state that it will employ its best efforts to eradicate, or control within the strictest practicable limits, any and all pests. It is recognized that performance of this responsibility involves:</td></tr></table><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">1. The maintenance of pest control and eradication activities of interstate significance by a party state at a level that would be reasonable for its own protection in the absence of this compact.</div><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">2. The meeting of emergency outbreaks or infestations of interstate significance to no less an extent than would have been done in the absence of this compact.</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">B.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Whenever a party state is threatened by a pest not present within its borders but present within another party state, or whenever a party state is undertaking or engaged in activities for the control or eradication of a pest or pests, and finds that such activities are or would be impracticable or substantially more difficult of success by reason of failure of another party state to cope with infestation or threatened infestation, that state may request the Governing Board to authorize expenditures from the Insurance Fund for eradication or control measures to be taken by one or more of such other party states at a level sufficient to prevent, or to reduce to the greatest practicable extent, infestation or reinfestation of the requesting state. Upon such authorization the responding state or states shall take or increase such eradication or control measures as may be warranted. A responding state shall use moneys made available from the Insurance Fund expeditiously and efficiently to assist in affording the protection requested.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">C.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">In order to apply for expenditures from the Insurance Fund, a requesting state shall submit the following in writing:</td></tr></table><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">1. A detailed statement of the circumstances which occasion the request for the invoking of the compact.</div><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">2. Evidence that the pest on account of whose eradication or control assistance is requested constitutes a danger to an agricultural or forest crop, product, tree, shrub, grass or other plant having a substantial value to the requesting state.</div><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">3. A statement of the extent of the present and projected program of the requesting state and its subdivision, including full information as to the legal authority for the conduct of such program or programs and the expenditures being made or budgeted therefor, in connection with the eradication, control, or prevention of introduction of the pest concerned.</div><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">4. Proof that the expenditures being made or budgeted as detailed in item 3 do not constitute a reduction of the effort for the control or eradication of the pest concerned or, if there is a reduction, the reasons why the level of program detailed in item 3 constitutes a normal level of pest control activity.</div><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">5. A declaration as to whether, to the best of its knowledge and belief, the conditions which in its view occasion the invoking of the compact in the particular instance can be abated by a program undertaken with the aid of moneys from the Insurance Fund in one year or less, or whether the request is for an installment in a program which is likely to continue for a longer period of time.</div><div style="text-indent:-25px;padding-left:25px;margin-left:1.5in;margin-right:0pt;">6. Such other information as the Governing Board may require consistent with the provisions of this compact.</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">D.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Governing Board or Executive Committee shall give due notice of any meeting at which an application for assistance from the Insurance Fund is to be considered. Such notice shall be given to the compact administrator of each party state and to such other officers and agencies as may be designated by the laws of the party states. The requesting state and any other party state shall be entitled to be represented and present evidence and argument at such meeting.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">E.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Upon the submission as required by paragraph (C) of this Article and such other information as it may have or acquire, and upon determining that an expenditure of funds is within the purposes of this compact and justified thereby, the Governing Board or Executive Committee shall authorize support of the program. The Governing Board or the Executive Committee may meet at any time or place for the purpose of receiving and considering an application. Any and all determinations of the Governing Board or Executive Committee, with respect to an application, together with the reasons therefor shall be recorded and subscribed in such manner as to show and preserve the votes of the individual members thereof.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">F.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A requesting state which is dissatisfied with a determination of the Executive Committee shall upon notice in writing given within twenty days of the determination with which it is dissatisfied, be entitled to receive a review thereof at the next meeting of the Governing Board. Determinations of the Executive Committee shall be reviewable only by the Governing Board at one of its regular meetings, or at a special meeting held in such manner as the Governing Board may authorize.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">G.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Responding states required to undertake or increase measures pursuant to this compact may receive moneys from the Insurance Fund, either at the time or times when such state incurs expenditures on account of such measures, or as reimbursement for expenses incurred and chargeable to the Insurance Fund. The Governing Board shall adopt and, from time to time, may amend or revise procedures for submission of claims upon it and for payment thereof.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">H.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Before authorizing the expenditure of moneys from the Insurance Fund pursuant to an application of a requesting state, the Insurance Fund shall ascertain the extent and nature of any timely assistance or participation which may be available from the Federal Government and shall request the appropriate agency or agencies of the Federal Government for such assistance and participation.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">I.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund may negotiate and execute a memorandum of understanding or other appropriate instrument defining the extent and degree of assistance or participation between and among the Insurance Fund, cooperating federal agencies, states and any other entities concerned.</td></tr></table><div style="text-align:center;margin-top:4.5pt;">ARTICLE VII</div><div style="text-indent:0pt;text-align:center;">ADVISORY AND TECHNICAL COMMITTEES</div><div style="text-indent:0pt;margin-top:4.5pt;">The Governing Board may establish advisory and technical committees composed of state, local, and federal officials, and private persons to advise it with respect to any one or more of its functions. Any such advisory or technical committee, or any member or members thereof may meet with and participate in its deliberations. Upon request of the Governing Board or Executive Committee an advisory or technical committee may furnish information and recommendations with respect to any application for assistance from the Insurance Fund being considered by such Board or Committee and the Board or Committee may receive and consider the same: provided that any participant in a meeting of the Governing Board or Executive Committee held pursuant to Article VI(D) of the compact shall be entitled to know the substance of any such information and recommendations, at the time of the meeting if made prior thereto or as a part thereof or, if made thereafter, no later than the time at which the Governing Board or Executive Committee makes its disposition of the application.</div><div style="text-align:center;margin-top:4.5pt;">ARTICLE VIII</div><div style="text-align:center;">RELATIONS WITH NONPARTY JURISDICTIONS</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A party state may make application for assistance from the Insurance Fund in respect of a pest in a nonparty state. Such application shall be considered and disposed of by the Governing Board or Executive Committee in the same manner as an application with respect to a pest within a party state, except as provided in this Article.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">B.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">At or in connection with any meeting of the Governing Board or Executive Committee held pursuant to Article VI(D) of this compact a nonparty state shall be entitled to appear, participate, and receive information only to such extent as the Governing Board or Executive Committee may provide. A nonparty state shall not be entitled to review of any determination made by the Executive Committee.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">C.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Governing Board or Executive Committee shall authorize expenditures from the Insurance Fund to be made in a nonparty state only after determining that the conditions in such state and the value of such expenditures to the party states as a whole justify them. The Governing Board or Executive Committee may set any conditions which it deems appropriate with respect to the expenditure of moneys from the Insurance Fund in a nonparty state and may enter into such agreement or agreements with nonparty states and other jurisdictions or entities as it may deem necessary or appropriate to protect the interests of the Insurance Fund with respect to expenditures and activities outside of party states.</td></tr></table><div style="text-align:center;margin-top:4.5pt;">ARTICLE IX</div><div style="text-indent:0pt;text-align:center;">FINANCE</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund shall submit to the executive head or designated officer or officers of each party state a budget for the Insurance Fund for such period as may be required by the laws of that party state for presentation to the legislature thereof.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">B.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Each of the budgets shall contain specific recommendations of the amount or amounts to be appropriated by each of the party states. The requests for appropriations shall be apportioned among the party states as follows: one-tenth of the total budget in equal shares and the remainder in proportion to the value of agricultural and forest crops and products, excluding animals and animal products, produced in each party state. In determining the value of such crops and products the Insurance Fund may employ such source or sources of information as in its judgment present the most equitable and accurate comparisons among the party states. Each of the budgets and requests for appropriations shall indicate the source or sources used in obtaining information concerning value of products.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">C.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The financial assets of the Insurance Fund shall be maintained in two accounts to be designated respectively as the "Operating Account" and the "Claims Account". The Operating Account shall consist only of those assets necessary for the administration of the Insurance Fund during the next ensuing two-year period. The Claims Account shall contain all moneys not included in the Operating Account and shall not exceed the amount reasonably estimated to be sufficient to pay all legitimate claims on the Insurance Fund for a period of three years. At any time when the Claims Account has reached its maximum limit or would reach its maximum limit by the addition of moneys requested for appropriation by the party states, the Governing Board shall reduce its budget requests on a pro rata basis in such manner as to keep the Claims Account within such maximum limit. Any moneys in the Claims Account by virtue of conditional donations, grants or gifts shall be included in calculations made pursuant to this paragraph only to the extent that such moneys are available to meet demands arising out of claims.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">D.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund shall not pledge the credit of any party state. The Insurance Fund may meet any of its obligations in whole or in part with moneys available to it under Article IV(G) of this compact, provided that the Governing Board takes specific action setting aside such moneys prior to incurring any obligation to be met in whole or in part in such manner. Except where the Insurance Fund makes use of moneys available to it under Article IV(G) hereof, the Insurance Fund shall not incur any obligation prior to the allotment of moneys by the party states adequate to meet the same.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">E.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The Insurance Fund shall keep accurate accounts of all receipts and disbursements. The receipts and disbursements of the Insurance Fund shall be subject to the audit and accounting procedures established under its bylaws. However, all receipts and disbursements of funds handled by the Insurance Fund shall be audited yearly by a certified or licensed public accountant and a report of the audit shall be included in and become part of the annual report of the Insurance Fund.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">F.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">The accounts of the Insurance Fund shall be open at any reasonable time for inspection by duly authorized officers of the party states and by any persons authorized by the Insurance Fund.</td></tr></table><div style="text-align:center;margin-top:4.5pt;">ARTICLE X</div><div style="text-indent:0pt;text-align:center;">ENTRY INTO FORCE AND WITHDRAWAL</div><table style="border-collapse:collapse;text-indent:0.5in;margin-top:4.5pt;"><thead><tr><td style="width:24pt;" /><td /></tr></thead><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">A.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">This compact shall enter into force when enacted into law by any five or more states: provided, that one such state is contiguous to this state and the legislature has appropriated the necessary funds. Thereafter, this compact shall become effective as to any other state upon its enactment thereof.</td></tr><tr><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">B.</td><td style="padding-left:0px;padding-right:0px;vertical-align:top;margin-top:0px;margin-bottom:0px;">Any party state may withdraw from this compact by enacting a statute repealing the same, but no such withdrawal shall take effect until two years after the executive head of the withdrawing state has given notice in writing of the withdrawal to the executive heads of all other party states. No withdrawal shall affect any liability already incurred by or chargeable to a party state prior to the time of such withdrawal.</td></tr></table><div style="text-align:center;margin-top:4.5pt;">ARTICLE XI</div><div style="text-indent:0pt;text-align:center;">CONSTRUCTION AND SEVERABILITY</div><div style="text-indent:0pt;margin-top:4.5pt;">This compact shall be liberally construed so as to effectuate the purposes thereof. The provisions of this compact shall be severable and if any phrase, clause, sentence or provision of this compact is declared to be contrary to the constitution of any state or of the United States or the applicability thereof to any government, agency, person or circumstance is held invalid, the validity of the remainder of this compact and the applicability thereof to any government, agency, person or circumstance shall not be affected thereby. If this compact shall be held contrary to the constitution of any state participating herein, the compact shall remain in full force and effect as to the remaining party states and in full force and effect as to the state affected as to all severable matters.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1969ex1c130.pdf?cite=1969 ex.s. c 130 § 1'>1969 ex.s. c 130 § 1</a>.]</div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

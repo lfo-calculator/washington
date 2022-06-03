@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 69.50.204: Schedule I.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=69.50.204" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="r/YvY55DO4nLgtDq/GYn3cgtg6z/uPW4hj4RBzetRtKfiqWANEkJ/YRLZGqG89EIC2qAjGl3AoWh3yMFSZupqCphvdsENG/Gh8AbQU2Lrsdsf774CQCevsuADaKkNEr9a4PC2w4IN38y6oENjt/xHKs0IRSTmJUu7Kd7j8SWgyVKPF47wK8rO+PJiWiOHO+dghKtPMzQXH9ruuHA+T1hwKOwqOWm947i625lJDw1nP3LmLOvLk7XYtMO6foDQLQ4Q1DUsDXAt/b2e90xa5rU/Vp6uXkSKFM1bJ40xh6bVlmCnBEJMO3eBrtGRBQTTAEZn0uPmuQuXzmdBSqcCZ5tkw==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=69">Title 69</a> > <a href="default.aspx?cite=69.50">Chapter 69.50</a> > <a href="default.aspx?cite=69.50.204">Section 69.50.204</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=69.50.203">69.50.203</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        69.50.204&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=69.50.205">69.50.205</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.204'>69.50.204</a></h3></div><div><h3>Schedule I.</h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1210-S2.SL.pdf">1210-S2.SL</a>) ***</div><div><div style="text-indent:0.5in;">Unless specifically excepted by state or federal law or regulation or more specifically included in another schedule, the following controlled substances are listed in Schedule I:</div><div style="text-indent:0.5in;">(a) Any of the following opiates, including their isomers, esters, ethers, salts, and salts of isomers, esters, and ethers whenever the existence of these isomers, esters, ethers, and salts is possible within the specific chemical designation:</div><div style="text-indent:0.5in;">(1) Acetyl-alpha-methylfentanyl (N-[1-(1-methyl-2-phenethyl)-4-piperidinyl]-N-phenylacetamide);</div><div style="text-indent:0.5in;">(2) Acetylmethadol;</div><div style="text-indent:0.5in;">(3) Allylprodine;</div><div style="text-indent:0.5in;">(4) Alphacetylmethadol, except levo-alphacetylmethadol, also known as levo-alpha-acetylmethadol, levomethadyl acetate, or LAAM;</div><div style="text-indent:0.5in;">(5) Alphameprodine;</div><div style="text-indent:0.5in;">(6) Alphamethadol;</div><div style="text-indent:0.5in;">(7) Alpha-methylfentanyl (N-[1-(alpha-methyl-beta-phenyl) ethyl-4-piperidyl] propionanilide); (1-(1-methyl-2-phenylethyl)-4-(N-propanilido) piperidine);</div><div style="text-indent:0.5in;">(8) Alpha-methylthiofentanyl (N-[1-methyl-2-(2-thienyl)ethyl-4-piperidinyl]-N-phenylpropanamide);</div><div style="text-indent:0.5in;">(9) Benzethidine;</div><div style="text-indent:0.5in;">(10) Betacetylmethadol;</div><div style="text-indent:0.5in;">(11) Beta-hydroxyfentanyl (N-[1-(2-hydroxy-2-phenethyl)-4-piperidinyl]-N-phenylpropanamide);</div><div style="text-indent:0.5in;">(12) Beta-hydroxy-3-methylfentanyl, some trade or other names: N-[1-(2-hydrox-2-phenethyl)-3-methyl-4-piperidinyl]-N-phenylpropanamide;</div><div style="text-indent:0.5in;">(13) Betameprodine;</div><div style="text-indent:0.5in;">(14) Betamethadol;</div><div style="text-indent:0.5in;">(15) Betaprodine;</div><div style="text-indent:0.5in;">(16) Clonitazene;</div><div style="text-indent:0.5in;">(17) Dextromoramide;</div><div style="text-indent:0.5in;">(18) Diampromide;</div><div style="text-indent:0.5in;">(19) Diethylthiambutene;</div><div style="text-indent:0.5in;">(20) Difenoxin;</div><div style="text-indent:0.5in;">(21) Dimenoxadol;</div><div style="text-indent:0.5in;">(22) Dimepheptanol;</div><div style="text-indent:0.5in;">(23) Dimethylthiambutene;</div><div style="text-indent:0.5in;">(24) Dioxaphetyl butyrate;</div><div style="text-indent:0.5in;">(25) Dipipanone;</div><div style="text-indent:0.5in;">(26) Ethylmethylthiambutene;</div><div style="text-indent:0.5in;">(27) Etonitazene;</div><div style="text-indent:0.5in;">(28) Etoxeridine;</div><div style="text-indent:0.5in;">(29) Furethidine;</div><div style="text-indent:0.5in;">(30) Hydroxypethidine;</div><div style="text-indent:0.5in;">(31) Ketobemidone;</div><div style="text-indent:0.5in;">(32) Levomoramide;</div><div style="text-indent:0.5in;">(33) Levophenacylmorphan;</div><div style="text-indent:0.5in;">(34) 3-Methylfentanyl (N-[3-methyl-1-(2-phenylethyl)-4-piperidyl]-N-phenylprop anamide);</div><div style="text-indent:0.5in;">(35) 3-Methylthiofentanyl (N-[(3-methyl-1-(2-thienyl)ethyl-4-piperidinyl]-N-phenylpropanamide);</div><div style="text-indent:0.5in;">(36) Morpheridine;</div><div style="text-indent:0.5in;">(37) MPPP (1-methyl-4-phenyl-4-propionoxypiperidine);</div><div style="text-indent:0.5in;">(38) Noracymethadol;</div><div style="text-indent:0.5in;">(39) Norlevorphanol;</div><div style="text-indent:0.5in;">(40) Normethadone;</div><div style="text-indent:0.5in;">(41) Norpipanone;</div><div style="text-indent:0.5in;">(42) Para-fluorofentanyl (N-(4-fluorophenyl)-N-[1-(2-phenethyl)-4-piperidinyl] propanamide);</div><div style="text-indent:0.5in;">(43) PEPAP(1-(-2-phenethyl)-4-phenyl-4-acetoxypiperidine);</div><div style="text-indent:0.5in;">(44) Phenadoxone;</div><div style="text-indent:0.5in;">(45) Phenampromide;</div><div style="text-indent:0.5in;">(46) Phenomorphan;</div><div style="text-indent:0.5in;">(47) Phenoperidine;</div><div style="text-indent:0.5in;">(48) Piritramide;</div><div style="text-indent:0.5in;">(49) Proheptazine;</div><div style="text-indent:0.5in;">(50) Properidine;</div><div style="text-indent:0.5in;">(51) Propiram;</div><div style="text-indent:0.5in;">(52) Racemoramide;</div><div style="text-indent:0.5in;">(53) Thiofentanyl (N-phenyl-N-[1-(2-thienyl)ethyl-4-piperidinyl]- propanamide);</div><div style="text-indent:0.5in;">(54) Tilidine;</div><div style="text-indent:0.5in;">(55) Trimeperidine.</div><div style="text-indent:0.5in;">(b) Opium derivatives. Unless specifically excepted or unless listed in another schedule, any of the following opium derivatives, including their salts, isomers, and salts of isomers whenever the existence of those salts, isomers, and salts of isomers is possible within the specific chemical designation:</div><div style="text-indent:0.5in;">(1) Acetorphine;</div><div style="text-indent:0.5in;">(2) Acetyldihydrocodeine;</div><div style="text-indent:0.5in;">(3) Benzylmorphine;</div><div style="text-indent:0.5in;">(4) Codeine methylbromide;</div><div style="text-indent:0.5in;">(5) Codeine-N-Oxide;</div><div style="text-indent:0.5in;">(6) Cyprenorphine;</div><div style="text-indent:0.5in;">(7) Desomorphine;</div><div style="text-indent:0.5in;">(8) Dihydromorphine;</div><div style="text-indent:0.5in;">(9) Drotebanol;</div><div style="text-indent:0.5in;">(10) Etorphine, except hydrochloride salt;</div><div style="text-indent:0.5in;">(11) Heroin;</div><div style="text-indent:0.5in;">(12) Hydromorphinol;</div><div style="text-indent:0.5in;">(13) Methyldesorphine;</div><div style="text-indent:0.5in;">(14) Methyldihydromorphine;</div><div style="text-indent:0.5in;">(15) Morphine methylbromide;</div><div style="text-indent:0.5in;">(16) Morphine methylsulfonate;</div><div style="text-indent:0.5in;">(17) Morphine-N-Oxide;</div><div style="text-indent:0.5in;">(18) Myrophine;</div><div style="text-indent:0.5in;">(19) Nicocodeine;</div><div style="text-indent:0.5in;">(20) Nicomorphine;</div><div style="text-indent:0.5in;">(21) Normorphine;</div><div style="text-indent:0.5in;">(22) Pholcodine;</div><div style="text-indent:0.5in;">(23) Thebacon.</div><div style="text-indent:0.5in;">(c) Hallucinogenic substances. Unless specifically excepted or unless listed in another schedule, any material, compound, mixture, or preparation which contains any quantity of the following hallucinogenic substances, including their salts, isomers, and salts of isomers whenever the existence of those salts, isomers, and salts of isomers is possible within the specific chemical designation. For the purposes of this subsection only, the term "isomer" includes the optical, position, and geometric isomers:</div><div style="text-indent:0.5in;">(1) Alpha-ethyltryptamine: Some trade or other names: Etryptamine; monase; a-ethyl-1H-indole-3-ethanamine; 3-(2-aminobutyl) indole; a-ET; and AET;</div><div style="text-indent:0.5in;">(2) 4-bromo-2,5-dimethoxy-amphetamine: Some trade or other names: 4-bromo-2,5-dimethoxy-a-methylphenethylamine; 4-bromo-2,5-DMA;</div><div style="text-indent:0.5in;">(3) 4-bromo-2,5-dimethoxyphenethylamine: Some trade or other names: 2-(4-bromo-2,5-dimethoxyphenyl)-1-aminoethane; alpha-desmethyl DOB; 2C-B, nexus;</div><div style="text-indent:0.5in;">(4) 2,5-dimethoxyamphetamine: Some trade or other names: 2,5-dimethoxy-a-methylphenethylamine; 2,5-DMA;</div><div style="text-indent:0.5in;">(5) 2,5-dimethoxy-4-ethylamphetamine (DOET);</div><div style="text-indent:0.5in;">(6) 2,5-dimethoxy-4-(n)-propylthiophenethylamine: Other name: 2C-T-7;</div><div style="text-indent:0.5in;">(7) 4-methoxyamphetamine: Some trade or other names: 4-methoxy-a-methylphenethylamine; paramethoxyamphetamine, PMA;</div><div style="text-indent:0.5in;">(8) 5-methoxy-3,4-methylenedioxy-amphetamine;</div><div style="text-indent:0.5in;">(9) 4-methyl-2,5-dimethoxy-amphetamine: Some trade and other names: 4-methyl-2,5-dimethoxy-a-methylphenethylamine; "DOM"; and "STP";</div><div style="text-indent:0.5in;">(10) 3,4-methylenedioxy amphetamine;</div><div style="text-indent:0.5in;">(11) 3,4-methylenedioxymethamphetamine (MDMA);</div><div style="text-indent:0.5in;">(12) 3,4-methylenedioxy-N-ethylamphetamine, also known as N-ethyl-alpha-methyl-3,4(methylenedioxy)phenethylamine, N-ethyl MDA, MDE, MDEA;</div><div style="text-indent:0.5in;">(13) N-hydroxy-3,4-methylenedioxyamphetamine also known as N-hydroxy-alpha-methyl-3,4(methylenedioxy)phenethylamine,N-hydroxy MDA;</div><div style="text-indent:0.5in;">(14) 3,4,5-trimethoxy amphetamine;</div><div style="text-indent:0.5in;">(15) Alpha-methyltryptamine: Other name: AMT;</div><div style="text-indent:0.5in;">(16) Bufotenine: Some trade or other names: 3-(beta-Dimethylaminoethyl)-5-hydroxindole; 3-(2-dimethylaminoethyl)-5-indolol; N, N-dimethylserotonin; 5-hydroxy-N,N-dimethyltryptamine; mappine;</div><div style="text-indent:0.5in;">(17) Diethyltryptamine: Some trade or other names: N,N-Diethyltryptamine; DET;</div><div style="text-indent:0.5in;">(18) Dimethyltryptamine: Some trade or other names: DMT;</div><div style="text-indent:0.5in;">(19) 5-methoxy-N,N-diisopropyltryptamine: Other name: 5-MeO-DIPT;</div><div style="text-indent:0.5in;">(20) Ibogaine: Some trade or other names: 7-Ethyl-6,6 beta,7,8,9,10,12,13,-octahydro-2-methoxy-6,9-methano-5H-pyndo (1',2' 1,2) azepino (5,4-b) indole; Tabernanthe iboga;</div><div style="text-indent:0.5in;">(21) Lysergic acid diethylamide;</div><div style="text-indent:0.5in;">(22) Marihuana or marijuana;</div><div style="text-indent:0.5in;">(23) Mescaline;</div><div style="text-indent:0.5in;">(24) Parahexyl-7374: Some trade or other names: 3-Hexyl-1-hydroxy-7, 8, 9, 10-tetrahydro-6, 6, 9-trimethyl-6H-dibenzo[b,d]pyran; synhexyl;</div><div style="text-indent:0.5in;">(25) Peyote, meaning all parts of the plant presently classified botanically as Lophophora Williamsii Lemaire, whether growing or not, the seeds thereof, any extract from any part of such plant, and every compound, manufacture, salts, derivative, mixture, or preparation of such plant, its seeds, or extracts; (interprets 21 U.S.C. Sec. 812 (c), Schedule I (c)(12));</div><div style="text-indent:0.5in;">(26) N-ethyl-3-piperidyl benzilate;</div><div style="text-indent:0.5in;">(27) N-methyl-3-piperidyl benzilate;</div><div style="text-indent:0.5in;">(28) Psilocybin;</div><div style="text-indent:0.5in;">(29) Psilocyn;</div><div style="text-indent:0.5in;">(30)(i) Tetrahydrocannabinols, meaning tetrahydrocannabinols naturally contained in a plant of the genera Cannabis, as well as synthetic equivalents of the substances contained in the plant, or in the resinous extractives of the genera Cannabis, and/or synthetic substances, derivatives, and their isomers with similar chemical structure and pharmacological activity such as the following:</div><div style="text-indent:0.5in;">(A) 1 - cis - or trans tetrahydrocannabinol, and their optical isomers, excluding tetrahydrocannabinol in sesame oil and encapsulated in a soft gelatin capsule in a drug product approved by the United States Food and Drug Administration;</div><div style="text-indent:0.5in;">(B) 6 - cis - or trans tetrahydrocannabinol, and their optical isomers;</div><div style="text-indent:0.5in;">(C) 3,4 - cis - or trans tetrahydrocannabinol, and its optical isomers; or</div><div style="text-indent:0.5in;">(D) That is chemically synthesized and either:</div><div style="text-indent:0.5in;">(I) Has been demonstrated to have binding activity at one or more cannabinoid receptors; or</div><div style="text-indent:0.5in;">(II) Is a chemical analog or isomer of a compound that has been demonstrated to have binding activity at one or more cannabinoid receptors;</div><div style="text-indent:0pt;">(Since nomenclature of these substances is not internationally standardized, compounds of these structures, regardless of numerical designation of atomic positions covered.)</div><div style="text-indent:0.5in;">(ii) Hemp and industrial hemp, as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=15.140.020'>15.140.020</a>, are excepted from the categories of controlled substances identified under this section;</div><div style="text-indent:0.5in;">(31) Ethylamine analog of phencyclidine: Some trade or other names: N-ethyl-1phenylcyclohexalymine, (1-phenylcyclohexl) ethylamine; N-(1-phenylcyclohexyl)ethylamine; cyclohexamine; PCE;</div><div style="text-indent:0.5in;">(32) Pyrrolidine analog of phencyclidine: Some trade or other names: 1-(1-phencyclohexyl)pyrrolidine; PCPy; PHP;</div><div style="text-indent:0.5in;">(33) Thiophene analog of phencyclidine: Some trade or other names: 1-(1-[2-thenyl]-cyclohexly)-pipendine; 2-thienylanalog of phencyclidine; TPCP; TCP;</div><div style="text-indent:0.5in;">(34) 1-[1-(2-thienyl)cyclohexyl]pyrrolidine: A trade or other name is TCPy.</div><div style="text-indent:0.5in;">(d) Depressants. Unless specifically excepted or unless listed in another schedule, any material, compound, mixture, or preparation which contains any quantity of the following substances having a depressant effect on the central nervous system, including its salts, isomers, and salts of isomers whenever the existence of such salts, isomers, and salts of isomers is possible within the specific chemical designation.</div><div style="text-indent:0.5in;">(1) Gamma-hydroxybutyric acid: Some other names include GHB; gamma-hydroxybutyrate; 4-hydroxybutyrate; 4-hydroxybutanoic acid; sodium oxybate; sodium oxybutyrate;</div><div style="text-indent:0.5in;">(2) Mecloqualone;</div><div style="text-indent:0.5in;">(3) Methaqualone.</div><div style="text-indent:0.5in;">(e) Stimulants. Unless specifically excepted or unless listed in another schedule, any material, compound, mixture, or preparation which contains any quantity of the following substances having a stimulant effect on the central nervous system, including its salts, isomers, and salts of isomers:</div><div style="text-indent:0.5in;">(1) Aminorex: Some other names: aminoxaphen; 2-amino-5-phenyl-2-oxazoline; or 4, 5-dihydro-5-phenly-2-oxazolamine;</div><div style="text-indent:0.5in;">(2) N-Benzylpiperazine: Some other names: BZP,1-benzylpiperazine;</div><div style="text-indent:0.5in;">(3) Cathinone, also known as 2-amino-1-phenyl-1-propanone, alpha-aminopropiophenone, 2-aminopropiophenone and norephedrone;</div><div style="text-indent:0.5in;">(4) Fenethylline;</div><div style="text-indent:0.5in;">(5) Methcathinone: Some other names: 2-(methylamino)-propiophenone; alpha-(methylamino)propiophenone; 2-(methylamino)-1-phenylpropan-1-one; alpha-N-methylaminopropiophenone; monomethylpropion; ephedrone; N-methylcathinone; methylcathinone; AL-464; AL-422; AL-463 and UR1432, its salts, optical isomers, and salts of optical isomers;</div><div style="text-indent:0.5in;">(6) (+-)cis-4-methylaminorex ((+-)cis-4,5-dihydro-4-methyl-5-phenyl-2-oxazolamine);</div><div style="text-indent:0.5in;">(7) N-ethylamphetamine;</div><div style="text-indent:0.5in;">(8) N,N-dimethylamphetamine: Some trade or other names: N,N-alpha-trimethyl-benzeneethanamine; N,N-alpha-trimethylphenoethylene.</div><div style="text-indent:0.5in;">The controlled substances in this section may be added, rescheduled, or deleted as provided for in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.201'>69.50.201</a>.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5276-S2.SL.pdf?cite=2019 c 158 § 13'>2019 c 158 § 13</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/House/2136-S2.SL.pdf?cite=2015 2nd sp.s. c 4 § 1203'>2015 2nd sp.s. c 4 § 1203</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/House/2443-S.SL.pdf?cite=2010 c 177 § 2'>2010 c 177 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/5520-S.SL.pdf?cite=1993 c 187 § 4'>1993 c 187 § 4</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c124.pdf?cite=1986 c 124 § 3'>1986 c 124 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1980c138.pdf?cite=1980 c 138 § 1'>1980 c 138 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1971ex1c308.pdf?cite=1971 ex.s. c 308 § 69.50.204'>1971 ex.s. c 308 § 69.50.204</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2019 c 158:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=15.140.900'>15.140.900</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Effective dates<span style="font-family:times new roman;">—</span>2015 2nd sp.s. c 4:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.334'>69.50.334</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Pharmacy quality assurance commission may change schedules of controlled substances: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=69.50.201'>69.50.201</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

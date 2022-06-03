@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 41.40.023: Membership.
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=41.40.023" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="fusYs51LECxyi6ulylFn+orDe8UbpdisiQA2Rop8WGd8oU2h9MITH90Kc0LGm7HkMtFSqmC2x+KARhAepTinRNJJrvugLIFj2tlncwNCDFl80BX8nGNJm9JzxZU13b5Vfhk6kn9r5mdJVVxgcVAkC+zTXWwynqdHoD/MrgluywGvRbaN4CSkJ5QGYmJPocRMdUNzHCgJxhZMH/UKIs/lhGD7+5UgxHLCT4N0Fvjh37P+e0pSKuwW4taRnaiVehhWyCwAIRe3c+VClAfDkazoT6PlP2178OVyXD6d2/dI8iS3khUAM4XYzi2WRH1c3/ZRbYT/gqLRshQzGfYFZ9Nk+w==" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=41">Title 41</a> > <a href="default.aspx?cite=41.40">Chapter 41.40</a> > <a href="default.aspx?cite=41.40.023">Section 41.40.023</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious" href="default.aspx?cite=41.40.020">41.40.020</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        41.40.023&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=41.40.025">41.40.025</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.023'>41.40.023</a></h3></div><div><h3>Membership.</h3></div><div><div style="text-indent:0.5in;">Membership in the retirement system shall consist of all regularly compensated employees and appointive and elective officials of employers, as defined in this chapter, with the following exceptions:</div><div style="text-indent:0.5in;">(1) Persons in ineligible positions;</div><div style="text-indent:0.5in;">(2) Employees of the legislature except the officers thereof elected by the members of the senate and the house and legislative committees, unless membership of such employees be authorized by the said committee;</div><div style="text-indent:0.5in;">(3)(a) Persons holding elective offices or persons appointed directly by the governor: PROVIDED, That such persons shall have the option of applying for membership during such periods of employment: AND PROVIDED FURTHER, That any persons holding or who have held elective offices or persons appointed by the governor who are members in the retirement system and who have, prior to becoming such members, previously held an elective office, and did not at the start of such initial or successive terms of office exercise their option to become members, may apply for membership to be effective during such term or terms of office, and shall be allowed to establish the service credit applicable to such term or terms of office upon payment of the employee contributions therefor by the employee with interest as determined by the director and employer contributions therefor by the employer or employee with interest as determined by the director: AND PROVIDED FURTHER, That all contributions with interest submitted by the employee under this subsection shall be placed in the employee's individual account in the employee's savings fund and be treated as any other contribution made by the employee, with the exception that any contributions submitted by the employee in payment of the employer's obligation, together with the interest the director may apply to the employer's contribution, shall not be considered part of the member's annuity for any purpose except withdrawal of contributions;</div><div style="text-indent:0.5in;">(b) A member holding elective office who has elected to apply for membership pursuant to (a) of this subsection and who later wishes to be eligible for a retirement allowance shall have the option of ending his or her membership in the retirement system. A member wishing to end his or her membership under this subsection must file, on a form supplied by the department, a statement indicating that the member agrees to irrevocably abandon any claim for service for future periods served as an elected official. A member who receives more than fifteen thousand dollars per year in compensation for his or her elective service, adjusted annually for inflation by the director, is not eligible for the option provided by this subsection (3)(b);</div><div style="text-indent:0.5in;">(4) Employees holding membership in, or receiving pension benefits under, any retirement plan operated wholly or in part by an agency of the state or political subdivision thereof, or who are by reason of their current employment contributing to or otherwise establishing the right to receive benefits from any such retirement plan except as follows:</div><div style="text-indent:0.5in;">(a) In any case where the retirement system has in existence an agreement with another retirement system in connection with exchange of service credit or an agreement whereby members can retain service credit in more than one system, such an employee shall be allowed membership rights should the agreement so provide;</div><div style="text-indent:0.5in;">(b) An employee shall be allowed membership if otherwise eligible while receiving survivor's benefits;</div><div style="text-indent:0.5in;">(c) An employee shall not either before or after June 7, 1984, be excluded from membership or denied service credit pursuant to this subsection solely on account of: (i) Membership in the plan created under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.14'>2.14</a> RCW; or (ii) enrollment under the relief and compensation provisions or the pension provisions of the volunteer firefighters' [and reserve officers'] relief and pension [principal] fund under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.24'>41.24</a> RCW;</div><div style="text-indent:0.5in;">(d) Except as provided in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.109'>41.40.109</a>, on or after July 25, 1999, an employee shall not be excluded from membership or denied service credit pursuant to this subsection solely on account of participation in a defined contribution pension plan qualified under section 401 of the internal revenue code;</div><div style="text-indent:0.5in;">(e) Employees who have been reported in the retirement system prior to July 25, 1999, and who participated during the same period of time in a defined contribution pension plan qualified under section 401 of the internal revenue code and operated wholly or in part by the employer, shall not be excluded from previous retirement system membership and service credit on account of such participation;</div><div style="text-indent:0.5in;">(5) Patient and inmate help in state charitable, penal, and correctional institutions;</div><div style="text-indent:0.5in;">(6) "Members" of a state veterans' home or state soldiers' home;</div><div style="text-indent:0.5in;">(7) Persons employed by an institution of higher learning or community college, primarily as an incident to and in furtherance of their education or training, or the education or training of a spouse;</div><div style="text-indent:0.5in;">(8) Employees of an institution of higher learning or community college during the period of service necessary to establish eligibility for membership in the retirement plans operated by such institutions;</div><div style="text-indent:0.5in;">(9) Persons rendering professional services to an employer on a fee, retainer, or contract basis or when the income from these services is less than fifty percent of the gross income received from the person's practice of a profession;</div><div style="text-indent:0.5in;">(10) Persons appointed after April 1, 1963, by the *liquor control board as contract liquor store managers;</div><div style="text-indent:0.5in;">(11) Employees of a labor guild, association, or organization: PROVIDED, That elective officials and employees of a labor guild, association, or organization which qualifies as an employer within this chapter shall have the option of applying for membership;</div><div style="text-indent:0.5in;">(12) Retirement system retirees: PROVIDED, That following reemployment in an eligible position, a retiree may elect to prospectively become a member of the retirement system if otherwise eligible;</div><div style="text-indent:0.5in;">(13) Persons employed by or appointed or elected as an official of a first-class city that has its own retirement system: PROVIDED, That any member elected or appointed to an elective office on or after April 1, 1971, shall have the option of continuing as a member of this system in lieu of becoming a member of the city system. A member who elects to continue as a member of this system shall pay the appropriate member contributions and the city shall pay the employer contributions at the rates prescribed by this chapter. The city shall also transfer to this system all of such member's accumulated contributions together with such further amounts as necessary to equal all employee and employer contributions which would have been paid into this system on account of such service with the city and thereupon the member shall be granted credit for all such service. Any city that becomes an employer as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.010'>41.40.010</a>(13) as the result of an individual's election under this subsection shall not be required to have all employees covered for retirement under the provisions of this chapter. Nothing in this subsection shall prohibit a city of the first class with its own retirement system from: (a) Transferring all of its current employees to the retirement system established under this chapter, or (b) allowing newly hired employees the option of continuing coverage under the retirement system established by this chapter.</div><div style="text-indent:0.5in;">Notwithstanding any other provision of this chapter, persons transferring from employment with a first-class city of over four hundred thousand population that has its own retirement system to employment with the state department of agriculture may elect to remain within the retirement system of such city and the state shall pay the employer contributions for such persons at like rates as prescribed for employers of other members of such system;</div><div style="text-indent:0.5in;">(14) Employees who (a) are not citizens of the United States, (b) do not reside in the United States, and (c) perform duties outside of the United States;</div><div style="text-indent:0.5in;">(15) Employees who (a) are not citizens of the United States, (b) are not covered by chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.48'>41.48</a> RCW, (c) are not excluded from membership under this chapter or chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.04'>41.04</a> RCW, (d) are residents of this state, and (e) make an irrevocable election to be excluded from membership, in writing, which is submitted to the director within thirty days after employment in an eligible position;</div><div style="text-indent:0.5in;">(16) Employees who are citizens of the United States and who reside and perform duties for an employer outside of the United States: PROVIDED, That unless otherwise excluded under this chapter or chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.04'>41.04</a> RCW, the employee may apply for membership (a) within thirty days after employment in an eligible position and membership service credit shall be granted from the first day of membership service, and (b) after this thirty-day period, but membership service credit shall be granted only if payment is made for the noncredited membership service under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.50.165'>41.50.165</a>(2), otherwise service shall be from the date of application;</div><div style="text-indent:0.5in;">(17) The city manager or chief administrative officer of a city or town, other than a retiree, who serves at the pleasure of an appointing authority: PROVIDED, That such persons shall have the option of applying for membership within thirty days from date of their appointment to such positions. Persons serving in such positions as of April 4, 1986, shall continue to be members in the retirement system unless they notify the director in writing prior to December 31, 1986, of their desire to withdraw from membership in the retirement system. A member who withdraws from membership in the system under this section shall receive a refund of the member's accumulated contributions.</div><div style="text-indent:0.5in;">Persons serving in such positions who have not opted for membership within the specified thirty days, may do so by paying the amount required under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.50.165'>41.50.165</a>(2) for the period from the date of their appointment to the date of acceptance into membership;</div><div style="text-indent:0.5in;">(18) Persons serving as: (a) The chief administrative officer of a public utility district as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=54.16.100'>54.16.100</a>; (b) the chief administrative officer of a port district formed under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=53.04'>53.04</a> RCW; or (c) the chief administrative officer of a county who serves at the pleasure of an appointing authority: PROVIDED, That such persons shall have the option of applying for membership within thirty days from the date of their appointment to such positions. Persons serving in such positions as of July 25, 1999, shall continue to be members in the retirement system unless they notify the director in writing prior to December 31, 1999, of their desire to withdraw from membership in the retirement system. A member who withdraws from membership in the system under this section shall receive a refund of the member's accumulated contributions upon termination of employment or as otherwise consistent with the plan's tax qualification status as defined in internal revenue code section 401.</div><div style="text-indent:0.5in;">Persons serving in such positions who have not opted for membership within the specified thirty days, may do so at a later date by paying the amount required under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.50.165'>41.50.165</a>(2) for the period from the date of their appointment to the date of acceptance into membership;</div><div style="text-indent:0.5in;">(19) Persons enrolled in state-approved apprenticeship programs, authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=49.04'>49.04</a> RCW, and who are employed by local governments to earn hours to complete such apprenticeship programs, if the employee is a member of a union-sponsored retirement plan and is making contributions to such a retirement plan or if the employee is a member of a Taft-Hartley retirement plan;</div><div style="text-indent:0.5in;">(20) Beginning on July 22, 2001, persons employed exclusively as trainers or trainees in resident apprentice training programs operated by housing authorities authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=35.82'>35.82</a> RCW, (a) if the trainer or trainee is a member of a union-sponsored retirement plan and is making contributions to such a retirement plan or (b) if the employee is a member of a Taft-Hartley retirement plan; </div><div style="text-indent:0.5in;">(21) Employees who are removed from membership under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.823'>41.40.823</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.633'>41.40.633</a>; and</div><div style="text-indent:0.5in;">(22) Persons employed as the state director of fire protection under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.43.938'>43.43.938</a> who were previously members of the law enforcement officers' and firefighters' retirement system plan 2 under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.26'>41.26</a> RCW may continue as a member of the law enforcement officers' and firefighters' retirement system in lieu of becoming a member of this system.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/6546.SL.pdf?cite=2010 c 80 § 1'>2010 c 80 § 1</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/House/1409.SL.pdf?cite=2005 c 151 § 12'>2005 c 151 § 12</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2005-06/Pdf/Bills/Session Laws/Senate/5497-S.SL.pdf?cite=2005 c 131 § 7'>2005 c 131 § 7</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2001-02/Pdf/Bills/Session Laws/Senate/5145.SL.pdf?cite=2001 c 37 § 1'>2001 c 37 § 1</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/5837.SL.pdf?cite=1999 c 286 § 2'>1999 c 286 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/5029-S.SL.pdf?cite=1999 c 244 § 1'>1999 c 244 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1997-98/Pdf/Bills/Session Laws/Senate/5218-S.SL.pdf?cite=1997 c 254 § 11'>1997 c 254 § 11</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/2643.SL.pdf?cite=1994 c 298 § 8'>1994 c 298 § 8</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/6143-S.SL.pdf?cite=1994 c 197 § 24'>1994 c 197 § 24</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/House/1595-S.SL.pdf?cite=1993 c 319 § 1'>1993 c 319 § 1</a>; prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1990c274.pdf?cite=1990 c 274 § 10'>1990 c 274 § 10</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1990c192.pdf?cite=1990 c 192 § 4'>1990 c 192 § 4</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1988c109.pdf?cite=1988 c 109 § 25'>1988 c 109 § 25</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1987c379.pdf?cite=1987 c 379 § 1'>1987 c 379 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1986c317.pdf?cite=1986 c 317 § 5'>1986 c 317 § 5</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1984c184.pdf?cite=1984 c 184 § 13'>1984 c 184 § 13</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1984c121.pdf?cite=1984 c 121 § 1'>1984 c 121 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1982ex1c52.pdf?cite=1982 1st ex.s. c 52 § 19'>1982 1st ex.s. c 52 § 19</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1975c33.pdf?cite=1975 c 33 § 6'>1975 c 33 § 6</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1974ex1c195.pdf?cite=1974 ex.s. c 195 § 2'>1974 ex.s. c 195 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1973ex1c190.pdf?cite=1973 1st ex.s. c 190 § 5'>1973 1st ex.s. c 190 § 5</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1971ex1c271.pdf?cite=1971 ex.s. c 271 § 4'>1971 ex.s. c 271 § 4</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1969c128.pdf?cite=1969 c 128 § 5'>1969 c 128 § 5</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1967c127.pdf?cite=1967 c 127 § 3'>1967 c 127 § 3</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1965c155.pdf?cite=1965 c 155 § 2'>1965 c 155 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1963c225.pdf?cite=1963 c 225 § 2'>1963 c 225 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1963c210.pdf?cite=1963 c 210 § 1'>1963 c 210 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1957c231.pdf?cite=1957 c 231 § 2'>1957 c 231 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1955c277.pdf?cite=1955 c 277 § 2'>1955 c 277 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1953c200.pdf?cite=1953 c 200 § 5'>1953 c 200 § 5</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1951c50.pdf?cite=1951 c 50 § 2'>1951 c 50 § 2</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1949c240.pdf?cite=1949 c 240 § 7'>1949 c 240 § 7</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1947c274.pdf?cite=1947 c 274 § 13'>1947 c 274 § 13</a>; Rem. Supp. 1949 § 11072-13. Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.120'>41.40.120</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">*Reviser's note: </span>The "state liquor control board" was renamed the "state liquor and cannabis board" by  <a href='http://lawfilesext.leg.wa.gov/biennium/2015-16/Pdf/Bills/Session Laws/Senate/5052-S2.SL.pdf?cite=2015 c 70 § 3'>2015 c 70 § 3</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2010 c 80:</span> "This act is necessary for the immediate preservation of the public peace, health, or safety, or support of the state government and its existing public institutions, and takes effect immediately [March 17, 2010]." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/6546.SL.pdf?cite=2010 c 80 § 2'>2010 c 80 § 2</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2005 c 131:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.823'>41.40.823</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>1999 c 286:</span> "It is the intent of the legislature that retirement benefits represent a valuable element of the total compensation and benefits employees receive for their service. The value of these benefits is contained in the retirement income and cost-of-living adjustments provided to employees who remain in public service until retirement. For the majority of public employees, this requires membership in the public employees' retirement system.</div><div style="text-indent:0.75in;">The legislature recognizes, however, that certain occupations display a pattern of interstate mobility which requires retirement benefits which are highly portable. Incumbents in these occupations gain little value from membership in the public employees' retirement system. In order to remove any barrier to employing qualified personnel in positions with high mobility, membership in the retirement system should be optional in those occupations." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/5837.SL.pdf?cite=1999 c 286 § 1'>1999 c 286 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>Construction<span style="font-family:times new roman;">—</span>Application<span style="font-family:times new roman;">—</span>1997 c 254:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.26.490'>41.26.490</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>1994 c 298:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.010'>41.40.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>1994 c 197:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.50.165'>41.50.165</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Construction<span style="font-family:times new roman;">—</span>1990 c 274:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.32.010'>41.32.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1988 c 109:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.10.030'>2.10.030</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Legislative findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1986 c 317:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.150'>41.40.150</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1984 c 184:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.50.150'>41.50.150</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective dates<span style="font-family:times new roman;">—</span>1982 1st ex.s. c 52:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=2.10.180'>2.10.180</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1975 c 33:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=35.21.780'>35.21.780</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1974 ex.s. c 195:</span> "If any provision of this 1974 amendatory act, or its application to any person or circumstance is held invalid, the remainder of the act, or the application of the provision to other persons or circumstances is not affected." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1974ex1c195.pdf?cite=1974 ex.s. c 195 § 14'>1974 ex.s. c 195 § 14</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1973 1st ex.s. c 190:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.010'>41.40.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1971 ex.s. c 271:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.32.260'>41.32.260</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>1969 c 128:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=41.40.010'>41.40.010</a>.</div></div><div style="margin-bottom:0.2in;"><div style="font-style:italic;">Pension benefits or annuity benefits for certain classifications of school district employees: RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.400.260'>28A.400.260</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>

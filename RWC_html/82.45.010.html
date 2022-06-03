@@ -1,0 +1,544 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="theHead"><title>
+	RCW 82.45.010: "Sale" defined. (<i>Effective until January 1, 2030.</i>)
+</title><meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <!-- make IE use highest version - not compat -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript">
+        if (typeof jQuery == "undefined") {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery-1.9.1.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+
+    <link href="//app.leg.wa.gov/assets/css/framework/jquery/mobile/1.4.2/Wsl-Theme.min.css" rel="stylesheet" />
+
+    <!-- start replace css files -->
+    <link rel="stylesheet" href="//app.leg.wa.gov/assets/css/publicSiteResponsive.css?v=" /><link rel="stylesheet" href="css/flexGrid.css" /><link rel="stylesheet" href="css/jqueryOverrides.css" /><link rel="Stylesheet" type="text/css" href="css/rcw.css" />
+    <!-- end replace css files -->
+
+    <script type="text/javascript" src="//app.leg.wa.gov/assets/Javascript/Framework/2.0/baseFramework.min.js"></script>
+
+    <!-- start replace js files -->
+    <script type="text/javascript" src="js/AppNamespace.js"></script>
+    <script type="text/javascript" src="js/ResponsiveElements.js"></script>
+    <script type="text/javascript" src="js/JSMediaQueries.js"></script>
+    <script src="js/rcw.js" type="text/javascript"></script>
+    <!-- end replace js files -->
+
+    <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+    <script>
+        if (typeof $.mobile == 'undefined') {
+            document.write(unescape("%3Cscript src='//app.leg.wa.gov/assets/javascript/framework/jquery/jquery.mobile-1.4.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+        }
+    </script>
+    
+    
+</head>
+<body>
+    <div id="mediaquery">
+        <!-- do not delete, used for js media queries-->
+    </div>
+    <div data-role="page" id="rcwPage" data-theme="b">
+
+        <div id="headerElements">
+            
+        <div id="mobileHeader">
+            <div class="headerImg">
+                <a class="ui-link" href="http://leg.wa.gov/">
+                <picture>
+                    <!--[if IE 9]><video style="display: none;"><![endif]-->
+                    <source media="(min-width: 600px)" srcset="/assets/images/PubSiteBanner2013Tablet.jpg, /assets/images/PubSiteBanner2013Tablet2x.jpg 2x"></source>
+                    <source srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x"></source>
+                    <!--[if IE 9]></video><![endif]-->
+                    <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg, /assets/images/PubSiteBanner2013PhoneTall2x.jpg 2x">
+                </picture>
+                </a>
+</div>
+            <a href="#navPanel" class="menuBtn ui-btn-left ui-btn ui-btn-c ui-corner-all ">
+                Menu
+
+            </a>
+            <a id="searchPanel" href="#" class="searchBtn ui-nodisc-icon ui-btn-right ui-btn ui-btn-c ui-icon-search ui-btn-icon-notext ui-shadow ui-corner-all">
+                Search
+
+            </a>
+        </div>
+        <div id="divMobileSearch">
+            <fieldset data-theme="e" class="row ui-body-b">
+                <div class="col-xs-8 col-xs-offset-1">
+                    <label for="mobileSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="mobileSearchInput" class="ui-mini" type="text" placeholder="Enter search terms" name="customSearchBox" size="15">
+                </div>
+                <div class="col-xs-3  col-xs-offset-0">
+                    <a id="mobileSubmitSearchBtn" href="" class="searchBtn ui-btn ui-btn-c ui-shadow ui-mini ui-corner-all ui-btn-inline">
+                        Go
+                    </a>
+                </div>
+            </fieldset>
+        </div>
+        <div id="largePageHeader">
+            <div id="banner">
+                <div id="bannerImg">
+                    <a class="ui-link" href="http://leg.wa.gov/">
+                    <picture>
+                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                        <source media="(min-width: 768px)" srcset="/assets/images/PubSiteBanner2013Full.jpg 1x, /assets/images/PubSiteBanner2013Full2x.jpg 2x"></source>
+                        <!--[if IE 9]></video><![endif]-->
+                        <img alt="Washington State Legislature" srcset="/assets/images/PubSiteBanner2013PhoneTall.jpg">
+                    </picture>
+                    </a>
+                </div>
+                <div id="bannerGraphicBackground">
+                    <!-- div to show green background -->
+                </div>
+                <div id="divSearch">
+                    <label for="bannerSearchInput" class="offScreenLabel">Enter search terms</label>
+                    <input id="bannerSearchInput" type="text" name="customSearchBox" size="15">
+                    <img id="bannerSubmitSearchBtn" alt="Search" src="/assets/images/searchicon.jpg">
+                </div>
+            </div>
+        </div>
+    
+        </div>
+        <div data-role="panel" data-position="left" data-display="push" id="navPanel">
+            <!-- this is where the navigation will be inserted by javascript -->
+        </div>
+        
+        <div id="navigationList">
+            <div class="sidebarNavigation">
+                <ul style="padding:0; margin:0;" class="ui-listview ui-group-theme-b ui-theme-b" data-role="listview" data-theme="b" id="navigationSubsiteHeader" data-inset="false">
+                    <li data-theme="b" role="heading" class="ui-li-divider ui-bar-b ui-first-child ui-last-child" data-role="list-divider" id="NavigationTitleBar" data-icon="false">
+                        <a href="http://leg.wa.gov" style="background-color: #2B674D; border-color: #2B674D; text-decoration:none; color:white"><span>Legislature Home</span></a>
+                    </li>
+                </ul>
+                <ul class="root ms-core-listMenu-root static ui-listview ui-group-theme-b ui-theme-b" id="zz2_RootAspMenu" data-theme="b" data-role="listview" data-inset="false">
+                    <li class="static ui-first-child" data-icon="false"><a href="http://leg.wa.gov/house/" title="House" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">House of Representatives</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/senate/" title="Senate" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Senate</span></span></a></li>
+                    <li class="static" data-icon="false">
+                        <a href="https://app.leg.wa.gov/districtfinder" title="Find Your District" tabindex="0" class="visible-md visible-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                        <a href="https://app.leg.wa.gov/districtfinder/" title="Find Your District" tabindex="0" class="hidden-md hidden-lg static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Find Your District</span></span></a>
+                    </li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/LawsAndAgencyRules/" title="Laws and Agency Rules" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Laws & Agency Rules</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://apps.leg.wa.gov/billinfo/" title="Bill Information" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Bill Information</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx" title="Agendas, Schedules, and Calendars" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Agendas, Schedules, and Calendars</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx" title="Legislative Committees" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Committees</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx" title="Coming to the Legislature" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Coming to the Legislature</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/civiced/" title="Civic Education" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Civic Education</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx" title="Legislative Agencies" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Agencies</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="http://leg.wa.gov/lic" title="Legislative Information Centser" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Legislative Information Center</span></span></a></li>
+                    <li class="static" data-icon="false"><a href="https://public.govdelivery.com:443/accounts/WALEG/subscriber/new" title="E-mail Notifications" tabindex="0" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">Email Updates (GovDelivery)</span></span></a></li>
+                    <li class="static ui-last-child"><a data-ajax="false" href="#footerAnchor" class="static menu-item ms-core-listMenu-item ms-displayInline ms-navedit-linkNode navSectionContentLink ui-btn"><span class="additional-background ms-navedit-flyoutArrow"><span class="menu-item-text">View All Links</span></span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <ul data-role="listview" id="permanentLinks" style="display: none;" data-theme="b" data-inset="false" class="ui-listview ui-group-theme-b ui-theme-b">
+            <li data-role="list-divider" data-icon="false" role="heading" class="ui-li-divider ui-bar-b ui-first-child">
+                Main Sections
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov">
+                    Legislature Home
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/house">
+                    House of Representatives
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/senate">
+                    Senate
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="visible-md visible-lg navSectionContentLink ui-btn" href="https://app.leg.wa.gov/DistrictFinder/">
+                    Find Your District
+                </a>
+                <a class="navSectionContentLink ui-btn hidden-md hidden-lg " href="https://app.leg.wa.gov/districtfinder/">
+                    Find Your District
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/LawsAndAgencyRules/LawsAndAgencyRules">
+                    Laws & Agency Rules
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://app.leg.wa.gov/billinfo/">
+                    Bill Information
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                    Agendas, Schedules, & Calendars
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                    Legislative Committees
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/legislature/Pages/LegislativeAgencies.aspx">
+                    Legislative Agencies
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="http://leg.wa.gov/lic/">
+                    Legislative Information Center 
+                </a>
+            </li>
+            <li data-icon="false">
+                <a class="navSectionContentLink ui-btn" href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                    Email Updates (GovDelivery)
+                </a>
+            </li>
+            <li data-icon="false" class="ui-last-child">
+                <a data-ajax="false" class="navSectionContentLink ui-btn" href="#footerAnchor">
+                    View all links
+                </a>
+            </li>
+        </ul>
+    
+        <div class="ui-content" role="main">
+            <div class="desktopSideNavParentContainer">
+                <div id="desktopNavigation">
+                </div>
+            </div>
+            <div id="pageWrapper" role="main" class="ui-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form method="post" action="./default.aspx?cite=82.45.010" id="form1">
+<input type="hidden" name="__RESUBMIT" id="__RESUBMIT" value="0" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="R7LLoqGFPUc4akNqXrjpQ0ALmDo7e8mY8kdWyZ6VBYVCyC+VdDwYKceVep9ORx7+cBLDXO9cj53TxsAK3i4OPy6IepoPDslDQo1xcnMrYdtinb6f8OAV6ND04J3JJQ7JhETCklpM/PW5i4mSzVd+oHuKnaboKpSY+xizaloPZVsc0tIbwRyRzq3rb/ONtRWbaIbQ3hyXnnUcZoScMKzOeOkfczt8za6vCtFD/0E8vpxxU0buOOzkKaxSGgS/KSSaaCcpj/8SiHl/qCIkbK1sTnOz+Zn64KfBQkJUZZo6MjU=" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="23A86732" />
+                                <div id="divContent" class="noscroll">
+                                    <div class="row clearfix">
+                                        <div id="divPrint" class="col-csm-7 col-csm-push-5 text-right">
+                                            <a id="aPrint" onclick="javascript:window.print();">Print</a>
+                                        </div>
+                                        <div id="divBreadCrumb" class="col-csm-5 col-csm-pull-7">
+                                            <!-- phBreadcrumb start -->
+                                            <span class="breadCrumbClass"><a href="default.aspx">RCWs</a> > <a href="default.aspx?cite=82">Title 82</a> > <a href="default.aspx?cite=82.45">Chapter 82.45</a> > <a href="default.aspx?cite=82.45.010">Section 82.45.010</a></span><br /><br />
+                                            <!-- phBreadcrumb end -->
+                                        </div>
+                                    </div>
+                                    
+    <div id="ContentPlaceHolder1_pnlPrevNext"><font color="#888888">
+	
+        <a id="ContentPlaceHolder1_hlPrevious">Beginning of Chapter</a>&nbsp;&nbsp;&lt;&lt;&nbsp;
+        82.45.010&nbsp;&gt;&gt;&nbsp;&nbsp;
+        <a id="ContentPlaceHolder1_hlNext" href="default.aspx?cite=82.45.020">82.45.020</a><br/>
+        <br/>
+    
+</font></div>
+
+    <div class="row">
+        <div class="col-csm-6 col-csm-push-6 text-right">             
+            
+        </div>
+        <div class="col-csm-6 col-csm-pull-6">
+            
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-csm-12">
+            
+        </div>
+    </div>
+
+    
+    
+    <div id='contentWrapper'><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45.010'>82.45.010</a></h3></div><div><h3>"Sale" defined. <span style="font-style:italic;">(Effective until January 1, 2030.)</span></h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1643-S.SL.pdf">1643-S.SL</a>) ***</div><div><div style="text-indent:0.5in;">(1) As used in this chapter, the term "sale" has its ordinary meaning and includes any conveyance, grant, assignment, quitclaim, or transfer of the ownership of or title to real property, including standing timber, or any estate or interest therein for a valuable consideration, and any contract for such conveyance, grant, assignment, quitclaim, or transfer, and any lease with an option to purchase real property, including standing timber, or any estate or interest therein or other contract under which possession of the property is given to the purchaser, or any other person at the purchaser's direction, and title to the property is retained by the vendor as security for the payment of the purchase price. The term also includes the grant, assignment, quitclaim, sale, or transfer of improvements constructed upon leased land.</div><div style="text-indent:0.5in;">(2)(a) The term "sale" also includes the transfer or acquisition within any thirty-six month period of a controlling interest in any entity with an interest in real property located in this state for a valuable consideration.</div><div style="text-indent:0.5in;">(b) For the sole purpose of determining whether, pursuant to the exercise of an option, a controlling interest was transferred or acquired within a thirty-six month period, the date that the option agreement was executed is the date on which the transfer or acquisition of the controlling interest is deemed to occur. For all other purposes under this chapter, the date upon which the option is exercised is the date of the transfer or acquisition of the controlling interest.</div><div style="text-indent:0.5in;">(c) For purposes of this subsection, all acquisitions of persons acting in concert must be aggregated for purposes of determining whether a transfer or acquisition of a controlling interest has taken place. The department must adopt standards by rule to determine when persons are acting in concert. In adopting a rule for this purpose, the department must consider the following:</div><div style="text-indent:0.5in;">(i) Persons must be treated as acting in concert when they have a relationship with each other such that one person influences or controls the actions of another through common ownership; and</div><div style="text-indent:0.5in;">(ii) When persons are not commonly owned or controlled, they must be treated as acting in concert only when the unity with which the purchasers have negotiated and will consummate the transfer of ownership interests supports a finding that they are acting as a single entity. If the acquisitions are completely independent, with each purchaser buying without regard to the identity of the other purchasers, then the acquisitions are considered separate acquisitions.</div><div style="text-indent:0.5in;">(3) The term "sale" does not include:</div><div style="text-indent:0.5in;">(a) A transfer by gift, devise, or inheritance.</div><div style="text-indent:0.5in;">(b) A transfer by transfer on death deed, to the extent that it is not in satisfaction of a contractual obligation of the decedent owed to the recipient of the property.</div><div style="text-indent:0.5in;">(c) A transfer of any leasehold interest other than of the type mentioned above.</div><div style="text-indent:0.5in;">(d) A cancellation or forfeiture of a vendee's interest in a contract for the sale of real property, whether or not such contract contains a forfeiture clause, or deed in lieu of foreclosure of a mortgage.</div><div style="text-indent:0.5in;">(e) The partition of property by tenants in common by agreement or as the result of a court decree.</div><div style="text-indent:0.5in;">(f) The assignment of property or interest in property from one spouse or one domestic partner to the other spouse or other domestic partner in accordance with the terms of a decree of dissolution of marriage or state registered domestic partnership or in fulfillment of a property settlement agreement.</div><div style="text-indent:0.5in;">(g) The assignment or other transfer of a vendor's interest in a contract for the sale of real property, even though accompanied by a conveyance of the vendor's interest in the real property involved.</div><div style="text-indent:0.5in;">(h) Transfers by appropriation or decree in condemnation proceedings brought by the United States, the state or any political subdivision thereof, or a municipal corporation.</div><div style="text-indent:0.5in;">(i) A mortgage or other transfer of an interest in real property merely to secure a debt, or the assignment thereof.</div><div style="text-indent:0.5in;">(j) Any transfer or conveyance made pursuant to a deed of trust or an order of sale by the court in any mortgage, deed of trust, or lien foreclosure proceeding or upon execution of a judgment, or deed in lieu of foreclosure to satisfy a mortgage or deed of trust.</div><div style="text-indent:0.5in;">(k) A conveyance to the federal housing administration or veterans administration by an authorized mortgagee made pursuant to a contract of insurance or guaranty with the federal housing administration or veterans administration.</div><div style="text-indent:0.5in;">(l) A transfer in compliance with the terms of any lease or contract upon which the tax as imposed by this chapter has been paid or where the lease or contract was entered into prior to the date this tax was first imposed.</div><div style="text-indent:0.5in;">(m) The sale of any grave or lot in an established cemetery.</div><div style="text-indent:0.5in;">(n) A sale by the United States, this state or any political subdivision thereof, or a municipal corporation of this state.</div><div style="text-indent:0.5in;">(o) A sale to a regional transit authority or public corporation under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.112.320'>81.112.320</a> under a sale/leaseback agreement under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.112.300'>81.112.300</a>.</div><div style="text-indent:0.5in;">(p) A transfer of real property, however effected, if it consists of a mere change in identity or form of ownership of an entity where there is no change in the beneficial ownership. These include transfers to a corporation or partnership which is wholly owned by the transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner. However, if thereafter such transferee corporation or partnership voluntarily transfers such real property, or such transferor, spouse or domestic partner, or children of the transferor or the transferor's spouse or domestic partner voluntarily transfer stock in the transferee corporation or interest in the transferee partnership capital, as the case may be, to other than (i) the transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner, (ii) a trust having the transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner as the only beneficiaries at the time of the transfer to the trust, or (iii) a corporation or partnership wholly owned by the original transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner, within three years of the original transfer to which this exemption applies, and the tax on the subsequent transfer has not been paid within sixty days of becoming due, excise taxes become due and payable on the original transfer as otherwise provided by law.</div><div style="text-indent:0.5in;">(q)(i) A transfer that for federal income tax purposes does not involve the recognition of gain or loss for entity formation, liquidation or dissolution, and reorganization, including but not limited to nonrecognition of gain or loss because of application of 26 U.S.C. Sec. 332, 337, 351, 368(a)(1), 721, or 731 of the internal revenue code of 1986, as amended.</div><div style="text-indent:0.5in;">(ii) However, the transfer described in (q)(i) of this subsection cannot be preceded or followed within a thirty-six month period by another transfer or series of transfers, that, when combined with the otherwise exempt transfer or transfers described in (q)(i) of this subsection, results in the transfer of a controlling interest in the entity for valuable consideration, and in which one or more persons previously holding a controlling interest in the entity receive cash or property in exchange for any interest the person or persons acting in concert hold in the entity. This subsection (3)(q)(ii) does not apply to that part of the transfer involving property received that is the real property interest that the person or persons originally contributed to the entity or when one or more persons who did not contribute real property or belong to the entity at a time when real property was purchased receive cash or personal property in exchange for that person or persons' interest in the entity. The real estate excise tax under this subsection (3)(q)(ii) is imposed upon the person or persons who previously held a controlling interest in the entity.</div><div style="text-indent:0.5in;">(r) A qualified sale of a manufactured/mobile home community, as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=59.20.030'>59.20.030</a>.</div><div style="text-indent:0.5in;">(s)(i) A transfer of a qualified low-income housing development or controlling interest in a qualified low-income housing development, unless, due to noncompliance with federal statutory requirements, the seller is subject to recapture, in whole or in part, of its allocated federal low-income housing tax credits within the four years prior to the date of transfer.</div><div style="text-indent:0.5in;">(ii) For purposes of this subsection (3)(s), "qualified low-income housing development" means real property and improvements in respect to which the seller or, in the case of a transfer of a controlling interest, the owner or beneficial owner, was allocated federal low-income housing tax credits authorized under 26 U.S.C. Sec. 42 or successor statute, by the Washington state housing finance commission or successor state-authorized tax credit allocating agency.</div><div style="text-indent:0.5in;">(iii) This subsection (3)(s) does not apply to transfers of a qualified low-income housing development or controlling interest in a qualified low-income housing development occurring on or after July 1, 2035.</div><div style="text-indent:0.5in;">(iv) The Washington state housing finance commission, in consultation with the department, must gather data on: (A) The fiscal savings, if any, accruing to transferees as a result of the exemption provided in this subsection (3)(s); (B) the extent to which transferors of qualified low-income housing developments receive consideration, including any assumption of debt, as part of a transfer subject to the exemption provided in this subsection (3)(s); and (C) the continued use of the property for low-income housing. The Washington state housing finance commission must provide this information to the joint legislative audit and review committee. The committee must conduct a review of the tax preference created under this subsection (3)(s) in calendar year 2033, as required under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.136'>43.136</a> RCW.</div><div style="text-indent:0.5in;">(t)(i) A qualified transfer of residential property by a legal representative of a person with developmental disabilities to a qualified entity subject to the following conditions:</div><div style="text-indent:0.5in;">(A) The adult child with developmental disabilities of the transferor of the residential property must be allowed to reside in the residence or successor property so long as the placement is safe and appropriate as determined by the department of social and health services;</div><div style="text-indent:0.5in;">(B) The title to the residential property is conveyed without the receipt of consideration by the legal representative of a person with developmental disabilities to a qualified entity;</div><div style="text-indent:0.5in;">(C) The residential property must have no more than four living units located on it; and</div><div style="text-indent:0.5in;">(D) The residential property transferred must remain in continued use for fifty years by the qualified entity as supported living for persons with developmental disabilities by the qualified entity or successor entity. If the qualified entity sells or otherwise conveys ownership of the residential property the proceeds of the sale or conveyance must be used to acquire similar residential property and such similar residential property must be considered the successor for continued use. The property will not be considered in continued use if the department of social and health services finds that the property has failed, after a reasonable time to remedy, to meet any health and safety statutory or regulatory requirements. If the department of social and health services determines that the property fails to meet the requirements for continued use, the department of social and health services must notify the department and the real estate excise tax based on the value of the property at the time of the transfer into use as residential property for persons with developmental disabilities becomes immediately due and payable by the qualified entity. The tax due is not subject to penalties, fees, or interest under this title.</div><div style="text-indent:0.5in;">(ii) For the purposes of this subsection (3)(t) the definitions in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.10.020'>71A.10.020</a> apply.</div><div style="text-indent:0.5in;">(iii) A "qualified entity" is:</div><div style="text-indent:0.5in;">(A) A nonprofit organization under Title 26 U.S.C. Sec. 501(c)(3) of the federal internal revenue code of 1986, as amended, as of June 7, 2018, or a subsidiary under the same taxpayer identification number that provides residential supported living for persons with developmental disabilities; or</div><div style="text-indent:0.5in;">(B) A nonprofit adult family home, as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.128.010'>70.128.010</a>, that exclusively serves persons with developmental disabilities.</div><div style="text-indent:0.5in;">(iv) In order to receive an exemption under this subsection (3)(t) an affidavit must be submitted by the transferor of the residential property and must include a copy of the transfer agreement and any other documentation as required by the department.</div><div style="text-indent:0.5in;">(u)(i) The sale by an affordable homeownership facilitator of self-help housing to a low-income household. The definitions in *section 2 of this act apply to this subsection.</div><div style="text-indent:0.5in;">(ii) The definitions in this subsection (3)(u) apply to this subsection (3)(u) unless the context clearly requires otherwise.</div><div style="text-indent:0.5in;">(A) "Affordable homeownership facilitator" means a nonprofit community or neighborhood-based organization that is exempt from income tax under Title 26 U.S.C. Sec. 501(c) of the internal revenue code of 1986, as amended, as of October 1, 2019, and that is the developer of self-help housing.</div><div style="text-indent:0.5in;">(B) "Low-income" means household income as defined by the department, provided that the definition may not exceed eighty percent of median household income, adjusted for household size, for the county in which the dwelling is located.</div><div style="text-indent:0.5in;">(C) "Self-help housing" means dwelling residences provided for ownership by low-income individuals and families whose ownership requirement includes labor participation. "Self-help housing" does not include residential rental housing provided on a commercial basis to the general public.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5998-S.SL.pdf?cite=2019 c 424 § 3'>2019 c 424 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5183-S.SL.pdf?cite=2019 c 390 § 10'>2019 c 390 § 10</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5025-S.SL.pdf?cite=2019 c 385 § 2'>2019 c 385 § 2</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2448-S.SL.pdf?cite=2018 c 223 § 3'>2018 c 223 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2444.SL.pdf?cite=2018 c 221 § 1'>2018 c 221 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/House/1117-S.SL.pdf?cite=2014 c 58 § 24'>2014 c 58 § 24</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/6143-S.SL.pdf?cite=2010 1st sp.s. c 23 § 207'>2010 1st sp.s. c 23 § 207</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1621-S2.SL.pdf?cite=2008 c 116 § 3'>2008 c 116 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/3104-S2.SL.pdf?cite=2008 c 6 § 701'>2008 c 6 § 701</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/6856-S2.SL.pdf?cite=2000 2nd sp.s. c 4 § 26'>2000 2nd sp.s. c 4 § 26</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/1664.SL.pdf?cite=1999 c 209 § 2'>1999 c 209 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/5967-S.SL.pdf?cite=1993 sp.s. c 25 § 502'>1993 sp.s. c 25 § 502</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1981c93.pdf?cite=1981 c 93 § 1'>1981 c 93 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1970ex1c65.pdf?cite=1970 ex.s. c 65 § 1'>1970 ex.s. c 65 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1969ex1c223.pdf?cite=1969 ex.s. c 223 § 28A.45.010'>1969 ex.s. c 223 § 28A.45.010</a>; prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1955c132.pdf?cite=1955 c 132 § 1'>1955 c 132 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1953c94.pdf?cite=1953 c 94 § 1'>1953 c 94 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1951ex2c19.pdf?cite=1951 2nd ex.s. c 19 § 1'>1951 2nd ex.s. c 19 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1951ex1c11.pdf?cite=1951 1st ex.s. c 11 § 7'>1951 1st ex.s. c 11 § 7</a>. Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.45.010'>28A.45.010</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28.45.010'>28.45.010</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Reviser's note:</span>*(1) The reference to section 2 of this act is erroneous; it appears that subsection (3)(u)(ii) was intended.</div><div style="text-indent:0.75in;"><span>(2) The tax preference enacted in section 3, chapter 223, Laws of 2018 expires January 1, 2029, pursuant to the automatic expiration date established in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.32.805'>82.32.805</a>(1)(a).</span></div><div style="text-indent:0.75in;"><span>(3) This section was amended by 2019 c 385 § 2, 2019 c 390 § 10, and by 2019 c 424 § 3, without reference to one another. All amendments are incorporated in the publication of this section under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.12.025'>1.12.025</a>(2). For rule of construction, see RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=1.12.025'>1.12.025</a>(1).</span></div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Automatic expiration date and tax preference performance statement exemption<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2019 c 424:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45.060'>82.45.060</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Expiration date<span style="font-family:times new roman;">—</span>2019 c 390 § 10:</span> "Section 10 of this act expires January 1, 2030." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5183-S.SL.pdf?cite=2019 c 390 § 21'>2019 c 390 § 21</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Tax preference performance statement<span style="font-family:times new roman;">—</span>2019 c 390 § 10:</span> "This section is the tax preference performance statement for the tax preference contained in section 10, chapter 390, Laws of 2019. This performance statement is only intended to be used for subsequent evaluation of the tax preference. It is not intended to create a private right of action by any party or be used to determine eligibility for preferential tax treatment.</div><div style="text-indent:0.75in;">(1) The legislature categorizes this tax preference as one intended to induce certain designated behaviors by taxpayers, as indicated in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.32.808'>82.32.808</a>(2)(a).</div><div style="text-indent:0.75in;">(2) It is the legislature's specific public policy objective to preserve the affordable housing opportunities provided by existing manufactured/mobile home communities. It is the legislature's intent to encourage owners to sell existing communities to tenants and eligible organizations by providing a real estate excise tax exemption.</div><div style="text-indent:0.75in;">(3) To measure the effectiveness of this tax preference in achieving the specific public policy objective described in subsection (2) of this section, the joint legislative audit and review committee must, at minimum, review the number of units of housing that are preserved as a result of qualified sales of manufactured/mobile home communities and the total amount of exemptions claimed, as reported to the department of revenue.</div><div style="text-indent:0.75in;">(4) The joint legislative audit and review committee may use any other data it deems necessary in performing the evaluation under this section." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5183-S.SL.pdf?cite=2019 c 390 § 9'>2019 c 390 § 9</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Finding<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2019 c 390:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=59.21.005'>59.21.005</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Tax preference performance statement and expiration<span style="font-family:times new roman;">—</span>2019 c 390:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=84.36.560'>84.36.560</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Expiration date<span style="font-family:times new roman;">—</span>2019 c 385 § 2:</span> "Section 2 of this act expires January 1, 2030." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5025-S.SL.pdf?cite=2019 c 385 § 4'>2019 c 385 § 4</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Tax preference performance statement<span style="font-family:times new roman;">—</span>2019 c 385:</span> "(1) This section is the tax preference performance statement for this act. This performance statement is only intended to be used for subsequent evaluation of the tax preference. It is not intended to create a private right of action by any part or be used to determine eligibility for a preferential tax treatment.</div><div style="text-indent:0.75in;">(2) The legislature categorizes the tax preference as one intended to induce certain designated behavior by taxpayers, as indicated in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.32.808'>82.32.808</a>(2)(a).</div><div style="text-indent:0.75in;">(3) It is the legislature's specific public policy objective to provide real estate excise tax relief to developers of self-help housing to encourage continued development of self-help housing.</div><div style="text-indent:0.75in;">(4) The joint legislative audit and review committee is directed to review:</div><div style="text-indent:0.75in;">(a) The total number of taxpayers that claimed the tax preference; and</div><div style="text-indent:0.75in;">(b) The total amount of real estate excise tax revenue that was exempt under this act, annually.</div><div style="text-indent:0.75in;">(5) In order to obtain this section, the joint legislative audit and review committee may refer to department of revenue data, as well as any other available data source." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5025-S.SL.pdf?cite=2019 c 385 § 1'>2019 c 385 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2019 c 385:</span> "This act takes effect October 1, 2019." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5025-S.SL.pdf?cite=2019 c 385 § 3'>2019 c 385 § 3</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Tax preference performance statement<span style="font-family:times new roman;">—</span>2018 c 223 § 3:</span> "(1) This section is the tax preference performance statement for the tax preference contained in section 3, chapter 223, Laws of 2018. This performance statement is only intended to be used for subsequent evaluation of the tax preference. It is not intended to create a private right of action by any party or to be used to determine eligibility for preferential tax treatment.</div><div style="text-indent:0.75in;">(2) The legislature categorizes this tax preference as one intended to induce certain designated behavior by taxpayers, as indicated in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.32.808'>82.32.808</a>(2)(a).</div><div style="text-indent:0.75in;">(3) It is the legislature's specific public policy objective to reduce the tax burden on individuals and businesses imposed by the existing real estate excise tax rates.</div><div style="text-indent:0.75in;">(4) If a review finds that there is an increase of residential property transfers by parents of a person with developmental disabilities to a qualified entity as a result of the relief from this tax preference, then the legislature intends to extend the expiration date of this tax preference.</div><div style="text-indent:0.75in;">(5) In order to obtain the data necessary to perform the review in subsection (4) of this section, the joint legislative audit and review committee may refer to any data collected by the state." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2448-S.SL.pdf?cite=2018 c 223 § 2'>2018 c 223 § 2</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2018 c 223:</span> "The legislature finds that there is need to expand housing opportunities for persons with developmental disabilities. The legislature finds it is often preferable for persons with developmental disabilities to remain residing in their home, when it is safe and appropriate, to foster ongoing stability. The legislature recognizes that securing a child's future housing and services provides the parents of persons with developmental disabilities peace of mind. The legislature further finds that providing a new mechanism for the transfer of residential property into housing for persons with developmental disabilities expands the state's housing capacity and helps meet demand. The legislature further finds that utilizing existing residential property will reduce the demands on the housing trust fund. The legislature finds that there is an opportunity and need, for advocates and the supporters of the developmental disabilities community to work together, to develop model transfer agreements that will provide peace of mind and assist parents of children with developmental disabilities [to] more readily access this program." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2448-S.SL.pdf?cite=2018 c 223 § 1'>2018 c 223 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>2018 c 221:</span> "This act applies with respect to transfers occurring before, on, or after July 1, 2018. However, this act may not be construed by the department of revenue, state board of tax appeals, or any court as authorizing the refund of any tax liability imposed or authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.46'>82.46</a> RCW and properly paid before July 1, 2018, with respect to a transfer of qualified low-income housing as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45.010'>82.45.010</a>(3)(s)." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2444.SL.pdf?cite=2018 c 221 § 2'>2018 c 221 § 2</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2018 c 221:</span> "This act takes effect July 1, 2018." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2444.SL.pdf?cite=2018 c 221 § 3'>2018 c 221 § 3</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Uniformity of application and construction<span style="font-family:times new roman;">—</span>Relation to electronic signatures in global and national commerce act<span style="font-family:times new roman;">—</span>2014 c 58:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.80.903'>64.80.903</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.80.904'>64.80.904</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2010 1st sp.s. c 23:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.32.655'>82.32.655</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2010 1st sp.s. c 23:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220'>82.04.220</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>2008 c 116:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=59.20.300'>59.20.300</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Part headings not law<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>2008 c 6:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.60.900'>26.60.900</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.60.901'>26.60.901</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Construction<span style="font-family:times new roman;">—</span>2000 2nd sp.s. c 4 §§ 18-30:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.112.300'>81.112.300</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>1999 c 209:</span> "In chapter 25, Laws of 1993 sp. sess., the legislature found that transfer of ownership of entities can be equivalent to the sale of real property held by the entity. The legislature further found that all transfers of possession or use of real property should be subject to the same excise tax burdens.</div><div style="text-indent:0.75in;">The legislature intended to apply the real estate excise tax of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW to transfers of entity ownership when the transfer of entity ownership is comparable to the sale of real property. The legislature intends to equate the excise tax burdens on all sales of real property and transfers of entity ownership essentially equivalent to a sale of real property under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/1664.SL.pdf?cite=1999 c 209 § 1'>1999 c 209 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>1993 sp.s. c 25:</span> "(1) The legislature finds that transfers of ownership of entities may be essentially equivalent to the sale of real property held by the entity. The legislature further finds that all transfers of possession or use of real property should be subject to the same excise tax burdens.</div><div style="text-indent:0.75in;">(2) The legislature intends to apply the real estate excise tax of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW to transfers of entity ownership when the transfer of entity ownership is comparable to the sale of real property. The legislature intends to equate the excise tax burdens on all sales of real property and transfers of entity ownership essentially equivalent to a sale of real property under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/5967-S.SL.pdf?cite=1993 sp.s. c 25 § 501'>1993 sp.s. c 25 § 501</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>Effective dates<span style="font-family:times new roman;">—</span>Part headings, captions not law<span style="font-family:times new roman;">—</span>1993 sp.s. c 25:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.04.230'>82.04.230</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1981 c 93 § 2:</span> "Section 2 of this act shall take effect September 1, 1981." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1981c93.pdf?cite=1981 c 93 § 3'>1981 c 93 § 3</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1970 ex.s. c 65:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.03.050'>82.03.050</a>.</div></div><div><h3>RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45.010'>82.45.010</a></h3></div><div><h3>"Sale" defined. <span style="font-style:italic;">(Effective January 1, 2030.)</span></h3></div><div style="text-indent:0.5in;margin-bottom:0.2in;">*** CHANGE IN 2022 *** (SEE <a target="_blank" href="http://lawfilesext.leg.wa.gov/biennium/2021-22/Pdf/Bills/Session Laws/House/1643-S.SL.pdf">1643-S.SL</a>) ***</div><div><div style="text-indent:0.5in;">(1) As used in this chapter, the term "sale" has its ordinary meaning and includes any conveyance, grant, assignment, quitclaim, or transfer of the ownership of or title to real property, including standing timber, or any estate or interest therein for a valuable consideration, and any contract for such conveyance, grant, assignment, quitclaim, or transfer, and any lease with an option to purchase real property, including standing timber, or any estate or interest therein or other contract under which possession of the property is given to the purchaser, or any other person at the purchaser's direction, and title to the property is retained by the vendor as security for the payment of the purchase price. The term also includes the grant, assignment, quitclaim, sale, or transfer of improvements constructed upon leased land.</div><div style="text-indent:0.5in;">(2)(a) The term "sale" also includes the transfer or acquisition within any thirty-six month period of a controlling interest in any entity with an interest in real property located in this state for a valuable consideration.</div><div style="text-indent:0.5in;">(b) For the sole purpose of determining whether, pursuant to the exercise of an option, a controlling interest was transferred or acquired within a thirty-six month period, the date that the option agreement was executed is the date on which the transfer or acquisition of the controlling interest is deemed to occur. For all other purposes under this chapter, the date upon which the option is exercised is the date of the transfer or acquisition of the controlling interest.</div><div style="text-indent:0.5in;">(c) For purposes of this subsection, all acquisitions of persons acting in concert must be aggregated for purposes of determining whether a transfer or acquisition of a controlling interest has taken place. The department must adopt standards by rule to determine when persons are acting in concert. In adopting a rule for this purpose, the department must consider the following:</div><div style="text-indent:0.5in;">(i) Persons must be treated as acting in concert when they have a relationship with each other such that one person influences or controls the actions of another through common ownership; and</div><div style="text-indent:0.5in;">(ii) When persons are not commonly owned or controlled, they must be treated as acting in concert only when the unity with which the purchasers have negotiated and will consummate the transfer of ownership interests supports a finding that they are acting as a single entity. If the acquisitions are completely independent, with each purchaser buying without regard to the identity of the other purchasers, then the acquisitions are considered separate acquisitions.</div><div style="text-indent:0.5in;">(3) The term "sale" does not include:</div><div style="text-indent:0.5in;">(a) A transfer by gift, devise, or inheritance.</div><div style="text-indent:0.5in;">(b) A transfer by transfer on death deed, to the extent that it is not in satisfaction of a contractual obligation of the decedent owed to the recipient of the property.</div><div style="text-indent:0.5in;">(c) A transfer of any leasehold interest other than of the type mentioned above.</div><div style="text-indent:0.5in;">(d) A cancellation or forfeiture of a vendee's interest in a contract for the sale of real property, whether or not such contract contains a forfeiture clause, or deed in lieu of foreclosure of a mortgage.</div><div style="text-indent:0.5in;">(e) The partition of property by tenants in common by agreement or as the result of a court decree.</div><div style="text-indent:0.5in;">(f) The assignment of property or interest in property from one spouse or one domestic partner to the other spouse or other domestic partner in accordance with the terms of a decree of dissolution of marriage or state registered domestic partnership or in fulfillment of a property settlement agreement.</div><div style="text-indent:0.5in;">(g) The assignment or other transfer of a vendor's interest in a contract for the sale of real property, even though accompanied by a conveyance of the vendor's interest in the real property involved.</div><div style="text-indent:0.5in;">(h) Transfers by appropriation or decree in condemnation proceedings brought by the United States, the state or any political subdivision thereof, or a municipal corporation.</div><div style="text-indent:0.5in;">(i) A mortgage or other transfer of an interest in real property merely to secure a debt, or the assignment thereof.</div><div style="text-indent:0.5in;">(j) Any transfer or conveyance made pursuant to a deed of trust or an order of sale by the court in any mortgage, deed of trust, or lien foreclosure proceeding or upon execution of a judgment, or deed in lieu of foreclosure to satisfy a mortgage or deed of trust.</div><div style="text-indent:0.5in;">(k) A conveyance to the federal housing administration or veterans administration by an authorized mortgagee made pursuant to a contract of insurance or guaranty with the federal housing administration or veterans administration.</div><div style="text-indent:0.5in;">(l) A transfer in compliance with the terms of any lease or contract upon which the tax as imposed by this chapter has been paid or where the lease or contract was entered into prior to the date this tax was first imposed.</div><div style="text-indent:0.5in;">(m) The sale of any grave or lot in an established cemetery.</div><div style="text-indent:0.5in;">(n) A sale by the United States, this state or any political subdivision thereof, or a municipal corporation of this state.</div><div style="text-indent:0.5in;">(o) A sale to a regional transit authority or public corporation under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.112.320'>81.112.320</a> under a sale/leaseback agreement under RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.112.300'>81.112.300</a>.</div><div style="text-indent:0.5in;">(p) A transfer of real property, however effected, if it consists of a mere change in identity or form of ownership of an entity where there is no change in the beneficial ownership. These include transfers to a corporation or partnership which is wholly owned by the transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner. However, if thereafter such transferee corporation or partnership voluntarily transfers such real property, or such transferor, spouse or domestic partner, or children of the transferor or the transferor's spouse or domestic partner voluntarily transfer stock in the transferee corporation or interest in the transferee partnership capital, as the case may be, to other than (i) the transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner, (ii) a trust having the transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner as the only beneficiaries at the time of the transfer to the trust, or (iii) a corporation or partnership wholly owned by the original transferor and/or the transferor's spouse or domestic partner or children of the transferor or the transferor's spouse or domestic partner, within three years of the original transfer to which this exemption applies, and the tax on the subsequent transfer has not been paid within sixty days of becoming due, excise taxes become due and payable on the original transfer as otherwise provided by law.</div><div style="text-indent:0.5in;">(q)(i) A transfer that for federal income tax purposes does not involve the recognition of gain or loss for entity formation, liquidation or dissolution, and reorganization, including but not limited to nonrecognition of gain or loss because of application of 26 U.S.C. Sec. 332, 337, 351, 368(a)(1), 721, or 731 of the internal revenue code of 1986, as amended.</div><div style="text-indent:0.5in;">(ii) However, the transfer described in (q)(i) of this subsection cannot be preceded or followed within a thirty-six month period by another transfer or series of transfers, that, when combined with the otherwise exempt transfer or transfers described in (q)(i) of this subsection, results in the transfer of a controlling interest in the entity for valuable consideration, and in which one or more persons previously holding a controlling interest in the entity receive cash or property in exchange for any interest the person or persons acting in concert hold in the entity. This subsection (3)(q)(ii) does not apply to that part of the transfer involving property received that is the real property interest that the person or persons originally contributed to the entity or when one or more persons who did not contribute real property or belong to the entity at a time when real property was purchased receive cash or personal property in exchange for that person or persons' interest in the entity. The real estate excise tax under this subsection (3)(q)(ii) is imposed upon the person or persons who previously held a controlling interest in the entity.</div><div style="text-indent:0.5in;">(r) A qualified sale of a manufactured/mobile home community, as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=59.20.030'>59.20.030</a>, that takes place on or after June 12, 2008, but before December 31, 2018.</div><div style="text-indent:0.5in;">(s)(i) A transfer of a qualified low-income housing development or controlling interest in a qualified low-income housing development, unless, due to noncompliance with federal statutory requirements, the seller is subject to recapture, in whole or in part, of its allocated federal low-income housing tax credits within the four years prior to the date of transfer.</div><div style="text-indent:0.5in;">(ii) For purposes of this subsection (3)(s), "qualified low-income housing development" means real property and improvements in respect to which the seller or, in the case of a transfer of a controlling interest, the owner or beneficial owner, was allocated federal low-income housing tax credits authorized under 26 U.S.C. Sec. 42 or successor statute, by the Washington state housing finance commission or successor state-authorized tax credit allocating agency.</div><div style="text-indent:0.5in;">(iii) This subsection (3)(s) does not apply to transfers of a qualified low-income housing development or controlling interest in a qualified low-income housing development occurring on or after July 1, 2035.</div><div style="text-indent:0.5in;">(iv) The Washington state housing finance commission, in consultation with the department, must gather data on: (A) The fiscal savings, if any, accruing to transferees as a result of the exemption provided in this subsection (3)(s); (B) the extent to which transferors of qualified low-income housing developments receive consideration, including any assumption of debt, as part of a transfer subject to the exemption provided in this subsection (3)(s); and (C) the continued use of the property for low-income housing. The Washington state housing finance commission must provide this information to the joint legislative audit and review committee. The committee must conduct a review of the tax preference created under this subsection (3)(s) in calendar year 2033, as required under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=43.136'>43.136</a> RCW.</div><div style="text-indent:0.5in;">(t)(i) A qualified transfer of residential property by a legal representative of a person with developmental disabilities to a qualified entity subject to the following conditions:</div><div style="text-indent:0.5in;">(A) The adult child with developmental disabilities of the transferor of the residential property must be allowed to reside in the residence or successor property so long as the placement is safe and appropriate as determined by the department of social and health services;</div><div style="text-indent:0.5in;">(B) The title to the residential property is conveyed without the receipt of consideration by the legal representative of a person with developmental disabilities to a qualified entity;</div><div style="text-indent:0.5in;">(C) The residential property must have no more than four living units located on it; and</div><div style="text-indent:0.5in;">(D) The residential property transferred must remain in continued use for fifty years by the qualified entity as supported living for persons with developmental disabilities by the qualified entity or successor entity. If the qualified entity sells or otherwise conveys ownership of the residential property the proceeds of the sale or conveyance must be used to acquire similar residential property and such similar residential property must be considered the successor for continued use. The property will not be considered in continued use if the department of social and health services finds that the property has failed, after a reasonable time to remedy, to meet any health and safety statutory or regulatory requirements. If the department of social and health services determines that the property fails to meet the requirements for continued use, the department of social and health services must notify the department and the real estate excise tax based on the value of the property at the time of the transfer into use as residential property for persons with developmental disabilities becomes immediately due and payable by the qualified entity. The tax due is not subject to penalties, fees, or interest under this title.</div><div style="text-indent:0.5in;">(ii) For the purposes of this subsection (3)(t) the definitions in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=71A.10.020'>71A.10.020</a> apply.</div><div style="text-indent:0.5in;">(iii) A "qualified entity" is:</div><div style="text-indent:0.5in;">(A) A nonprofit organization under Title 26 U.S.C. Sec. 501(c)(3) of the federal internal revenue code of 1986, as amended, as of June 7, 2018, or a subsidiary under the same taxpayer identification number that provides residential supported living for persons with developmental disabilities; or</div><div style="text-indent:0.5in;">(B) A nonprofit adult family home, as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=70.128.010'>70.128.010</a>, that exclusively serves persons with developmental disabilities.</div><div style="text-indent:0.5in;">(iv) In order to receive an exemption under this subsection (3)(t) an affidavit must be submitted by the transferor of the residential property and must include a copy of the transfer agreement and any other documentation as required by the department.</div></div><div style="margin-top:15pt;margin-bottom:0pt;">[ <a href='http://lawfilesext.leg.wa.gov/biennium/2019-20/Pdf/Bills/Session Laws/Senate/5998-S.SL.pdf?cite=2019 c 424 § 3'>2019 c 424 § 3</a>. Prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2448-S.SL.pdf?cite=2018 c 223 § 3'>2018 c 223 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2444.SL.pdf?cite=2018 c 221 § 1'>2018 c 221 § 1</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2013-14/Pdf/Bills/Session Laws/House/1117-S.SL.pdf?cite=2014 c 58 § 24'>2014 c 58 § 24</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2009-10/Pdf/Bills/Session Laws/Senate/6143-S.SL.pdf?cite=2010 1st sp.s. c 23 § 207'>2010 1st sp.s. c 23 § 207</a>; prior:  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/1621-S2.SL.pdf?cite=2008 c 116 § 3'>2008 c 116 § 3</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/2007-08/Pdf/Bills/Session Laws/House/3104-S2.SL.pdf?cite=2008 c 6 § 701'>2008 c 6 § 701</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/Senate/6856-S2.SL.pdf?cite=2000 2nd sp.s. c 4 § 26'>2000 2nd sp.s. c 4 § 26</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/1664.SL.pdf?cite=1999 c 209 § 2'>1999 c 209 § 2</a>;  <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/5967-S.SL.pdf?cite=1993 sp.s. c 25 § 502'>1993 sp.s. c 25 § 502</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1981c93.pdf?cite=1981 c 93 § 1'>1981 c 93 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1970ex1c65.pdf?cite=1970 ex.s. c 65 § 1'>1970 ex.s. c 65 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1969ex1c223.pdf?cite=1969 ex.s. c 223 § 28A.45.010'>1969 ex.s. c 223 § 28A.45.010</a>; prior:  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1955c132.pdf?cite=1955 c 132 § 1'>1955 c 132 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1953c94.pdf?cite=1953 c 94 § 1'>1953 c 94 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1951ex2c19.pdf?cite=1951 2nd ex.s. c 19 § 1'>1951 2nd ex.s. c 19 § 1</a>;  <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1951ex1c11.pdf?cite=1951 1st ex.s. c 11 § 7'>1951 1st ex.s. c 11 § 7</a>. Formerly RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28A.45.010'>28A.45.010</a>,  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=28.45.010'>28.45.010</a>.]</div><div style="margin-top:0.25in;margin-bottom:0.25in;"><h3>NOTES:</h3></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Automatic expiration date and tax preference performance statement exemption<span style="font-family:times new roman;">—</span>Effective date<span style="font-family:times new roman;">—</span>2019 c 424:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45.060'>82.45.060</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Tax preference performance statement<span style="font-family:times new roman;">—</span>2018 c 223 § 3:</span> "(1) This section is the tax preference performance statement for the tax preference contained in section 3, chapter 223, Laws of 2018. This performance statement is only intended to be used for subsequent evaluation of the tax preference. It is not intended to create a private right of action by any party or to be used to determine eligibility for preferential tax treatment.</div><div style="text-indent:0.75in;">(2) The legislature categorizes this tax preference as one intended to induce certain designated behavior by taxpayers, as indicated in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.32.808'>82.32.808</a>(2)(a).</div><div style="text-indent:0.75in;">(3) It is the legislature's specific public policy objective to reduce the tax burden on individuals and businesses imposed by the existing real estate excise tax rates.</div><div style="text-indent:0.75in;">(4) If a review finds that there is an increase of residential property transfers by parents of a person with developmental disabilities to a qualified entity as a result of the relief from this tax preference, then the legislature intends to extend the expiration date of this tax preference.</div><div style="text-indent:0.75in;">(5) In order to obtain the data necessary to perform the review in subsection (4) of this section, the joint legislative audit and review committee may refer to any data collected by the state." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2448-S.SL.pdf?cite=2018 c 223 § 2'>2018 c 223 § 2</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>2018 c 223:</span> "The legislature finds that there is need to expand housing opportunities for persons with developmental disabilities. The legislature finds it is often preferable for persons with developmental disabilities to remain residing in their home, when it is safe and appropriate, to foster ongoing stability. The legislature recognizes that securing a child's future housing and services provides the parents of persons with developmental disabilities peace of mind. The legislature further finds that providing a new mechanism for the transfer of residential property into housing for persons with developmental disabilities expands the state's housing capacity and helps meet demand. The legislature further finds that utilizing existing residential property will reduce the demands on the housing trust fund. The legislature finds that there is an opportunity and need, for advocates and the supporters of the developmental disabilities community to work together, to develop model transfer agreements that will provide peace of mind and assist parents of children with developmental disabilities [to] more readily access this program." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2448-S.SL.pdf?cite=2018 c 223 § 1'>2018 c 223 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Application<span style="font-family:times new roman;">—</span>2018 c 221:</span> "This act applies with respect to transfers occurring before, on, or after July 1, 2018. However, this act may not be construed by the department of revenue, state board of tax appeals, or any court as authorizing the refund of any tax liability imposed or authorized under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> or  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.46'>82.46</a> RCW and properly paid before July 1, 2018, with respect to a transfer of qualified low-income housing as defined in RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45.010'>82.45.010</a>(3)(s)." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2444.SL.pdf?cite=2018 c 221 § 2'>2018 c 221 § 2</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2018 c 221:</span> "This act takes effect July 1, 2018." [ <a href='http://lawfilesext.leg.wa.gov/biennium/2017-18/Pdf/Bills/Session Laws/House/2444.SL.pdf?cite=2018 c 221 § 3'>2018 c 221 § 3</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Uniformity of application and construction<span style="font-family:times new roman;">—</span>Relation to electronic signatures in global and national commerce act<span style="font-family:times new roman;">—</span>2014 c 58:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.80.903'>64.80.903</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=64.80.904'>64.80.904</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>2010 1st sp.s. c 23:</span> See note following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.32.655'>82.32.655</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>2010 1st sp.s. c 23:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.04.220'>82.04.220</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>2008 c 116:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=59.20.300'>59.20.300</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Part headings not law<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>2008 c 6:</span> See RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.60.900'>26.60.900</a> and  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=26.60.901'>26.60.901</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Construction<span style="font-family:times new roman;">—</span>2000 2nd sp.s. c 4 §§ 18-30:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=81.112.300'>81.112.300</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Intent<span style="font-family:times new roman;">—</span>1999 c 209:</span> "In chapter 25, Laws of 1993 sp. sess., the legislature found that transfer of ownership of entities can be equivalent to the sale of real property held by the entity. The legislature further found that all transfers of possession or use of real property should be subject to the same excise tax burdens.</div><div style="text-indent:0.75in;">The legislature intended to apply the real estate excise tax of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW to transfers of entity ownership when the transfer of entity ownership is comparable to the sale of real property. The legislature intends to equate the excise tax burdens on all sales of real property and transfers of entity ownership essentially equivalent to a sale of real property under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1999-00/Pdf/Bills/Session Laws/House/1664.SL.pdf?cite=1999 c 209 § 1'>1999 c 209 § 1</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Findings<span style="font-family:times new roman;">—</span>Intent<span style="font-family:times new roman;">—</span>1993 sp.s. c 25:</span> "(1) The legislature finds that transfers of ownership of entities may be essentially equivalent to the sale of real property held by the entity. The legislature further finds that all transfers of possession or use of real property should be subject to the same excise tax burdens.</div><div style="text-indent:0.75in;">(2) The legislature intends to apply the real estate excise tax of chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW to transfers of entity ownership when the transfer of entity ownership is comparable to the sale of real property. The legislature intends to equate the excise tax burdens on all sales of real property and transfers of entity ownership essentially equivalent to a sale of real property under chapter  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.45'>82.45</a> RCW." [ <a href='http://lawfilesext.leg.wa.gov/biennium/1993-94/Pdf/Bills/Session Laws/Senate/5967-S.SL.pdf?cite=1993 sp.s. c 25 § 501'>1993 sp.s. c 25 § 501</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Severability<span style="font-family:times new roman;">—</span>Effective dates<span style="font-family:times new roman;">—</span>Part headings, captions not law<span style="font-family:times new roman;">—</span>1993 sp.s. c 25:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.04.230'>82.04.230</a>.</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>1981 c 93 § 2:</span> "Section 2 of this act shall take effect September 1, 1981." [ <a href='http://leg.wa.gov/CodeReviser/documents/sessionlaw/1981c93.pdf?cite=1981 c 93 § 3'>1981 c 93 § 3</a>.]</div></div><div style="margin-bottom:0.2in;"><div style="text-indent:0.75in;"><span style="font-weight:bold;">Effective date<span style="font-family:times new roman;">—</span>Severability<span style="font-family:times new roman;">—</span>1970 ex.s. c 65:</span> See notes following RCW  <a href='http://app.leg.wa.gov/RCW/default.aspx?cite=82.03.050'>82.03.050</a>.</div></div></div>
+    <div id="ContentPlaceHolder1_pnlExpanded">
+	
+        
+    
+</div>
+
+                                </div>
+
+                            
+<script type='text/javascript'>var gaJsHost=(('https:'==document.location.protocol)?'https://ssl.':'http://www.');var g_a_scr=document.createElement('script');g_a_scr.setAttribute('type','text/javascript');g_a_scr.setAttribute('src',gaJsHost+'google-analytics.com/ga.js');var g_a_scr2=document.createElement('script');g_a_scr2.setAttribute('type','text/javascript');g_a_scr2.text="try{var pageTracker=_gat._getTracker('UA-798075-3');pageTracker._trackPageview();}catch(e){}";document.body.insertBefore(g_a_scr,document.body.firstChild);setTimeout(function(){document.body.insertBefore(g_a_scr2,document.body.firstChild.nextSibling);},1);</script></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="publicSiteFooter ui-body-b" id="footerAnchor" name="footerAnchor">
+            <div style="text-align:center; margin-top:6px; margin-bottom:6px">
+                <span style="font-family:Open Sans,Helvetica, Arial, sans-serif; font-size:1.2em; font-weight:700">Site Contents</span><br>
+                Selected content listed in alphabetical order under each group
+            </div>
+            <div class="row">
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Let Your Voice Be Heard
+                        </li>
+                        <!--<li>
+        <a href="http://leg.wa.gov/legislature/Pages/ComingToTheLegislature.aspx">
+            Come to the Legislature
+        </a>
+    </li>-->
+                        <li>
+                            <a href="http://app.leg.wa.gov/memberemail/">
+                                Contact Your Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/pbc/">
+                                Comment on a Bill
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://leg.wa.gov/legislature/Pages/Participating.aspx">
+                                Participate in Committee Hearings
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Find
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/Calendar.aspx">
+                                Committee Meeting Schedules & Agendas
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/DistrictFinder/">
+                                District & Legislators
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/LawsAndAgencyRules/">
+                                Laws & Rules
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/MemberInformation.aspx">
+                                Member Information / Rosters
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.tvw.org/" target="_blank">
+                                Video & Audio on TVW
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            About the Legislature
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/CommitteeListing.aspx">
+                                Committees
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/House">
+                                House of Representatives
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/legislativeagencies.aspx">
+                                Legislative Agencies
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/lic">
+                                Legislative Information Center
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/">
+                                Legislature Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/Senate">
+                                Senate
+                            </a>
+                        </li>
+                        <br>
+                        <li class="footerHead">
+                            Track Legislation
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/DLR/user/login.aspx?ReturnUrl=%2fdlr%2fbilltracking%2fdefault.aspx">
+                                Bills
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://public.govdelivery.com/accounts/WALEG/subscriber/new">
+                                Email Updates (GovDelivery)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/AboutLegRSS.aspx">
+                                RSS Feeds
+                           </a>
+                        </li>
+                        <li>
+                            <a href="http://wslwebservices.leg.wa.gov/">
+                                Web Services
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                </div>
+                <div class="clearfix visible-csm">
+                </div>
+                <div class="clearfix visible-sm">
+                </div>
+                <div class="col-csm-6 col-md-3">
+                    <ul>
+                        <li class="footerHead">
+                            Additional Information
+                       </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/adainfo.aspx">
+                                Accessibility Information
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/civiced/Pages/default.aspx">
+                                Civic Education
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:support@leg.wa.gov">
+                                Comments about this site
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/contactus.aspx">
+                                Contact Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/disclaimer.aspx">
+                                Disclaimer
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/Pages/WSLEmployment.aspx">
+                                Employment Opportunities
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/giftcenter">
+                                Gift Center
+                           </a>
+                        </li>
+                        <li>
+                            <a href="https://app.leg.wa.gov/billinfo/glossary.aspx">
+                                Glossary of Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/help/Pages/default.aspx">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/history">
+                                History of the State Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://leg.wa.gov/legislature/pages/PrivacyNotice.aspx">
+                                Privacy Notice
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://app.leg.wa.gov/reportstothelegislature/">
+                                Reports to the Legislature
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://search.leg.wa.gov/">
+                                Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-csm-6 col-md-3  pull-left">
+                    <ul>
+                        <li class="footerHead">
+                            Outside the Legislature
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.usa.gov/elected-officials">
+                                Contact Congress - the Other Washington
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.governor.wa.gov/">
+                                Governor's Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://fortress.wa.gov/ofm/fnspublic">
+                                OFM Fiscal Note Website
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="http://www.courts.wa.gov/">
+                                Washington Courts
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <div class="footerHead">
+                        Translate
+
+
+
+                    </div>
+                    <div id="google_translate_element">
+                    </div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+
+                        function googleTranslateElementInit() {
+                            try {
+                                new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                            } catch (e) {
+
+                            }
+                        }
+                        //]]>
+                    </script>
+                    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                        //<![CDATA[
+
+                        //]]>
+                    </script>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
+
+</body>
+</html>
