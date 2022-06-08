@@ -55,21 +55,21 @@ all_the_regulations = []
 #     }
 def get_charge(line_to_check, the_section_number):
     charge = []
-    if line_to_check.find('class A felony') > -1:
+    if re.search('class A felony', line_to_check, re.IGNORECASE):
         charge.append('FelonyA')
-    if line_to_check.find('class B felony') > -1:
+    if re.search('class B felony', line_to_check, re.IGNORECASE):
         charge.append('FelonyB')
-    if line_to_check.find('class C felony') > -1:
+    if re.search('class C felony', line_to_check, re.IGNORECASE):
         charge.append('FelonyC')
-    if line_to_check.find('class A felony') == -1 and \
-        line_to_check.find('class B felony') == -1 and \
-        line_to_check.find('class C felony') == -1 and \
-        line_to_check.find('felony') > -1:
+    if not re.search('class A felony', line_to_check, re.IGNORECASE) and \
+        not re.search('class B felony', line_to_check, re.IGNORECASE) and \
+        not re.search('class C felony', line_to_check, re.IGNORECASE) and \
+        re.search('felony', line_to_check, re.IGNORECASE):
         # possible general list - no charges
         charge.append('')
-    if line_to_check.find('gross misdemeanor') > -1:
+    if re.search('gross misdemeanor', line_to_check, re.IGNORECASE):
         charge.append('GrossMisdemeanor')
-    if line_to_check.find('misdemeanor') > -1 and line_to_check.count('gross misdemeanor') != line_to_check.count('misdemeanor'):
+    if line_to_check.lower().find('misdemeanor') > -1 and line_to_check.lower().count('gross misdemeanor') != line_to_check.lower().count('misdemeanor'):
         charge.append('SimpleMisdemeanor')
 
     if len(charge) > 0:
