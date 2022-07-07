@@ -1,0 +1,116 @@
+[
+    {
+        "name": "DOMESTIC VIOLENCE PREVENTION. Violation of order—Penalties.",
+        "rcw_sources": {
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=26.50.110",
+            "num": "26.50.110"
+        },
+        "applies": "26.50.*",
+        "mandatory" : true,
+        "restitution": false,
+        "min": 15,
+        "max": 15,
+        "catala_representation": null,
+        "unsure_if_lfo": false,
+        "type": "penalty"
+    },
+    {
+       "name" : "MOTOR VEHICLES. ENFORCEMENT. Additional monetary penalty.",
+        "rcw_sources": {
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=46.64.055",
+            "num": "46.64.055"
+        },
+        "applies" : "46.*",
+        "mandatory" : true,
+        "reduceable_if_indigent" : true,
+        "suspendable_if_indigent" : true,
+        "waivable_if_indigent": true,
+        "min": 50,
+        "max": 50,
+        "catala_representation": "",
+        "cshAvailable": true,
+        "unsure_if_lfo": false,
+        "text": "Additional monetary penalty. \n(1) In addition to any other penalties imposed for conviction of a violation of this title that is a misdemeanor, gross misdemeanor, or felony, the court shall impose an additional penalty of fifty dollars. The court may not reduce, waive, or suspend the additional penalty unless the court finds the offender to be indigent. If a community restitution program for offenders is available in the jurisdiction, the court shall allow offenders to offset all or a part of the penalty due under this section by participation in the community restitution program.\n(2) Revenue from the additional penalty must be remitted under chapters 2.08, 3.46, 3.50, 3.62, 10.82, and 35.20 RCW. Money remitted under this section to the state treasurer must be deposited in the state general fund. The balance of the revenue received by the county or city treasurer under this section must be deposited into the county or city current expense fund. Moneys retained by the city or county under this subsection shall constitute reimbursement for any liabilities under RCW 43.135.060.",
+        "type": "penalty"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Deferred prosecution",
+        "rcw_sources": {
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        },
+        "applies": "*",
+        "max": 250,
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Pretrial supervision other than a pretrial electronic alcohol monitoring program, drug monitoring program, or 24/7 sobriety program",
+        "rcw_sources": {
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        },
+        "applies": "*",
+        "max": 150,
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Preparing and serving a warrant for failure to appear",
+        "rcw_sources": {
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        },
+        "applies": "*",
+        "max": 150,
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Costs of incarceration ",
+        "rcw_sources": {
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        },
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost",
+        "note": "In no case may the court require the offender to pay more than one hundred dollars per day for the cost of incarceration." 
+    },
+    {
+        "name": "Liability of convicted person for costs—Jury fee.",
+        "rcw_sources": [{
+                "num": "10.46.190",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.46.190"
+            },
+            { 
+                "num": "36.18.016",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=36.18.016"
+            }
+        ],
+        "applies": "*",
+        "type": "cost",
+        "max": 250,
+        "imposeIfIndigent": false,
+        "notes": "Upon conviction in criminal cases a jury demand charge of one hundred twenty-five dollars for a jury of six, or two hundred fifty dollars for a jury of twelve may be imposed as costs under RCW 10.46.190."
+    },
+    {
+        "name": "Judgment to include costs—Exception.",
+        "rcw_sources": [{
+                "num": "10.64.015",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.64.015"
+            }
+        ],
+        "applies": "*",
+        "type": "cost",
+        "imposeIfIndigent": false,
+        "notes": ""
+    }
+]
