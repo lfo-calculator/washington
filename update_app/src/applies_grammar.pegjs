@@ -38,29 +38,20 @@ Test
    parsed as right-associative but in reality left-associative. */
 Additive
     = _ head:Atomic tail:(_ ("+" / "-") _ Atomic)* {
-      console.log("START");
       return tail.reduce((result, element) => {
         if (element[1] === "+") {
           return citation => {
-            console.log("+");
             let left = result(citation);
-            console.log("left", left);
             let right = element[3](citation);
-            console.log("right", right);
             let r = left || right;
-            console.log("result", r);
             return r;
           }
         }
         if (element[1] === "-")
           return citation => {
-            console.log("-");
             let left = result(citation);
-            console.log("left", left);
             let right = element[3](citation);
-            console.log("right", right);
             let r = left && !right;
-            console.log("result", r);
             return r;
           }
       }, head);
@@ -115,39 +106,22 @@ ChargeClass
 Pattern
     = pattern:((N ".")* "*" / (N ".")* N SubSection* "(*)")
     {
-    	pattern = pattern.flat(2).filter((element) => { return element != ".";});
-        pattern.forEach((element, index) => {
-        	pattern[index] = element.replaceAll(/[()]/g, "");
-        });
-        console.log(pattern);
+    	pattern = pattern.flat(2).join("");
       return citation => {
-	    console.log(citation);
-      	let citation_elems = citation.join("").split(/[.()]/).filter((elem) => { return elem != "";});
-        console.log(citation_elems);
-
-        while (citation_elems.length !== 0 && pattern.length !== 0) {
-            let c_section = citation_elems.shift();
-            let p_section = pattern.shift();
-
-            if (p_section == "*") {
-                return true;
+        citation = citation.join("");
+        
+        // check if subsection wildcard
+        let idx = pattern.indexOf("(*)");
+        
+        if (idx == -1) {
+        	  // otherwise, check for N.* wildcard
+            idx = pattern.indexOf(".*");
+            if (idx == -1) {
+            	// otherwise, check for * wildcard
+              idx = pattern.indexOf("*");
             }
-            if (c_section != p_section) {
-                return false;
-            } 
         }
-
-		// the pattern is longer than the citation
-        if (pattern.length != 0) {
-        	p_section = pattern.shift();
-            // the pattern may end in a wildcard encompassing the citation, e.g. (1.1.*, "1.1")
-            if (p_section == "*") {
-            	return true;
-            }
-            // otherwise, the pattern cannot be a match, e.g. (1.1.1(*), "1.1")
-            return false;
-        }
-      	return true;
+        return citation.substring(0, idx) == pattern.substring(0, idx));
       };
     }
     
