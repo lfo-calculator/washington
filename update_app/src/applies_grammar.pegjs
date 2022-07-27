@@ -11,7 +11,10 @@ C ::=
   | { c, ... }           // set of charges
   | C-C                  // set difference
   | C+C                  // set union
+  | C&C                  // set intersection 
   | p                    // prefix pattern
+  | DV                   // case involving domestic violence
+  | CLJ, SC              // court 
 
 */
 
@@ -31,27 +34,34 @@ Start
     
 Test
    = "Applies(" a:Additive "," _ "\"" c:[^"]* "\"" ")" { // make it not a string and then rewrite with less parsing
-     return a(c);
+     return a(c, {isDV : true, court: "CLJ", charge: "G"});
    }
 
 /* An expression with set union (+) and difference (-),
    parsed as right-associative but in reality left-associative. */
 Additive
-    = _ head:Atomic tail:(_ ("+" / "-") _ Atomic)* {
+    = _ head:Atomic tail:(_ ("+" / "-" / "&") _ Atomic)* {
       return tail.reduce((result, element) => {
         if (element[1] === "+") {
-          return citation => {
-            let left = result(citation);
-            let right = element[3](citation);
+          return (citation,context) => {
+            let left = result(citation,context);
+            let right = element[3](citation,context);
             let r = left || right;
             return r;
           }
         }
         if (element[1] === "-")
-          return citation => {
-            let left = result(citation);
-            let right = element[3](citation);
+          return (citation, context) => {
+            let left = result(citation, context);
+            let right = element[3](citation, context);
             let r = left && !right;
+            return r;
+          }
+         if (element[1] === "&")
+          return (citation, context) => {
+            let left = result(citation, context);
+            let right = element[3](citation, context);
+            let r = left && right;
             return r;
           }
       }, head);
@@ -60,7 +70,7 @@ Additive
 
 /* A base citation, set of citations, or pattern. */
 Atomic
-    = a:(Pattern / Citation / Set / Paren / ChargeClass) {
+    = a:(Pattern / Citation / Set / Paren / ChargeClass / CourtLevel / DomesticViolence) {
       return a;
     }
     
@@ -98,10 +108,24 @@ N
 
 ChargeClass
 	= chargeClass:("G" / "S" / "F_A" / "F_B" / "F_C") {
-    	return charge => {
-        	return charge.join("") == chargeClass;
+    	return (charge, context) => {
+        	return context.charge == chargeClass;
         }
     }
+
+DomesticViolence
+  = domesticViolence: "DV" {
+    return (dv, context) => {
+      return context.isDV;
+    }
+  }
+
+CourtLevel
+  = courtLevel : ("CLJ" / "SC") {
+    return (court, context) => {
+      return context.court == courtLevel;
+    }
+  }
 
 Pattern
     = pattern:((N ".")* "*" / (N ".")* N SubSection* "(*)")
@@ -121,7 +145,7 @@ Pattern
               idx = pattern.indexOf("*");
             }
         }
-        return citation.substring(0, idx) == pattern.substring(0, idx));
+        return citation.substring(0, idx) == pattern.substring(0, idx);
       };
     }
     
