@@ -368,7 +368,7 @@
                 "url": ""
             }
         ],
-        "applies" : "F+(9.94A.030+DV)+9.68A.090+9A.44.170+9A.44.*+9A.46.020+9A.88.110+9A.44.096+9A.46.110+9A.88.010+",
+        "applies" : "F+(9.94A.030&DV)+9.68A.090+9A.44.170+9A.44.*+9A.46.020+9A.88.110+9A.44.096+9A.46.110+9A.88.010+(7.105.450&violates_sexual_assault_protection)",
         "type": "fee",
         "max": 100,
         "notes" : "Every sentence imposed for a crime specified in RCW 43.43.754 must include a fee of one hundred dollars unless the state has previously collected the offender's DNA as a result of a prior conviction. "

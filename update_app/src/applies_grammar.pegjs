@@ -30,7 +30,7 @@ C ::=
 */
 
 Start
-    = Additive / Test
+    = Test / Additive
     
 Test
    = "Applies(" a:Additive "," _ c:BareCitation ")" {
@@ -134,7 +134,7 @@ SubSection
     }
 
 N 
-    = digits:[0-9]+ {
+    = digits:[0-9a-zA-Z]+ {
       return digits.join("");
     }
 
@@ -170,4 +170,5 @@ Pattern
     
 _ "whitespace"
   = [ \t\n\r]*
+
 
