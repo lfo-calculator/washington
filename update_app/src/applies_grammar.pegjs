@@ -33,19 +33,24 @@ Start
     = Additive / Test
     
 Test
-   = "Applies(" a:Additive "," _ "\"" c:[^"]* "\"" ")" { // make it not a string and then rewrite with less parsing
-     return a(c, {isDV : true, court: "CLJ", charge: "G"});
+   = "Applies(" a:Additive "," _ c:BareCitation ")" {
+     return a(c, { isDV : true, court: "CLJ", charge: "G", offense_number: 4, foobar: true });
    }
+
+BareCitation
+    = c: ((N ".")* N SubSection*) {
+      return c[0].map(x => x[0]).concat(c[1]).concat(c[2]);
+    }
 
 /* An expression with set union (+) and difference (-),
    parsed as right-associative but in reality left-associative. */
 Additive
-    = _ head:Atomic tail:(_ ("+" / "-" / "&") _ Atomic)* {
+    = _ head:SideCondition tail:(_ ("+" / "-" / "&") _ SideCondition)* {
       return tail.reduce((result, element) => {
         if (element[1] === "+") {
-          return (citation,context) => {
-            let left = result(citation,context);
-            let right = element[3](citation,context);
+          return (citation, context) => {
+            let left = result(citation, context);
+            let right = element[3](citation, context);
             let r = left || right;
             return r;
           }
@@ -66,7 +71,30 @@ Additive
           }
       }, head);
     }
-    / Atomic
+    / SideCondition
+    
+SideCondition
+    = _ f:Field _ op:(">=" / "=") _ v:Value {
+      return (citation, context) => {
+        switch (op) {
+          case ">=":
+            return (f in context) && context[f] >= v;
+          case "=":
+            return (f in context) && context[f] == v;
+        }
+      }
+    } / 
+    _ f:Field {
+      return (citation, context) => {
+        return (f in context) && context[f];
+      }
+    } / Atomic
+    
+Field = c:[a-z_]+ { return c.join(""); }
+Value =
+  n:[0-9]+ { return parseInt(n.join("")); } /
+  "true" { return true; } /
+  "false" { return false; }
 
 /* A base citation, set of citations, or pattern. */
 Atomic
@@ -82,6 +110,8 @@ Paren
 /* A set of citations, denoted { C1, ..., Cn } */
 Set
     = "{" _ cs:(Citation _ "," _)* c:Citation _ "}" {
+      // We skip the second argument here because only citations are in sets, 
+      // meaning we will not need the context to evaluate any of those.
       return cs.reduce((result, element) => {
         return citation => result(citation) || element[0](citation);
       }, c);
@@ -90,9 +120,11 @@ Set
 Citation
     = c: ((N ".")* N SubSection*) 
     {
+      // Same thing: citations do not need the context to evaluate
       return citation => {
-        console.log(citation.join(""), "in", c[0].map(x => x.join("")).join("")+c[1]+c[2].join(""));
-        return citation.join("") == c[0].map(x => x.join("")).join("")+c[1]+c[2].join("");
+        // citation is an array of components originally dot-separated
+        let components = c[0].map(x => x[0]).concat(c[1]).concat(c[2]);
+        return components.reduce((acc, n, i) => acc && n == citation[i], true);
       }
     }
 
@@ -130,24 +162,12 @@ CourtLevel
 Pattern
     = pattern:((N ".")* "*" / (N ".")* N SubSection* "(*)")
     {
-    	pattern = pattern.flat(2).join("");
       return citation => {
-        citation = citation.join("");
-        
-        // check if subsection wildcard
-        let idx = pattern.indexOf("(*)");
-        
-        if (idx == -1) {
-        	  // otherwise, check for N.* wildcard
-            idx = pattern.indexOf(".*");
-            if (idx == -1) {
-            	// otherwise, check for * wildcard
-              idx = pattern.indexOf("*");
-            }
-        }
-        return citation.substring(0, idx) == pattern.substring(0, idx);
+        let components = pattern[0].map(x => x[0]).concat(pattern[1]).concat(pattern[2] || []);
+        return components.reduce((acc, n, i) => acc && n == "*" || n == citation[i], true);
       };
     }
     
 _ "whitespace"
   = [ \t\n\r]*
+
