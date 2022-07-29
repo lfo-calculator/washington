@@ -111,18 +111,6 @@ scope RCW_46_61_5055:
   equals
     [ One content imprisonment ; One content fine ; One content cost ; One content minor_passenger_fine; One content minor_passenger_imprisonment ]
 
-scope RCW_46_61_5055_11_b:
-  definition probation_imprisonment
-  equals
-    (Imprisonment content (Imprisonment {
-      -- min_days: 0 day 
-      -- max_days: 0 day 
-    }))
-
-  definition outcome
-  equals
-  One content probation_imprisonment
-
 ```
 
 ## RCW 46.61.5055 Alcohol and drug violators—Penalty schedule. (Effective until January 1, 2022.)
@@ -821,15 +809,17 @@ offender's driving privilege in probationary status pursuant to RCW 46.20.355.
   or deferred.
 
 ```catala
-scope RCW_46_61_5055_11_b under condition info.probation_violation_count > 0:
-
-  exception definition probation_imprisonment
-  under condition true
-  consequence equals
+scope RCW_46_61_5055_11_b:
+  definition probation_imprisonment
+  equals
     (Imprisonment content (Imprisonment {
       -- min_days : 30 day *^ info.probation_violation_count
       -- max_days : 30 day *^ info.probation_violation_count
     }))
+
+  definition outcome
+  equals
+  One content probation_imprisonment
 
 ```
 
