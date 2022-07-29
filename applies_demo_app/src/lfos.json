@@ -1,0 +1,537 @@
+[
+    {
+        "name": "DOMESTIC VIOLENCE PREVENTION. Violation of order—Penalties.",
+        "rcw_sources": [{
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=26.50.110",
+            "num": "26.50.110"
+        }],
+        "applies": "26.50.*",
+        "mandatory" : true,
+        "restitution": false,
+        "min": 15,
+        "max": 15,
+        "catala_representation": null,
+        "unsure_if_lfo": false,
+        "type": "penalty"
+    },
+    {
+       "name" : "MOTOR VEHICLES. ENFORCEMENT. Additional monetary penalty.",
+        "rcw_sources": [{
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=46.64.055",
+            "num": "46.64.055"
+        }],
+        "applies" : "46.*",
+        "mandatory" : true,
+        "reduceable_if_indigent" : true,
+        "suspendable_if_indigent" : true,
+        "waivable_if_indigent": true,
+        "min": 50,
+        "max": 50,
+        "catala_representation": "",
+        "cshAvailable": true,
+        "unsure_if_lfo": false,
+        "text": "Additional monetary penalty. \n(1) In addition to any other penalties imposed for conviction of a violation of this title that is a misdemeanor, gross misdemeanor, or felony, the court shall impose an additional penalty of fifty dollars. The court may not reduce, waive, or suspend the additional penalty unless the court finds the offender to be indigent. If a community restitution program for offenders is available in the jurisdiction, the court shall allow offenders to offset all or a part of the penalty due under this section by participation in the community restitution program.\n(2) Revenue from the additional penalty must be remitted under chapters 2.08, 3.46, 3.50, 3.62, 10.82, and 35.20 RCW. Money remitted under this section to the state treasurer must be deposited in the state general fund. The balance of the revenue received by the county or city treasurer under this section must be deposited into the county or city current expense fund. Moneys retained by the city or county under this subsection shall constitute reimbursement for any liabilities under RCW 43.135.060.",
+        "type": "penalty"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Deferred prosecution",
+        "rcw_sources": [{
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        }],
+        "applies": "*",
+        "max": 250,
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Pretrial supervision other than a pretrial electronic alcohol monitoring program, drug monitoring program, or 24/7 sobriety program",
+        "rcw_sources": [{
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        }],
+        "applies": "*",
+        "max": 150,
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Preparing and serving a warrant for failure to appear",
+        "rcw_sources": [{
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        }],
+        "applies": "*",
+        "max": 150,
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost"
+    },
+    {
+        "name": "Costs—What constitutes—Payment by defendant—Procedure—Remission—Medical or mental health treatment or services. Costs of incarceration ",
+        "rcw_sources": [{
+            "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.01.160",
+            "num": "10.01.160(2)"
+        }],
+        "orderIfIndigent": false,
+        "remittableAfterRelease": true,
+        "cshAvailable": true,
+        "type": "cost",
+        "note": "In no case may the court require the offender to pay more than one hundred dollars per day for the cost of incarceration." 
+    },
+    {
+        "name": "Liability of convicted person for costs—Jury fee.",
+        "rcw_sources": [{
+                "num": "10.46.190",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.46.190"
+            },
+            { 
+                "num": "36.18.016",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=36.18.016"
+            }
+        ],
+        "applies": "*",
+        "type": "cost",
+        "max": 250,
+        "imposeIfIndigent": false,
+        "notes": "Upon conviction in criminal cases a jury demand charge of one hundred twenty-five dollars for a jury of six, or two hundred fifty dollars for a jury of twelve may be imposed as costs under RCW 10.46.190."
+    },
+    {
+        "name": "Judgment to include costs—Exception.",
+        "rcw_sources": [{
+                "num": "10.64.015",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=10.64.015"
+            }
+        ],
+        "applies": "*",
+        "type": "cost",
+        "imposeIfIndigent": false,
+        "notes": ""
+    },
+    {
+        "name": "AIRCRAFT AND AIRMAN REGULATIONS. Penalty.",
+        "rcw_sources": [{
+                "num": "14.16.060",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=14.16.060"
+            }
+        ],
+        "applies": "14.16.*",
+        "type" : "fine",
+        "max" : 500,
+        "notes" : ""
+    },
+    {
+        "name": "ANIMAL HEALTH. Violations of chapter or rules—Civil penalty—Moneys collected—Time and mileage fee.",
+        "rcw_sources": [{
+                "num": "16.36.113",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=16.36.113"
+            }
+        ],
+        "applies": "16.36.*",
+        "type" : "civil penalty",
+        "notes" : " Any person in violation of this chapter or its rules may be subject to a civil penalty in an amount of not more than one thousand dollars for each violation. Each violation is a separate and distinct offense. "
+    },
+    {
+        "name": "Animal cruelty in the first degree.",
+        "rcw_sources": [{
+                "num": "16.52.205",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=16.52.205"
+            }
+        ],
+        "applies": "16.52.205",
+        "type" : "cost",
+        "notes" : "[T]he court may order that the convicted person ... Reimburse the animal shelter or humane society for any reasonable costs incurred for the care and maintenance of any animals taken to the animal shelter or humane society as a result of conduct proscribed in this section."
+    },
+    {
+        "name": "WASHINGTON PESTICIDE APPLICATION ACT. Civil penalty for failure to comply with chapter.",
+        "rcw_sources": [{
+                "num": "17.21.315",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=17.21.315"
+            }
+        ],
+        "applies": "17.21.*",
+        "type" : "civil penalty",
+        "notes" : "Every person who fails to comply with this chapter or the rules adopted under it may be subjected to a civil penalty, as determined by the director, in an amount of not more than seven thousand five hundred dollars for every such violation. Each and every such violation shall be a separate and distinct offense."
+    },
+    {
+        "name": "ACCOUNTANCY. Penalty.",
+        "rcw_sources": [{
+                "num": "18.04.370",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=18.04.370"
+            }
+        ],
+        "applies": "18.04.*",
+        "type" : "fine",
+        "max" : 30000,
+        "notes" : ""
+    },
+    {
+        "name": "Reproduction of sound without consent of owner unlawful—Fine and penalty. Felony.",
+        "rcw_sources": [{
+                "num": "19.25.020",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.25.020"
+            }
+        ],
+        "applies": "19.25.020(2)(b)+19.25.020(2)(a)",
+        "type" : "fine",
+        "max" : 250000,
+        "notes" : ""
+    },
+    {
+        "name": "Reproduction of sound without consent of owner unlawful—Fine and penalty. Misdemeanor.",
+        "rcw_sources": [{
+                "num": "19.25.020",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.25.020"
+            }
+        ],
+        "applies": "19.25.020(2)(c)",
+        "type" : "fine",
+        "max" : 25000,
+        "notes" : ""
+    },
+    {
+        "name": "TAX REFUND ANTICIPATION LOANS. Violation of chapter—Penalty.",
+        "rcw_sources": [{
+                "num": "19.265.060",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=19.265.060"
+            }
+        ],
+        "applies": "19.265.*",
+        "type" : "fine",
+        "notes" : "Any person who knowingly and willfully violates this chapter is guilty of a misdemeanor and shall be fined up to five hundred dollars for each offense."
+    },
+    {
+        "name": "Abusing or insulting teachers, liability for—Penalty.",
+        "rcw_sources": [{
+                "num": "28A.635.010",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=28A.635.010"
+            }
+        ],
+        "applies": "28A.635.010",
+        "type" : "fine",
+        "max" : 100,
+        "min" : 10,
+        "notes" : ""
+    },
+    {
+        "name": "Disturbing school, school activities or meetings—Penalty.",
+        "rcw_sources": [{
+                "num": "28A.635.030",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=28A.635.030"
+            }
+        ],
+        "applies": "28A.635.030",
+        "type" : "fine",
+        "max" : 50,
+        "notes" : ""
+    },
+    {
+        "name": "Examination questions—Disclosing—Penalty.",
+        "rcw_sources": [{
+                "num": "28A.635.040",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=28A.635.040"
+            }
+        ],
+        "applies": "28A.635.040",
+        "type" : "fine",
+        "min" : 100,
+        "max" : 500,
+        "notes" : ""
+    },
+    {
+        "name": "Property, failure of officials or employees to account for—Mutilation by—Penalties.",
+        "rcw_sources": [{
+                "num": "28A.635.070",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=28A.635.070"
+            }
+        ],
+        "applies": "28A.635.070",
+        "type" : "fine",
+        "notes" : "Any school district official or employee who shall refuse or fail to deliver to his or her qualified successor all books, papers, and records pertaining to his or her position, or who shall willfully mutilate or destroy any such property, or any part thereof, shall be guilty of a misdemeanor, the penalty for which shall be a fine not to exceed one hundred dollars: PROVIDED, That for each day there is a refusal or failure to deliver to a successor books, papers and records, a separate offense shall be deemed to have occurred."
+    },
+    {
+        "name": "Interference by force or violence—Penalty.",
+        "rcw_sources": [{
+                "num": "28A.635.090",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=28A.635.090"
+            }
+        ],
+        "applies": "28A.635.090",
+        "type" : "fine",
+        "max" : 500,
+        "notes" : ""
+    },
+    {
+        "name": "Intimidating any administrator, teacher, classified employee, or student by threat of force or violence unlawful—Penalty.",
+        "rcw_sources": [{
+                "num": "28A.635.100",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=28A.635.100"
+            }
+        ],
+        "applies": "28A.635.100",
+        "type" : "fine",
+        "max" : 500,
+        "notes" : ""
+    },
+    {
+        "name": "Pollution as criminal nuisance—Punishment.",
+        "rcw_sources": [{
+                "num": "35.88.040",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=35.88.040"
+            }
+        ],
+        "applies": "35.88.030+35.88.040",
+        "type" : "fine",
+        "max" : 500,
+        "notes" : ""
+    },
+    {
+        "name": "Peddler's license—Penalty for peddling without license.",
+        "rcw_sources": [{
+                "num": "36.71.060",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=36.71.060"
+            }
+        ],
+        "applies": "36.71.060",
+        "max" : 200,
+        "type" : "fine",
+        "notes" : "Every peddler who sells or offers for sale or exposes for sale, at public or private sale any goods, wares, or merchandise without a county license, is guilty of a misdemeanor and shall be punished by imprisonment for not less than thirty days nor more than ninety days or by fine of not less than fifty dollars nor more than two hundred dollars or by both."
+    },
+    {
+        "name": "Emergency response caused by person's intoxication—Recovery of costs from convicted person.",
+        "rcw_sources": [{
+                "num": "38.52.430",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=38.52.430"
+            }
+        ],
+        "applies": "46.61.502+46.61.504+47.68.220+79A.60.040+46.61.520(1)(a)+46.61.522(1)(b)",
+        "max" : 2500,
+        "type" : "cost reimbursement",
+        "notes" : " Following a conviction of an offense listed in this section, and prior to sentencing, the prosecution may present to the court information setting forth the expenses incurred by the public agency for its emergency response to the incident. Upon a finding by the court that the expenses are reasonable, the court shall order the defendant to reimburse the public agency. The court may establish a payment schedule for the payment of the cost reimbursement, separate from any payment schedule imposed for other fines and costs."
+    },
+    {
+        "name" : "PUBLIC DOCUMENTS, RECORDS, AND PUBLICATIONS. PENAL PROVISIONS. Offering false instrument for filing or record.",
+        "rcw_sources" : [{
+                "num": "40.16.030",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=40.16"
+            }
+        ],
+        "applies" : "40.16.030",
+        "max": 5000,
+        "type": "fine",
+        "notes" : ""
+    },
+    {
+        "name" : "PUBLIC DOCUMENTS, RECORDS, AND PUBLICATIONS. PENAL PROVISIONS. Injury to and misappropriation of record.",
+        "rcw_sources" : [{
+                "num": " 40.16.020",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=40.16.020"
+            }
+        ],
+        "applies" : " 40.16.020",
+        "type": "fine",
+        "notes" : ""
+    },
+    {
+        "name" : "PUBLIC DOCUMENTS, RECORDS, AND PUBLICATIONS. PENAL PROVISIONS. Injury to public record.",
+        "rcw_sources" : [{
+                "num": "40.16.010",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=40.16.010"
+            }
+        ],
+        "applies" : "40.16.010",
+        "max" : 1000,
+        "type": "fine",
+        "notes" : ""
+    },
+    {
+        "name" : "Crime laboratory analysis fee—Court imposition—Collection.",
+        "rcw_sources" : [{
+                "num": "43.43.690",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=43.43.690"
+            }
+        ],
+        "applies" : "*",
+        "type": "fee",
+        "notes" : "When an adult offender has been adjudged guilty of violating any criminal statute of this state and a crime laboratory analysis was performed by a state crime laboratory, in addition to any other disposition, penalty, or fine imposed, the court shall levy a crime laboratory analysis fee of one hundred dollars for each offense for which the person was convicted. Upon a verified petition by the person assessed the fee, the court may suspend payment of all or part of the fee if it finds that the person does not have the ability to pay the fee.",
+        "suspendable" : true
+    },
+    {
+        "name" : "DNA identification system—Collection of biological samples—Fee.",
+        "rcw_sources" : [{
+                "num": "43.43.7541",
+                "url": ""
+            }
+        ],
+        "applies" : "F_A+F_B+F_C+(9.94A.030&DV)+9.68A.090+9A.44.170+9A.44.*+9A.46.020+9A.88.110+9A.44.096+9A.46.110+9A.88.010+(7.105.450&violates_sexual_assault_protection)",
+        "type": "fee",
+        "max": 100,
+        "notes" : "Every sentence imposed for a crime specified in RCW 43.43.754 must include a fee of one hundred dollars unless the state has previously collected the offender's DNA as a result of a prior conviction. "
+    },
+    {
+        "name" : "MOTOR VEHICLES. Enforcement. Additional monetary penalty.",
+        "rcw_sources" : [{
+                "num": "46.64.055",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=46.64.055"
+            }
+        ],
+        "applies" : "46.*&(S+G+F)",
+        "type": "penalty",
+        "max" : 50,
+        "min": 50,
+        "reduceable_if_indigent": true,
+        "waivable_if_indigent": true,
+        "suspendable_if_indigent": true,
+        "notes" : ""
+    },
+    {
+        "name" : "Failure to title or register an off-road vehicle—Penalty, circumstances when.",
+        "rcw_sources" : [{
+                "num": "46.09.495",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=46.09.495"
+            }
+        ],
+        "applies" : "46.09.495",
+        "type": "fine",
+        "notes" : "For a second or subsequent offense, the person convicted is also subject to a fine equal to four times the amount of avoided taxes and fees, which may not be suspended, except as provided in RCW 10.05.180, Failure to register vehicle, aircraft, or vessel—Deferral program—Exception—Fines."
+    },
+    {
+        "name" : "Failure to register a snowmobile—Penalty, circumstances when.",
+        "rcw_sources" : [{
+                "num": "46.10.505",
+                "url": ""
+            }
+        ],
+        "applies" : "46.10.505",
+        "type": "fine",
+        "notes" : "For a second or subsequent offense, the person convicted is also subject to a fine equal to four times the amount of avoided taxes and fees, which may not be suspended, except as provided in RCW 10.05.180, Failure to register vehicle, aircraft, or vessel—Deferral program—Exception—Fines."
+    },
+    {
+        "name" : "MOTOR VEHICLES. CERTIFICATES OF TITLE. Disclosure violations, penalties.",
+        "rcw_sources" : [{
+                "num": "46.12.640",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=46.12.640"
+            }
+        ],
+        "applies" : "46.12.640(2)(*)",
+        "type": "fine",
+        "max" : 10000,
+        "notes" : ""
+    },
+    {
+        "name" : "Ownership of motor vehicle by person under eighteen prohibited—Exception.",
+        "rcw_sources" : [{
+                "num": "46.12.755",
+                "url": ""
+            }
+        ],
+        "applies" : "46.12.755(3)(*)",
+        "type": "fine",
+        "max" : 250,
+        "notes" : "A person is guilty of a misdemeanor punishable by a fine of not more than two hundred fifty dollars or by imprisonment in a county jail for not more than ninety days if that person with actual notice of the prohibition: (a) Gives, sells, or transfers the ownership of a motor vehicle to a person under the age of eighteen; (b) Is a registered or legal owner of a motor vehicle in violation of subsection (1) of this section; or (c) Transfers, sells, or encumbers an interest in a motor vehicle in violation of RCW 46.61.5058."
+    },
+    {
+        "name" : "",
+        "rcw_sources" : [{
+                "num": "46.16A.030",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=46.16A.030"
+            }
+        ],
+        "applies" : "46.16A.030(6)(a)",
+        "type": "fine",
+        "min": 1529,
+        "notes" : "(a) For a first offense: \n(i) Up to three hundred sixty-four days in the county jail;\n(ii) Payment of a fine of five hundred twenty-nine dollars plus any applicable assessments, which may not be suspended or reduced. The fine of five hundred twenty-nine dollars must be deposited into the vehicle licensing fraud account created in the state treasury in RCW 46.68.250;\n(iii) A fine of one thousand dollars to be deposited into the vehicle licensing fraud account created in the state treasury in RCW 46.68.250, which may not be suspended or reduced; and\n(iv) The delinquent taxes and fees, which must be deposited and distributed in the same manner as if the taxes and fees were properly paid in a timely fashion, and which may not be suspended or reduced;"
+    },
+    {
+        "name" : "",
+        "rcw_sources" : [{
+                "num": "46.16A.030",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=46.16A.030"
+            }
+        ],
+        "applies" : "46.16A.030(6)(b)",
+        "type": "fine",
+        "min": 5529,
+        "notes" : "(b) For a second or subsequent offense: \n(i) Up to three hundred sixty-four days in the county jail;\n(ii) Payment of a fine of five hundred twenty-nine dollars plus any applicable assessments, which may not be suspended or reduced, except as provided in RCW 10.05.180. The fine of five hundred twenty-nine dollars must be deposited into the vehicle licensing fraud account created in the state treasury in RCW 46.68.250;\n(iii) A fine of five thousand dollars to be deposited into the vehicle licensing fraud account created in the state treasury in RCW 46.68.250, which may not be suspended or reduced; and\n(iv) The amount of delinquent taxes and fees, which must be deposited and distributed in the same manner as if the taxes and fees were properly paid in a timely fashion, and which may not be suspended or reduced."
+    },
+    {
+        "name" : "Registration—Requirements before issuance—Penalty—Rules.",
+        "rcw_sources" : [{
+                "num": "46.16A.050",
+                "url": "https://app.leg.wa.gov/rcw/default.aspx?cite=46.16A.050"
+            }
+        ],
+        "applies" : "46.16A.050",
+        "type": "fine",
+        "max": 529,
+        "notes" : "A person falsifying residency is guilty of a gross misdemeanor punishable only by a fine of five hundred twenty-nine dollars."
+    },
+    {
+        "name" : "Vehicle trip permits—Restrictions and requirements—Fee—Penalty—Rules.",
+        "rcw_sources" : [{
+                "num": "46.16A.320",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=46.16A.320"
+            }
+        ],
+        "applies" : "46.16A.320(2)(b)",
+        "type": "penalty",
+        "min" : 2500,
+        "notes" : "A violation of or a failure to comply with this subsection is a gross misdemeanor, subject to a minimum monetary penalty of two thousand five hundred dollars for the first violation and five thousand dollars for each subsequent violation."
+    },
+    {
+        "name" : "IGNITION INTERLOCK, TEMPORARY RESTRICTED, OCCUPATIONAL LICENSES. Penalty—Violation.",
+        "rcw_sources" : [{
+                "num": "46.20.410",
+                "url": ""
+            }
+        ],
+        "applies" : "46.20.410+46.20.394",
+        "type": "fine",
+        "max": 200,
+        "notes" : "Any person convicted for violation of any restriction of an occupational driver's license or a temporary restricted driver's license shall in addition to the cancellation of such license and any other penalties provided by law be fined not less than fifty nor more than two hundred dollars or imprisoned for not more than six months or both such fine and imprisonment."
+    },
+    {
+        "name" : "Suspension of registration, notice—Surrender of license plates—Penalties. Failure to surrender license plates.",
+        "rcw_sources" : [{
+                "num": "https://app.leg.wa.gov/RCW/default.aspx?cite=46.29.605",
+                "url": "46.29.605"
+            }
+        ],
+        "applies" : "46.29.605(4)",
+        "type": "fine",
+        "min" : 50,
+        "max" : 250,
+        "notes" : ""
+    },
+    {
+        "name" : "Suspension of registration, notice—Surrender of license plates—Penalties. Suspension of registration.",
+        "rcw_sources" : [{
+                "num": "https://app.leg.wa.gov/RCW/default.aspx?cite=46.29.605",
+                "url": "46.29.605"
+            }
+        ],
+        "applies" : "46.29.605(6)",
+        "type": "fine",
+        "min": 100,
+        "max": 500,
+        "notes" : ""
+    },
+    {
+        "name" : "TRANSPORTATION OF HAZARDOUS MATERIALS. Rules—Penalties—Responsibility for compliance.",
+        "rcw_sources" : [{
+                "num": "46.48.175",
+                "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=46.48.175"
+            }
+        ],
+        "applies" : "46.48.175",
+        "type": "fine",
+        "min": 200,
+        "max": 500,
+        "notes" : ""
+    }
+]

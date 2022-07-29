@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>LFO sketch</title>
+    <script type="application/javascript" src="parser.js"></script>
+    <script type="application/javascript">
+      var lfos = fetch("./lfos.json");
+      window.addEventListener("load", () => {
+        document.querySelector("#go").addEventListener("click", () => {
+          lfos.then(response => {
+            return response.json();
+          }).then(data => {
+            let citation = document.querySelector("#citation").value;
+            for (let lfo of data) {
+              try {
+                let applies = appliesParser.parse(lfo.applies);
+                if (applies(citation))
+                  console.log(lfo.name, "applies to", citation);
+              } catch (e) {
+                console.error("Could not parse applies field for", lfo.name, lfo.applies);
+              }
+            }
+          });;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    LFO: <input type="text" id="citation" /><br />
+    <input type="submit" value="Go" id="go" />
+  </body>
+</html>
