@@ -5,26 +5,6 @@
 ## command to run tests:
 ## $ catala -t interpret -s Test Test.catala_en
 
-## cannot implement this test until duration multiplication implemented in Catala
-declaration scope Test11b:
-  t1 scope RCW_46_61_5055_11_b
-  t2 scope RCW_46_61_5055_11_b
-  t3 scope RCW_46_61_5055_11_b
-
-scope Test11b:
-  definition t1.info equals RCW_46_61_5055_Probation_Info {
-    -- probation_violation_count : 2
-  }
-  assertion t1.outcome = 
-    One content (
-      Imprisonment content (
-        Imprisonment {
-          -- min_days : 60 day
-          -- max_days : 60 day
-        }
-      )
-    )
-
 ```catala
 
 declaration scope Test1a:
@@ -1035,8 +1015,54 @@ declaration scope Test:
   test3 scope Test2b
   test4 scope Test3a
   test5 scope Test3b
-  
-```
   test6 scope Test11b
+
+
+declaration scope Test11b:
+  t1 scope RCW_46_61_5055_11_b
+  t2 scope RCW_46_61_5055_11_b
+  t3 scope RCW_46_61_5055_11_b
+
+scope Test11b:
+  definition t1.info equals RCW_46_61_5055_Probation_Info {
+    -- probation_violation_count : 2
+  }
+  assertion t1.outcome = 
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days : 60 day
+          -- max_days : 60 day
+        }
+      )
+    )
+
+  definition t2.info equals RCW_46_61_5055_Probation_Info {
+    -- probation_violation_count : 0
+  }
+  assertion t2.outcome = 
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days : 0 day
+          -- max_days : 0 day
+        }
+      )
+    )
+  
+  definition t3.info equals RCW_46_61_5055_Probation_Info {
+    -- probation_violation_count : 6
+  }
+  assertion t3.outcome = 
+    One content (
+      Imprisonment content (
+        Imprisonment {
+          -- min_days : 180 day
+          -- max_days : 180 day
+        }
+      )
+    )
+
+```
 
 
