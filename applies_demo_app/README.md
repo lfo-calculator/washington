@@ -1,3 +1,11 @@
+# Extra steps to do first
+
+`npm install -g pegjs`
+
+`npm install`
+
+`npm install react-scripts react` if it still doesn't work!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

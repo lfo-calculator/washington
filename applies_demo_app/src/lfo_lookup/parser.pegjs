@@ -1,4 +1,4 @@
-/* 
+/*
     Grammar of the applies field:
     =============================
 
@@ -11,10 +11,10 @@ C ::=
   | { c, ... }           // set of charges
   | C-C                  // set difference
   | C+C                  // set union
-  | C&C                  // set intersection 
+  | C&C                  // set intersection
   | p                    // prefix pattern
   | DV                   // case involving domestic violence
-  | CLJ, SC              // court 
+  | CLJ, SC              // court
 
 */
 
@@ -22,7 +22,7 @@ C ::=
     Examples of applies fields:
     ===========================
 
-    Note: concrete syntax for `p` 
+    Note: concrete syntax for `p`
 
     *-(46.*-{46.60.0, 46.60.1})
 
@@ -31,7 +31,7 @@ C ::=
 
 Start
     = Test / Additive
-    
+
 Test
    = "Applies(" a:Additive "," _ c:BareCitation ")" {
      return a(c, { isDV : true, court: "CLJ", charge: "G", offense_number: 4, foobar: true });
@@ -72,7 +72,7 @@ Additive
       }, head);
     }
     / SideCondition
-    
+
 SideCondition
     = _ f:Field _ op:(">=" / "=") _ v:Value {
       return (citation, context) => {
@@ -83,13 +83,13 @@ SideCondition
             return (f in context) && context[f] == v;
         }
       }
-    } / 
+    } /
     _ f:Field {
       return (citation, context) => {
         return (f in context) && context[f];
       }
     } / Atomic
-    
+
 Field = c:[a-z_]+ { return c.join(""); }
 Value =
   n:[0-9]+ { return parseInt(n.join("")); } /
@@ -101,7 +101,7 @@ Atomic
     = a:(Pattern / Citation / Set / Paren / ChargeClass / CourtLevel / DomesticViolence) {
       return a;
     }
-    
+
 Paren
 	= "(" a:Additive ")" {
     	return a;
@@ -110,7 +110,7 @@ Paren
 /* A set of citations, denoted { C1, ..., Cn } */
 Set
     = "{" _ cs:(Citation _ "," _)* c:Citation _ "}" {
-      // We skip the second argument here because only citations are in sets, 
+      // We skip the second argument here because only citations are in sets,
       // meaning we will not need the context to evaluate any of those.
       return cs.reduce((result, element) => {
         return citation => result(citation) || element[0](citation);
@@ -118,7 +118,7 @@ Set
     }
 
 Citation
-    = c: ((N ".")* N SubSection*) 
+    = c: ((N ".")* N SubSection*)
     {
       // Same thing: citations do not need the context to evaluate
       return citation => {
@@ -128,13 +128,13 @@ Citation
       }
     }
 
-SubSection 
+SubSection
     =  "(" subsection:([0-9]+ / [a-z]+ / [A-Z]+) ")" {
       return subsection.join("");
     }
 
-N 
-    = digits:[0-9a-zA-Z]+ {
+N
+    = digits:([0-9]+[a-zA-Z]*) {
       return digits.join("");
     }
 
@@ -167,7 +167,7 @@ Pattern
         return components.reduce((acc, n, i) => acc && n == "*" || n == citation[i], true);
       };
     }
-    
+
 _ "whitespace"
   = [ \t\n\r]*
 

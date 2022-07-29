@@ -17,15 +17,20 @@ export class LFOLookup extends React.Component {
 
         let matches = [];
         let citation = document.querySelector("#citation").value;
-        
+
         for (let lfo of lfos) {
           try {
-            console.log(appliesParser);
             let applies = appliesParser.parse(lfo.applies);
-            if (applies(citation))
+            let bareCitation = appliesParser.parse(citation, { startRule: "BareCitation" });
+            let isMatch = applies(bareCitation, {});
+
+            console.log(lfo.name, "(" + lfo.applies + ") applies to ", citation, "?");
+            console.log(isMatch, appliesParser);
+
+            if (isMatch)
               matches.push(lfo);
           } catch (e) {
-            console.error("Could not parse applies field for", lfo.name, lfo.applies);
+            console.error("Could not parse applies field for", lfo.name, lfo.applies, e);
           }
         }
 
@@ -50,4 +55,4 @@ export class LFOLookup extends React.Component {
         );
     }
 }
-          
+
