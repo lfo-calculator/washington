@@ -1,0 +1,19 @@
+[
+    {
+        "name": "",
+        "type": "",
+         "num": "",
+        "url": "",
+        "context" : {
+        }
+    },
+    {
+        "name": "FAIL TO REGISTER SNOWMOBILE",
+        "type": "G",
+         "num": "46.10.505(1)(a)",
+        "url": "http://app.leg.wa.gov/rcw/default.aspx?cite=46.10.505",
+        "context" : {
+            "offense_num" : "1|2+"
+        }
+    }
+]

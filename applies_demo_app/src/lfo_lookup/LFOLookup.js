@@ -1,37 +1,76 @@
 import React from 'react';
 import lfos from '../lfos.json';
+import charges from '../charges.json';
 import appliesParser from './parser';
+import { LFOOptions } from './LFOOptions';
 
 export class LFOLookup extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = ({
-            applicableLFOs: []
+            applicableLFOs: [],
+            lfoOptions: {},
+            lfoSelectedOptions: {},
+            currentCitation: ""
         });
 
-        this.find_applicable_lfos = this.find_applicable_lfos.bind(this);
+        this.findApplicableLFOs = this.findApplicableLFOs.bind(this);
+        this.selectLFOoption = this.selectLFOoption.bind(this);
+        this.enterCitation = this.enterCitation.bind(this);
+        this.handleSelect = this.handleSelect.bind(this);
     }
 
-    find_applicable_lfos () {
+    selectLFOoption(name, val) {
+        let opts = this.state.lfoSelectedOptions;
+        opts[name] = val;
+        this.setState({
+            lfoSelectedOptions : opts
+        });
+        this.findApplicableLFOs();
+    }
 
+    handleSelect(event) {
+        let selected_charge = charges[event.target.value];
+        this.setState({
+            lfoOptions : selected_charge.context,
+            currentCitation : selected_charge.num
+        });
+        this.findApplicableLFOs();
+    };
+    
+    enterCitation() {
+        this.setState({
+            lfoOptions : {},
+            lfoSelectedOptions : {},
+            currentCitation: document.querySelector("#citation").value
+        });
+        this.findApplicableLFOs(document.querySelector("#citation").value);
+    }
+
+    findApplicableLFOs () {
+
+        let citation = this.state.currentCitation;
+        console.log(this.state.lfoSelectedOptions);
         let matches = [];
-        let citation = document.querySelector("#citation").value;
 
         for (let lfo of lfos) {
-          try {
-            let applies = appliesParser.parse(lfo.applies);
-            let bareCitation = appliesParser.parse(citation, { startRule: "BareCitation" });
-            let isMatch = applies(bareCitation, {});
-
-            console.log(lfo.name, "(" + lfo.applies + ") applies to ", citation, "?");
-            console.log(isMatch, appliesParser);
-
-            if (isMatch)
-              matches.push(lfo);
-          } catch (e) {
-            console.error("Could not parse applies field for", lfo.name, lfo.applies, e);
-          }
+            try {
+                let applies = appliesParser.parse(lfo.applies);
+                let bareCitation = appliesParser.parse(citation, { startRule : "BareCitation"});
+                let isMatch = applies(bareCitation, this.state.lfoSelectedOptions);
+    
+                console.log(lfo.name, "(" + lfo.applies + ") applies to ", citation, "?");
+                console.log('with the options');
+                console.log(this.state.lfoSelectedOptions);
+                console.log(isMatch, appliesParser);
+    
+                if (isMatch)
+                  matches.push(lfo);
+            }
+            catch (e) {
+                console.error("Could not parse applies field for", lfo.name, lfo.applies, e);
+            }
         }
 
         this.setState({
@@ -40,16 +79,22 @@ export class LFOLookup extends React.Component {
     }
 
     render() {
+
         return (
             <div>
-                <p>
-                    Enter Charge: <input type="text" id="citation" />
-                </p>
-                <p>
-                <input type="submit" value="Go" id="go" onClick={this.find_applicable_lfos} />
-                </p>
+                <label>Select Charge: 
+                <select onChange={this.handleSelect}>
+                    {
+                        charges.map((charge, i) =>
+                            <option context={charge.context} value={i} key={`chargeoption_${i}`} >{charge.name}</option>
+                        )
+                    }
+                </select>
+                <LFOOptions citation={this.state.currentCitation} selectLFOoption={this.selectLFOoption} lfoOptions={this.state.lfoOptions} />
+
+                </label>
                 <div>
-                    {this.state.applicableLFOs.map((lfo, i) => <p key={i}>{lfo.name}</p>)}
+                    {this.state.applicableLFOs.map((lfo, i) => <p key={`applicableLFO_${i}`}>{lfo.name}</p>)}
                 </div>
             </div>
         );

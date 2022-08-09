@@ -34,7 +34,7 @@ Start
 
 Test
    = "Applies(" a:Additive "," _ c:BareCitation ")" {
-     return a(c, { isDV : true, court: "CLJ", charge: "G", offense_number: 4, foobar: true });
+     return a(c, { isDV : true, court: "CLJ", charge: "G", offense_num: "2+", foobar: true });
    }
 
 BareCitation
@@ -80,7 +80,12 @@ SideCondition
           case ">=":
             return (f in context) && context[f] >= v;
           case "=":
-            return (f in context) && context[f] == v;
+          	console.log(`testing whether ${f} matches ${v} with context:`);
+            console.log(context);
+            
+            let result = (f in context) && context[f] == v;
+            console.log("result: ", result);
+            return result;
         }
       }
     } /
@@ -92,7 +97,7 @@ SideCondition
 
 Field = c:[a-z_]+ { return c.join(""); }
 Value =
-  n:[0-9]+ { return parseInt(n.join("")); } /
+  "\"" n:[0-9+a-z]+ "\"" { return n.join(""); } /
   "true" { return true; } /
   "false" { return false; }
 
